@@ -1,0 +1,161 @@
+:root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;color:#18312a;background:#f5f7f1}*{box-sizing:border-box}body{margin:0}header{background:#163f33;color:#fff}.mast{max-width:1280px;padding:35px 28px;display:flex;justify-content:space-between;gap:22px;margin:auto;align-items:center}.eyebrow{letter-spacing:.14em;font-size:11px;font-weight:800;color:#88b8a0}.mast h1{font-family:Georgia,serif;font-size:clamp(30px,4vw,52px);margin:8px 0}.mast p{color:#d4e5db;margin:0}.leaf{color:#a9cf76;margin-left:14px}.header-actions{display:flex;gap:10px;align-items:center}.header-actions label{font-size:12px}button,select,input{font:inherit}button{cursor:pointer;border:0;background:#337c5d;color:white;border-radius:9px;padding:10px 13px;font-weight:650}.outline{background:transparent;color:inherit;border:1px solid #a4c5b5}header select{background:#fff}select,input{padding:10px;border-radius:8px;border:1px solid #c9d6ce;background:white;width:100%;min-width:0}.notice{background:#fff1d4;color:#67512f;text-align:center;padding:9px 12px;font-size:13px;border-bottom:1px solid #ead8ab}main{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:minmax(290px,355px) 1fr;gap:24px;padding:26px}.filters,.results{background:#fff;border:1px solid #e1e9e0;border-radius:16px;padding:23px;align-self:start;box-shadow:0 6px 18px #1c473309}h2{font-size:21px;margin:0}.panel-title,.results-top,.modal-heading{display:flex;align-items:center;justify-content:space-between;gap:14px}.muted,.quiet{font-size:13px;color:#64766b;line-height:1.5}.filter{border:1px solid #dce8df;border-radius:12px;margin:15px 0;padding:13px;background:#fbfdfb}.filter-top{display:flex;align-items:start;gap:8px;justify-content:space-between}.filter h3{font-size:14px;margin:0 0 8px}.filter .remove{border:0;background:transparent;color:#946251;padding:0 4px}.filter .desc{font-size:12px;color:#667669;margin:3px 0 9px}.choices{display:grid;gap:5px}.choices label{display:flex;align-items:flex-start;gap:8px;font-size:13px;padding:6px;cursor:pointer;border-radius:6px}.choices label:hover{background:#eff5ef}.choices input{width:auto;margin-top:2px;accent-color:#27794f}.add-filter{border-top:1px solid #e0e9e1;margin-top:20px;padding-top:18px;display:grid;gap:9px}.add-filter label,.sort label{font-size:12px;font-weight:700;color:#51675a}.helper{font-size:12px;color:#536d5c;margin-top:17px}.results-top{align-items:end}.results-top h2{font-family:Georgia,serif;font-size:30px;margin-top:5px}.sort{min-width:220px;display:grid;gap:6px}.suggestion{background:#e9f4e7;border:1px solid #d1e7ce;padding:12px;border-radius:12px;font-size:13px;margin:20px 0}.suggestion button{margin-left:10px;padding:6px 9px;font-size:12px}.taxon-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}.taxon{border:1px solid #dce6dc;background:#fff;border-radius:12px;padding:15px;text-align:left;color:#243e31}.taxon:hover{border-color:#4b936e;background:#f8fcf8}.taxon strong{display:block;font-size:15px;font-style:italic;font-family:Georgia,serif;line-height:1.4}.taxon small{display:block;color:#687f70;margin-top:5px}.tags{display:flex;gap:5px;flex-wrap:wrap;margin-top:12px}.tag{font-size:10px;background:#e8f0ea;color:#476550;padding:4px 6px;border-radius:5px}.tag.uncertain{background:#fff2d5;color:#8b641c}dialog{max-width:min(670px,92vw);width:100%;border:1px solid #d4e3d8;border-radius:16px;padding:23px;box-shadow:0 30px 90px #142e2944}dialog::backdrop{background:#102c2877}.modal-heading .outline{color:#294b3c;border-color:#b6c9bc}#detail-body{margin-top:18px}.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.detail-grid div{background:#f4f8f3;border-radius:7px;padding:9px}.detail-grid small{display:block;color:#6e8276;margin-bottom:3px}footer{text-align:center;padding:25px;font-size:12px;color:#708174}footer a{color:#287152}@media(max-width:780px){main{grid-template-columns:1fr;padding:14px}.mast{padding:25px 18px;flex-direction:column;align-items:start}.results-top{flex-direction:column;align-items:stretch}.sort{min-width:0}.header-actions{flex-wrap:wrap}.detail-grid{grid-template-columns:1fr}}
+
+
+/* V4: separate, accessible scrolling panels for desktop and independently collapsible traits */
+@media(min-width:781px){
+ main{align-items:start;}
+ .filters,.results{height:min(78vh,850px);overflow-y:auto;overscroll-behavior:contain;scrollbar-gutter:stable;}
+ .filters::-webkit-scrollbar,.results::-webkit-scrollbar{width:9px}
+ .filters::-webkit-scrollbar-thumb,.results::-webkit-scrollbar-thumb{background:#c1d5c5;border-radius:20px;border:2px solid white}
+}
+.filter{padding:0;overflow:hidden}
+.filter-heading{display:flex;align-items:center;gap:10px;padding:14px 13px;cursor:pointer;list-style:none;font-weight:700;font-size:14px;line-height:1.35}
+.filter-heading::-webkit-details-marker{display:none}
+.filter-heading:hover,.filter-heading:focus-visible{background:#eff6ef}
+.filter-heading:focus-visible{outline:2px solid #337c5d;outline-offset:-2px}
+.filter-chevron{color:#3a7559;display:inline-block;transition:transform .15s ease;font-size:17px;line-height:1;flex-shrink:0}
+.filter[open] .filter-chevron{transform:rotate(90deg)}
+.filter-title{flex:1;min-width:0}
+.filter-selected{font-size:12px;min-width:20px;text-align:center;border-radius:12px;color:#fff;background:#367f5e;padding:2px 6px}
+.filter-selected:empty{display:none}
+.filter-body{padding:0 13px 13px}
+.filter .desc{margin:0 0 9px}
+@media(max-width:780px){.filters,.results{height:auto;max-height:none;overflow:visible}}
+
+/* V5: compact morphology help and optional photography */
+.state-line{display:flex;align-items:center;gap:6px;border-radius:7px}
+.state-line:hover{background:#eff5ef}
+.state-line label{flex:1;min-width:0;margin:0}
+.state-info{background:transparent;color:#367f5e;border:1px solid #d3e3d8;border-radius:50%;width:28px;height:28px;min-width:28px;line-height:1;padding:0;text-align:center;font-size:19px;font-weight:600}
+.state-info:hover,.state-info:focus-visible{background:#e0f1e4;outline:2px solid transparent}
+.info-dialog{max-width:min(520px,92vw)}
+#info-description{color:#324f40;line-height:1.55}
+#info-illustration{text-align:center}
+.trait-drawing{display:block;width:min(100%,400px);height:auto;max-height:300px;object-fit:contain;margin:12px auto 2px;background:#f9fcf8;border-radius:12px;border:1px solid #dce9dd}
+.photo-example{margin:0 0 18px;padding:8px;background:#f4f8f3;border-radius:12px}
+.photo-example img{display:block;max-width:100%;height:260px;width:100%;object-fit:contain;border-radius:8px;background:white}
+.photo-example figcaption{margin-top:8px;font-size:11px;line-height:1.6;color:#526c59}
+.photo-example a{color:#23694b}
+[hidden]{display:none!important}
+
+
+/* V7: typographic refresh inspired by ARGE Botanik OOE's modern, restrained website */
+:root{font-family:Arial,Helvetica,system-ui,sans-serif;color:#2d3431;background:#f6f7f6}
+body{font-size:15px;line-height:1.5}
+.mast h1,.results-top h2,.taxon strong{font-family:Arial,Helvetica,system-ui,sans-serif}
+.mast h1{font-weight:650;letter-spacing:-.035em;font-size:clamp(31px,3.5vw,47px)}
+.results-top h2{font-weight:650;letter-spacing:-.02em;font-size:28px}
+.taxon strong{font-weight:650;font-style:italic;letter-spacing:-.01em}
+header{background:#294d42}
+.eyebrow{letter-spacing:.1em}
+.filters,.results{border-radius:8px;box-shadow:0 2px 12px #263b3008}
+.filter{border-radius:7px;background:#fff}
+button,select,input{border-radius:5px}
+.filter-toolbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+.reset-inline{background:transparent;border:1px solid #d5e0d7;color:#36664e;padding:7px 10px;font-size:12px;font-weight:600;white-space:nowrap}
+.reset-inline:hover,.reset-inline:focus-visible{background:#eaf2eb;border-color:#80a88c}
+.taxon{border-radius:7px;transition:border-color .15s,background .15s,opacity .15s}
+/* Missing character values remain in the candidate set, but visually recede. */
+.taxon.taxon-uncertain{background:#f1f2f1;border-color:#d9ddda;color:#777f7a}
+.taxon.taxon-uncertain strong{color:#666f69}
+.taxon.taxon-uncertain small{color:#828a85}
+.taxon.taxon-uncertain .tag{background:#e5e8e6;color:#747d77}
+.taxon.taxon-uncertain:hover,.taxon.taxon-uncertain:focus-visible{background:#e9eeea;border-color:#a4b9a9;color:#505d54}
+@media(max-width:520px){.panel-title{align-items:flex-start;flex-wrap:wrap}.filter-toolbar{width:100%;justify-content:space-between}}
+
+
+/* V8: lighter editorial appearance inspired by ARGE Botanik OOE. */
+:root{font-family:Arial,Helvetica,system-ui,sans-serif;color:#353b37;background:#fafbf9}
+body{font-family:Arial,Helvetica,system-ui,sans-serif;font-size:14px;line-height:1.58}
+header{background:#fff;color:#4c9f37;border-bottom:1px solid #e6ebe5}
+.mast{padding:28px 28px 25px;align-items:center}
+.eyebrow{color:#69a845;font-family:'Arial Narrow',Arial,Helvetica,sans-serif;font-size:17px;font-weight:500;letter-spacing:.055em;text-transform:uppercase}
+.mast h1{color:#65a540;font-family:'Arial Narrow',Arial,Helvetica,sans-serif;font-size:clamp(39px,4.4vw,58px);font-weight:500;letter-spacing:.015em;line-height:1.05;margin:9px 0 0}
+.mast .leaf{font-family:Arial,sans-serif;font-size:.65em;color:#a0c564}
+.header-actions label{color:#568744;font-family:'Arial Narrow',Arial,Helvetica,sans-serif;font-size:19px;font-weight:500}
+header select{border:1px solid #b9d3b1;color:#397b2e}
+.notice{background:#f5f9f2;color:#687965;border-color:#e2ecdf;font-size:12px}
+main{max-width:1400px;grid-template-columns:minmax(310px,360px) minmax(0,1fr);gap:25px;padding-top:25px}
+.filters,.results{border:1px solid #e5ebe3;box-shadow:none;background:#fff;border-radius:3px;padding:24px}
+h2,.results-top h2{font-family:'Arial Narrow',Arial,Helvetica,sans-serif;font-weight:500;letter-spacing:.015em}
+h2{font-size:30px;color:#65a540}
+.results-top h2{font-size:40px;color:#69a745;letter-spacing:.005em}
+.results-top .eyebrow{font-size:16px}
+.filter{border-color:#e7ece6;border-radius:3px;background:#fff;margin:12px 0;padding:13px}
+.filter h3{font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:700;color:#365b38}
+.filter .desc{font-size:12px;color:#777e74}
+.muted,.quiet{color:#69796a}
+button{background:#69a846;font-weight:600;border-radius:3px}
+button:hover{background:#568d38}
+.reset-inline{color:#5e9e42;border-color:#d6e7d0;border-radius:3px}
+.reset-inline:hover{background:#edf6e9}
+select,input{border-color:#cfdcc9;border-radius:3px}
+.choices label:hover{background:#f1f7ee}
+.choices input{accent-color:#68a844}
+.suggestion{background:#eff6ea;border-color:#dcebd3;border-radius:3px;color:#476c37}
+.taxon-list{gap:11px}
+.taxon{border:1px solid #e3e9df;border-radius:3px;background:#fff;padding:15px;box-shadow:none}
+.taxon:hover{border-color:#8fbc7b;background:#f9fcf7}
+.taxon-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:6px}
+.taxon strong{font-family:Arial,Helvetica,sans-serif;font-size:14px;font-style:italic;font-weight:600;color:#38553e}
+.taxon small{color:#63815e}
+.photo-hint{font-style:normal;font-size:15px;line-height:1.35;color:#6e9a59;flex:none;filter:grayscale(.4)}
+.tag{background:#eef5e9;color:#57804a;border-radius:2px}
+.taxon.taxon-uncertain{background:#f2f3f2;border-color:#dfe2df;color:#747d76}
+.taxon.taxon-uncertain strong{color:#727b74}
+.taxon.taxon-uncertain .photo-hint{opacity:.75}
+.filter-toolbar{gap:10px}
+.info-dialog,.photo-example,dialog{border-radius:4px}
+@media(max-width:780px){main{grid-template-columns:1fr;padding:14px}.mast{gap:15px;padding:22px 18px}}
+
+
+/* V10: reduce text, move suggestion into sidebar, uniform checkboxes, thumbnails on cards */
+#search::placeholder{color:transparent}
+.suggestion-sidebar{margin:16px 0 8px}
+.suggestion-sidebar .suggestion-label{font-size:12px;color:#5e7d53;margin-bottom:4px}
+.suggestion-sidebar .suggestion-main{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.suggestion-sidebar strong{font-weight:700}
+.choices input[type=checkbox]{appearance:none;-webkit-appearance:none;width:18px;height:18px;min-width:18px;flex:none;border:1.5px solid #8db07f;border-radius:3px;background:#fff;display:inline-grid;place-content:center;margin:2px 0 0 0;}
+.choices input[type=checkbox]::after{content:'';width:10px;height:10px;transform:scale(0);transition:transform .08s ease-in-out;box-shadow: inset 1em 1em #68a844;clip-path: polygon(14% 44%, 0 59%, 41% 100%, 100% 17%, 84% 2%, 39% 62%);} 
+.choices input[type=checkbox]:checked::after{transform:scale(1)}
+.choices input[type=checkbox]:focus-visible{outline:2px solid #7fae6a;outline-offset:2px}
+.taxon-image-wrap{margin:-15px -15px 12px -15px;border-bottom:1px solid #e7ece4;background:#f4f8f1}
+.taxon-thumb{display:block;width:100%;height:132px;object-fit:cover;background:#f7faf5}
+.taxon .photo-hint{margin-left:8px}
+@media(max-width:780px){.suggestion-sidebar .suggestion-main{align-items:flex-start}.taxon-thumb{height:120px}}
+
+/* Publication preparation: compact bilingual project attribution */
+.project-footer{display:flex;flex-wrap:wrap;gap:12px 28px;align-items:flex-start;justify-content:space-between}
+.project-credits{display:flex;flex-direction:column;gap:3px;max-width:640px}
+.project-credits strong{font-weight:700}
+.project-links{max-width:550px;line-height:1.8}
+
+/* V13: UI-only tiered, grouped character picker */
+.add-filter #trait-level{border-color:#b9d5aa;background:#f8fbf6}
+.add-filter #trait-select optgroup{font-weight:700;color:#446b3b}
+.add-filter #trait-select option{font-weight:400;color:#303b31}
+
+/* V14: visible character levels and inline, categorized character states */
+.character-browser{margin-top:16px;border-top:1px solid #dce8df;padding-top:16px}
+.character-browser-title{font-weight:750;font-size:14px;margin-bottom:12px}
+.trait-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:3px;background:#edf2ed;padding:4px;border-radius:13px;margin-bottom:17px}
+.trait-tabs button{background:transparent;color:#466054;font-size:12px;padding:9px 3px;border-radius:10px;min-width:0}
+.trait-tabs button.is-active{background:#286f50;color:#fff;box-shadow:0 2px 6px #15372425}
+.trait-tabs button:focus-visible{outline:2px solid #183f30;outline-offset:2px}
+.catalog-section{margin:0 0 19px}
+.catalog-section h3{font-size:12px;color:#426e55;margin:0 0 7px;padding:0 3px;font-weight:800}
+.catalog-trait{border-bottom:1px solid #edf1ed}
+.catalog-trait-heading{list-style:none;cursor:pointer;display:flex;align-items:center;gap:7px;padding:10px 7px;font-size:13px;line-height:1.4;color:#244133}
+.catalog-trait-heading::-webkit-details-marker{display:none}
+.catalog-trait-heading::before{content:'›';font-size:19px;line-height:12px;color:#4b8b69;display:block;transition:transform .15s}
+.catalog-trait[open]>.catalog-trait-heading::before{transform:rotate(90deg)}
+.catalog-trait-heading:hover,.catalog-trait-heading:focus-visible{background:#edf5ee;border-radius:7px}
+.catalog-trait-heading:focus-visible{outline:2px solid #337c5d;outline-offset:-2px}
+.catalog-trait-name{flex:1;min-width:0}
+.catalog-trait-body{padding:3px 4px 10px 14px}
+.catalog-trait-body .desc{font-size:11px;color:#68796d;margin:0 0 8px}
+.catalog-trait-body .choices label{font-size:12px}
+.catalog-trait .filter-selected{flex-shrink:0}
+
+/* Programm- und Excel-Datenversion dezent am Seitenende */
+.version-info{flex-basis:100%;display:flex;flex-wrap:wrap;gap:5px 16px;margin-top:5px;padding-top:9px;border-top:1px solid #dce8df;color:#69796a;font-size:11px;line-height:1.5}

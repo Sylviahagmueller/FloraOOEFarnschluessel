@@ -1,0 +1,7558 @@
+[
+  {
+    "id": "TX0037",
+    "name": "Osmunda regalis",
+    "german_name": "Königsfarn",
+    "family": "Osmundaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "rosette"
+      ],
+      "frond_arrangement": [
+        "rosette"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_dimorphism": [
+        "weakly_dimorphic"
+      ],
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "lanceolate"
+      ],
+      "frond_division_degree": [
+        "bipinnate"
+      ],
+      "frond_texture": [
+        "soft_herbaceous"
+      ],
+      "scales_presence": [
+        "absent"
+      ],
+      "sorus_position": [
+        "not_visible_typically"
+      ],
+      "sorus_shape": [
+        "not_applicable"
+      ],
+      "indusium_presence": [
+        "absent"
+      ],
+      "fertile_frond_special_form": [
+        "contracted"
+      ],
+      "frond_color": [
+        "medium_green"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "habitat_main_refined": [
+        "wet_forest"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "siliceous"
+      ],
+      "carbonate_preference": [
+        "calcifuge"
+      ],
+      "moisture_preference": [
+        "wet"
+      ],
+      "light": [
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "colline_montane"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0038",
+    "name": "Marsilea quadrifolia",
+    "german_name": "Gewöhnlicher Kleefarn",
+    "family": "Marsileaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "creeping_mat"
+      ],
+      "frond_arrangement": [
+        "solitary_from_rhizome"
+      ],
+      "rhizome_type": [
+        "long_creeping"
+      ],
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "quadrifoliate"
+      ],
+      "frond_division_degree": [
+        "irregularly_divided"
+      ],
+      "frond_texture": [
+        "soft_herbaceous"
+      ],
+      "sorus_position": [
+        "sporocarp"
+      ],
+      "sorus_shape": [
+        "bean_like_sporocarp"
+      ],
+      "indusium_presence": [
+        "absent"
+      ],
+      "frond_color": [
+        "medium_green"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "habitat_main_refined": [
+        "shore_mud"
+      ],
+      "land_water_group": [
+        "amphibious"
+      ],
+      "substrate_preference": [
+        "neutral"
+      ],
+      "carbonate_preference": [
+        "carbonate_indifferent"
+      ],
+      "moisture_preference": [
+        "periodically_inundated"
+      ],
+      "light": [
+        "halfshade",
+        "sun"
+      ],
+      "altitudinal_belt": [
+        "colline_montane"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0039",
+    "name": "Salvinia natans",
+    "german_name": "Gewöhnlicher Schwimmfarn",
+    "family": "Salviniaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "floating"
+      ],
+      "frond_arrangement": [
+        "floating_whorled"
+      ],
+      "rhizome_type": [
+        "reduced"
+      ],
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "oblong"
+      ],
+      "frond_division_degree": [
+        "entire"
+      ],
+      "frond_texture": [
+        "soft_herbaceous"
+      ],
+      "hairiness": [
+        "densely_hairy"
+      ],
+      "sorus_position": [
+        "sporocarp"
+      ],
+      "sorus_shape": [
+        "globose_sporocarp"
+      ],
+      "indusium_presence": [
+        "absent"
+      ],
+      "frond_color": [
+        "medium_green"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "habitat_main_refined": [
+        "aquatic_floating"
+      ],
+      "land_water_group": [
+        "aquatic"
+      ],
+      "moisture_preference": [
+        "aquatic"
+      ],
+      "light": [
+        "sun"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0040",
+    "name": "Azolla filiculoides",
+    "german_name": "Großer Algenfarn",
+    "family": "Salviniaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "floating"
+      ],
+      "frond_arrangement": [
+        "two_ranked"
+      ],
+      "rhizome_type": [
+        "reduced"
+      ],
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "ovate"
+      ],
+      "frond_division_degree": [
+        "irregularly_divided"
+      ],
+      "frond_texture": [
+        "soft_herbaceous"
+      ],
+      "sorus_position": [
+        "sporocarp"
+      ],
+      "sorus_shape": [
+        "globose_sporocarp"
+      ],
+      "indusium_presence": [
+        "absent"
+      ],
+      "frond_color": [
+        "reddish_brown_late"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "habitat_main_refined": [
+        "aquatic_floating"
+      ],
+      "land_water_group": [
+        "aquatic"
+      ],
+      "moisture_preference": [
+        "aquatic"
+      ],
+      "light": [
+        "sun"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0041",
+    "name": "Adiantum capillus-veneris",
+    "german_name": "Echtes Venushaar",
+    "family": "Pteridaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_creeping"
+      ],
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "fan_like"
+      ],
+      "frond_division_degree": [
+        "tripinnate"
+      ],
+      "frond_texture": [
+        "delicate"
+      ],
+      "stipe_color": [
+        "blackish"
+      ],
+      "rachis_color": [
+        "blackish"
+      ],
+      "sorus_position": [
+        "marginal"
+      ],
+      "sorus_shape": [
+        "continuous_marginal_band"
+      ],
+      "indusium_presence": [
+        "false_indusium_margin"
+      ],
+      "frond_gloss": [
+        "weakly_glossy"
+      ],
+      "frond_color": [
+        "medium_green"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "margin_rolled_covering_sori": [
+        "yes"
+      ],
+      "habitat_main_refined": [
+        "rock"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "variable"
+      ],
+      "carbonate_preference": [
+        "carbonate_indifferent"
+      ],
+      "moisture_preference": [
+        "moist"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "colline_montane"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0042",
+    "name": "Paragymnopteris marantae",
+    "german_name": "Europa-Pelzfarn",
+    "family": "Pteridaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "oblong"
+      ],
+      "frond_division_degree": [
+        "bipinnate"
+      ],
+      "frond_texture": [
+        "firm"
+      ],
+      "scales_presence": [
+        "dense"
+      ],
+      "sorus_position": [
+        "marginal"
+      ],
+      "sorus_shape": [
+        "continuous_marginal_band"
+      ],
+      "indusium_presence": [
+        "false_indusium_margin"
+      ],
+      "frond_color": [
+        "medium_green"
+      ],
+      "pinna_margin": [
+        "entire"
+      ],
+      "scales_distribution": [
+        "lower_surface"
+      ],
+      "lower_surface_scales_persistent": [
+        "true"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "margin_rolled_covering_sori": [
+        "yes"
+      ],
+      "habitat_main_refined": [
+        "rock"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "serpentine"
+      ],
+      "carbonate_preference": [
+        "calcifuge"
+      ],
+      "moisture_preference": [
+        "dry"
+      ],
+      "light": [
+        "sun"
+      ],
+      "altitudinal_belt": [
+        "colline_montane"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0043",
+    "name": "Cryptogramma crispa",
+    "german_name": "Kraus-Rollfarn",
+    "family": "Pteridaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_dimorphism": [
+        "strongly_dimorphic"
+      ],
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "triangular"
+      ],
+      "frond_division_degree": [
+        "tripinnate"
+      ],
+      "frond_texture": [
+        "delicate"
+      ],
+      "sorus_position": [
+        "marginal"
+      ],
+      "sorus_shape": [
+        "continuous_marginal_band"
+      ],
+      "indusium_presence": [
+        "false_indusium_margin"
+      ],
+      "fertile_frond_special_form": [
+        "contracted"
+      ],
+      "frond_color": [
+        "pale_green"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "margin_rolled_covering_sori": [
+        "yes"
+      ],
+      "habitat_main_refined": [
+        "block_talus"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "siliceous"
+      ],
+      "carbonate_preference": [
+        "calcifuge"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "halfshade",
+        "sun"
+      ],
+      "altitudinal_belt": [
+        "montane_subalpine"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0044",
+    "name": "Pteridium aquilinum",
+    "german_name": "Adlerfarn",
+    "family": "Dennstaedtiaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "scattered_fronds"
+      ],
+      "frond_arrangement": [
+        "solitary_from_rhizome"
+      ],
+      "rhizome_type": [
+        "long_creeping"
+      ],
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "broadly_triangular"
+      ],
+      "frond_division_degree": [
+        "tripinnate"
+      ],
+      "frond_texture": [
+        "firm"
+      ],
+      "sorus_position": [
+        "marginal"
+      ],
+      "sorus_shape": [
+        "continuous_marginal_band"
+      ],
+      "indusium_presence": [
+        "false_indusium_margin"
+      ],
+      "frond_gloss": [
+        "dull"
+      ],
+      "frond_color": [
+        "medium_green"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "margin_rolled_covering_sori": [
+        "yes"
+      ],
+      "habitat_main_refined": [
+        "forest"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "siliceous"
+      ],
+      "carbonate_preference": [
+        "calcifuge"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "halfshade",
+        "sun"
+      ],
+      "altitudinal_belt": [
+        "colline_montane"
+      ],
+      "nectar_gland_at_lower_pinnae": [
+        "yes"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0045",
+    "name": "Pteridium aquilinum subsp. aquilinum",
+    "german_name": "Gewöhnlicher Adlerfarn",
+    "family": "Dennstaedtiaceae",
+    "rank": "subspecies",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "scattered_fronds"
+      ],
+      "frond_arrangement": [
+        "solitary_from_rhizome"
+      ],
+      "rhizome_type": [
+        "long_creeping"
+      ],
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "broadly_triangular"
+      ],
+      "frond_division_degree": [
+        "tripinnate"
+      ],
+      "hairiness": [
+        "sparsely_hairy"
+      ],
+      "sorus_position": [
+        "marginal"
+      ],
+      "sorus_shape": [
+        "continuous_marginal_band"
+      ],
+      "indusium_presence": [
+        "false_indusium_margin"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "margin_rolled_covering_sori": [
+        "yes"
+      ],
+      "habitat_main_refined": [
+        "forest"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "siliceous"
+      ],
+      "carbonate_preference": [
+        "calcifuge"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "halfshade",
+        "sun"
+      ],
+      "altitudinal_belt": [
+        "colline_montane"
+      ],
+      "nectar_gland_at_lower_pinnae": [
+        "yes"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0046",
+    "name": "Pteridium aquilinum subsp. pinetorum",
+    "german_name": "Föhrenwald-Adlerfarn",
+    "family": "Dennstaedtiaceae",
+    "rank": "subspecies",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "scattered_fronds"
+      ],
+      "frond_arrangement": [
+        "solitary_from_rhizome"
+      ],
+      "rhizome_type": [
+        "long_creeping"
+      ],
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "broadly_triangular"
+      ],
+      "frond_division_degree": [
+        "tripinnate"
+      ],
+      "hairiness": [
+        "glabrous"
+      ],
+      "sorus_position": [
+        "marginal"
+      ],
+      "sorus_shape": [
+        "continuous_marginal_band"
+      ],
+      "indusium_presence": [
+        "false_indusium_margin"
+      ],
+      "frond_gloss": [
+        "glossy"
+      ],
+      "frond_color": [
+        "yellow_green"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "margin_rolled_covering_sori": [
+        "yes"
+      ],
+      "habitat_main_refined": [
+        "forest"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "siliceous"
+      ],
+      "carbonate_preference": [
+        "calcifuge"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "halfshade",
+        "sun"
+      ],
+      "altitudinal_belt": [
+        "colline_montane"
+      ],
+      "nectar_gland_at_lower_pinnae": [
+        "yes"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0047",
+    "name": "Cystopteris montana",
+    "german_name": "Berg-Blasenfarn",
+    "family": "Cystopteridaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "pentagonal"
+      ],
+      "frond_division_degree": [
+        "tripinnate"
+      ],
+      "glands_presence": [
+        "sparse"
+      ],
+      "sorus_position": [
+        "on_veins"
+      ],
+      "sorus_shape": [
+        "round"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "bladder_like"
+      ],
+      "habitat_main_refined": [
+        "block_talus"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "variable"
+      ],
+      "carbonate_preference": [
+        "carbonate_indifferent"
+      ],
+      "moisture_preference": [
+        "moist"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "montane_subalpine"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0048",
+    "name": "Cystopteris sudetica",
+    "german_name": "Sudeten-Blasenfarn",
+    "family": "Cystopteridaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "pentagonal"
+      ],
+      "frond_division_degree": [
+        "tripinnate"
+      ],
+      "glands_presence": [
+        "dense"
+      ],
+      "sorus_position": [
+        "on_veins"
+      ],
+      "sorus_shape": [
+        "round"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "bladder_like"
+      ],
+      "habitat_main_refined": [
+        "forest"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "calcareous"
+      ],
+      "carbonate_preference": [
+        "calcicole"
+      ],
+      "moisture_preference": [
+        "moist"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "montane_subalpine"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0049",
+    "name": "Cystopteris alpina",
+    "german_name": "Alpen-Blasenfarn",
+    "family": "Cystopteridaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "lanceolate"
+      ],
+      "frond_division_degree": [
+        "bipinnate"
+      ],
+      "sorus_position": [
+        "on_veins"
+      ],
+      "sorus_shape": [
+        "round"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "bladder_like"
+      ],
+      "habitat_main_refined": [
+        "rock"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "calcareous"
+      ],
+      "carbonate_preference": [
+        "calcicole"
+      ],
+      "moisture_preference": [
+        "moist"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "subalpine"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0050",
+    "name": "Cystopteris fragilis",
+    "german_name": "Bruch-Blasenfarn",
+    "family": "Cystopteridaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "ovate"
+      ],
+      "frond_division_degree": [
+        "bipinnate"
+      ],
+      "sorus_position": [
+        "on_veins"
+      ],
+      "sorus_shape": [
+        "round"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "bladder_like"
+      ],
+      "habitat_main_refined": [
+        "rock"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "weakly_calcareous"
+      ],
+      "carbonate_preference": [
+        "weakly_calcicole"
+      ],
+      "moisture_preference": [
+        "moist"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "broad_range"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0051",
+    "name": "Gymnocarpium dryopteris",
+    "german_name": "Eichenfarn",
+    "family": "Cystopteridaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "scattered_fronds"
+      ],
+      "rhizome_type": [
+        "long_creeping"
+      ],
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "triangular"
+      ],
+      "frond_division_degree": [
+        "bipinnate"
+      ],
+      "frond_texture": [
+        "delicate"
+      ],
+      "glands_presence": [
+        "absent"
+      ],
+      "sorus_position": [
+        "on_veins"
+      ],
+      "sorus_shape": [
+        "round"
+      ],
+      "indusium_presence": [
+        "absent"
+      ],
+      "frond_color": [
+        "pale_green"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "habitat_main_refined": [
+        "forest"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "siliceous"
+      ],
+      "carbonate_preference": [
+        "calcifuge"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "submontane"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0052",
+    "name": "Gymnocarpium robertianum",
+    "german_name": "Ruprechtsfarn",
+    "family": "Cystopteridaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "scattered_fronds"
+      ],
+      "rhizome_type": [
+        "long_creeping"
+      ],
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "triangular"
+      ],
+      "frond_division_degree": [
+        "bipinnate"
+      ],
+      "frond_texture": [
+        "firm"
+      ],
+      "glands_presence": [
+        "dense"
+      ],
+      "sorus_position": [
+        "on_veins"
+      ],
+      "sorus_shape": [
+        "round"
+      ],
+      "indusium_presence": [
+        "absent"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "habitat_main_refined": [
+        "scree"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "calcareous"
+      ],
+      "carbonate_preference": [
+        "calcicole"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "submontane"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0053",
+    "name": "Phegopteris connectilis",
+    "german_name": "Buchenfarn",
+    "family": "Thelypteridaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "scattered_fronds"
+      ],
+      "rhizome_type": [
+        "long_creeping"
+      ],
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "triangular"
+      ],
+      "frond_division_degree": [
+        "once_pinnate"
+      ],
+      "sorus_position": [
+        "on_veins"
+      ],
+      "sorus_shape": [
+        "round"
+      ],
+      "indusium_presence": [
+        "absent"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "habitat_main_refined": [
+        "forest"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "siliceous"
+      ],
+      "carbonate_preference": [
+        "calcifuge"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "submontane"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0054",
+    "name": "Thelypteris palustris",
+    "german_name": "Sumpffarn",
+    "family": "Thelypteridaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "scattered_fronds"
+      ],
+      "rhizome_type": [
+        "long_creeping"
+      ],
+      "frond_dimorphism": [
+        "weakly_dimorphic"
+      ],
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "lanceolate"
+      ],
+      "frond_division_degree": [
+        "once_pinnate",
+        "bipinnate"
+      ],
+      "sorus_position": [
+        "marginal"
+      ],
+      "sorus_shape": [
+        "round"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "kidney_shaped"
+      ],
+      "margin_rolled_covering_sori": [
+        "yes"
+      ],
+      "habitat_main_refined": [
+        "fen"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "neutral"
+      ],
+      "carbonate_preference": [
+        "carbonate_indifferent"
+      ],
+      "moisture_preference": [
+        "wet"
+      ],
+      "light": [
+        "halfshade",
+        "sun"
+      ],
+      "altitudinal_belt": [
+        "colline_montane"
+      ],
+      "frond_base_narrowing": [
+        "not_clearly_narrowed"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0055",
+    "name": "Oreopteris limbosperma",
+    "german_name": "Bergfarn",
+    "family": "Thelypteridaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "rosette"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "lanceolate"
+      ],
+      "frond_division_degree": [
+        "once_pinnate"
+      ],
+      "glands_presence": [
+        "dense"
+      ],
+      "sorus_position": [
+        "submarginal"
+      ],
+      "sorus_shape": [
+        "round"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "kidney_shaped"
+      ],
+      "odor_when_crushed": [
+        "lemon_like"
+      ],
+      "habitat_main_refined": [
+        "forest"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "siliceous"
+      ],
+      "carbonate_preference": [
+        "calcifuge"
+      ],
+      "moisture_preference": [
+        "moist"
+      ],
+      "light": [
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "submontane"
+      ],
+      "frond_base_narrowing": [
+        "clearly_narrowed"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0056",
+    "name": "Asplenium scolopendrium",
+    "german_name": "Hirschzunge",
+    "family": "Aspleniaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "rosette"
+      ],
+      "frond_arrangement": [
+        "rosette"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_overwintering": [
+        "evergreen"
+      ],
+      "frond_outline": [
+        "oblong"
+      ],
+      "frond_division_degree": [
+        "entire"
+      ],
+      "scales_presence": [
+        "sparse"
+      ],
+      "sorus_position": [
+        "along_veins"
+      ],
+      "sorus_shape": [
+        "linear"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "frond_gloss": [
+        "weakly_glossy"
+      ],
+      "frond_color": [
+        "medium_green"
+      ],
+      "scales_distribution": [
+        "lower_surface"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "lateral_linear"
+      ],
+      "habitat_main_refined": [
+        "forest"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "calcareous"
+      ],
+      "carbonate_preference": [
+        "calcicole"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "montane_subalpine"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0057",
+    "name": "Asplenium ×alternifolium",
+    "german_name": "Deutscher Streifenfarn",
+    "family": "Aspleniaceae",
+    "rank": "hybrid",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "lanceolate"
+      ],
+      "frond_division_degree": [
+        "once_pinnate"
+      ],
+      "stipe_color": [
+        "red_brown"
+      ],
+      "rachis_color": [
+        "red_brown"
+      ],
+      "sorus_position": [
+        "along_veins"
+      ],
+      "sorus_shape": [
+        "linear"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "lateral_linear"
+      ],
+      "habitat_main_refined": [
+        "rock"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "siliceous"
+      ],
+      "carbonate_preference": [
+        "calcifuge"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "montane_subalpine"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0058",
+    "name": "Asplenium fontanum",
+    "german_name": "Jura-Streifenfarn",
+    "family": "Aspleniaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_overwintering": [
+        "evergreen"
+      ],
+      "frond_outline": [
+        "lanceolate"
+      ],
+      "frond_division_degree": [
+        "bipinnate"
+      ],
+      "stipe_color": [
+        "green"
+      ],
+      "rachis_color": [
+        "green"
+      ],
+      "sorus_position": [
+        "along_veins"
+      ],
+      "sorus_shape": [
+        "linear"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "lateral_linear"
+      ],
+      "habitat_main_refined": [
+        "rock"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "calcareous"
+      ],
+      "carbonate_preference": [
+        "calcicole"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "colline_montane"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0059",
+    "name": "Asplenium adiantum-nigrum subsp. cuneifolium",
+    "german_name": "Serpentin-Streifenfarn",
+    "family": "Aspleniaceae",
+    "rank": "subspecies",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "broadly_triangular"
+      ],
+      "frond_division_degree": [
+        "bipinnate"
+      ],
+      "stipe_color": [
+        "dark_brown"
+      ],
+      "rachis_color": [
+        "dark_brown"
+      ],
+      "sorus_position": [
+        "along_veins"
+      ],
+      "sorus_shape": [
+        "linear"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "lateral_linear"
+      ],
+      "habitat_main_refined": [
+        "rock"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "serpentine"
+      ],
+      "carbonate_preference": [
+        "calcifuge"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "montane_subalpine"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0060",
+    "name": "Asplenium adiantum-nigrum subsp. adiantum-nigrum",
+    "german_name": "Schwarzer Streifenfarn",
+    "family": "Aspleniaceae",
+    "rank": "subspecies",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_overwintering": [
+        "evergreen"
+      ],
+      "frond_outline": [
+        "triangular"
+      ],
+      "frond_division_degree": [
+        "bipinnate"
+      ],
+      "stipe_color": [
+        "dark_brown"
+      ],
+      "rachis_color": [
+        "dark_brown"
+      ],
+      "sorus_position": [
+        "along_veins"
+      ],
+      "sorus_shape": [
+        "linear"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "lateral_linear"
+      ],
+      "habitat_main_refined": [
+        "rock"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "variable"
+      ],
+      "carbonate_preference": [
+        "weakly_calcifuge"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "colline_montane"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0061",
+    "name": "Asplenium fissum",
+    "german_name": "Zerschlitzter Streifenfarn",
+    "family": "Aspleniaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "lanceolate"
+      ],
+      "frond_division_degree": [
+        "bipinnate"
+      ],
+      "sorus_position": [
+        "along_veins"
+      ],
+      "sorus_shape": [
+        "linear"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "lateral_linear"
+      ],
+      "habitat_main_refined": [
+        "rock"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "calcareous"
+      ],
+      "carbonate_preference": [
+        "calcicole"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "montane_subalpine"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0062",
+    "name": "Asplenium lepidum",
+    "german_name": "Zarter Streifenfarn",
+    "family": "Aspleniaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "ovate"
+      ],
+      "frond_division_degree": [
+        "bipinnate"
+      ],
+      "glands_presence": [
+        "moderate"
+      ],
+      "sorus_position": [
+        "along_veins"
+      ],
+      "sorus_shape": [
+        "linear"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "lateral_linear"
+      ],
+      "habitat_main_refined": [
+        "rock"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "calcareous"
+      ],
+      "carbonate_preference": [
+        "calcicole"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "montane"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0063",
+    "name": "Asplenium ruta-muraria subsp. ruta-muraria",
+    "german_name": "Gewöhnlicher Mauer-Streifenfarn",
+    "family": "Aspleniaceae",
+    "rank": "subspecies",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_overwintering": [
+        "evergreen"
+      ],
+      "frond_outline": [
+        "ovate"
+      ],
+      "frond_division_degree": [
+        "bipinnate"
+      ],
+      "sorus_position": [
+        "along_veins"
+      ],
+      "sorus_shape": [
+        "linear"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "lateral_linear"
+      ],
+      "habitat_main_refined": [
+        "rock"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "calcareous"
+      ],
+      "carbonate_preference": [
+        "calcicole"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "colline_montane"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0064",
+    "name": "Asplenium ruta-muraria subsp. dolomiticum",
+    "german_name": "Dolomiten-Mauer-Streifenfarn",
+    "family": "Aspleniaceae",
+    "rank": "subspecies",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_overwintering": [
+        "evergreen"
+      ],
+      "frond_outline": [
+        "ovate"
+      ],
+      "frond_division_degree": [
+        "bipinnate"
+      ],
+      "sorus_position": [
+        "along_veins"
+      ],
+      "sorus_shape": [
+        "linear"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "lateral_linear"
+      ],
+      "habitat_main_refined": [
+        "rock"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "dolomite"
+      ],
+      "carbonate_preference": [
+        "calcicole"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "colline_montane"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0065",
+    "name": "Asplenium septentrionale",
+    "german_name": "Nordischer Streifenfarn",
+    "family": "Aspleniaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_overwintering": [
+        "evergreen"
+      ],
+      "frond_outline": [
+        "linear"
+      ],
+      "frond_division_degree": [
+        "irregularly_divided"
+      ],
+      "stipe_color": [
+        "dark_brown"
+      ],
+      "rachis_color": [
+        "dark_brown"
+      ],
+      "sorus_position": [
+        "along_veins"
+      ],
+      "sorus_shape": [
+        "linear"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "lateral_linear"
+      ],
+      "habitat_main_refined": [
+        "rock"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "siliceous"
+      ],
+      "carbonate_preference": [
+        "calcifuge"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "colline_montane"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0066",
+    "name": "Asplenium seelosii",
+    "german_name": "Dolomit-Streifenfarn",
+    "family": "Aspleniaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_overwintering": [
+        "evergreen"
+      ],
+      "frond_outline": [
+        "oblong"
+      ],
+      "frond_division_degree": [
+        "lobed"
+      ],
+      "glands_presence": [
+        "moderate"
+      ],
+      "sorus_position": [
+        "along_veins"
+      ],
+      "sorus_shape": [
+        "linear"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "lateral_linear"
+      ],
+      "habitat_main_refined": [
+        "rock"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "dolomite"
+      ],
+      "carbonate_preference": [
+        "calcicole"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "montane"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0067",
+    "name": "Asplenium ceterach subsp. ceterach",
+    "german_name": "Gewöhnlicher Milzfarn",
+    "family": "Aspleniaceae",
+    "rank": "subspecies",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_overwintering": [
+        "evergreen"
+      ],
+      "frond_outline": [
+        "linear_lanceolate"
+      ],
+      "frond_division_degree": [
+        "pinnatifid"
+      ],
+      "scales_presence": [
+        "dense"
+      ],
+      "sorus_position": [
+        "along_veins"
+      ],
+      "sorus_shape": [
+        "linear"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "scales_distribution": [
+        "persistent_lower_surface"
+      ],
+      "lower_surface_scales_persistent": [
+        "true"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "lateral_linear"
+      ],
+      "habitat_main_refined": [
+        "rock"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "variable"
+      ],
+      "carbonate_preference": [
+        "carbonate_indifferent"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "colline_montane"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0068",
+    "name": "Asplenium ceterach subsp. bivalens",
+    "german_name": "Diploider Milzfarn",
+    "family": "Aspleniaceae",
+    "rank": "subspecies",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_overwintering": [
+        "evergreen"
+      ],
+      "frond_outline": [
+        "linear_lanceolate"
+      ],
+      "frond_division_degree": [
+        "pinnatifid"
+      ],
+      "scales_presence": [
+        "dense"
+      ],
+      "sorus_position": [
+        "along_veins"
+      ],
+      "sorus_shape": [
+        "linear"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "scales_distribution": [
+        "persistent_lower_surface"
+      ],
+      "lower_surface_scales_persistent": [
+        "true"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "lateral_linear"
+      ],
+      "habitat_main_refined": [
+        "rock"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "variable"
+      ],
+      "carbonate_preference": [
+        "carbonate_indifferent"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "colline_montane"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0069",
+    "name": "Asplenium viride",
+    "german_name": "Grünstieliger Streifenfarn",
+    "family": "Aspleniaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_overwintering": [
+        "evergreen"
+      ],
+      "frond_outline": [
+        "linear"
+      ],
+      "frond_division_degree": [
+        "once_pinnate"
+      ],
+      "stipe_color": [
+        "green"
+      ],
+      "rachis_color": [
+        "green"
+      ],
+      "sorus_position": [
+        "along_veins"
+      ],
+      "sorus_shape": [
+        "linear"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "lateral_linear"
+      ],
+      "habitat_main_refined": [
+        "rock"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "calcareous"
+      ],
+      "carbonate_preference": [
+        "calcicole"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "montane_subalpine"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0070",
+    "name": "Asplenium inexpectans",
+    "german_name": "Unerwarteter Braunstieliger Streifenfarn",
+    "family": "Aspleniaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_overwintering": [
+        "evergreen"
+      ],
+      "frond_outline": [
+        "linear"
+      ],
+      "frond_division_degree": [
+        "once_pinnate"
+      ],
+      "stipe_color": [
+        "dark_brown"
+      ],
+      "rachis_color": [
+        "dark_brown"
+      ],
+      "rachis_winged": [
+        "narrowly"
+      ],
+      "sorus_position": [
+        "along_veins"
+      ],
+      "sorus_shape": [
+        "linear"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "lateral_linear"
+      ],
+      "habitat_main_refined": [
+        "rock"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "calcareous"
+      ],
+      "carbonate_preference": [
+        "calcicole"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "submontane"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0071",
+    "name": "Asplenium trichomanes subsp. trichomanes",
+    "german_name": "Silikat-Braunstieliger Streifenfarn",
+    "family": "Aspleniaceae",
+    "rank": "subspecies",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_overwintering": [
+        "evergreen"
+      ],
+      "frond_outline": [
+        "linear"
+      ],
+      "frond_division_degree": [
+        "once_pinnate"
+      ],
+      "stipe_color": [
+        "red_brown"
+      ],
+      "rachis_color": [
+        "red_brown"
+      ],
+      "rachis_winged": [
+        "narrowly"
+      ],
+      "sorus_position": [
+        "along_veins"
+      ],
+      "sorus_shape": [
+        "linear"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "lateral_linear"
+      ],
+      "habitat_main_refined": [
+        "rock"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "siliceous"
+      ],
+      "carbonate_preference": [
+        "calcifuge"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "montane"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0072",
+    "name": "Asplenium quadrivalens",
+    "german_name": "Tetraploider Braunstieliger Streifenfarn",
+    "family": "Aspleniaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_overwintering": [
+        "evergreen"
+      ],
+      "frond_outline": [
+        "linear"
+      ],
+      "frond_division_degree": [
+        "once_pinnate"
+      ],
+      "stipe_color": [
+        "dark_brown"
+      ],
+      "rachis_color": [
+        "dark_brown"
+      ],
+      "rachis_winged": [
+        "narrowly"
+      ],
+      "sorus_position": [
+        "along_veins"
+      ],
+      "sorus_shape": [
+        "linear"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "lateral_linear"
+      ],
+      "habitat_main_refined": [
+        "rock"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "calcareous"
+      ],
+      "carbonate_preference": [
+        "calcicole"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "broad_range"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0073",
+    "name": "Asplenium csikii",
+    "german_name": "Seestern-Braunstieliger Streifenfarn",
+    "family": "Aspleniaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_overwintering": [
+        "evergreen"
+      ],
+      "frond_outline": [
+        "linear"
+      ],
+      "frond_division_degree": [
+        "once_pinnate"
+      ],
+      "stipe_color": [
+        "dark_brown"
+      ],
+      "rachis_color": [
+        "dark_brown"
+      ],
+      "rachis_winged": [
+        "narrowly"
+      ],
+      "sorus_position": [
+        "along_veins"
+      ],
+      "sorus_shape": [
+        "linear"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "lateral_linear"
+      ],
+      "habitat_main_refined": [
+        "rock"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "calcareous"
+      ],
+      "carbonate_preference": [
+        "calcicole"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "submontane"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0074",
+    "name": "Asplenium jessenii",
+    "german_name": "Spießförmiger Braunstieliger Streifenfarn",
+    "family": "Aspleniaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_overwintering": [
+        "evergreen"
+      ],
+      "frond_outline": [
+        "linear"
+      ],
+      "frond_division_degree": [
+        "once_pinnate"
+      ],
+      "stipe_color": [
+        "dark_brown"
+      ],
+      "rachis_color": [
+        "dark_brown"
+      ],
+      "rachis_winged": [
+        "narrowly"
+      ],
+      "sorus_position": [
+        "along_veins"
+      ],
+      "sorus_shape": [
+        "linear"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "lateral_linear"
+      ],
+      "habitat_main_refined": [
+        "rock"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "calcareous"
+      ],
+      "carbonate_preference": [
+        "calcicole"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "montane_subalpine"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0075",
+    "name": "Asplenium adulterinum",
+    "german_name": "Grünspitziger Streifenfarn",
+    "family": "Aspleniaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_overwintering": [
+        "evergreen"
+      ],
+      "frond_outline": [
+        "linear"
+      ],
+      "frond_division_degree": [
+        "once_pinnate"
+      ],
+      "stipe_color": [
+        "red_brown"
+      ],
+      "rachis_color": [
+        "bicolored"
+      ],
+      "rachis_winged": [
+        "no"
+      ],
+      "sorus_position": [
+        "along_veins"
+      ],
+      "sorus_shape": [
+        "linear"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "lateral_linear"
+      ],
+      "habitat_main_refined": [
+        "rock"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "serpentine"
+      ],
+      "carbonate_preference": [
+        "calcifuge"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "montane_subalpine"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0076",
+    "name": "Athyrium filix-femina",
+    "german_name": "Wald-Frauenfarn",
+    "family": "Athyriaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "frond_arrangement": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_dimorphism": [
+        "monomorphic"
+      ],
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "lanceolate"
+      ],
+      "frond_division_degree": [
+        "bipinnate",
+        "tripinnate"
+      ],
+      "frond_texture": [
+        "soft_herbaceous"
+      ],
+      "hairiness": [
+        "moderate"
+      ],
+      "glands_presence": [
+        "absent"
+      ],
+      "sorus_position": [
+        "along_veins"
+      ],
+      "sorus_shape": [
+        "elongate",
+        "hooked"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "frond_color": [
+        "pale_green"
+      ],
+      "pinna_margin": [
+        "crenate",
+        "serrate"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "lateral_linear"
+      ],
+      "habitat_main_refined": [
+        "forest"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "soil",
+        "humus"
+      ],
+      "carbonate_preference": [
+        "variable"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "broad_range"
+      ],
+      "spore_ornamentation": [
+        "almost_smooth"
+      ],
+      "pinnule_spacing": [
+        "variable"
+      ],
+      "indusium_persistence": [
+        "persistent"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0077",
+    "name": "Pseudathyrium alpestre",
+    "german_name": "Gebirgs-Frauenfarn",
+    "family": "Athyriaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "frond_arrangement": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_dimorphism": [
+        "monomorphic"
+      ],
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "lanceolate"
+      ],
+      "frond_division_degree": [
+        "bipinnate",
+        "tripinnate",
+        "quadripinnate"
+      ],
+      "frond_texture": [
+        "firm"
+      ],
+      "pinna_base_symmetry": [
+        "symmetrical"
+      ],
+      "hairiness": [
+        "glabrous"
+      ],
+      "glands_presence": [
+        "absent"
+      ],
+      "sorus_position": [
+        "submarginal"
+      ],
+      "sorus_shape": [
+        "round"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "frond_color": [
+        "dark_green"
+      ],
+      "pinna_margin": [
+        "crenate",
+        "serrate"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "lateral_linear"
+      ],
+      "habitat_main_refined": [
+        "scree"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "soil",
+        "humus"
+      ],
+      "carbonate_preference": [
+        "variable"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "montane_subalpine"
+      ],
+      "spore_ornamentation": [
+        "reticulate",
+        "folded"
+      ],
+      "pinnule_spacing": [
+        "widely_spaced"
+      ],
+      "indusium_persistence": [
+        "early_deciduous"
+      ],
+      "sorus_width_class": [
+        "tiny_le_0_5mm"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0078",
+    "name": "Woodsia pulchella",
+    "german_name": "Zierlicher Wimperfarn",
+    "family": "Woodsiaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "frond_arrangement": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_creeping"
+      ],
+      "frond_dimorphism": [
+        "monomorphic"
+      ],
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "lanceolate"
+      ],
+      "frond_division_degree": [
+        "once_pinnate"
+      ],
+      "frond_texture": [
+        "delicate"
+      ],
+      "stipe_color": [
+        "straw"
+      ],
+      "rachis_color": [
+        "straw"
+      ],
+      "hairiness": [
+        "glabrous"
+      ],
+      "scales_presence": [
+        "sparse"
+      ],
+      "sorus_position": [
+        "along_veins"
+      ],
+      "sorus_shape": [
+        "round"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "fringed"
+      ],
+      "habitat_main_refined": [
+        "rock"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "calcareous"
+      ],
+      "carbonate_preference": [
+        "calcicole"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "halfshade",
+        "sun"
+      ],
+      "altitudinal_belt": [
+        "montane_subalpine"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0079",
+    "name": "Woodsia ilvensis",
+    "german_name": "Rost-Wimperfarn",
+    "family": "Woodsiaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "frond_arrangement": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_creeping"
+      ],
+      "frond_dimorphism": [
+        "monomorphic"
+      ],
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "lanceolate"
+      ],
+      "frond_division_degree": [
+        "once_pinnate"
+      ],
+      "frond_texture": [
+        "firm"
+      ],
+      "stipe_color": [
+        "red_brown"
+      ],
+      "rachis_color": [
+        "red_brown"
+      ],
+      "hairiness": [
+        "sparsely_hairy"
+      ],
+      "scales_presence": [
+        "dense"
+      ],
+      "sorus_position": [
+        "along_veins"
+      ],
+      "sorus_shape": [
+        "round"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "scales_distribution": [
+        "stipe_base",
+        "rachis",
+        "lower_surface"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "fringed"
+      ],
+      "habitat_main_refined": [
+        "scree"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "siliceous"
+      ],
+      "carbonate_preference": [
+        "calcifuge"
+      ],
+      "moisture_preference": [
+        "dry"
+      ],
+      "light": [
+        "halfshade",
+        "sun"
+      ],
+      "altitudinal_belt": [
+        "montane_subalpine"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0080",
+    "name": "Woodsia alpina",
+    "german_name": "Alpen-Wimperfarn",
+    "family": "Woodsiaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "frond_arrangement": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_creeping"
+      ],
+      "frond_dimorphism": [
+        "monomorphic"
+      ],
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "oblong"
+      ],
+      "frond_division_degree": [
+        "once_pinnate"
+      ],
+      "frond_texture": [
+        "delicate"
+      ],
+      "stipe_color": [
+        "red_brown"
+      ],
+      "rachis_color": [
+        "red_brown"
+      ],
+      "hairiness": [
+        "sparsely_hairy"
+      ],
+      "scales_presence": [
+        "moderate"
+      ],
+      "sorus_position": [
+        "along_veins"
+      ],
+      "sorus_shape": [
+        "round"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "scales_distribution": [
+        "rachis",
+        "lower_surface"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "fringed"
+      ],
+      "habitat_main_refined": [
+        "scree"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "siliceous"
+      ],
+      "carbonate_preference": [
+        "calcifuge"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "halfshade",
+        "sun"
+      ],
+      "altitudinal_belt": [
+        "subalpine"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0081",
+    "name": "Struthiopteris spicant",
+    "german_name": "Europa-Rippenfarn",
+    "family": "Blechnaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "rosette"
+      ],
+      "frond_arrangement": [
+        "rosette"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_dimorphism": [
+        "strongly_dimorphic"
+      ],
+      "frond_overwintering": [
+        "evergreen"
+      ],
+      "frond_outline": [
+        "lanceolate"
+      ],
+      "frond_division_degree": [
+        "once_pinnate"
+      ],
+      "frond_texture": [
+        "leathery"
+      ],
+      "lowest_pinnae_relation": [
+        "equal_to_next"
+      ],
+      "pinna_base_symmetry": [
+        "symmetrical"
+      ],
+      "stipe_color": [
+        "brown"
+      ],
+      "stipe_winged": [
+        "no"
+      ],
+      "rachis_color": [
+        "brown"
+      ],
+      "rachis_winged": [
+        "no"
+      ],
+      "hairiness": [
+        "glabrous"
+      ],
+      "glands_presence": [
+        "absent"
+      ],
+      "scales_presence": [
+        "sparse"
+      ],
+      "sorus_position": [
+        "along_veins"
+      ],
+      "sorus_shape": [
+        "linear"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "fertile_frond_special_form": [
+        "strongly_narrowed"
+      ],
+      "frond_gloss": [
+        "weakly_glossy"
+      ],
+      "frond_color": [
+        "dark_green"
+      ],
+      "frond_translucent": [
+        "false"
+      ],
+      "pinna_shape": [
+        "linear"
+      ],
+      "pinna_margin": [
+        "entire"
+      ],
+      "pinna_apex": [
+        "rounded"
+      ],
+      "pinna_arrangement": [
+        "opposite"
+      ],
+      "terminal_segment_form": [
+        "entire"
+      ],
+      "scales_distribution": [
+        "stipe_base"
+      ],
+      "lower_surface_scales_persistent": [
+        "false"
+      ],
+      "underside_special_cover": [
+        "none"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "linear"
+      ],
+      "margin_rolled_covering_sori": [
+        "no"
+      ],
+      "habitat_main_refined": [
+        "forest"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "siliceous"
+      ],
+      "carbonate_preference": [
+        "calcifuge"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "broad_range"
+      ],
+      "vein_branching": [
+        "free_simple"
+      ],
+      "sori_opening_behavior": [
+        "normally_opening"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0082",
+    "name": "Matteuccia struthiopteris",
+    "german_name": "Straußenfarn",
+    "family": "Onocleaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "rosette"
+      ],
+      "frond_arrangement": [
+        "rosette"
+      ],
+      "rhizome_type": [
+        "long_creeping"
+      ],
+      "frond_dimorphism": [
+        "strongly_dimorphic"
+      ],
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "lanceolate"
+      ],
+      "frond_division_degree": [
+        "once_pinnate"
+      ],
+      "frond_texture": [
+        "firm"
+      ],
+      "sorus_position": [
+        "along_veins"
+      ],
+      "sorus_shape": [
+        "linear"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "fertile_frond_special_form": [
+        "contracted"
+      ],
+      "pinna_margin": [
+        "lobed"
+      ],
+      "pinna_apex": [
+        "rounded"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "rolled_margin_false_indusium"
+      ],
+      "habitat_main_refined": [
+        "wet_forest"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "variable"
+      ],
+      "carbonate_preference": [
+        "calcifuge"
+      ],
+      "moisture_preference": [
+        "moist"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "colline_montane"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0083",
+    "name": "Polystichum lonchitis",
+    "german_name": "Lanzen-Schildfarn",
+    "family": "Dryopteridaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "frond_arrangement": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_dimorphism": [
+        "monomorphic"
+      ],
+      "frond_overwintering": [
+        "evergreen"
+      ],
+      "frond_outline": [
+        "lanceolate"
+      ],
+      "frond_division_degree": [
+        "once_pinnate"
+      ],
+      "frond_texture": [
+        "leathery"
+      ],
+      "pinna_base_symmetry": [
+        "strongly_asymmetrical"
+      ],
+      "sorus_position": [
+        "on_veins"
+      ],
+      "sorus_shape": [
+        "round"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "frond_gloss": [
+        "glossy"
+      ],
+      "pinna_margin": [
+        "serrate"
+      ],
+      "pinna_apex": [
+        "awned"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "peltate"
+      ],
+      "habitat_main_refined": [
+        "rock"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "calcareous"
+      ],
+      "carbonate_preference": [
+        "calcicole"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "montane_subalpine"
+      ],
+      "indusium_attachment": [
+        "central"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0084",
+    "name": "Polystichum setiferum",
+    "german_name": "Granniger Dorn-Schildfarn",
+    "family": "Dryopteridaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "frond_arrangement": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_dimorphism": [
+        "monomorphic"
+      ],
+      "frond_overwintering": [
+        "evergreen"
+      ],
+      "frond_outline": [
+        "ovate"
+      ],
+      "frond_division_degree": [
+        "bipinnate"
+      ],
+      "frond_texture": [
+        "soft_herbaceous"
+      ],
+      "pinna_base_symmetry": [
+        "strongly_asymmetrical"
+      ],
+      "hairiness": [
+        "sparsely_hairy"
+      ],
+      "sorus_position": [
+        "on_veins"
+      ],
+      "sorus_shape": [
+        "round"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "pinna_margin": [
+        "serrate"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "peltate"
+      ],
+      "habitat_main_refined": [
+        "forest"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "variable"
+      ],
+      "carbonate_preference": [
+        "carbonate_indifferent"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "montane"
+      ],
+      "indusium_attachment": [
+        "central"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0085",
+    "name": "Polystichum aculeatum",
+    "german_name": "Gewöhnlicher Dorn-Schildfarn",
+    "family": "Dryopteridaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "frond_arrangement": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_dimorphism": [
+        "monomorphic"
+      ],
+      "frond_overwintering": [
+        "evergreen"
+      ],
+      "frond_outline": [
+        "lanceolate"
+      ],
+      "frond_division_degree": [
+        "bipinnate"
+      ],
+      "frond_texture": [
+        "leathery"
+      ],
+      "pinna_base_symmetry": [
+        "strongly_asymmetrical"
+      ],
+      "hairiness": [
+        "glabrous"
+      ],
+      "sorus_position": [
+        "on_veins"
+      ],
+      "sorus_shape": [
+        "round"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "pinna_margin": [
+        "serrate"
+      ],
+      "pinna_apex": [
+        "awned"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "peltate"
+      ],
+      "habitat_main_refined": [
+        "forest"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "variable"
+      ],
+      "carbonate_preference": [
+        "carbonate_indifferent"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "broad_range"
+      ],
+      "indusium_attachment": [
+        "central"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0086",
+    "name": "Polystichum braunii",
+    "german_name": "Schuppen-Schildfarn",
+    "family": "Dryopteridaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "frond_arrangement": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_dimorphism": [
+        "monomorphic"
+      ],
+      "frond_overwintering": [
+        "evergreen"
+      ],
+      "frond_outline": [
+        "oblong"
+      ],
+      "frond_division_degree": [
+        "bipinnate"
+      ],
+      "frond_texture": [
+        "soft_herbaceous"
+      ],
+      "pinna_base_symmetry": [
+        "strongly_asymmetrical"
+      ],
+      "hairiness": [
+        "moderate"
+      ],
+      "scales_presence": [
+        "moderate"
+      ],
+      "sorus_position": [
+        "on_veins"
+      ],
+      "sorus_shape": [
+        "round"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "pinna_margin": [
+        "crenate",
+        "serrate"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "peltate"
+      ],
+      "habitat_main_refined": [
+        "forest"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "variable"
+      ],
+      "carbonate_preference": [
+        "weakly_calcifuge"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "montane_subalpine"
+      ],
+      "indusium_attachment": [
+        "central"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0087",
+    "name": "Cyrtomium fortunei",
+    "german_name": "Fortunes Sichelfarn",
+    "family": "Dryopteridaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "frond_arrangement": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_dimorphism": [
+        "monomorphic"
+      ],
+      "frond_overwintering": [
+        "evergreen"
+      ],
+      "frond_outline": [
+        "lanceolate"
+      ],
+      "frond_division_degree": [
+        "once_pinnate"
+      ],
+      "frond_texture": [
+        "leathery"
+      ],
+      "pinna_base_symmetry": [
+        "symmetrical"
+      ],
+      "sorus_position": [
+        "on_veins"
+      ],
+      "sorus_shape": [
+        "round"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "frond_gloss": [
+        "weakly_glossy"
+      ],
+      "pinna_margin": [
+        "finely_serrulate"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "kidney_shaped"
+      ],
+      "habitat_main_refined": [
+        "forest"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "variable"
+      ],
+      "carbonate_preference": [
+        "carbonate_indifferent"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "colline"
+      ],
+      "vein_branching": [
+        "anastomosing"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0088",
+    "name": "Dryopteris cristata",
+    "german_name": "Kammfarn",
+    "family": "Dryopteridaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "frond_arrangement": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_dimorphism": [
+        "strongly_dimorphic"
+      ],
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "oblong"
+      ],
+      "frond_division_degree": [
+        "once_pinnate"
+      ],
+      "sorus_position": [
+        "on_veins"
+      ],
+      "sorus_shape": [
+        "round"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "pinna_shape": [
+        "narrow_triangular"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "kidney_shaped"
+      ],
+      "habitat_main_refined": [
+        "fen"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "neutral"
+      ],
+      "carbonate_preference": [
+        "carbonate_indifferent"
+      ],
+      "moisture_preference": [
+        "wet"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "submontane"
+      ],
+      "indusium_attachment": [
+        "lateral"
+      ],
+      "sorus_width_class": [
+        "large_gt_0_7mm"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0089",
+    "name": "Dryopteris filix-mas",
+    "german_name": "Echter Wurmfarn",
+    "family": "Dryopteridaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "frond_arrangement": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_dimorphism": [
+        "monomorphic"
+      ],
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "oblong"
+      ],
+      "frond_division_degree": [
+        "once_pinnate"
+      ],
+      "frond_texture": [
+        "firm"
+      ],
+      "lowest_pinnae_relation": [
+        "equal_to_next"
+      ],
+      "pinna_base_symmetry": [
+        "weakly_asymmetrical"
+      ],
+      "stipe_color": [
+        "brown"
+      ],
+      "stipe_winged": [
+        "no"
+      ],
+      "rachis_color": [
+        "brown"
+      ],
+      "rachis_winged": [
+        "no"
+      ],
+      "hairiness": [
+        "glabrous"
+      ],
+      "glands_presence": [
+        "absent"
+      ],
+      "scales_presence": [
+        "moderate"
+      ],
+      "sorus_position": [
+        "on_veins"
+      ],
+      "sorus_shape": [
+        "round"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "fertile_frond_special_form": [
+        "none"
+      ],
+      "frond_gloss": [
+        "dull"
+      ],
+      "frond_color": [
+        "medium_green"
+      ],
+      "frond_translucent": [
+        "false"
+      ],
+      "pinna_shape": [
+        "oblong"
+      ],
+      "pinna_margin": [
+        "crenate",
+        "serrate"
+      ],
+      "pinna_apex": [
+        "rounded"
+      ],
+      "pinna_arrangement": [
+        "subopposite"
+      ],
+      "terminal_segment_form": [
+        "lobed"
+      ],
+      "scales_distribution": [
+        "stipe_base",
+        "rachis"
+      ],
+      "lower_surface_scales_persistent": [
+        "false"
+      ],
+      "underside_special_cover": [
+        "none"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "kidney_shaped"
+      ],
+      "margin_rolled_covering_sori": [
+        "no"
+      ],
+      "habitat_main_refined": [
+        "forest"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "variable"
+      ],
+      "carbonate_preference": [
+        "carbonate_indifferent"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "broad_range"
+      ],
+      "vein_branching": [
+        "free_forked"
+      ],
+      "sori_opening_behavior": [
+        "normally_opening"
+      ],
+      "indusium_attachment": [
+        "lateral"
+      ],
+      "sorus_width_class": [
+        "large_gt_0_7mm"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0090",
+    "name": "Dryopteris affinis",
+    "german_name": "Ledriger Schuppen-Wurmfarn",
+    "family": "Dryopteridaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "frond_arrangement": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_dimorphism": [
+        "monomorphic"
+      ],
+      "frond_overwintering": [
+        "evergreen"
+      ],
+      "frond_outline": [
+        "oblong"
+      ],
+      "frond_division_degree": [
+        "once_pinnate"
+      ],
+      "frond_texture": [
+        "firm"
+      ],
+      "scales_presence": [
+        "dense"
+      ],
+      "sorus_position": [
+        "on_veins"
+      ],
+      "sorus_shape": [
+        "round"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "scales_distribution": [
+        "stipe_base",
+        "rachis"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "kidney_shaped"
+      ],
+      "habitat_main_refined": [
+        "forest"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "siliceous"
+      ],
+      "carbonate_preference": [
+        "calcifuge"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "montane"
+      ],
+      "indusium_attachment": [
+        "lateral"
+      ],
+      "sorus_width_class": [
+        "large_gt_0_7mm"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0091",
+    "name": "Dryopteris cambrensis",
+    "german_name": "Insubrischer Schuppen-Wurmfarn",
+    "family": "Dryopteridaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "frond_arrangement": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_overwintering": [
+        "evergreen"
+      ],
+      "frond_outline": [
+        "oblong"
+      ],
+      "frond_division_degree": [
+        "once_pinnate"
+      ],
+      "scales_presence": [
+        "dense"
+      ],
+      "sorus_position": [
+        "on_veins"
+      ],
+      "sorus_shape": [
+        "round"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "kidney_shaped"
+      ],
+      "habitat_main_refined": [
+        "forest"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "siliceous"
+      ],
+      "carbonate_preference": [
+        "calcifuge"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "submontane"
+      ],
+      "indusium_attachment": [
+        "lateral"
+      ],
+      "sorus_width_class": [
+        "large_gt_0_7mm"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0092",
+    "name": "Dryopteris pseudodisjuncta",
+    "german_name": "Eleganter Schuppen-Wurmfarn",
+    "family": "Dryopteridaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "frond_arrangement": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_overwintering": [
+        "evergreen"
+      ],
+      "frond_outline": [
+        "oblong"
+      ],
+      "frond_division_degree": [
+        "once_pinnate"
+      ],
+      "scales_presence": [
+        "dense"
+      ],
+      "sorus_position": [
+        "on_veins"
+      ],
+      "sorus_shape": [
+        "round"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "kidney_shaped"
+      ],
+      "habitat_main_refined": [
+        "forest"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "calcareous"
+      ],
+      "carbonate_preference": [
+        "calcicole"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "montane"
+      ],
+      "indusium_attachment": [
+        "lateral"
+      ],
+      "sorus_width_class": [
+        "large_gt_0_7mm"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0093",
+    "name": "Dryopteris borreri",
+    "german_name": "Kräftiger Schuppen-Wurmfarn",
+    "family": "Dryopteridaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "frond_arrangement": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_overwintering": [
+        "evergreen"
+      ],
+      "frond_outline": [
+        "oblong"
+      ],
+      "frond_division_degree": [
+        "once_pinnate"
+      ],
+      "scales_presence": [
+        "dense"
+      ],
+      "sorus_position": [
+        "on_veins"
+      ],
+      "sorus_shape": [
+        "round"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "kidney_shaped"
+      ],
+      "habitat_main_refined": [
+        "forest"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "variable"
+      ],
+      "carbonate_preference": [
+        "carbonate_indifferent"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "submontane"
+      ],
+      "indusium_attachment": [
+        "lateral"
+      ],
+      "sorus_width_class": [
+        "large_gt_0_7mm"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0094",
+    "name": "Dryopteris lacunosa",
+    "german_name": "Lückiger Schuppen-Wurmfarn",
+    "family": "Dryopteridaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "frond_arrangement": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_overwintering": [
+        "evergreen"
+      ],
+      "frond_outline": [
+        "oblong"
+      ],
+      "frond_division_degree": [
+        "once_pinnate"
+      ],
+      "scales_presence": [
+        "dense"
+      ],
+      "sorus_position": [
+        "on_veins"
+      ],
+      "sorus_shape": [
+        "round"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "kidney_shaped"
+      ],
+      "habitat_main_refined": [
+        "forest"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "variable"
+      ],
+      "carbonate_preference": [
+        "carbonate_indifferent"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "montane"
+      ],
+      "indusium_attachment": [
+        "lateral"
+      ],
+      "sorus_width_class": [
+        "large_gt_0_7mm"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0095",
+    "name": "Dryopteris villarii",
+    "german_name": "Steifer Wurmfarn",
+    "family": "Dryopteridaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "frond_arrangement": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "lanceolate"
+      ],
+      "frond_division_degree": [
+        "bipinnate"
+      ],
+      "glands_presence": [
+        "dense"
+      ],
+      "scales_presence": [
+        "dense"
+      ],
+      "sorus_position": [
+        "on_veins"
+      ],
+      "sorus_shape": [
+        "round"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "kidney_shaped"
+      ],
+      "odor_when_crushed": [
+        "other"
+      ],
+      "habitat_main_refined": [
+        "scree"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "calcareous"
+      ],
+      "carbonate_preference": [
+        "calcicole"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "subalpine"
+      ],
+      "indusium_attachment": [
+        "lateral"
+      ],
+      "sorus_width_class": [
+        "large_gt_0_7mm"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0096",
+    "name": "Dryopteris remota",
+    "german_name": "Entferntfieder-Wurmfarn",
+    "family": "Dryopteridaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "frond_arrangement": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "linear_lanceolate"
+      ],
+      "frond_division_degree": [
+        "bipinnate",
+        "tripinnate"
+      ],
+      "pinna_base_symmetry": [
+        "strongly_asymmetrical"
+      ],
+      "scales_presence": [
+        "moderate"
+      ],
+      "sorus_position": [
+        "on_veins"
+      ],
+      "sorus_shape": [
+        "round"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "pinna_apex": [
+        "mucronate"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "kidney_shaped"
+      ],
+      "habitat_main_refined": [
+        "forest"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "variable"
+      ],
+      "carbonate_preference": [
+        "carbonate_indifferent"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "montane"
+      ],
+      "indusium_attachment": [
+        "lateral"
+      ],
+      "sorus_width_class": [
+        "large_gt_0_7mm"
+      ],
+      "pinnule_spine_tip": [
+        "short"
+      ],
+      "scale_color_pattern": [
+        "dark_base_pale_margin"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0097",
+    "name": "Dryopteris carthusiana",
+    "german_name": "Gewöhnlicher Dornfarn",
+    "family": "Dryopteridaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "frond_arrangement": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "linear_lanceolate"
+      ],
+      "frond_division_degree": [
+        "bipinnate",
+        "tripinnate"
+      ],
+      "pinna_base_symmetry": [
+        "weakly_asymmetrical"
+      ],
+      "hairiness": [
+        "glabrous"
+      ],
+      "scales_presence": [
+        "sparse"
+      ],
+      "sorus_position": [
+        "on_veins"
+      ],
+      "sorus_shape": [
+        "round"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "pinna_apex": [
+        "mucronate"
+      ],
+      "scales_distribution": [
+        "stipe_base",
+        "rachis"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "kidney_shaped"
+      ],
+      "habitat_main_refined": [
+        "wet_forest"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "siliceous"
+      ],
+      "carbonate_preference": [
+        "calcifuge"
+      ],
+      "moisture_preference": [
+        "moist"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "broad_range"
+      ],
+      "indusium_persistence": [
+        "persistent"
+      ],
+      "indusium_attachment": [
+        "lateral"
+      ],
+      "sorus_width_class": [
+        "large_gt_0_7mm"
+      ],
+      "pinnule_spine_tip": [
+        "long"
+      ],
+      "scale_color_pattern": [
+        "uniform_pale"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0098",
+    "name": "Dryopteris dilatata",
+    "german_name": "Breitblättriger Dornfarn",
+    "family": "Dryopteridaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "frond_arrangement": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_overwintering": [
+        "evergreen"
+      ],
+      "frond_outline": [
+        "broadly_triangular"
+      ],
+      "frond_division_degree": [
+        "tripinnate",
+        "quadripinnate"
+      ],
+      "pinna_base_symmetry": [
+        "strongly_asymmetrical"
+      ],
+      "hairiness": [
+        "glandular_hairy"
+      ],
+      "glands_presence": [
+        "sparse"
+      ],
+      "scales_presence": [
+        "dense"
+      ],
+      "sorus_position": [
+        "on_veins"
+      ],
+      "sorus_shape": [
+        "round"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "pinna_apex": [
+        "mucronate"
+      ],
+      "scales_distribution": [
+        "stipe_base",
+        "rachis"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "kidney_shaped"
+      ],
+      "habitat_main_refined": [
+        "forest"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "siliceous"
+      ],
+      "carbonate_preference": [
+        "calcifuge"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "broad_range"
+      ],
+      "indusium_attachment": [
+        "lateral"
+      ],
+      "sorus_width_class": [
+        "large_gt_0_7mm"
+      ],
+      "pinnule_spine_tip": [
+        "present"
+      ],
+      "scale_color_pattern": [
+        "dark_central_stripe"
+      ],
+      "basiscopic_pinnule_length_ratio": [
+        "less_than_half"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0099",
+    "name": "Dryopteris expansa",
+    "german_name": "Gebirgs-Dornfarn",
+    "family": "Dryopteridaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "frond_arrangement": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_erect"
+      ],
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "broadly_triangular"
+      ],
+      "frond_division_degree": [
+        "tripinnate",
+        "quadripinnate"
+      ],
+      "pinna_base_symmetry": [
+        "strongly_asymmetrical"
+      ],
+      "hairiness": [
+        "sparsely_hairy"
+      ],
+      "glands_presence": [
+        "moderate"
+      ],
+      "scales_presence": [
+        "dense"
+      ],
+      "sorus_position": [
+        "on_veins"
+      ],
+      "sorus_shape": [
+        "round"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "pinna_apex": [
+        "mucronate"
+      ],
+      "scales_distribution": [
+        "stipe_base",
+        "rachis"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "kidney_shaped"
+      ],
+      "habitat_main_refined": [
+        "forest"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "siliceous"
+      ],
+      "carbonate_preference": [
+        "calcifuge"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "montane_subalpine"
+      ],
+      "indusium_attachment": [
+        "lateral"
+      ],
+      "sorus_width_class": [
+        "large_gt_0_7mm"
+      ],
+      "pinnule_spine_tip": [
+        "present"
+      ],
+      "scale_color_pattern": [
+        "dark_central_stripe"
+      ],
+      "basiscopic_pinnule_length_ratio": [
+        "more_than_half"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0101",
+    "name": "Polypodium vulgare",
+    "german_name": "Gewöhnlicher Tüpfelfarn",
+    "family": "Polypodiaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "creeping_mat"
+      ],
+      "frond_arrangement": [
+        "solitary_from_rhizome"
+      ],
+      "rhizome_type": [
+        "long_creeping"
+      ],
+      "frond_dimorphism": [
+        "monomorphic"
+      ],
+      "frond_overwintering": [
+        "evergreen"
+      ],
+      "frond_outline": [
+        "lanceolate"
+      ],
+      "frond_division_degree": [
+        "once_pinnate"
+      ],
+      "frond_texture": [
+        "firm"
+      ],
+      "scales_presence": [
+        "moderate"
+      ],
+      "sorus_position": [
+        "on_veins"
+      ],
+      "sorus_shape": [
+        "round"
+      ],
+      "indusium_presence": [
+        "absent"
+      ],
+      "scales_distribution": [
+        "rhizome_only"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "habitat_main_refined": [
+        "rock"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "variable"
+      ],
+      "carbonate_preference": [
+        "weakly_calcifuge"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "broad_range"
+      ],
+      "vein_branching": [
+        "forked"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0102",
+    "name": "Polypodium interjectum",
+    "german_name": "Mittel-Tüpfelfarn",
+    "family": "Polypodiaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "creeping_mat"
+      ],
+      "frond_arrangement": [
+        "solitary_from_rhizome"
+      ],
+      "rhizome_type": [
+        "long_creeping"
+      ],
+      "frond_dimorphism": [
+        "monomorphic"
+      ],
+      "frond_overwintering": [
+        "evergreen"
+      ],
+      "frond_outline": [
+        "lanceolate"
+      ],
+      "frond_division_degree": [
+        "once_pinnate"
+      ],
+      "frond_texture": [
+        "firm"
+      ],
+      "scales_presence": [
+        "moderate"
+      ],
+      "sorus_position": [
+        "on_veins"
+      ],
+      "sorus_shape": [
+        "round"
+      ],
+      "indusium_presence": [
+        "absent"
+      ],
+      "scales_distribution": [
+        "rhizome_only"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "habitat_main_refined": [
+        "rock"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "variable"
+      ],
+      "carbonate_preference": [
+        "weakly_calcicole"
+      ],
+      "moisture_preference": [
+        "fresh"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "colline_montane"
+      ],
+      "vein_branching": [
+        "forked"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0108",
+    "name": "Pteris multifida",
+    "german_name": "Vielzipfel-Saumfarn",
+    "family": "Pteridaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "clustered"
+      ],
+      "rhizome_type": [
+        "short_creeping"
+      ],
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "lanceolate"
+      ],
+      "frond_division_degree": [
+        "bipinnate"
+      ],
+      "sorus_position": [
+        "marginal"
+      ],
+      "sorus_shape": [
+        "continuous_marginal_band"
+      ],
+      "indusium_presence": [
+        "false_indusium_margin"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "margin_rolled_covering_sori": [
+        "yes"
+      ],
+      "habitat_main_refined": [
+        "wall"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "substrate_preference": [
+        "variable"
+      ],
+      "carbonate_preference": [
+        "carbonate_indifferent"
+      ],
+      "moisture_preference": [
+        "moist"
+      ],
+      "light": [
+        "shade",
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "colline"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0110",
+    "name": "Onoclea sensibilis",
+    "german_name": "Perlfarn",
+    "family": "Onocleaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "growth_form": [
+        "scattered_fronds"
+      ],
+      "rhizome_type": [
+        "long_creeping"
+      ],
+      "frond_dimorphism": [
+        "strongly_dimorphic"
+      ],
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "ovate"
+      ],
+      "frond_division_degree": [
+        "bipinnate"
+      ],
+      "sorus_position": [
+        "along_veins"
+      ],
+      "sorus_shape": [
+        "round"
+      ],
+      "indusium_presence": [
+        "present"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "indusium_shape": [
+        "rolled_margin_false_indusium"
+      ],
+      "habitat_main_refined": [
+        "wet_forest"
+      ],
+      "land_water_group": [
+        "land"
+      ],
+      "moisture_preference": [
+        "wet"
+      ],
+      "light": [
+        "halfshade"
+      ],
+      "altitudinal_belt": [
+        "colline"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0116",
+    "name": "Ophioglossum vulgatum",
+    "german_name": "Gewöhnliche Natternzunge",
+    "family": "Ophioglossaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "ophioglossoid"
+      ],
+      "ophi_sterile_lamina_shape": [
+        "entire"
+      ],
+      "ophi_fertile_segment_form": [
+        "two_ranked_spike"
+      ]
+    }
+  },
+  {
+    "id": "TX0117",
+    "name": "Botrychium lunaria",
+    "german_name": "Gewöhnlicher Rautenfarn",
+    "family": "Ophioglossaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "ophioglossoid"
+      ],
+      "ophi_sterile_lamina_shape": [
+        "divided"
+      ],
+      "ophi_fertile_segment_form": [
+        "branched_cluster"
+      ],
+      "ophi_sterile_segment_outline": [
+        "fan_shaped"
+      ]
+    }
+  },
+  {
+    "id": "TX0118",
+    "name": "Botrychium matricariifolium",
+    "german_name": "Ästiger Rautenfarn",
+    "family": "Ophioglossaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "ophioglossoid"
+      ],
+      "ophi_sterile_lamina_shape": [
+        "divided"
+      ],
+      "ophi_fertile_segment_form": [
+        "branched_cluster"
+      ]
+    }
+  },
+  {
+    "id": "TX0119",
+    "name": "Botrychium simplex",
+    "german_name": "Einfacher Rautenfarn",
+    "family": "Ophioglossaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "ophioglossoid"
+      ],
+      "ophi_sterile_lamina_shape": [
+        "divided"
+      ],
+      "ophi_fertile_segment_form": [
+        "branched_cluster"
+      ]
+    }
+  },
+  {
+    "id": "TX0120",
+    "name": "Botrychium multifidum",
+    "german_name": "Vielteiliger Rautenfarn",
+    "family": "Ophioglossaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "ophioglossoid"
+      ],
+      "ophi_sterile_lamina_shape": [
+        "divided"
+      ],
+      "ophi_fertile_segment_form": [
+        "branched_cluster"
+      ]
+    }
+  },
+  {
+    "id": "TX0121",
+    "name": "Botrychium virginianum",
+    "german_name": "Virginischer Rautenfarn",
+    "family": "Ophioglossaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "ophioglossoid"
+      ],
+      "ophi_sterile_lamina_shape": [
+        "divided"
+      ],
+      "ophi_fertile_segment_form": [
+        "branched_cluster"
+      ]
+    }
+  },
+  {
+    "id": "TX0122",
+    "name": "Equisetum arvense",
+    "german_name": "Acker-Schachtelhalm",
+    "family": "Equisetaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "jointed_stems"
+      ],
+      "eq_fertile_shoot_separation": [
+        "separate_different"
+      ],
+      "eq_branching": [
+        "branched_whorls"
+      ],
+      "eq_branch_first_internode": [
+        "equal_or_longer"
+      ],
+      "leaf_type": [
+        "reduced"
+      ],
+      "sporangia_placement": [
+        "strobilus"
+      ]
+    }
+  },
+  {
+    "id": "TX0123",
+    "name": "Equisetum fluviatile",
+    "german_name": "Teich-Schachtelhalm",
+    "family": "Equisetaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "jointed_stems"
+      ],
+      "eq_fertile_shoot_separation": [
+        "similar_green"
+      ],
+      "eq_branching": [
+        "variable"
+      ],
+      "eq_central_cavity": [
+        "very_large"
+      ],
+      "eq_strobilus_apex": [
+        "blunt"
+      ],
+      "leaf_type": [
+        "reduced"
+      ],
+      "sporangia_placement": [
+        "strobilus"
+      ]
+    }
+  },
+  {
+    "id": "TX0124",
+    "name": "Equisetum hyemale",
+    "german_name": "Winter-Schachtelhalm",
+    "family": "Equisetaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "jointed_stems"
+      ],
+      "leaf_type": [
+        "reduced"
+      ],
+      "sporangia_placement": [
+        "strobilus"
+      ]
+    }
+  },
+  {
+    "id": "TX0125",
+    "name": "Equisetum palustre",
+    "german_name": "Sumpf-Schachtelhalm",
+    "family": "Equisetaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "jointed_stems"
+      ],
+      "eq_fertile_shoot_separation": [
+        "similar_green"
+      ],
+      "eq_branching": [
+        "branched_whorls"
+      ],
+      "eq_branch_first_internode": [
+        "shorter"
+      ],
+      "eq_strobilus_apex": [
+        "blunt"
+      ],
+      "leaf_type": [
+        "reduced"
+      ],
+      "sporangia_placement": [
+        "strobilus"
+      ]
+    }
+  },
+  {
+    "id": "TX0126",
+    "name": "Equisetum pratense",
+    "german_name": "Wiesen-Schachtelhalm",
+    "family": "Equisetaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "jointed_stems"
+      ],
+      "leaf_type": [
+        "reduced"
+      ],
+      "sporangia_placement": [
+        "strobilus"
+      ]
+    }
+  },
+  {
+    "id": "TX0127",
+    "name": "Equisetum ramosissimum",
+    "german_name": "Ästiger Schachtelhalm",
+    "family": "Equisetaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "jointed_stems"
+      ],
+      "leaf_type": [
+        "reduced"
+      ],
+      "sporangia_placement": [
+        "strobilus"
+      ]
+    }
+  },
+  {
+    "id": "TX0128",
+    "name": "Equisetum scirpoides",
+    "german_name": "Zwerg-Schachtelhalm",
+    "family": "Equisetaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "jointed_stems"
+      ],
+      "leaf_type": [
+        "reduced"
+      ],
+      "sporangia_placement": [
+        "strobilus"
+      ]
+    }
+  },
+  {
+    "id": "TX0129",
+    "name": "Equisetum sylvaticum",
+    "german_name": "Wald-Schachtelhalm",
+    "family": "Equisetaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "jointed_stems"
+      ],
+      "leaf_type": [
+        "reduced"
+      ],
+      "sporangia_placement": [
+        "strobilus"
+      ]
+    }
+  },
+  {
+    "id": "TX0130",
+    "name": "Equisetum telmateia",
+    "german_name": "Riesen-Schachtelhalm",
+    "family": "Equisetaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "jointed_stems"
+      ],
+      "leaf_type": [
+        "reduced"
+      ],
+      "sporangia_placement": [
+        "strobilus"
+      ]
+    }
+  },
+  {
+    "id": "TX0131",
+    "name": "Equisetum variegatum",
+    "german_name": "Bunter Schachtelhalm",
+    "family": "Equisetaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "jointed_stems"
+      ],
+      "leaf_type": [
+        "reduced"
+      ],
+      "sporangia_placement": [
+        "strobilus"
+      ]
+    }
+  },
+  {
+    "id": "TX0132",
+    "name": "Botrychium lanceolatum",
+    "german_name": "Lanzett-Rautenfarn",
+    "family": "Ophioglossaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "ophioglossoid"
+      ],
+      "ophi_sterile_lamina_shape": [
+        "divided"
+      ],
+      "ophi_fertile_segment_form": [
+        "branched_cluster"
+      ]
+    }
+  },
+  {
+    "id": "TX0133",
+    "name": "Equisetum × litorale",
+    "german_name": "Ufer-Schachtelhalm",
+    "family": "Equisetaceae",
+    "rank": "hybrid",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "jointed_stems"
+      ],
+      "leaf_type": [
+        "reduced"
+      ],
+      "sporangia_placement": [
+        "strobilus"
+      ]
+    }
+  },
+  {
+    "id": "TX0134",
+    "name": "Equisetum × moorei",
+    "german_name": "Moores Schachtelhalm",
+    "family": "Equisetaceae",
+    "rank": "hybrid",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "jointed_stems"
+      ],
+      "leaf_type": [
+        "reduced"
+      ],
+      "sporangia_placement": [
+        "strobilus"
+      ]
+    }
+  },
+  {
+    "id": "TX0135",
+    "name": "Equisetum × trachyodon",
+    "german_name": "Rauzahn-Schachtelhalm",
+    "family": "Equisetaceae",
+    "rank": "hybrid",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "jointed_stems"
+      ],
+      "leaf_type": [
+        "reduced"
+      ],
+      "sporangia_placement": [
+        "strobilus"
+      ]
+    }
+  },
+  {
+    "id": "TX0136",
+    "name": "Equisetum × mildeanum",
+    "german_name": "Mildes Schachtelhalm-Hybrid",
+    "family": "Equisetaceae",
+    "rank": "hybrid",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "jointed_stems"
+      ],
+      "leaf_type": [
+        "reduced"
+      ],
+      "sporangia_placement": [
+        "strobilus"
+      ]
+    }
+  },
+  {
+    "id": "TX0148",
+    "name": "Asplenium adiantum-nigrum",
+    "german_name": "",
+    "family": "Aspleniaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0149",
+    "name": "Asplenium ceterach",
+    "german_name": "",
+    "family": "Aspleniaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0151",
+    "name": "Asplenium cuneifolium",
+    "german_name": "",
+    "family": "Aspleniaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0155",
+    "name": "Asplenium ruta-muraria",
+    "german_name": "",
+    "family": "Aspleniaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0156",
+    "name": "Asplenium trichomanes",
+    "german_name": "",
+    "family": "Aspleniaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0157",
+    "name": "Asplenium × adulteriniforme",
+    "german_name": "",
+    "family": "Aspleniaceae",
+    "rank": "hybrid",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0158",
+    "name": "Asplenium × dolosum",
+    "german_name": "",
+    "family": "Aspleniaceae",
+    "rank": "hybrid",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0159",
+    "name": "Asplenium × lobmingense",
+    "german_name": "",
+    "family": "Aspleniaceae",
+    "rank": "hybrid",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0160",
+    "name": "Asplenium × lovisianum",
+    "german_name": "",
+    "family": "Aspleniaceae",
+    "rank": "hybrid",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0161",
+    "name": "Asplenium × lucanum",
+    "german_name": "",
+    "family": "Aspleniaceae",
+    "rank": "hybrid",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0162",
+    "name": "Asplenium × melzerianum",
+    "german_name": "",
+    "family": "Aspleniaceae",
+    "rank": "hybrid",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0163",
+    "name": "Asplenium × moravicum",
+    "german_name": "",
+    "family": "Aspleniaceae",
+    "rank": "hybrid",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0164",
+    "name": "Asplenium × praetermissum",
+    "german_name": "",
+    "family": "Aspleniaceae",
+    "rank": "hybrid",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0165",
+    "name": "Asplenium × protoadulterinum",
+    "german_name": "",
+    "family": "Aspleniaceae",
+    "rank": "hybrid",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0166",
+    "name": "Asplenium × stiriacum",
+    "german_name": "",
+    "family": "Aspleniaceae",
+    "rank": "hybrid",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0167",
+    "name": "Asplenium × tadei-reichsteinii",
+    "german_name": "",
+    "family": "Aspleniaceae",
+    "rank": "hybrid",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0168",
+    "name": "Asplenium × trichomaniforme",
+    "german_name": "",
+    "family": "Aspleniaceae",
+    "rank": "hybrid",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0169",
+    "name": "Asplenium × wachaviense",
+    "german_name": "",
+    "family": "Aspleniaceae",
+    "rank": "hybrid",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0170",
+    "name": "Asplenium × woynarianum",
+    "german_name": "",
+    "family": "Aspleniaceae",
+    "rank": "hybrid",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0171",
+    "name": "Botrychium angustisegmentum",
+    "german_name": "",
+    "family": "Ophioglossaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "ophioglossoid"
+      ]
+    }
+  },
+  {
+    "id": "TX0172",
+    "name": "Botrychium onondagense",
+    "german_name": "",
+    "family": "Ophioglossaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "ophioglossoid"
+      ]
+    }
+  },
+  {
+    "id": "TX0173",
+    "name": "Botrychium tenebrosum",
+    "german_name": "",
+    "family": "Ophioglossaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "ophioglossoid"
+      ]
+    }
+  },
+  {
+    "id": "TX0174",
+    "name": "Botrychium tunux",
+    "german_name": "",
+    "family": "Ophioglossaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "ophioglossoid"
+      ]
+    }
+  },
+  {
+    "id": "TX0175",
+    "name": "Botrypus virginianus",
+    "german_name": "",
+    "family": "Ophioglossaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "ophioglossoid"
+      ]
+    }
+  },
+  {
+    "id": "TX0176",
+    "name": "Cystopteris dickieana",
+    "german_name": "",
+    "family": "Cystopteridaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0177",
+    "name": "Cystopteris pseudoregia",
+    "german_name": "",
+    "family": "Cystopteridaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0178",
+    "name": "Diphasiastrum alpinum",
+    "german_name": "",
+    "family": "Lycopodiaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "lycophyte"
+      ],
+      "leaf_type": [
+        "microphyll"
+      ]
+    }
+  },
+  {
+    "id": "TX0179",
+    "name": "Diphasiastrum complanatum",
+    "german_name": "",
+    "family": "Lycopodiaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "lycophyte"
+      ],
+      "leaf_type": [
+        "microphyll"
+      ]
+    }
+  },
+  {
+    "id": "TX0180",
+    "name": "Diphasiastrum tristachyum",
+    "german_name": "",
+    "family": "Lycopodiaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "lycophyte"
+      ],
+      "leaf_type": [
+        "microphyll"
+      ]
+    }
+  },
+  {
+    "id": "TX0181",
+    "name": "Diphasiastrum × issleri",
+    "german_name": "",
+    "family": "Lycopodiaceae",
+    "rank": "hybrid",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "lycophyte"
+      ],
+      "leaf_type": [
+        "microphyll"
+      ]
+    }
+  },
+  {
+    "id": "TX0182",
+    "name": "Diphasiastrum × oellgaardii",
+    "german_name": "",
+    "family": "Lycopodiaceae",
+    "rank": "hybrid",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "lycophyte"
+      ],
+      "leaf_type": [
+        "microphyll"
+      ]
+    }
+  },
+  {
+    "id": "TX0183",
+    "name": "Diphasiastrum × zeilleri",
+    "german_name": "",
+    "family": "Lycopodiaceae",
+    "rank": "hybrid",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "lycophyte"
+      ],
+      "leaf_type": [
+        "microphyll"
+      ]
+    }
+  },
+  {
+    "id": "TX0184",
+    "name": "Dryopteris pseudocomplexa",
+    "german_name": "",
+    "family": "Dryopteridaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0185",
+    "name": "Dryopteris × alpirsbachensis",
+    "german_name": "",
+    "family": "Dryopteridaceae",
+    "rank": "hybrid",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0186",
+    "name": "Dryopteris × ambroseae",
+    "german_name": "",
+    "family": "Dryopteridaceae",
+    "rank": "hybrid",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0187",
+    "name": "Dryopteris × brathaica",
+    "german_name": "",
+    "family": "Dryopteridaceae",
+    "rank": "hybrid",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0188",
+    "name": "Dryopteris × critica",
+    "german_name": "",
+    "family": "Dryopteridaceae",
+    "rank": "hybrid",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0189",
+    "name": "Dryopteris × lawalreei",
+    "german_name": "",
+    "family": "Dryopteridaceae",
+    "rank": "hybrid",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0190",
+    "name": "Equisetum × font-queri",
+    "german_name": "",
+    "family": "Equisetaceae",
+    "rank": "hybrid",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "jointed_stems"
+      ],
+      "leaf_type": [
+        "reduced"
+      ],
+      "sporangia_placement": [
+        "strobilus"
+      ]
+    }
+  },
+  {
+    "id": "TX0191",
+    "name": "Equisetum × mackayi",
+    "german_name": "",
+    "family": "Equisetaceae",
+    "rank": "hybrid",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "jointed_stems"
+      ],
+      "leaf_type": [
+        "reduced"
+      ],
+      "sporangia_placement": [
+        "strobilus"
+      ]
+    }
+  },
+  {
+    "id": "TX0192",
+    "name": "Equisetum × meridionale",
+    "german_name": "",
+    "family": "Equisetaceae",
+    "rank": "hybrid",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "jointed_stems"
+      ],
+      "leaf_type": [
+        "reduced"
+      ],
+      "sporangia_placement": [
+        "strobilus"
+      ]
+    }
+  },
+  {
+    "id": "TX0193",
+    "name": "Huperzia selago",
+    "german_name": "",
+    "family": "Lycopodiaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "lycophyte"
+      ],
+      "leaf_type": [
+        "microphyll"
+      ]
+    }
+  },
+  {
+    "id": "TX0194",
+    "name": "Lycopodiella inundata",
+    "german_name": "",
+    "family": "Lycopodiaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "lycophyte"
+      ],
+      "leaf_type": [
+        "microphyll"
+      ]
+    }
+  },
+  {
+    "id": "TX0195",
+    "name": "Lycopodium clavatum",
+    "german_name": "",
+    "family": "Lycopodiaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "lycophyte"
+      ],
+      "leaf_type": [
+        "microphyll"
+      ]
+    }
+  },
+  {
+    "id": "TX0196",
+    "name": "Lycopodium lagopus",
+    "german_name": "",
+    "family": "Lycopodiaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "lycophyte"
+      ],
+      "leaf_type": [
+        "microphyll"
+      ]
+    }
+  },
+  {
+    "id": "TX0197",
+    "name": "Polystichum × bicknellii",
+    "german_name": "",
+    "family": "Dryopteridaceae",
+    "rank": "hybrid",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0198",
+    "name": "Polystichum × illyricum",
+    "german_name": "",
+    "family": "Dryopteridaceae",
+    "rank": "hybrid",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0199",
+    "name": "Polystichum × luerssenii",
+    "german_name": "",
+    "family": "Dryopteridaceae",
+    "rank": "hybrid",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0200",
+    "name": "Polystichum × meyeri",
+    "german_name": "",
+    "family": "Dryopteridaceae",
+    "rank": "hybrid",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0201",
+    "name": "Polystichum × wirtgenii",
+    "german_name": "",
+    "family": "Dryopteridaceae",
+    "rank": "hybrid",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0203",
+    "name": "Salvinia × molesta",
+    "german_name": "",
+    "family": "Salviniaceae",
+    "rank": "hybrid",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0204",
+    "name": "Sceptridium multifidum",
+    "german_name": "",
+    "family": "Ophioglossaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "ophioglossoid"
+      ]
+    }
+  },
+  {
+    "id": "TX0205",
+    "name": "Selaginella helvetica",
+    "german_name": "",
+    "family": "Selaginellaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "lycophyte"
+      ],
+      "leaf_type": [
+        "microphyll"
+      ]
+    }
+  },
+  {
+    "id": "TX0206",
+    "name": "Selaginella selaginoides",
+    "german_name": "",
+    "family": "Selaginellaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "lycophyte"
+      ],
+      "leaf_type": [
+        "microphyll"
+      ]
+    }
+  },
+  {
+    "id": "TX0207",
+    "name": "Spinulum annotinum",
+    "german_name": "",
+    "family": "Lycopodiaceae",
+    "rank": "species",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "lycophyte"
+      ],
+      "leaf_type": [
+        "microphyll"
+      ]
+    }
+  },
+  {
+    "id": "TX0208",
+    "name": "Asplenium cuneifolium ssp. cuneifolium",
+    "german_name": "",
+    "family": "Aspleniaceae",
+    "rank": "subspecies",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0209",
+    "name": "Asplenium lepidum ssp. lepidum",
+    "german_name": "",
+    "family": "Aspleniaceae",
+    "rank": "subspecies",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "ovate"
+      ],
+      "frond_division_degree": [
+        "bipinnate"
+      ],
+      "sorus_position": [
+        "along_veins"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0210",
+    "name": "Asplenium scolopendrium ssp. scolopendrium",
+    "german_name": "",
+    "family": "Aspleniaceae",
+    "rank": "subspecies",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "frond_arrangement": [
+        "rosette"
+      ],
+      "frond_overwintering": [
+        "evergreen"
+      ],
+      "frond_outline": [
+        "oblong"
+      ],
+      "frond_division_degree": [
+        "entire"
+      ],
+      "sorus_position": [
+        "along_veins"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0211",
+    "name": "Asplenium seelosii ssp. seelosii",
+    "german_name": "",
+    "family": "Aspleniaceae",
+    "rank": "subspecies",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "frond_overwintering": [
+        "evergreen"
+      ],
+      "frond_outline": [
+        "oblong"
+      ],
+      "frond_division_degree": [
+        "lobed"
+      ],
+      "sorus_position": [
+        "along_veins"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0212",
+    "name": "Asplenium septentrionale ssp. septentrionale",
+    "german_name": "",
+    "family": "Aspleniaceae",
+    "rank": "subspecies",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "frond_overwintering": [
+        "evergreen"
+      ],
+      "frond_outline": [
+        "linear"
+      ],
+      "frond_division_degree": [
+        "irregularly_divided"
+      ],
+      "sorus_position": [
+        "along_veins"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0213",
+    "name": "Asplenium × alternifolium nssp. alterinifolium",
+    "german_name": "",
+    "family": "Aspleniaceae",
+    "rank": "subspecies",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0214",
+    "name": "Athyrium filix-femina ssp. filix-femina",
+    "german_name": "",
+    "family": "Athyriaceae",
+    "rank": "subspecies",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "frond_arrangement": [
+        "clustered"
+      ],
+      "frond_dimorphism": [
+        "monomorphic"
+      ],
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "lanceolate"
+      ],
+      "frond_division_degree": [
+        "bipinnate",
+        "tripinnate"
+      ],
+      "frond_texture": [
+        "soft_herbaceous"
+      ],
+      "sorus_position": [
+        "along_veins"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0215",
+    "name": "Botrychium simplex ssp. simplex",
+    "german_name": "",
+    "family": "Ophioglossaceae",
+    "rank": "subspecies",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "ophioglossoid"
+      ]
+    }
+  },
+  {
+    "id": "TX0216",
+    "name": "Cystopteris fragilis ssp. fragilis",
+    "german_name": "",
+    "family": "Cystopteridaceae",
+    "rank": "subspecies",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "ovate"
+      ],
+      "frond_division_degree": [
+        "bipinnate"
+      ],
+      "sorus_position": [
+        "on_veins"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0217",
+    "name": "Cystopteris fragilis ssp. huteri",
+    "german_name": "",
+    "family": "Cystopteridaceae",
+    "rank": "subspecies",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "ovate"
+      ],
+      "frond_division_degree": [
+        "bipinnate"
+      ],
+      "sorus_position": [
+        "on_veins"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0218",
+    "name": "Diphasiastrum complanatum ssp. complanatum",
+    "german_name": "",
+    "family": "Lycopodiaceae",
+    "rank": "subspecies",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "lycophyte"
+      ],
+      "leaf_type": [
+        "microphyll"
+      ]
+    }
+  },
+  {
+    "id": "TX0219",
+    "name": "Dryopteris affinis ssp. affinis",
+    "german_name": "",
+    "family": "Dryopteridaceae",
+    "rank": "subspecies",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "frond_arrangement": [
+        "clustered"
+      ],
+      "frond_dimorphism": [
+        "monomorphic"
+      ],
+      "frond_overwintering": [
+        "evergreen"
+      ],
+      "frond_outline": [
+        "oblong"
+      ],
+      "frond_division_degree": [
+        "once_pinnate"
+      ],
+      "frond_texture": [
+        "firm"
+      ],
+      "sorus_position": [
+        "on_veins"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0220",
+    "name": "Dryopteris affinis ssp. punctata",
+    "german_name": "",
+    "family": "Dryopteridaceae",
+    "rank": "subspecies",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "frond_arrangement": [
+        "clustered"
+      ],
+      "frond_dimorphism": [
+        "monomorphic"
+      ],
+      "frond_overwintering": [
+        "evergreen"
+      ],
+      "frond_outline": [
+        "oblong"
+      ],
+      "frond_division_degree": [
+        "once_pinnate"
+      ],
+      "frond_texture": [
+        "firm"
+      ],
+      "sorus_position": [
+        "on_veins"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0221",
+    "name": "Dryopteris cambrensis ssp. insubrica",
+    "german_name": "",
+    "family": "Dryopteridaceae",
+    "rank": "subspecies",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "frond_arrangement": [
+        "clustered"
+      ],
+      "frond_overwintering": [
+        "evergreen"
+      ],
+      "frond_outline": [
+        "oblong"
+      ],
+      "frond_division_degree": [
+        "once_pinnate"
+      ],
+      "sorus_position": [
+        "on_veins"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0222",
+    "name": "Dryopteris dilatata ssp. dilatata",
+    "german_name": "",
+    "family": "Dryopteridaceae",
+    "rank": "subspecies",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "frond_arrangement": [
+        "clustered"
+      ],
+      "frond_overwintering": [
+        "evergreen"
+      ],
+      "frond_outline": [
+        "broadly_triangular"
+      ],
+      "frond_division_degree": [
+        "tripinnate",
+        "quadripinnate"
+      ],
+      "sorus_position": [
+        "on_veins"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0223",
+    "name": "Dryopteris filix-mas ssp. filix-mas",
+    "german_name": "",
+    "family": "Dryopteridaceae",
+    "rank": "subspecies",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "frond_arrangement": [
+        "clustered"
+      ],
+      "frond_dimorphism": [
+        "monomorphic"
+      ],
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "oblong"
+      ],
+      "frond_division_degree": [
+        "once_pinnate"
+      ],
+      "frond_texture": [
+        "firm"
+      ],
+      "sorus_position": [
+        "on_veins"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0224",
+    "name": "Dryopteris × complexa nssp. complexa",
+    "german_name": "",
+    "family": "Dryopteridaceae",
+    "rank": "subspecies",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0225",
+    "name": "Equisetum arvense ssp. alpestre",
+    "german_name": "",
+    "family": "Equisetaceae",
+    "rank": "subspecies",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "jointed_stems"
+      ],
+      "leaf_type": [
+        "reduced"
+      ],
+      "sporangia_placement": [
+        "strobilus"
+      ]
+    }
+  },
+  {
+    "id": "TX0226",
+    "name": "Equisetum arvense ssp. arvense",
+    "german_name": "",
+    "family": "Equisetaceae",
+    "rank": "subspecies",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "jointed_stems"
+      ],
+      "leaf_type": [
+        "reduced"
+      ],
+      "sporangia_placement": [
+        "strobilus"
+      ]
+    }
+  },
+  {
+    "id": "TX0227",
+    "name": "Equisetum hyemale ssp. hyemale",
+    "german_name": "",
+    "family": "Equisetaceae",
+    "rank": "subspecies",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "jointed_stems"
+      ],
+      "leaf_type": [
+        "reduced"
+      ],
+      "sporangia_placement": [
+        "strobilus"
+      ]
+    }
+  },
+  {
+    "id": "TX0228",
+    "name": "Equisetum telmateia ssp. telmateia",
+    "german_name": "",
+    "family": "Equisetaceae",
+    "rank": "subspecies",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "jointed_stems"
+      ],
+      "leaf_type": [
+        "reduced"
+      ],
+      "sporangia_placement": [
+        "strobilus"
+      ]
+    }
+  },
+  {
+    "id": "TX0229",
+    "name": "Equisetum variegatum ssp. variegatum",
+    "german_name": "",
+    "family": "Equisetaceae",
+    "rank": "subspecies",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "jointed_stems"
+      ],
+      "leaf_type": [
+        "reduced"
+      ],
+      "sporangia_placement": [
+        "strobilus"
+      ]
+    }
+  },
+  {
+    "id": "TX0230",
+    "name": "Equisetum × mackayi nssp. mackayi",
+    "german_name": "",
+    "family": "Equisetaceae",
+    "rank": "subspecies",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "jointed_stems"
+      ],
+      "leaf_type": [
+        "reduced"
+      ],
+      "sporangia_placement": [
+        "strobilus"
+      ]
+    }
+  },
+  {
+    "id": "TX0231",
+    "name": "Equisetum × moorei nssp. moorei",
+    "german_name": "",
+    "family": "Equisetaceae",
+    "rank": "subspecies",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "jointed_stems"
+      ],
+      "leaf_type": [
+        "reduced"
+      ],
+      "sporangia_placement": [
+        "strobilus"
+      ]
+    }
+  },
+  {
+    "id": "TX0232",
+    "name": "Huperzia selago ssp. selago",
+    "german_name": "",
+    "family": "Lycopodiaceae",
+    "rank": "subspecies",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "lycophyte"
+      ],
+      "leaf_type": [
+        "microphyll"
+      ]
+    }
+  },
+  {
+    "id": "TX0233",
+    "name": "Lycopodium clavatum ssp. clavatum",
+    "german_name": "",
+    "family": "Lycopodiaceae",
+    "rank": "subspecies",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "lycophyte"
+      ],
+      "leaf_type": [
+        "microphyll"
+      ]
+    }
+  },
+  {
+    "id": "TX0234",
+    "name": "Ophioglossum vulgatum ssp. vulgatum",
+    "german_name": "",
+    "family": "Ophioglossaceae",
+    "rank": "subspecies",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "ophioglossoid"
+      ]
+    }
+  },
+  {
+    "id": "TX0235",
+    "name": "Paragymnopteris marantae ssp. marantae",
+    "german_name": "",
+    "family": "Pteridaceae",
+    "rank": "subspecies",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "frond_outline": [
+        "oblong"
+      ],
+      "frond_division_degree": [
+        "bipinnate"
+      ],
+      "frond_texture": [
+        "firm"
+      ],
+      "sorus_position": [
+        "marginal"
+      ],
+      "sori_presence": [
+        "true"
+      ],
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0236",
+    "name": "Pseudathyrium alpestre ssp. alpestre",
+    "german_name": "",
+    "family": "Athyriaceae",
+    "rank": "subspecies",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "leafy_fern"
+      ]
+    }
+  },
+  {
+    "id": "TX0237",
+    "name": "Spinulum annotinum ssp. annotinum",
+    "german_name": "",
+    "family": "Lycopodiaceae",
+    "rank": "subspecies",
+    "status": "draft",
+    "description_de": "",
+    "description_en": "",
+    "values": {
+      "plant_architecture": [
+        "lycophyte"
+      ],
+      "leaf_type": [
+        "microphyll"
+      ]
+    }
+  }
+]
