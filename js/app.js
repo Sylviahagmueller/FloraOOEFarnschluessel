@@ -1,10 +1,11 @@
-const [traits,taxa,metadata]=await Promise.all(['data/traits.json','data/taxa.json','data/metadata.json'].map(x=>fetch(x).then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}: ${x}`);return r.json()})));
+const [traits,taxa,metadata,genera]=await Promise.all(['data/traits.json','data/taxa.json','data/metadata.json','data/genera.json'].map(x=>fetch(x).then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}: ${x}`);return r.json()})));
+const generaByName=Object.fromEntries(genera.map(g=>[g.genus_name,g]));
 // Versionsinformationen: Programmstand fix, Datenstand aus exportierten Metadaten.
 const dataVersionMatch = String(metadata.source_file || '').match(/(?:^|[_-])v(\d+(?:\.\d+)?)(?=[_.-]|$)/i);
 const dataVersion = dataVersionMatch ? `V${dataVersionMatch[1]}` : (metadata.source_file || 'unbekannt');
 function renderVersionInfo(){
  const english = document.getElementById('language')?.value === 'en';
- document.getElementById('program-version').textContent = `${english ? 'App version' : 'Programmversion'}: V18`;
+ document.getElementById('program-version').textContent = `${english ? 'App version' : 'Programmversion'}: V19`;
  document.getElementById('data-version').textContent = `${english ? 'Excel data version' : 'Excel-Datenbasis'}: ${metadata.base_excel_version || dataVersion} · ${metadata.editorial_revision || 'V17'}`;
 }
 renderVersionInfo();
@@ -138,21 +139,26 @@ function renderCatalog(){
  $('filter-count').textContent=`${active} ${t('active')}`;
 }
 const DRAWINGS={
- 'frond_division_degree:entire':'assets/drawings/entire.svg',
- 'frond_division_degree:pinnatifid':'assets/drawings/pinnatifid.svg',
- 'frond_division_degree:once_pinnate':'assets/drawings/once_pinnate.svg',
- 'frond_division_degree:bipinnate':'assets/drawings/bipinnate.svg',
- 'sorus_shape:round':'assets/drawings/sori_round.svg',
- 'sorus_shape:hooked':'assets/drawings/sori_hooked.svg',
- 'plant_architecture:leafy_fern':'assets/drawings/architecture_fern.png',
- 'plant_architecture:ophioglossoid':'assets/drawings/architecture_ophiogloss.png',
- 'plant_architecture:jointed_stems':'assets/drawings/architecture_horsetail.png',
- 'plant_architecture:lycophyte':'assets/drawings/architecture_lycophyte.png',
- 'leaf_type:reduced':'assets/drawings/leaftype_reduced.svg',
- 'leaf_type:microphyll':'assets/drawings/leaftype_microphyll.svg',
- 'leaf_type:narrow_undivided':'assets/drawings/leaftype_narrow_undivided.svg',
- 'leaf_type:broad_undivided':'assets/drawings/leaftype_broad_undivided.svg',
- 'leaf_type:divided':'assets/drawings/leaftype_divided.svg'
+  "frond_division_degree:entire": "assets/drawings/v19_entire.svg",
+  "frond_division_degree:lobed": "assets/drawings/v19_lobed.svg",
+  "frond_division_degree:pinnatifid": "assets/drawings/v19_pinnatifid.svg",
+  "frond_division_degree:once_pinnate": "assets/drawings/v19_once_pinnate.svg",
+  "frond_division_degree:bipinnate": "assets/drawings/v19_bipinnate.svg",
+  "frond_division_degree:tripinnate": "assets/drawings/v19_tripinnate.svg",
+  "frond_division_degree:quadripinnate": "assets/drawings/v19_quadripinnate.svg",
+  "frond_division_degree:irregularly_divided": "assets/drawings/v19_irregularly_divided.svg",
+  "frond_division_degree:once_pinnate_with_pinnatifid_segments": "assets/drawings/v19_once_pinnate_with_pinnatifid_segments.svg",
+  "leaf_type:reduced": "assets/drawings/v19_leaf_type_reduced.svg",
+  "leaf_type:microphyll": "assets/drawings/v19_leaf_type_microphyll.svg",
+  "leaf_type:narrow_undivided": "assets/drawings/v19_leaf_type_narrow_undivided.svg",
+  "leaf_type:broad_undivided": "assets/drawings/v19_leaf_type_broad_undivided.svg",
+  "leaf_type:divided": "assets/drawings/v19_leaf_type_divided.svg",
+  "sorus_shape:round": "assets/drawings/sori_round.svg",
+  "sorus_shape:hooked": "assets/drawings/sori_hooked.svg",
+  "plant_architecture:leafy_fern": "assets/drawings/architecture_fern.png",
+  "plant_architecture:ophioglossoid": "assets/drawings/architecture_ophiogloss.png",
+  "plant_architecture:jointed_stems": "assets/drawings/architecture_horsetail.png",
+  "plant_architecture:lycophyte": "assets/drawings/architecture_lycophyte.png"
 };
 // Illustrations are deliberately schematic, not original floristic book artwork.
 function showStateInfo(tr,option){
@@ -185,6 +191,9 @@ function detail(taxon){
  const common=taxon.german_name?`<p>${state.lang==='de'?escape(taxon.german_name):`${escape(t('commonName'))}: ${escape(taxon.german_name)}`}</p>`:'';
  const description=txt(taxon,'description');
  const habitat=txt(taxon,'habitat');
+ const genusName=taxon.name.split(' ')[0];
+ const genus=generaByName[genusName];
+ const genusHtml=genus?`<details class="genus-detail"><summary>${state.lang==='en'?'About the genus':'Über die Gattung'} <i>${escape(genusName)}</i></summary><div><p>${escape(txt(genus,'description'))}</p><p><strong>${state.lang==='en'?'Distinguishing features':'Unterscheidungsmerkmale'}:</strong> ${escape(txt(genus,'diagnostic_notes'))}</p></div></details>`:'';
  const section=(title,body)=>body?`<section class="taxon-detail-section"><h3>${escape(title)}</h3><p>${escape(body)}</p></section>`:'';
  const diagnostic=taxon.diagnostic_values||{};
  const diagnosticItems=Object.entries(diagnostic).flatMap(([code,vals])=>{
@@ -204,7 +213,7 @@ function detail(taxon){
  $('detail-body').innerHTML=`${photoHtml(taxon.name)}${common}<p>${escape(t('family'))}: ${escape(taxon.family||'–')}</p>`+
  section(state.lang==='en'?'Description':'Beschreibung',description)+
  section(state.lang==='en'?'Habitat':'Standort',habitat)+
- diagnosticHtml+`<p class="muted">${escape(t('notReviewed'))}</p><div class="detail-grid">${detailValues||escape(t('notAvailable'))}</div>`;
+ genusHtml+diagnosticHtml+`<p class="muted">${escape(t('notReviewed'))}</p><div class="detail-grid">${detailValues||escape(t('notAvailable'))}</div>`;
  $('details').showModal();
 }
 function render(){localizeStatic();renderCatalog();const items=candidates();const filtered=items.filter(x=>(x.taxon.name+' '+(x.taxon.german_name||'')).toLocaleLowerCase().includes(state.query.toLocaleLowerCase()));$('count').textContent=items.length;$('summary').textContent='';const suggestion=recommendation(items);$('suggestion').innerHTML=suggestion?`<div class="suggestion-label">${escape(t('suggest'))}</div><div class="suggestion-main"><strong>${escape(txt(suggestion,'label'))}</strong><button id="suggest-button">${escape(t('add'))}</button></div>`:'';$('suggestion').hidden=!suggestion;if(suggestion)$('suggest-button').onclick=()=>add(suggestion.code);$('list').replaceChildren();for(const x of filtered){const taxon=x.taxon,btn=document.createElement('button');btn.className='taxon'+(selected().length&&x.match.unknown>0?' taxon-uncertain':'');if(selected().length&&x.match.unknown>0)btn.title=state.lang==='de'?'Möglicher Treffer: für einige ausgewählte Merkmale liegen noch keine Angaben vor.':'Possible match: some selected characters have no recorded values.';const sub=state.lang==='de'?(taxon.german_name||taxon.family):(taxon.family||'');btn.innerHTML=`${PHOTO_TEST[taxon.name]?`<div class="taxon-image-wrap">${photoThumbHtml(taxon.name)}</div>`:''}<div class="taxon-heading"><strong>${escape(taxon.name)}</strong>${PHOTO_TEST[taxon.name]?`<span class="photo-hint" title="${escape(t('photoExample'))}" aria-label="${escape(t('photoExample'))}">&#128247;</span>`:''}</div><small>${escape(sub)}</small><div class="tags"><span class="tag">${escape(taxon.family)}</span></div>`;btn.onclick=()=>detail(taxon);$('list').append(btn);}if(!filtered.length)$('list').innerHTML=`<p class="muted">${escape(t('none'))}</p>`;}

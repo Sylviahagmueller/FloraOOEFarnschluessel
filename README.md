@@ -28,3 +28,12 @@ Die Excel V18 ist die Datenquelle. `not_applicable` wird als Taxonwert im JSON g
 Export: `python tools/export_excel_v18.py /Pfad/zur/farn_schluessel_v18_teilungsgrad_nicht_anwendbar.xlsx`
 
 Wichtig: Taxa ohne Angabe sind weiterhin unbestimmt; die fachliche Gesamtprüfung steht aus.
+
+
+## V19 Testfassung
+- Gattungsinformationen in `data/genera.json` (Excel-Blatt `5_genera`), aufklappbar in Artdetails.
+- Neue eigenständige SVG-Schemata für fünf vorhandene Ausprägungen von `leaf_type` und neun von `frond_division_degree`. Die Merkmalscodes und Matrixwerte bleiben erhalten.
+- Laufende `#!`-Korrekturen aus V18 übernommen (Polystichum braunii, Athyrium filix-femina, Pseudathyrium alpestre).
+- Gattungen sind **keine** zusätzlichen Bestimmungskandidaten.
+- Gattungstexte sind fachliche Entwürfe; botanische Gesamtprüfung ausstehend.
+- Für Neugenerierung: `python tools/export_excel_v19.py /pfad/zur/v19.xlsx`. Ein vollständiger V18-Neuexport sollte nur mit aktualisierter Metadatenerstellung kombiniert werden.

@@ -1,5 +1,5 @@
 {
-  "source_file": "farn_schluessel_v18_teilungsgrad_nicht_anwendbar.xlsx",
+  "source_file": "farn_schluessel_v19_gattungen_zeichnungen.xlsx",
   "taxa_count": 173,
   "trait_count": 67,
   "primary_count": 11,
@@ -8,10 +8,11 @@
   "region_count": 0,
   "distribution_count": 0,
   "base_excel_version": "V23",
-  "editorial_revision": "V18",
+  "editorial_revision": "V19",
   "described_taxa_count": 28,
   "diagnostic_taxa_count": 28,
-  "diagnostic_state_count": 72,
+  "diagnostic_state_count": 75,
   "not_applicable_state_count": 2097,
-  "not_applicable_trait_count": 23
+  "not_applicable_trait_count": 23,
+  "genus_description_count": 3
 }

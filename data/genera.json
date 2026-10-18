@@ -1,0 +1,35 @@
+[
+  {
+    "genus_id": "GEN001",
+    "genus_name": "Dryopteris",
+    "german_name": "Wurmfarne",
+    "description_de": "Gattung überwiegend terrestrischer Farne mit meist büschelig stehenden, einfach bis mehrfach gegliederten Wedeln. Blattstiel und oft auch Blattspindel tragen Spreuschuppen. Die Sori sind typischerweise rundlich und werden bei vielen Arten von einem nierenförmigen Schleier bedeckt. Blattkonsistenz, Zerteilungsgrad und Beschuppung unterscheiden sich deutlich zwischen den Arten.",
+    "description_en": "A genus of mainly terrestrial ferns, usually with clustered fronds ranging from simply to finely divided. Scales occur on the stipe and often along the rachis. Sori are typically rounded, frequently protected by kidney-shaped indusia. Blade texture, degree of division and scale characters vary considerably among species.",
+    "diagnostic_notes_de": "Im Vergleich zum Gewöhnlichen Frauenfarn wirken viele Wurmfarne kräftiger und stärker beschuppt. Besonders auf Soriform, Schleier, basale Fiedern und Spreuschuppen achten; die Faustregel gilt nicht für jede Art.",
+    "diagnostic_notes_en": "Many buckler ferns appear more robust and scaly than common lady fern. Check sorus and indusium shape, basal pinnae and scales; these tendencies are not universal.",
+    "source_urls": "https://www.blumeninschwaben.de/Sporenpflanzen/fieder_stachel.htm; https://www.infoflora.ch/de/",
+    "review_status": "draft"
+  },
+  {
+    "genus_id": "GEN002",
+    "genus_name": "Athyrium",
+    "german_name": "Frauenfarne",
+    "description_de": "Gattung meist sommergrüner Farne mit häufig zarten, fein zerteilten Wedeln und vergleichsweise dünnen Blattspindeln. Die Sori können länglich, gebogen oder hakenförmig sein; die genaue Ausbildung unterscheidet sich zwischen den Arten. Insgesamt ist der Wedelbau oft lockerer als bei kräftigen Wurmfarnen.",
+    "description_en": "A genus of mostly deciduous ferns, often with delicate, finely divided fronds and slender axes. Sori may be elongate, curved or hook-shaped, with details differing among species. Frond architecture is often more open than in robust buckler ferns.",
+    "diagnostic_notes_de": "Bei Athyrium filix-femina sind die länglichen bis hakenförmigen Sori besonders hilfreich. Die feinere Textur und geringere Beschuppung sind Vergleichshinweise, keine absoluten Gattungsmerkmale.",
+    "diagnostic_notes_en": "In A. filix-femina the elongate to hook-shaped sori are especially useful. Delicate texture and fewer scales are comparative clues rather than universal genus characters.",
+    "source_urls": "https://www.infoflora.ch/de/; https://www.burgenlandflora.at/flora/",
+    "review_status": "draft"
+  },
+  {
+    "genus_id": "GEN003",
+    "genus_name": "Polystichum",
+    "german_name": "Schildfarne",
+    "description_de": "Gattung meist büschelig wachsender Farne mit häufig festen, oft überwinternden Wedeln. Viele Arten besitzen zugespitzte oder grannige Zähne an den Fiederchen. Die rundlichen Sori werden typischerweise von einem schildförmigen, mittig befestigten Schleier bedeckt; Stiel und Rhachis sind oft spreuschuppig.",
+    "description_en": "A genus of mostly tufted ferns, often with firm, frequently evergreen fronds. Many species have spine-tipped teeth on their pinnules. Rounded sori are typically covered by centrally attached, shield-shaped indusia; the stipe and rachis are often scaly.",
+    "diagnostic_notes_de": "Gegenüber Dryopteris sind der meist schildförmig mittig befestigte Schleier und häufig die grannigen Fiederchenzähne besonders nützlich. Polystichum braunii hat jedoch auffallend weiche Wedel.",
+    "diagnostic_notes_en": "Compared with Dryopteris, the typically centrally attached shield-like indusium and often spine-tipped pinnule teeth are useful. P. braunii is an exception in its notably soft fronds.",
+    "source_urls": "https://www.blumeninschwaben.de/Sporenpflanzen/fieder_stachel.htm; https://www.infoflora.ch/de/",
+    "review_status": "draft"
+  }
+]
