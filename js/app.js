@@ -4,7 +4,7 @@ const dataVersionMatch = String(metadata.source_file || '').match(/(?:^|[_-])v(\
 const dataVersion = dataVersionMatch ? `V${dataVersionMatch[1]}` : (metadata.source_file || 'unbekannt');
 function renderVersionInfo(){
  const english = document.getElementById('language')?.value === 'en';
- document.getElementById('program-version').textContent = `${english ? 'App version' : 'Programmversion'}: V17`;
+ document.getElementById('program-version').textContent = `${english ? 'App version' : 'Programmversion'}: V18`;
  document.getElementById('data-version').textContent = `${english ? 'Excel data version' : 'Excel-Datenbasis'}: ${metadata.base_excel_version || dataVersion} · ${metadata.editorial_revision || 'V17'}`;
 }
 renderVersionInfo();
@@ -21,9 +21,45 @@ const $=id=>document.getElementById(id),t=k=>I18N[state.lang][k]||k;
 const txt=(obj,field)=>obj?.[`${field}_${state.lang}`]||obj?.[`${field}_de`]||'';
 const escape=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const selected=()=>Object.entries(state.filters).filter(([,v])=>v.size);
-function classification(taxon){let unknown=0;for(const [code,choices] of selected()){const actual=taxon.values[code];if(!actual?.length){unknown++;continue;}if(!actual.some(v=>choices.has(v)))return null;}return {unknown,matched:selected().length-unknown};}
+// V18 semantics: not_applicable is an explicit contradiction, while missing/unknown data remain possible.
+const NON_SELECTABLE_STATES=new Set(['not_applicable','unknown']);
+const selectableStates=trait=>trait.states.filter(s=>!NON_SELECTABLE_STATES.has(s.code));
+function classification(taxon){
+ let unknown=0;
+ for(const [code,choices] of selected()){
+  const actual=taxon.values[code];
+  if(!actual?.length || actual.includes('unknown')){unknown++;continue;}
+  if(actual.includes('not_applicable'))return null;
+  if(!actual.some(v=>choices.has(v)))return null;
+ }
+ return {unknown,matched:selected().length-unknown};
+}
+function hasApplicableTaxa(trait,items){
+ return items.some(({taxon})=>{
+  const values=taxon.values[trait.code];
+  return !values?.includes('not_applicable') && (!values?.length || values.some(v=>!NON_SELECTABLE_STATES.has(v)));
+ });
+}
+
 function candidates(){return taxa.map(taxon=>({taxon,match:classification(taxon)})).filter(x=>x.match!==null).sort((a,b)=>a.match.unknown-b.match.unknown||a.taxon.name.localeCompare(b.taxon.name));}
-function recommendation(items){const used=new Set(Object.keys(state.filters));let best=null;for(const trait of traits){if(used.has(trait.code)||trait.states.length<2||!inLevel(trait))continue;const counts=new Map();let n=0;for(const {taxon} of items){const values=taxon.values[trait.code];if(!values?.length)continue;n++;for(const v of values)counts.set(v,(counts.get(v)||0)+1/values.length);}if(n<Math.max(3,items.length*.35)||counts.size<2)continue;let entropy=0;for(const count of counts.values()){const p=count/n;entropy-=p*Math.log2(p);}let score=entropy*(n/items.length)*(trait.role==='primary'?1.12:1);if(!best||score>best.score)best={trait,score};}return best?.trait;}
+function recommendation(items){
+ const used=new Set(Object.keys(state.filters));let best=null;
+ for(const trait of traits){
+  if(used.has(trait.code)||selectableStates(trait).length<2||!inLevel(trait)||!hasApplicableTaxa(trait,items))continue;
+  const counts=new Map();let n=0;
+  for(const {taxon} of items){
+   const values=taxon.values[trait.code]?.filter(v=>!NON_SELECTABLE_STATES.has(v));
+   if(!values?.length)continue;
+   n++;
+   for(const v of values)counts.set(v,(counts.get(v)||0)+1/values.length);
+  }
+  if(n<Math.max(3,items.length*.35)||counts.size<2)continue;
+  let entropy=0;for(const count of counts.values()){const p=count/n;entropy-=p*Math.log2(p);}
+  let score=entropy*(n/items.length)*(trait.role==='primary'?1.12:1);
+  if(!best||score>best.score)best={trait,score};
+ }
+ return best?.trait;
+}
 function localizeStatic(){document.documentElement.lang=state.lang;document.title=state.lang==='de'?'FloraOOE – Farnschlüssel':'FloraOOE – Fern identification key';$('language').value=state.lang;for(const el of document.querySelectorAll('[data-i18n]'))el.textContent=t(el.dataset.i18n);const search=$('search');if(search)search.placeholder='';}
 // UI-only classification: neither the source matrix nor candidate filtering is modified.
 const SIMPLE_CODES=new Set([
@@ -66,7 +102,7 @@ function makeCatalogTrait(tr){
  const body=document.createElement('div');body.className='catalog-trait-body';
  if(txt(tr,'description')){const description=document.createElement('p');description.className='desc';description.textContent=txt(tr,'description');body.append(description);}
  const choices=document.createElement('div');choices.className='choices';
- for(const option of tr.states){
+ for(const option of selectableStates(tr)){
   const line=document.createElement('div');line.className='state-line';
   const selectable=document.createElement('label'),chk=document.createElement('input');chk.type='checkbox';chk.checked=set.has(option.code);
   chk.onchange=()=>{if(!(code in state.filters))state.filters[code]=new Set();if(chk.checked)state.filters[code].add(option.code);else state.filters[code].delete(option.code);state.catalogOpen.add(code);render();};
@@ -79,15 +115,16 @@ function makeCatalogTrait(tr){
  return el;
 }
 function renderCatalog(){
+ const items=candidates();
  const panel=$('character-catalog');panel.replaceChildren();
  for(const btn of document.querySelectorAll('#trait-level button')){
   const selected=btn.dataset.level===state.traitLevel;btn.classList.toggle('is-active',selected);btn.setAttribute('aria-pressed',String(selected));
  }
  // The original nine primary characters remain the first group.
- const frequent=traits.filter(tr=>DEFAULT_TRAIT_CODES.includes(tr.code));
+ const frequent=traits.filter(tr=>DEFAULT_TRAIT_CODES.includes(tr.code)&&hasApplicableTaxa(tr,items));
  const groups=[['frequent',frequent]];
  for(const key of GROUP_KEYS){
-  const members=traits.filter(tr=>tr.states.length&&!DEFAULT_TRAIT_CODES.includes(tr.code)&&groupOf(tr)===key&&(inLevel(tr)||state.filters[tr.code]?.size));
+  const members=traits.filter(tr=>selectableStates(tr).length&&!DEFAULT_TRAIT_CODES.includes(tr.code)&&groupOf(tr)===key&&(inLevel(tr)||state.filters[tr.code]?.size)&&hasApplicableTaxa(tr,items));
   if(members.length)groups.push([key,members]);
  }
  for(const [key,members] of groups){
@@ -175,7 +212,7 @@ $('language').onchange=e=>{state.lang=e.target.value==='en'?'en':'de';try{localS
 document.querySelectorAll('#trait-level button').forEach(btn=>btn.onclick=()=>{state.traitLevel=btn.dataset.level;render();});
 $('search').oninput=e=>{state.query=e.target.value;render();};
 // Initial characters are identical after page load and after Reset.
-const DEFAULT_TRAIT_CODES=traits.filter(tr=>tr.role==='primary'&&tr.states.length).slice(0,9).map(tr=>tr.code);
+const DEFAULT_TRAIT_CODES=traits.filter(tr=>tr.role==='primary'&&selectableStates(tr).length).slice(0,9).map(tr=>tr.code);
 function resetIdentification(){
  state.filters=Object.fromEntries(DEFAULT_TRAIT_CODES.map(code=>[code,new Set()]));
  state.collapsed.clear();

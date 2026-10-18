@@ -374,6 +374,15 @@
         "explanation_en": "Four leaflets together form a clover-like outline.",
         "image_path": "",
         "review_status": "text_drafted"
+      },
+      {
+        "code": "not_applicable",
+        "label_de": "nicht anwendbar",
+        "label_en": "not applicable",
+        "explanation_de": "Das Merkmal ist für den Grundbauplan dieses Taxons anatomisch nicht sinnvoll.",
+        "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
+        "image_path": "",
+        "review_status": "pending"
       }
     ]
   },
@@ -404,6 +413,15 @@
         "explanation_en": "The lower pinnae do not become conspicuously shorter towards the blade base.",
         "image_path": "",
         "review_status": "text_drafted"
+      },
+      {
+        "code": "not_applicable",
+        "label_de": "nicht anwendbar",
+        "label_en": "not applicable",
+        "explanation_de": "Das Merkmal ist für den Grundbauplan dieses Taxons anatomisch nicht sinnvoll.",
+        "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
+        "image_path": "",
+        "review_status": "pending"
       }
     ]
   },
@@ -497,6 +515,15 @@
         "explanation_en": "Separate pinnae are deeply pinnatifid but are not divided into free pinnules.",
         "image_path": "",
         "review_status": "text_drafted"
+      },
+      {
+        "code": "not_applicable",
+        "label_de": "nicht anwendbar",
+        "label_en": "not applicable",
+        "explanation_de": "Das Merkmal ist für den Grundbauplan dieses Taxons anatomisch nicht sinnvoll.",
+        "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
+        "image_path": "",
+        "review_status": "pending"
       }
     ]
   },
@@ -743,6 +770,15 @@
         "explanation_en": "Sterile portion divided into segments.",
         "image_path": "",
         "review_status": "draft"
+      },
+      {
+        "code": "not_applicable",
+        "label_de": "nicht anwendbar",
+        "label_en": "not applicable",
+        "explanation_de": "Das Merkmal ist für den Grundbauplan dieses Taxons anatomisch nicht sinnvoll.",
+        "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
+        "image_path": "",
+        "review_status": "pending"
       }
     ]
   },
@@ -773,6 +809,15 @@
         "explanation_en": "Fertile portion branched into a cluster or panicle.",
         "image_path": "",
         "review_status": "draft"
+      },
+      {
+        "code": "not_applicable",
+        "label_de": "nicht anwendbar",
+        "label_en": "not applicable",
+        "explanation_de": "Das Merkmal ist für den Grundbauplan dieses Taxons anatomisch nicht sinnvoll.",
+        "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
+        "image_path": "",
+        "review_status": "pending"
       }
     ]
   },
@@ -812,6 +857,15 @@
         "explanation_en": "Sterile lamina dissected into numerous small parts.",
         "image_path": "",
         "review_status": "draft"
+      },
+      {
+        "code": "not_applicable",
+        "label_de": "nicht anwendbar",
+        "label_en": "not applicable",
+        "explanation_de": "Das Merkmal ist für den Grundbauplan dieses Taxons anatomisch nicht sinnvoll.",
+        "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
+        "image_path": "",
+        "review_status": "pending"
       }
     ]
   },
@@ -998,6 +1052,15 @@
         "explanation_en": "Strobili borne on broadly similar green shoots.",
         "image_path": "",
         "review_status": "draft"
+      },
+      {
+        "code": "not_applicable",
+        "label_de": "nicht anwendbar",
+        "label_en": "not applicable",
+        "explanation_de": "Das Merkmal ist für den Grundbauplan dieses Taxons anatomisch nicht sinnvoll.",
+        "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
+        "image_path": "",
+        "review_status": "pending"
       }
     ]
   },
@@ -1037,6 +1100,15 @@
         "explanation_en": "Branches may be present or absent.",
         "image_path": "",
         "review_status": "draft"
+      },
+      {
+        "code": "not_applicable",
+        "label_de": "nicht anwendbar",
+        "label_en": "not applicable",
+        "explanation_de": "Das Merkmal ist für den Grundbauplan dieses Taxons anatomisch nicht sinnvoll.",
+        "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
+        "image_path": "",
+        "review_status": "pending"
       }
     ]
   },
@@ -1205,6 +1277,15 @@
         "explanation_en": "First branch internode at least as long as adjacent sheath.",
         "image_path": "",
         "review_status": "draft"
+      },
+      {
+        "code": "not_applicable",
+        "label_de": "nicht anwendbar",
+        "label_en": "not applicable",
+        "explanation_de": "Das Merkmal ist für den Grundbauplan dieses Taxons anatomisch nicht sinnvoll.",
+        "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
+        "image_path": "",
+        "review_status": "pending"
       }
     ]
   },
@@ -1367,6 +1448,15 @@
         "explanation_en": "Cavity notably smaller; verify species-specific thresholds.",
         "image_path": "",
         "review_status": "draft"
+      },
+      {
+        "code": "not_applicable",
+        "label_de": "nicht anwendbar",
+        "label_en": "not applicable",
+        "explanation_de": "Das Merkmal ist für den Grundbauplan dieses Taxons anatomisch nicht sinnvoll.",
+        "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
+        "image_path": "",
+        "review_status": "pending"
       }
     ]
   },
@@ -1445,6 +1535,15 @@
         "explanation_en": "Persistence or appearance varies.",
         "image_path": "",
         "review_status": "draft"
+      },
+      {
+        "code": "not_applicable",
+        "label_de": "nicht anwendbar",
+        "label_en": "not applicable",
+        "explanation_de": "Das Merkmal ist für den Grundbauplan dieses Taxons anatomisch nicht sinnvoll.",
+        "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
+        "image_path": "",
+        "review_status": "pending"
       }
     ]
   },
@@ -1559,6 +1658,15 @@
         "explanation_en": "Strobilus tapering to acute apex.",
         "image_path": "",
         "review_status": "draft"
+      },
+      {
+        "code": "not_applicable",
+        "label_de": "nicht anwendbar",
+        "label_en": "not applicable",
+        "explanation_de": "Das Merkmal ist für den Grundbauplan dieses Taxons anatomisch nicht sinnvoll.",
+        "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
+        "image_path": "",
+        "review_status": "pending"
       }
     ]
   },
@@ -1871,6 +1979,15 @@
         "explanation_en": "",
         "image_path": "",
         "review_status": "label_completed"
+      },
+      {
+        "code": "not_applicable",
+        "label_de": "nicht anwendbar",
+        "label_en": "not applicable",
+        "explanation_de": "Das Merkmal ist für den Grundbauplan dieses Taxons anatomisch nicht sinnvoll.",
+        "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
+        "image_path": "",
+        "review_status": "pending"
       }
     ]
   },
@@ -1946,6 +2063,15 @@
         "explanation_en": "",
         "image_path": "",
         "review_status": "label_completed"
+      },
+      {
+        "code": "not_applicable",
+        "label_de": "nicht anwendbar",
+        "label_en": "not applicable",
+        "explanation_de": "Das Merkmal ist für den Grundbauplan dieses Taxons anatomisch nicht sinnvoll.",
+        "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
+        "image_path": "",
+        "review_status": "pending"
       }
     ]
   },
@@ -2012,6 +2138,15 @@
         "explanation_en": "",
         "image_path": "",
         "review_status": "label_completed"
+      },
+      {
+        "code": "not_applicable",
+        "label_de": "nicht anwendbar",
+        "label_en": "not applicable",
+        "explanation_de": "Das Merkmal ist für den Grundbauplan dieses Taxons anatomisch nicht sinnvoll.",
+        "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
+        "image_path": "",
+        "review_status": "pending"
       }
     ]
   },
@@ -2069,6 +2204,15 @@
         "explanation_en": "",
         "image_path": "",
         "review_status": "pending"
+      },
+      {
+        "code": "not_applicable",
+        "label_de": "nicht anwendbar",
+        "label_en": "not applicable",
+        "explanation_de": "Das Merkmal ist für den Grundbauplan dieses Taxons anatomisch nicht sinnvoll.",
+        "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
+        "image_path": "",
+        "review_status": "pending"
       }
     ]
   },
@@ -2124,6 +2268,15 @@
         "label_en": "long acuminate",
         "explanation_de": "",
         "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "not_applicable",
+        "label_de": "nicht anwendbar",
+        "label_en": "not applicable",
+        "explanation_de": "Das Merkmal ist für den Grundbauplan dieses Taxons anatomisch nicht sinnvoll.",
+        "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
         "image_path": "",
         "review_status": "pending"
       }
@@ -2745,6 +2898,15 @@
         "label_en": "widely spaced",
         "explanation_de": "",
         "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "not_applicable",
+        "label_de": "nicht anwendbar",
+        "label_en": "not applicable",
+        "explanation_de": "Das Merkmal ist für den Grundbauplan dieses Taxons anatomisch nicht sinnvoll.",
+        "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
         "image_path": "",
         "review_status": "pending"
       }
@@ -3528,6 +3690,15 @@
         "label_en": "long",
         "explanation_de": "",
         "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "not_applicable",
+        "label_de": "nicht anwendbar",
+        "label_en": "not applicable",
+        "explanation_de": "Das Merkmal ist für den Grundbauplan dieses Taxons anatomisch nicht sinnvoll.",
+        "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
         "image_path": "",
         "review_status": "pending"
       }

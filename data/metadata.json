@@ -1,5 +1,5 @@
 {
-  "source_file": "farn_schluessel_v17_erstentwurf_28_taxa.xlsx",
+  "source_file": "farn_schluessel_v18_teilungsgrad_nicht_anwendbar.xlsx",
   "taxa_count": 173,
   "trait_count": 67,
   "primary_count": 11,
@@ -8,8 +8,10 @@
   "region_count": 0,
   "distribution_count": 0,
   "base_excel_version": "V23",
-  "editorial_revision": "V17",
+  "editorial_revision": "V18",
   "described_taxa_count": 28,
   "diagnostic_taxa_count": 28,
-  "diagnostic_state_count": 71
+  "diagnostic_state_count": 72,
+  "not_applicable_state_count": 2097,
+  "not_applicable_trait_count": 23
 }

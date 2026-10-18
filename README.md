@@ -19,4 +19,12 @@ Im Projektverzeichnis `python -m http.server 8000` ausführen und http://localho
 
 ## Datenpflege
 
-Die Excel-Masterdatei liegt **nicht** im öffentlichen Website-ZIP. Export: `python tools/export_excel_v17.py /pfad/zu/farn_schluessel_v17_erstentwurf_28_taxa.xlsx`. Bei Änderungen zunächst auf Testbranch hochladen, dann prüfen und erst nach Freigabe veröffentlichen.
+Die Excel-Masterdatei liegt **nicht** im öffentlichen Website-ZIP. Export: `python tools/export_excel_v18.py /pfad/zu/farn_schluessel_v17_erstentwurf_28_taxa.xlsx`. Bei Änderungen zunächst auf Testbranch hochladen, dann prüfen und erst nach Freigabe veröffentlichen.
+
+## V18 – Teilungsgrad und nicht anwendbare Merkmale
+
+Die Excel V18 ist die Datenquelle. `not_applicable` wird als Taxonwert im JSON gespeichert und nicht als auswählbarer Zustand angezeigt. Solche Taxa werden bei einer positiven Merkmalsauswahl ausgeschlossen; leere und `unknown`-Werte bleiben dagegen mögliche Treffer. Ein Merkmal wird ausgeblendet, wenn es bei allen verbleibenden Taxa als `not_applicable` kodiert ist.
+
+Export: `python tools/export_excel_v18.py /Pfad/zur/farn_schluessel_v18_teilungsgrad_nicht_anwendbar.xlsx`
+
+Wichtig: Taxa ohne Angabe sind weiterhin unbestimmt; die fachliche Gesamtprüfung steht aus.
