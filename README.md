@@ -74,3 +74,10 @@ Idee und fachliche Betreuung: **Dr. Hans-Peter Reinthaler**. Konzeption und tech
 - Beschriftungen passen sich an Deutsch/Englisch an.
 - Keine Änderung der Excel-Datei, JSON-Daten oder Bestimmungs- und Filterlogik.
 - Keine GitHub-Veröffentlichung.
+
+## V15 – Schlanker Footer und Projektseite (18.10.2026)
+
+- Die Projektvorstellung und Namensnennungen wurden von der Hauptseite auf `projekt.html` verschoben.
+- Der Footer enthält nur noch die Links zu Projekt, ARGE, Impressum, Datenschutz, Bildnachweisen und Metadaten sowie die Versionsanzeige.
+- Programmversion V15; Excel-Datenbasis V23 unverändert.
+- Änderungen ausschließlich im Testbranch; Browserprüfung ausständig.
