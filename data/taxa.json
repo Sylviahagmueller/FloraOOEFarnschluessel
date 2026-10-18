@@ -4225,7 +4225,8 @@
         "almost_smooth"
       ],
       "pinnule_spacing": [
-        "variable"
+        "variable",
+        "widely_spaced"
       ],
       "indusium_persistence": [
         "persistent"
@@ -4268,6 +4269,9 @@
       "sorus_shape": [
         "elongate",
         "hooked"
+      ],
+      "pinnule_spacing": [
+        "widely_spaced"
       ]
     },
     "habitat_de": "Frische bis feuchte Wälder, Schluchten und schattige Hochstaudenfluren, in einem breiten Höhenspektrum.",
@@ -4419,6 +4423,9 @@
       ],
       "indusium_persistence": [
         "early_deciduous"
+      ],
+      "pinna_apex": [
+        "rounded"
       ]
     },
     "habitat_de": "Feuchte Bergwälder, subalpine Hochstaudenfluren, Grünerlengebüsche und steinige Hochlagen.",
@@ -5642,6 +5649,9 @@
       ],
       "frond_base_narrowing": [
         "clearly_narrowed"
+      ],
+      "hairiness": [
+        "moderate"
       ]
     },
     "habitat_de": "Kühle, luftfeuchte und schattige Berg- und Schluchtwälder, eher auf kalkarmen Böden.",

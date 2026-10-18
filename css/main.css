@@ -168,3 +168,8 @@ select,input{border-color:#cfdcc9;border-radius:3px}
 .taxon-diagnostic ul{margin:6px 0 0;padding-left:20px;line-height:1.8}
 .taxon-diagnostic li span{color:#516d54}
 .diagnostic-value{color:#285d3b;font-weight:750}
+
+/* V19 genus details */
+.genus-detail{margin:14px 0;padding:12px 14px;background:#f4f8f2;border:1px solid #d4e5d6;border-radius:10px}
+.genus-detail summary{cursor:pointer;font-weight:650;color:#245b45}
+.genus-detail p{margin:10px 0 0;line-height:1.55}
