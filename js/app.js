@@ -4,7 +4,7 @@ const dataVersionMatch = String(metadata.source_file || '').match(/(?:^|[_-])v(\
 const dataVersion = dataVersionMatch ? `V${dataVersionMatch[1]}` : (metadata.source_file || 'unbekannt');
 function renderVersionInfo(){
  const english = document.getElementById('language')?.value === 'en';
- document.getElementById('program-version').textContent = `${english ? 'App version' : 'Programmversion'}: V14`;
+ document.getElementById('program-version').textContent = `${english ? 'App version' : 'Programmversion'}: V15`;
  document.getElementById('data-version').textContent = `${english ? 'Excel data version' : 'Excel-Datenbasis'}: ${dataVersion}`;
 }
 renderVersionInfo();
