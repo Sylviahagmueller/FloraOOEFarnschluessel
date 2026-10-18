@@ -78,7 +78,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0038",
@@ -151,7 +154,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0039",
@@ -217,7 +223,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0040",
@@ -280,7 +289,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0041",
@@ -289,8 +301,8 @@
     "family": "Pteridaceae",
     "rank": "species",
     "status": "draft",
-    "description_de": "",
-    "description_en": "",
+    "description_de": "Feingliedriger Farn mit lockeren, zarten Wedeln und sehr dünnen, dunkelbraunen bis schwarzen, oft glänzenden Blattstielen. Die kleinen Fiederchen sitzen auf haarfeinen Stielchen, verbreitern sich fächerartig und sind am äußeren Rand gelappt oder gekerbt. Sporangiengruppen liegen nahe den Fiederchenrändern; umgeschlagene Randlappen bedecken sie wie ein falscher Schleier. Die Spreite ist meist zwei- bis dreifach gefiedert.",
+    "description_en": "A finely divided fern with delicate, open fronds and very slender, dark brown to black, often glossy stipes. The small pinnules are carried on hair-like stalks, spread into fan-shaped blades and have lobed or scalloped outer margins. Sporangia occur near the pinnule margins, sheltered by folded-over marginal lobes that form a false indusium. The blade is usually divided two or three times.",
     "values": {
       "growth_form": [
         "clustered"
@@ -305,6 +317,7 @@
         "fan_like"
       ],
       "frond_division_degree": [
+        "bipinnate",
         "tripinnate"
       ],
       "frond_texture": [
@@ -330,6 +343,9 @@
       ],
       "frond_color": [
         "medium_green"
+      ],
+      "pinna_shape": [
+        "fan_shaped"
       ],
       "sori_presence": [
         "true"
@@ -362,7 +378,20 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {
+      "stipe_color": [
+        "blackish"
+      ],
+      "indusium_presence": [
+        "false_indusium_margin"
+      ],
+      "pinna_shape": [
+        "fan_shaped"
+      ]
+    },
+    "habitat_de": "Warme, luftfeuchte Standorte an sickerfeuchten Kalk- und Tufffelsen, Quellen sowie Wasserfällen, meist in tiefen Lagen.",
+    "habitat_en": "Warm, humid sites on seepage-wet limestone and tufa rocks, by springs and waterfalls, usually at low elevations."
   },
   {
     "id": "TX0042",
@@ -446,7 +475,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0043",
@@ -455,8 +487,8 @@
     "family": "Pteridaceae",
     "rank": "species",
     "status": "draft",
-    "description_de": "",
-    "description_en": "",
+    "description_de": "Kleiner, büschelig wachsender Farn mit hell- bis gelbgrünen, fein zerteilten Wedeln. Auffällig sind zwei sehr unterschiedliche Blattformen: Die sterilen Wedel sind weich und breit gefiedert, die fertilen stehen häufig im Inneren des Büschels und tragen schmale, eingerollte Fiederabschnitte. Dadurch sind die sporentragenden Bereiche deutlich von den flächigen sterilen Blättern zu unterscheiden.",
+    "description_en": "A small tuft-forming fern with pale to yellowish-green, finely divided fronds. It produces two strikingly different frond forms: sterile blades are soft and broadly divided, while fertile fronds often arise nearer the centre of the tuft and bear narrow, inrolled segments. The spore-bearing parts therefore look noticeably different from the flat sterile blades.",
     "values": {
       "growth_form": [
         "clustered"
@@ -474,7 +506,9 @@
         "triangular"
       ],
       "frond_division_degree": [
-        "tripinnate"
+        "bipinnate",
+        "tripinnate",
+        "quadripinnate"
       ],
       "frond_texture": [
         "delicate"
@@ -489,7 +523,7 @@
         "false_indusium_margin"
       ],
       "fertile_frond_special_form": [
-        "contracted"
+        "rolled_segments"
       ],
       "frond_color": [
         "pale_green"
@@ -525,7 +559,20 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {
+      "frond_dimorphism": [
+        "strongly_dimorphic"
+      ],
+      "fertile_frond_special_form": [
+        "rolled_segments"
+      ],
+      "substrate_preference": [
+        "siliceous"
+      ]
+    },
+    "habitat_de": "Vor allem Spalten und Blockhalden aus silikatischem Gestein in kühlen, höheren Gebirgslagen, besonders subalpin bis alpin.",
+    "habitat_en": "Primarily crevices and block scree of siliceous rocks in cool high-mountain areas, particularly subalpine to alpine sites."
   },
   {
     "id": "TX0044",
@@ -534,8 +581,8 @@
     "family": "Dennstaedtiaceae",
     "rank": "species",
     "status": "draft",
-    "description_de": "",
-    "description_en": "",
+    "description_de": "Der Adlerfarn bildet mit seinem weit verzweigten, unterirdischen Rhizom oft ausgedehnte Bestände. Die einzeln stehenden, lang gestielten Wedel sind groß, derb und im Umriss breit dreieckig; die mehrfach geteilten Fiedern sind häufig deutlich ungleichseitig. Reife Sori können als länglicher Saum am umgeschlagenen Rand der letzten Abschnitte auftreten, sind aber nicht an jedem Wedel zu finden.",
+    "description_en": "Bracken often forms extensive stands through its far-reaching underground rhizome. The widely spaced, long-stalked fronds are large and firm, with a broadly triangular outline and frequently unevenly developed, multiply divided pinnae. At maturity, sori may appear as an elongated marginal band beneath the rolled edges of the smallest segments, but many fronds lack visible spores.",
     "values": {
       "growth_form": [
         "scattered_fronds"
@@ -553,7 +600,9 @@
         "broadly_triangular"
       ],
       "frond_division_degree": [
-        "tripinnate"
+        "bipinnate",
+        "tripinnate",
+        "quadripinnate"
       ],
       "frond_texture": [
         "firm"
@@ -607,7 +656,23 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {
+      "frond_arrangement": [
+        "solitary_from_rhizome"
+      ],
+      "rhizome_type": [
+        "long_creeping"
+      ],
+      "frond_outline": [
+        "broadly_triangular"
+      ],
+      "sorus_shape": [
+        "continuous_marginal_band"
+      ]
+    },
+    "habitat_de": "Lichte Wälder, Waldschläge, Heiden und Böschungen, meist auf sauren Böden.",
+    "habitat_en": "Open woods, forest clearings, heathland and banks, usually on acidic soil."
   },
   {
     "id": "TX0045",
@@ -683,7 +748,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0046",
@@ -765,7 +833,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0047",
@@ -774,8 +845,8 @@
     "family": "Cystopteridaceae",
     "rank": "species",
     "status": "draft",
-    "description_de": "",
-    "description_en": "",
+    "description_de": "Zierlicher, sommergrüner Farn mit meist 10–40 cm langen Wedeln und einer auffallend breiten, nahezu ebenso langen wie breiten Spreite. Ihr Umriss ist dreieckig-eiförmig bis fünfeckig; sie ist drei- bis vierfach gefiedert. Die untersten Hauptfiedern sind besonders kräftig entwickelt und deutlich ungleichseitig gegliedert. Die Blattspindel trägt feine Drüsen. Kleine rundliche Sori besitzen einen zarten, seitlich befestigten Schleier, der sich bei der Reife zurückbiegt.",
+    "description_en": "A delicate deciduous fern, usually with fronds 10–40 cm long and a conspicuously broad blade, nearly as wide as it is long. The blade is triangular-ovate to pentagonal and divided three or four times. The lowest primary pinnae are particularly prominent and unevenly developed. Fine glands occur on the rachis. Small rounded sori have a delicate, laterally attached indusium that bends back as they mature.",
     "values": {
       "growth_form": [
         "clustered"
@@ -787,7 +858,8 @@
         "pentagonal"
       ],
       "frond_division_degree": [
-        "tripinnate"
+        "tripinnate",
+        "quadripinnate"
       ],
       "glands_presence": [
         "sparse"
@@ -829,10 +901,20 @@
       "altitudinal_belt": [
         "montane_subalpine"
       ],
+      "indusium_attachment": [
+        "lateral"
+      ],
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {
+      "frond_outline": [
+        "pentagonal"
+      ]
+    },
+    "habitat_de": "Schattige, eher feuchte Wälder, Kalkfelsbereiche und Blockschutt, vor allem in der montanen bis subalpinen Höhenstufe.",
+    "habitat_en": "Shaded, relatively moist woodland, limestone rocks and boulder scree, chiefly from montane to subalpine elevations."
   },
   {
     "id": "TX0048",
@@ -899,7 +981,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0049",
@@ -963,7 +1048,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0050",
@@ -972,8 +1060,8 @@
     "family": "Cystopteridaceae",
     "rank": "species",
     "status": "draft",
-    "description_de": "",
-    "description_en": "",
+    "description_de": "Zarter Blasenfarn mit gewöhnlich 12–50 cm langen, leicht zerbrechlichen Wedeln. Die Spreite ist meist länglich-eiförmig bis schmal dreieckig und zwei- bis dreifach gegliedert. Die untersten Hauptfiedern sind in der Regel kürzer als die nächsthöheren; die fein geteilten Fiederchen besitzen gezähnte oder eingeschnittene Ränder. Auf der Unterseite sitzen rundliche Sori mit einem dünnen, seitlich angesetzten Schleier, der sich später zurücklegt.",
+    "description_en": "A slender bladder fern with usually 12–50 cm long, rather fragile fronds. The blade is commonly elongated-ovate to narrowly triangular and divided two or three times. The lowest primary pinnae are generally shorter than those immediately above them, while the small ultimate segments have toothed or incised margins. Rounded sori on the underside carry a thin indusium attached at one side and bending back later.",
     "values": {
       "growth_form": [
         "clustered"
@@ -985,7 +1073,11 @@
         "ovate"
       ],
       "frond_division_degree": [
-        "bipinnate"
+        "bipinnate",
+        "tripinnate"
+      ],
+      "lowest_pinnae_relation": [
+        "shorter_than_next"
       ],
       "sorus_position": [
         "on_veins"
@@ -1024,10 +1116,20 @@
       "altitudinal_belt": [
         "broad_range"
       ],
+      "indusium_attachment": [
+        "lateral"
+      ],
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {
+      "lowest_pinnae_relation": [
+        "shorter_than_next"
+      ]
+    },
+    "habitat_de": "Vor allem schattige, feuchte Fels- und Mauerspalten, steinige Waldstellen und Blockschutt; in unterschiedlichen Höhenlagen.",
+    "habitat_en": "Mostly shaded, damp rock and wall crevices, stony woodland sites and scree, across a wide elevation range."
   },
   {
     "id": "TX0051",
@@ -1100,7 +1202,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0052",
@@ -1170,7 +1275,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0053",
@@ -1179,8 +1287,8 @@
     "family": "Thelypteridaceae",
     "rank": "species",
     "status": "draft",
-    "description_de": "",
-    "description_en": "",
+    "description_de": "Der Buchenfarn besitzt einzeln aus einem weitkriechenden Rhizom aufsteigende, weiche Wedel mit dreieckigem Umriss. Die untersten beiden Hauptfiedern sind deutlich nach hinten beziehungsweise unten gerichtet, wodurch die Spreite eigentümlich dreieckig wirkt. Die rundlichen Sori sitzen unbedeckt auf der Blattunterseite.",
+    "description_en": "Beech fern produces separate, soft, triangular fronds from a widely creeping rhizome. Its lowest pair of primary pinnae points conspicuously backwards or downwards, giving the blade a distinctive outline. Rounded sori sit exposed on the underside of the frond.",
     "values": {
       "growth_form": [
         "scattered_fronds"
@@ -1234,7 +1342,17 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {
+      "rhizome_type": [
+        "long_creeping"
+      ],
+      "frond_outline": [
+        "triangular"
+      ]
+    },
+    "habitat_de": "Schattige, frische bis feuchte, meist kalkarme Bergwälder und moosige Böschungen.",
+    "habitat_en": "Shady, fresh to damp, usually lime-poor mountain woodland and mossy banks."
   },
   {
     "id": "TX0054",
@@ -1243,8 +1361,8 @@
     "family": "Thelypteridaceae",
     "rank": "species",
     "status": "draft",
-    "description_de": "",
-    "description_en": "",
+    "description_de": "Der Sumpffarn wächst mit weitkriechenden unterirdischen Sprossen in lockeren Beständen. Seine schmal lanzettlichen Wedel unterscheiden sich je nach Sporenbildung: An fertilen Wedeln rollen sich die Ränder der Fiederabschnitte stark ein, wodurch sie schmaler wirken. Die rundlichen Sori sitzen nahe am Rand. Typisch ist die Bindung an dauerhaft nasse Sumpf- und Moorstandorte.",
+    "description_en": "Marsh fern spreads through long creeping underground stems and forms loose stands. Its narrowly lanceolate fronds differ depending on fertility: on spore-bearing fronds, the segment margins roll strongly under, making the segments appear narrower. Rounded sori lie close to the margins. The species is characteristic of persistently wet marshes and fens.",
     "values": {
       "growth_form": [
         "scattered_fronds"
@@ -1266,7 +1384,7 @@
         "bipinnate"
       ],
       "sorus_position": [
-        "marginal"
+        "submarginal"
       ],
       "sorus_shape": [
         "round"
@@ -1311,7 +1429,20 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {
+      "sorus_position": [
+        "submarginal"
+      ],
+      "margin_rolled_covering_sori": [
+        "yes"
+      ],
+      "habitat_main_refined": [
+        "fen"
+      ]
+    },
+    "habitat_de": "Niedermoore, Sümpfe, Röhrichte und nasse Bruchwälder, oft bei stehendem oder langsam fließendem Wasser.",
+    "habitat_en": "Fens, marshes, reed beds and wet carr woodland, often beside standing or slow-flowing water."
   },
   {
     "id": "TX0055",
@@ -1320,8 +1451,8 @@
     "family": "Thelypteridaceae",
     "rank": "species",
     "status": "draft",
-    "description_de": "",
-    "description_en": "",
+    "description_de": "Der Berg-Lappenfarn bildet aufrechte Rosetten aus lanzettlichen Wedeln, deren unterste Fiedern zur Basis hin deutlich kürzer werden. Kleine, rundliche Sori sitzen dicht unter den Fiederchenrändern. Die Wedel sind häufig fein drüsig und können beim Zerreiben einen charakteristischen Duft verströmen. Im Vergleich zum Sumpffarn wächst er eher auf bewaldeten, sauren Bergstandorten.",
+    "description_en": "Mountain fern forms upright rosettes of lanceolate fronds with basal pinnae that become progressively shorter towards the blade base. Small rounded sori sit close to the pinnule margins. The fronds are often finely glandular and may release a distinctive scent when crushed. Unlike marsh fern, it mainly occupies acidic, wooded upland habitats.",
     "values": {
       "growth_form": [
         "rosette"
@@ -1386,7 +1517,17 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {
+      "sorus_position": [
+        "submarginal"
+      ],
+      "frond_base_narrowing": [
+        "clearly_narrowed"
+      ]
+    },
+    "habitat_de": "Bodensaure, frische bis feuchte Bergwälder, offene Bergwiesenränder und Waldlichtungen.",
+    "habitat_en": "Acidic, fresh to damp mountain woodland, edges of upland meadows and forest clearings."
   },
   {
     "id": "TX0056",
@@ -1395,8 +1536,8 @@
     "family": "Aspleniaceae",
     "rank": "species",
     "status": "draft",
-    "description_de": "",
-    "description_en": "",
+    "description_de": "Die Hirschzunge trägt aus einer grundständigen Rosette lange, glänzend grüne und vollständig ungeteilte Wedel. Die zungenförmige Spreite besitzt am Grund oft herz- bis pfeilförmige Lappen. Auf der Unterseite liegen längliche, paarweise angeordnete Sporenlager entlang der Blattnerven. Die immergrünen Blätter unterscheiden sie schon auf den ersten Blick von den meisten anderen heimischen Farnen.",
+    "description_en": "Hart’s-tongue fern forms a basal rosette of long, glossy green, undivided fronds. Their tongue-shaped blades often have heart-shaped to arrow-like lobes at the base. Elongated spore clusters are arranged in paired lines along veins beneath the blade. Its evergreen, entire fronds distinguish it from most other native ferns.",
     "values": {
       "growth_form": [
         "rosette"
@@ -1468,7 +1609,20 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {
+      "frond_outline": [
+        "oblong"
+      ],
+      "frond_division_degree": [
+        "entire"
+      ],
+      "sorus_shape": [
+        "linear"
+      ]
+    },
+    "habitat_de": "Schattige, luftfeuchte Schlucht- und Hangwälder sowie Kalkfels- und Mauerspalten, bevorzugt auf basenreichen Substraten.",
+    "habitat_en": "Shady, humid ravine and slope woodland, limestone crevices and damp walls, mostly on base-rich substrates."
   },
   {
     "id": "TX0057",
@@ -1541,7 +1695,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0058",
@@ -1614,7 +1771,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0059",
@@ -1687,7 +1847,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0060",
@@ -1760,7 +1923,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0061",
@@ -1827,7 +1993,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0062",
@@ -1897,7 +2066,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0063",
@@ -1964,7 +2136,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0064",
@@ -2031,7 +2206,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0065",
@@ -2104,7 +2282,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0066",
@@ -2174,7 +2355,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0067",
@@ -2250,7 +2434,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0068",
@@ -2326,7 +2513,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0069",
@@ -2335,8 +2525,8 @@
     "family": "Aspleniaceae",
     "rank": "species",
     "status": "draft",
-    "description_de": "",
-    "description_en": "",
+    "description_de": "Der Grüne Streifenfarn bildet kurze Büschel schmaler, einfach gefiederter Wedel mit kleinen rundlich-ovalen Fiedern. Besonders auffällig ist die grüne Blattspindel, die im Gegensatz zu den dunklen Spindeln verwandter Arten bis weit nach unten grün bleibt. Die Sori stehen als kurze längliche Streifen unter den Fiedern.",
+    "description_en": "Green spleenwort forms small tufts of narrow, once-pinnate fronds carrying rounded to oval pinnae. Its most conspicuous feature is the green rachis, which remains green well down the frond unlike the dark rachises of related species. Short, elongated sori occur on the underside of the pinnae.",
     "values": {
       "growth_form": [
         "clustered"
@@ -2399,7 +2589,17 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {
+      "stipe_color": [
+        "green"
+      ],
+      "rachis_color": [
+        "green"
+      ]
+    },
+    "habitat_de": "Kühle, schattige Felsspalten, häufig in den Bergen auf kalkhaltigem Gestein.",
+    "habitat_en": "Cool, shady rock fissures, often in the mountains on calcareous rock."
   },
   {
     "id": "TX0070",
@@ -2475,7 +2675,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0071",
@@ -2551,7 +2754,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0072",
@@ -2627,7 +2833,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0073",
@@ -2703,7 +2912,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0074",
@@ -2779,7 +2991,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0075",
@@ -2788,8 +3003,8 @@
     "family": "Aspleniaceae",
     "rank": "species",
     "status": "draft",
-    "description_de": "",
-    "description_en": "",
+    "description_de": "Der Braungrüne Streifenfarn ähnelt dem Braunschwarz-Streifenfarn, doch geht die dunkle Färbung seiner Blattspindel im oberen Abschnitt deutlich in Grün über. Die schmalen Wedel sind einfach gefiedert und tragen getrennt stehende, kleine Fiedern. Typisch ist das Vorkommen auf magnesiumreichen Sondergesteinen wie Serpentinit; die Art ist deshalb nur örtlich zu finden.",
+    "description_en": "This spleenwort resembles Asplenium trichomanes, but the dark rachis becomes distinctly green towards its upper end. Its narrow fronds are once pinnate, with small, well-separated pinnae. It is strongly associated with magnesium-rich rocks such as serpentinite and is therefore localised.",
     "values": {
       "growth_form": [
         "clustered"
@@ -2855,7 +3070,17 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {
+      "rachis_color": [
+        "bicolored"
+      ],
+      "substrate_preference": [
+        "serpentine"
+      ]
+    },
+    "habitat_de": "Felsspalten auf Serpentinit und ähnlichen magnesiumreichen Gesteinen, meist an geschützten Standorten.",
+    "habitat_en": "Rock crevices on serpentinite and similar magnesium-rich substrates, usually in sheltered sites."
   },
   {
     "id": "TX0076",
@@ -2864,8 +3089,8 @@
     "family": "Athyriaceae",
     "rank": "species",
     "status": "draft",
-    "description_de": "",
-    "description_en": "",
+    "description_de": "Der Wald-Frauenfarn besitzt zarte, meist hellgrüne Wedel, deren lange, schmale Fiedern häufig locker auseinander stehen. Die Spreite ist zwei- bis dreifach fein gegliedert. Auf ihrer Unterseite liegen typische längliche, oft komma- bis hakenförmig gekrümmte Sori. Insgesamt wirkt er im Vergleich zu vielen Wurmfarnen weniger derb und weniger stark beschuppt.",
+    "description_en": "Lady fern has delicate, generally light-green fronds with long, narrow primary pinnae that often stand well apart. The blade is finely divided two or three times. Beneath it are characteristic elongated sori that are often curved like a comma or hook. Compared with many wood ferns, the plant looks less leathery and less heavily scaled.",
     "values": {
       "growth_form": [
         "clustered"
@@ -2956,7 +3181,18 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {
+      "frond_texture": [
+        "soft_herbaceous"
+      ],
+      "sorus_shape": [
+        "elongate",
+        "hooked"
+      ]
+    },
+    "habitat_de": "Frische bis feuchte Wälder, Schluchten und schattige Hochstaudenfluren, in einem breiten Höhenspektrum.",
+    "habitat_en": "Fresh to damp woodland, ravines and shaded tall-herb communities over a wide elevation range."
   },
   {
     "id": "TX0077",
@@ -2965,8 +3201,8 @@
     "family": "Athyriaceae",
     "rank": "species",
     "status": "draft",
-    "description_de": "",
-    "description_en": "",
+    "description_de": "Der Gebirgs-Frauenfarn ähnelt dem Wald-Frauenfarn, wächst aber überwiegend in höheren Gebirgslagen. Seine Fiederchen sind meist kurz und relativ breit, mit eher abgerundeten Enden; sie stehen oft gedrängt. Die Sori sind überwiegend rundlich, und ihre sehr kleinen Schleier verschwinden früh. Die Spindeln sind in der Regel weniger behaart als beim Wald-Frauenfarn.",
+    "description_en": "Alpine lady fern resembles lady fern but primarily grows at higher elevations. Its pinnules are generally short and relatively broad, with rather rounded tips, often crowded together. The sori are mostly rounded and their tiny indusia disappear early. The axes typically lack the distinctive hairs seen in common lady fern.",
     "values": {
       "growth_form": [
         "clustered"
@@ -3019,6 +3255,9 @@
         "crenate",
         "serrate"
       ],
+      "pinna_apex": [
+        "rounded"
+      ],
       "sori_presence": [
         "true"
       ],
@@ -3053,7 +3292,7 @@
         "folded"
       ],
       "pinnule_spacing": [
-        "widely_spaced"
+        "close"
       ],
       "indusium_persistence": [
         "early_deciduous"
@@ -3064,7 +3303,20 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {
+      "sorus_shape": [
+        "round"
+      ],
+      "pinnule_spacing": [
+        "close"
+      ],
+      "indusium_persistence": [
+        "early_deciduous"
+      ]
+    },
+    "habitat_de": "Feuchte Bergwälder, subalpine Hochstaudenfluren, Grünerlengebüsche und steinige Hochlagen.",
+    "habitat_en": "Moist mountain woods, subalpine tall-herb stands, green-alder scrub and stony uplands."
   },
   {
     "id": "TX0078",
@@ -3152,7 +3404,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0079",
@@ -3245,7 +3500,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0080",
@@ -3337,7 +3595,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0081",
@@ -3346,8 +3607,8 @@
     "family": "Blechnaceae",
     "rank": "species",
     "status": "draft",
-    "description_de": "",
-    "description_en": "",
+    "description_de": "Der Rippenfarn bildet eine Rosette schmaler, einfach gefiederter Wedel. Die flach ausgebreiteten, meist überwinternden sterilen Wedel tragen breite, eng stehende Fiedern; die fertilen Wedel stehen aufrecht und haben auffallend schmale Fiedern mit Sporangien. Der deutliche Unterschied zwischen beiden Wedelformen ist eines seiner besten Erkennungsmerkmale.",
+    "description_en": "Hard fern forms a rosette of narrow, once-pinnate fronds. The spreading, often overwintering sterile fronds have broad, closely spaced pinnae, whereas the upright fertile fronds have conspicuously narrower pinnae that bear the sporangia. The strong contrast between these frond types is a key identification feature.",
     "values": {
       "growth_form": [
         "rosette"
@@ -3485,7 +3746,20 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {
+      "frond_dimorphism": [
+        "strongly_dimorphic"
+      ],
+      "frond_division_degree": [
+        "once_pinnate"
+      ],
+      "fertile_frond_special_form": [
+        "strongly_narrowed"
+      ]
+    },
+    "habitat_de": "Feuchte, bodensaure Wälder und schattige Böschungen, stellenweise bis in die höheren Gebirgslagen.",
+    "habitat_en": "Damp, acidic woodland and shaded banks, sometimes extending into higher mountain areas."
   },
   {
     "id": "TX0082",
@@ -3494,8 +3768,8 @@
     "family": "Onocleaceae",
     "rank": "species",
     "status": "draft",
-    "description_de": "",
-    "description_en": "",
+    "description_de": "Der Straußenfarn bildet große, trichterförmige Rosetten aus hellgrünen sterilen Wedeln. Diese sind einfach gefiedert, ihre Fiedern jedoch tief eingeschnitten, und die Spreite verengt sich deutlich zum Grund. Im Zentrum erscheinen getrennte, steif aufrechte fertile Wedel, die zur Sporenreife braun werden und durch ihre schmalen, zusammengerollten Abschnitte an Straußenfedern erinnern.",
+    "description_en": "Ostrich fern forms large funnel-shaped rosettes of bright-green sterile fronds. These are once pinnate with deeply divided pinnae, and their blades narrow markedly towards the base. Separate stiff, upright fertile fronds arise in the centre; they turn brown at maturity and their narrow, rolled segments resemble ostrich plumes.",
     "values": {
       "growth_form": [
         "rosette"
@@ -3567,10 +3841,26 @@
       "altitudinal_belt": [
         "colline_montane"
       ],
+      "frond_base_narrowing": [
+        "clearly_narrowed"
+      ],
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {
+      "frond_arrangement": [
+        "rosette"
+      ],
+      "frond_dimorphism": [
+        "strongly_dimorphic"
+      ],
+      "fertile_frond_special_form": [
+        "contracted"
+      ]
+    },
+    "habitat_de": "Feuchte Auen- und Schluchtwälder an Bächen und Flüssen; auch häufig in Gärten kultiviert und gelegentlich verwildert.",
+    "habitat_en": "Moist alluvial and ravine woodland along streams and rivers; also commonly cultivated and occasionally escaped."
   },
   {
     "id": "TX0083",
@@ -3579,8 +3869,8 @@
     "family": "Dryopteridaceae",
     "rank": "species",
     "status": "draft",
-    "description_de": "",
-    "description_en": "",
+    "description_de": "Der Lanzen-Schildfarn ist ein immergrüner Gebirgsfarn mit steifen, schmal lanzettlichen Wedeln, die nur einfach gefiedert sind. Die einzelnen derben Fiedern tragen scharf zugespitzte, oft grannenartige Zähne und sitzen asymmetrisch an der Spindel. Rundliche Sori auf der Unterseite sind mit schildförmigen, zentral befestigten Schleiern bedeckt.",
+    "description_en": "Holly fern is an evergreen mountain species with stiff, narrowly lanceolate fronds that are only once pinnate. Its tough pinnae are asymmetrically attached to the rachis and bear sharp, often bristle-like teeth. Rounded sori beneath the blade are covered by shield-shaped indusia attached near their centres.",
     "values": {
       "growth_form": [
         "clustered"
@@ -3661,7 +3951,20 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {
+      "frond_division_degree": [
+        "once_pinnate"
+      ],
+      "frond_texture": [
+        "leathery"
+      ],
+      "pinna_apex": [
+        "awned"
+      ]
+    },
+    "habitat_de": "Steinige, meist kalkreiche Bergwälder, Felsspalten und Blockschutt, besonders in kühlen Höhenlagen.",
+    "habitat_en": "Stony, often calcareous mountain woodland, rock crevices and scree, especially in cool upland habitats."
   },
   {
     "id": "TX0084",
@@ -3670,8 +3973,8 @@
     "family": "Dryopteridaceae",
     "rank": "species",
     "status": "draft",
-    "description_de": "",
-    "description_en": "",
+    "description_de": "Der Weiche Schildfarn bildet feine, zweimal gefiederte Wedel mit auffallend langen, spitz begrannten Zähnen. Die Spreite wird zur Basis meist nur wenig schmaler und fühlt sich vergleichsweise weich an. Blattstiel und Spindel sind reich mit Spreuschuppen besetzt. Anders als beim Dornigen Schildfarn sind die Fiederchen häufig erkennbar gestielt.",
+    "description_en": "Soft shield-fern forms finely divided, twice-pinnate fronds with conspicuously long bristle-tipped teeth. The blade usually narrows only slightly towards its base and feels relatively soft. The stipe and rachis are richly covered with scales. Unlike hard shield-fern, many pinnules have recognisable short stalks.",
     "values": {
       "growth_form": [
         "clustered"
@@ -3702,6 +4005,9 @@
       ],
       "hairiness": [
         "sparsely_hairy"
+      ],
+      "scales_presence": [
+        "dense"
       ],
       "sorus_position": [
         "on_veins"
@@ -3743,13 +4049,32 @@
       "altitudinal_belt": [
         "montane"
       ],
+      "frond_base_narrowing": [
+        "not_clearly_narrowed"
+      ],
       "indusium_attachment": [
         "central"
+      ],
+      "pinnule_spine_tip": [
+        "long"
       ],
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {
+      "frond_texture": [
+        "soft_herbaceous"
+      ],
+      "frond_base_narrowing": [
+        "not_clearly_narrowed"
+      ],
+      "pinnule_spine_tip": [
+        "long"
+      ]
+    },
+    "habitat_de": "Milde, schattige Mischwälder und luftfeuchte Standorte; laut privatem Schlüssel nicht zur oberösterreichischen Regel-Flora gerechnet.",
+    "habitat_en": "Mild, shaded mixed woodland and humid sites; the private key does not consider it part of the usual flora of Upper Austria."
   },
   {
     "id": "TX0085",
@@ -3758,8 +4083,8 @@
     "family": "Dryopteridaceae",
     "rank": "species",
     "status": "draft",
-    "description_de": "",
-    "description_en": "",
+    "description_de": "Der Dornige Schildfarn trägt kräftige, meist überwinternde, glänzende und recht derbe Wedel. Die lanzettliche Spreite ist zweimal gefiedert und zur Basis deutlich verschmälert. Die Fiederchen sind oft etwas asymmetrisch und haben scharfe, stachelspitzige Zähne; die Sporenlager werden von rundlichen, schildförmigen Schleiern bedeckt.",
+    "description_en": "Hard shield-fern bears robust, usually evergreen, glossy and rather leathery fronds. The lanceolate blade is twice pinnate and narrows markedly towards its base. Pinnules are often somewhat asymmetrical and have sharp, spine-tipped teeth; rounded sori are covered by shield-shaped indusia.",
     "values": {
       "growth_form": [
         "clustered"
@@ -3800,6 +4125,9 @@
       "indusium_presence": [
         "present"
       ],
+      "frond_gloss": [
+        "glossy"
+      ],
       "pinna_margin": [
         "serrate"
       ],
@@ -3834,13 +4162,32 @@
       "altitudinal_belt": [
         "broad_range"
       ],
+      "frond_base_narrowing": [
+        "clearly_narrowed"
+      ],
       "indusium_attachment": [
         "central"
+      ],
+      "pinnule_spine_tip": [
+        "present"
       ],
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {
+      "frond_texture": [
+        "leathery"
+      ],
+      "frond_gloss": [
+        "glossy"
+      ],
+      "frond_base_narrowing": [
+        "clearly_narrowed"
+      ]
+    },
+    "habitat_de": "Schattige Wälder und felsige, humusreiche Schluchten, oft in feuchten Berglagen.",
+    "habitat_en": "Shady woodland and rocky, humus-rich ravines, often in damp upland situations."
   },
   {
     "id": "TX0086",
@@ -3849,8 +4196,8 @@
     "family": "Dryopteridaceae",
     "rank": "species",
     "status": "draft",
-    "description_de": "",
-    "description_en": "",
+    "description_de": "Brauns Schildfarn hat im Vergleich zu anderen Schildfarnen auffallend weiche, dünne und meist nicht überwinternde Wedel. Stiel, Haupt- und Fiederspindeln sind dicht bis mäßig mit hellbraunen Spreuschuppen besetzt. Die unteren Fiedern werden auffällig kürzer; die kleinen Fiederchen tragen feine Grannen an den Zähnen.",
+    "description_en": "Braun’s holly fern has strikingly soft, thin fronds that usually do not persist through winter. The stipe, main rachis and pinna axes carry pale-brown scales, often rather conspicuously. The lowest pinnae become notably shorter, while the small pinnules have fine bristles at their tooth tips.",
     "values": {
       "growth_form": [
         "clustered"
@@ -3865,7 +4212,7 @@
         "monomorphic"
       ],
       "frond_overwintering": [
-        "evergreen"
+        "summergreen"
       ],
       "frond_outline": [
         "oblong"
@@ -3926,13 +4273,29 @@
       "altitudinal_belt": [
         "montane_subalpine"
       ],
+      "frond_base_narrowing": [
+        "clearly_narrowed"
+      ],
       "indusium_attachment": [
         "central"
       ],
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {
+      "frond_texture": [
+        "soft_herbaceous"
+      ],
+      "scales_presence": [
+        "moderate"
+      ],
+      "frond_base_narrowing": [
+        "clearly_narrowed"
+      ]
+    },
+    "habitat_de": "Kühle, luftfeuchte und schattige Berg- und Schluchtwälder, eher auf kalkarmen Böden.",
+    "habitat_en": "Cool, humid, shaded mountain and ravine forests, generally on lime-poor soil."
   },
   {
     "id": "TX0087",
@@ -4019,7 +4382,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0088",
@@ -4101,7 +4467,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0089",
@@ -4110,8 +4479,8 @@
     "family": "Dryopteridaceae",
     "rank": "species",
     "status": "draft",
-    "description_de": "",
-    "description_en": "",
+    "description_de": "Der Gewöhnliche Wurmfarn ist ein kräftiger Farn mit trichterartig gebüschelten, meist weich bis mäßig derben Wedeln. Die länglich-lanzettliche Spreite wird zum Grund allmählich schmaler. Ihre Fiederchen sind meist stumpf und überwiegend ohne ausgeprägte lange Stachelspitzen. Rundliche Sori stehen auf der Unterseite, meist mit nierenförmigem Schleier; am Blattstiel finden sich braune Spreuschuppen.",
+    "description_en": "Male fern is a robust species with tufted, often funnel-like fronds of soft to moderately firm texture. The elongated lanceolate blade gradually narrows towards the base. Its pinnules are usually blunt and mostly lack prominent long spine tips. Rounded sori beneath the blade generally have kidney-shaped indusia, while brown scales occur on the stipe.",
     "values": {
       "growth_form": [
         "clustered"
@@ -4248,16 +4617,32 @@
       "sori_opening_behavior": [
         "normally_opening"
       ],
+      "frond_base_narrowing": [
+        "clearly_narrowed"
+      ],
       "indusium_attachment": [
         "lateral"
       ],
       "sorus_width_class": [
         "large_gt_0_7mm"
       ],
+      "pinnule_spine_tip": [
+        "absent"
+      ],
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {
+      "frond_base_narrowing": [
+        "clearly_narrowed"
+      ],
+      "pinnule_spine_tip": [
+        "absent"
+      ]
+    },
+    "habitat_de": "Frische, schattige Wälder, Schluchten und steinige Gebüschbereiche; in vielen Höhenlagen.",
+    "habitat_en": "Fresh, shaded woods, ravines and stony scrub habitats over a wide altitudinal range."
   },
   {
     "id": "TX0090",
@@ -4266,8 +4651,8 @@
     "family": "Dryopteridaceae",
     "rank": "species",
     "status": "draft",
-    "description_de": "",
-    "description_en": "",
+    "description_de": "Der Spreuschuppige Wurmfarn-Komplex umfasst kräftige Arten mit überwinternden, meist derben Wedeln. Blattstiel und Blattspindel sind besonders dicht mit glänzend braunen Spreuschuppen bedeckt. Am Ansatz größerer Fiedern ist die Spindelunterseite häufig violett bis schwarz gefärbt. Die Fiederchen sind seitlich oft weniger gezähnt als beim Gewöhnlichen Wurmfarn; einzelne Sippen des Komplexes unterscheiden sich in weiteren Feinmerkmalen.",
+    "description_en": "The Dryopteris affinis complex includes robust ferns with usually persistent, firm fronds. Stipes and rachises are conspicuously clad in glossy brown scales. The underside near the base of larger pinnae is often violet to black. Pinnule sides are frequently less toothed than those of male fern; the different taxa within the complex require additional fine characters for separation.",
     "values": {
       "growth_form": [
         "clustered"
@@ -4346,7 +4731,20 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {
+      "frond_overwintering": [
+        "evergreen"
+      ],
+      "frond_texture": [
+        "firm"
+      ],
+      "scales_presence": [
+        "dense"
+      ]
+    },
+    "habitat_de": "Frische bis feuchte, häufig bodensaure Wälder und Waldränder, vorwiegend in niederen und mittleren Berglagen.",
+    "habitat_en": "Fresh to damp, often acidic woodland and forest margins, mainly at low to middle mountain elevations."
   },
   {
     "id": "TX0091",
@@ -4425,7 +4823,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0092",
@@ -4504,7 +4905,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0093",
@@ -4583,7 +4987,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0094",
@@ -4662,7 +5069,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0095",
@@ -4747,7 +5157,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0096",
@@ -4756,8 +5169,8 @@
     "family": "Dryopteridaceae",
     "rank": "species",
     "status": "draft",
-    "description_de": "",
-    "description_en": "",
+    "description_de": "Der Entferntfiedrige Wurmfarn ähnelt in seiner feinen Fiederung den Dornfarnen. Ein wichtiges Kennzeichen ist die am Grund violettschwarze Fiederspindel frischer Wedel; diese Färbung ist an getrocknetem Material oft nicht mehr sichtbar. Die schmallanzettliche Spreite trägt asymmetrische Fiedern und kurze spitze Zähne an den Fiederchen. Die Art ist selten und wächst meist an luftfeuchten Waldstandorten.",
+    "description_en": "The rare buckler-fern Dryopteris remota resembles other finely divided wood ferns. A key feature is the violet-black colour at the base of the pinna axes in fresh fronds; this colour may disappear on drying. The narrow lanceolate blade has asymmetric pinnae and short pointed teeth on its pinnules. It usually occurs in humid woodland habitats.",
     "values": {
       "growth_form": [
         "clustered"
@@ -4839,7 +5252,14 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {
+      "pinna_base_symmetry": [
+        "strongly_asymmetrical"
+      ]
+    },
+    "habitat_de": "Kühle, schattige, luftfeuchte und bodenfeuchte Wälder, häufig an geschützten Hanglagen.",
+    "habitat_en": "Cool, shady woodland with humid air and moist soil, often on sheltered slopes."
   },
   {
     "id": "TX0097",
@@ -4848,8 +5268,8 @@
     "family": "Dryopteridaceae",
     "rank": "species",
     "status": "draft",
-    "description_de": "",
-    "description_en": "",
+    "description_de": "Der Kleine Dornfarn besitzt lang gestielte, meist hellgrüne Wedel mit schmal dreieckiger bis länglicher Spreite. Die Spreite ist zwei- bis dreifach gefiedert. Vor allem an den Fiederchen fallen deutlich verlängerte Stachelspitzen auf. Im Unterschied zum Breitblättrigen Dornfarn sind die Spreuschuppen gewöhnlich spärlich und einheitlich blassbraun; die unteren Fiederchen stehen häufig deutlich ungleich.",
+    "description_en": "Narrow buckler-fern has relatively long-stalked, usually light-green fronds with a narrowly triangular to elongated blade. The blade is divided two or three times. The pinnule teeth often end in pronounced, extended spine tips. Unlike broad buckler-fern, its scales are usually sparse and uniformly pale brown; the lowest pinnules are often distinctly uneven.",
     "values": {
       "growth_form": [
         "clustered"
@@ -4941,7 +5361,20 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {
+      "frond_outline": [
+        "linear_lanceolate"
+      ],
+      "pinnule_spine_tip": [
+        "long"
+      ],
+      "scale_color_pattern": [
+        "uniform_pale"
+      ]
+    },
+    "habitat_de": "Feuchte bis frische, meist saure Wälder, Bruchwälder und Moorränder.",
+    "habitat_en": "Damp to fresh, usually acidic woodland, carr forests and margins of mires."
   },
   {
     "id": "TX0098",
@@ -4950,8 +5383,8 @@
     "family": "Dryopteridaceae",
     "rank": "species",
     "status": "draft",
-    "description_de": "",
-    "description_en": "",
+    "description_de": "Der Breitblättrige Dornfarn bildet eher kräftige, dunkelgrüne, oft etwas lederige Wedel mit breiter dreieckiger Spreite. Die untersten Fiedern sind deutlich ungleichseitig entwickelt; die Fiederchen tragen Stachelspitzen. Besonders auffällig sind die zahlreichen zweifarbigen Spreuschuppen mit dunklem Mittelstreifen und hellerem Rand, deren Muster einen guten Unterschied zum Kleinen Dornfarn liefert.",
+    "description_en": "Broad buckler-fern produces comparatively robust, dark-green, often rather leathery fronds with a broad triangular blade. The lowest pinnae are strongly unequal in development, and the pinnules bear spine-tipped teeth. Numerous two-coloured scales with a dark central stripe and paler margins are especially conspicuous and help separate it from narrow buckler-fern.",
     "values": {
       "growth_form": [
         "clustered"
@@ -4971,6 +5404,9 @@
       "frond_division_degree": [
         "tripinnate",
         "quadripinnate"
+      ],
+      "frond_texture": [
+        "leathery"
       ],
       "pinna_base_symmetry": [
         "strongly_asymmetrical"
@@ -5046,7 +5482,20 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {
+      "frond_outline": [
+        "broadly_triangular"
+      ],
+      "scales_presence": [
+        "dense"
+      ],
+      "scale_color_pattern": [
+        "dark_central_stripe"
+      ]
+    },
+    "habitat_de": "Schattige, eher frische bis feuchte Wälder, Felsblöcke und humusreiche Standorte, meist auf saurem Boden.",
+    "habitat_en": "Shaded, fresh to damp woodland, boulders and humus-rich sites, usually on acidic soil."
   },
   {
     "id": "TX0099",
@@ -5055,8 +5504,8 @@
     "family": "Dryopteridaceae",
     "rank": "species",
     "status": "draft",
-    "description_de": "",
-    "description_en": "",
+    "description_de": "Der Alpen-Dornfarn besitzt meist hellgrüne, zarte, im Winter absterbende Wedel mit breiter, mehrfach geteilter Spreite. Die unteren Fiedern sind besonders ungleichseitig entwickelt, und die nach unten gerichteten Fiederchen können deutlich länger sein als die gegenüberliegenden. Spreuschuppen sind häufig zweifarbig, mit dunklem Mittelbereich, der nicht immer bis zur Spitze reicht. Die Pflanze ist vor allem in kühleren Berglagen zu finden.",
+    "description_en": "Northern buckler-fern usually has light-green, relatively delicate fronds that die back in winter, with a broad and finely divided blade. The basal pinnae are markedly unequal; downward-pointing pinnules can be substantially longer than those opposite them. The scales are often two-coloured, with a dark centre that may not extend to the tip. It is especially characteristic of cool upland habitats.",
     "values": {
       "growth_form": [
         "clustered"
@@ -5097,6 +5546,9 @@
       ],
       "indusium_presence": [
         "present"
+      ],
+      "frond_color": [
+        "pale_green"
       ],
       "pinna_apex": [
         "mucronate"
@@ -5151,7 +5603,20 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {
+      "frond_overwintering": [
+        "summergreen"
+      ],
+      "pinna_base_symmetry": [
+        "strongly_asymmetrical"
+      ],
+      "frond_color": [
+        "pale_green"
+      ]
+    },
+    "habitat_de": "Kühle, feuchte Berg- und Hochstaudenwälder, Blockhalden und schattige felsige Stellen.",
+    "habitat_en": "Cool, damp mountain woodland, tall-herb stands, block scree and shaded rocky sites."
   },
   {
     "id": "TX0101",
@@ -5160,8 +5625,8 @@
     "family": "Polypodiaceae",
     "rank": "species",
     "status": "draft",
-    "description_de": "",
-    "description_en": "",
+    "description_de": "Der Gewöhnliche Tüpfelfarn hat ledrige, überwinternde und einzeln aus einem kriechenden Rhizom entspringende Wedel. Die schmale Spreite ist tief in seitliche, meist stumpf endende Abschnitte gegliedert. Auf der Unterseite entstehen zwei Reihen auffallend runder Sori ohne Schleier. Das Rhizom besitzt einen süßlichen Geschmack; als Bestimmungsmerkmal ist das Probieren wildwachsender Pflanzen jedoch nicht zu empfehlen.",
+    "description_en": "Common polypody has firm, evergreen fronds borne separately along a creeping rhizome. Its slender blade is deeply divided into lateral segments with mostly blunt tips. Two rows of conspicuously round, indusium-free sori occur beneath the blade. The rhizome is traditionally described as sweet-tasting, but tasting wild plants is not recommended as an identification method.",
     "values": {
       "growth_form": [
         "creeping_mat"
@@ -5233,7 +5698,17 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {
+      "frond_outline": [
+        "lanceolate"
+      ],
+      "sorus_shape": [
+        "round"
+      ]
+    },
+    "habitat_de": "Felsblöcke, moosige Felsen, Baumstämme und lichte steinige Wälder, oft auf eher saurem Untergrund.",
+    "habitat_en": "Boulders, moss-covered rocks, tree trunks and open stony woodland, often on relatively acidic substrates."
   },
   {
     "id": "TX0102",
@@ -5242,8 +5717,8 @@
     "family": "Polypodiaceae",
     "rank": "species",
     "status": "draft",
-    "description_de": "",
-    "description_en": "",
+    "description_de": "Der Mittlere Tüpfelfarn ähnelt dem Gewöhnlichen Tüpfelfarn, besitzt aber meist eine verhältnismäßig breitere, eiförmig-lanzettliche Spreite und öfter deutlich zugespitzte, gezähnte Abschnitte. Die Sori sind häufig länglich-oval statt kreisrund; für eine sichere Trennung können Merkmale der Sporangien und Sporen nötig sein. Seine Wedel erscheinen häufig erst gegen Ende des Sommers.",
+    "description_en": "Intermediate polypody resembles common polypody but generally has a relatively broader, ovate-lanceolate blade and more distinctly pointed, toothed segments. Its sori are often oval rather than circular; reliable separation may require microscopic characters of the sporangia and spores. New fronds frequently emerge late in summer.",
     "values": {
       "growth_form": [
         "creeping_mat"
@@ -5261,7 +5736,7 @@
         "evergreen"
       ],
       "frond_outline": [
-        "lanceolate"
+        "ovate"
       ],
       "frond_division_degree": [
         "once_pinnate"
@@ -5276,10 +5751,13 @@
         "on_veins"
       ],
       "sorus_shape": [
-        "round"
+        "elongate"
       ],
       "indusium_presence": [
         "absent"
+      ],
+      "pinna_apex": [
+        "acute"
       ],
       "scales_distribution": [
         "rhizome_only"
@@ -5315,7 +5793,17 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {
+      "frond_outline": [
+        "ovate"
+      ],
+      "sorus_shape": [
+        "elongate"
+      ]
+    },
+    "habitat_de": "Moosige Felsen, alte Mauern und schattige Gesteinsstellen, besonders in milderen Lagen.",
+    "habitat_en": "Mossy rocks, old walls and shady stony sites, particularly in milder regions."
   },
   {
     "id": "TX0108",
@@ -5382,7 +5870,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0110",
@@ -5445,7 +5936,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0116",
@@ -5466,7 +5960,10 @@
       "ophi_fertile_segment_form": [
         "two_ranked_spike"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0117",
@@ -5490,7 +5987,10 @@
       "ophi_sterile_segment_outline": [
         "fan_shaped"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0118",
@@ -5511,7 +6011,10 @@
       "ophi_fertile_segment_form": [
         "branched_cluster"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0119",
@@ -5532,7 +6035,10 @@
       "ophi_fertile_segment_form": [
         "branched_cluster"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0120",
@@ -5553,7 +6059,10 @@
       "ophi_fertile_segment_form": [
         "branched_cluster"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0121",
@@ -5574,7 +6083,10 @@
       "ophi_fertile_segment_form": [
         "branched_cluster"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0122",
@@ -5604,7 +6116,10 @@
       "sporangia_placement": [
         "strobilus"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0123",
@@ -5637,7 +6152,10 @@
       "sporangia_placement": [
         "strobilus"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0124",
@@ -5658,7 +6176,10 @@
       "sporangia_placement": [
         "strobilus"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0125",
@@ -5691,7 +6212,10 @@
       "sporangia_placement": [
         "strobilus"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0126",
@@ -5712,7 +6236,10 @@
       "sporangia_placement": [
         "strobilus"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0127",
@@ -5733,7 +6260,10 @@
       "sporangia_placement": [
         "strobilus"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0128",
@@ -5754,7 +6284,10 @@
       "sporangia_placement": [
         "strobilus"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0129",
@@ -5775,7 +6308,10 @@
       "sporangia_placement": [
         "strobilus"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0130",
@@ -5796,7 +6332,10 @@
       "sporangia_placement": [
         "strobilus"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0131",
@@ -5817,7 +6356,10 @@
       "sporangia_placement": [
         "strobilus"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0132",
@@ -5838,7 +6380,10 @@
       "ophi_fertile_segment_form": [
         "branched_cluster"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0133",
@@ -5859,7 +6404,10 @@
       "sporangia_placement": [
         "strobilus"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0134",
@@ -5880,7 +6428,10 @@
       "sporangia_placement": [
         "strobilus"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0135",
@@ -5901,7 +6452,10 @@
       "sporangia_placement": [
         "strobilus"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0136",
@@ -5922,7 +6476,10 @@
       "sporangia_placement": [
         "strobilus"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0148",
@@ -5937,7 +6494,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0149",
@@ -5952,7 +6512,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0151",
@@ -5967,7 +6530,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0155",
@@ -5982,7 +6548,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0156",
@@ -5991,13 +6560,32 @@
     "family": "Aspleniaceae",
     "rank": "species",
     "status": "draft",
-    "description_de": "",
-    "description_en": "",
+    "description_de": "Dieser kleinwüchsige Streifenfarn besitzt schmale, einfach gefiederte Wedel. Entlang einer dunkel rotbraunen bis nahezu schwarzen Blattspindel sitzen zahlreiche rundliche bis ovale Fiedern, die zum oberen Ende immer kleiner werden. Die Sporangien befinden sich in länglichen Gruppen auf der Unterseite. Die Art ist vielgestaltig; die Unterarten unterscheiden sich unter anderem in Spindelfarbe, Beschuppung und Standort.",
+    "description_en": "This small spleenwort bears slender, once-pinnate fronds. Numerous rounded to oval pinnae sit along a dark reddish-brown to nearly black rachis and gradually decrease in size towards the tip. Elongated groups of sporangia occur beneath the pinnae. The species is variable; subspecies differ in rachis colour, scales and habitat.",
     "values": {
+      "frond_division_degree": [
+        "once_pinnate"
+      ],
+      "rachis_color": [
+        "red_brown"
+      ],
+      "pinna_shape": [
+        "ovate"
+      ],
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {
+      "frond_division_degree": [
+        "once_pinnate"
+      ],
+      "rachis_color": [
+        "red_brown"
+      ]
+    },
+    "habitat_de": "Fels- und Mauerspalten sowie steinige Wälder; je nach Unterart auf unterschiedlichen Gesteinen.",
+    "habitat_en": "Rock and wall crevices and stony woodland; the preferred rock type varies among subspecies."
   },
   {
     "id": "TX0157",
@@ -6012,7 +6600,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0158",
@@ -6027,7 +6618,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0159",
@@ -6042,7 +6636,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0160",
@@ -6057,7 +6654,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0161",
@@ -6072,7 +6672,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0162",
@@ -6087,7 +6690,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0163",
@@ -6102,7 +6708,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0164",
@@ -6117,7 +6726,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0165",
@@ -6132,7 +6744,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0166",
@@ -6147,7 +6762,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0167",
@@ -6162,7 +6780,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0168",
@@ -6177,7 +6798,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0169",
@@ -6192,7 +6816,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0170",
@@ -6207,7 +6834,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0171",
@@ -6222,7 +6852,10 @@
       "plant_architecture": [
         "ophioglossoid"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0172",
@@ -6237,7 +6870,10 @@
       "plant_architecture": [
         "ophioglossoid"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0173",
@@ -6252,7 +6888,10 @@
       "plant_architecture": [
         "ophioglossoid"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0174",
@@ -6267,7 +6906,10 @@
       "plant_architecture": [
         "ophioglossoid"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0175",
@@ -6282,7 +6924,10 @@
       "plant_architecture": [
         "ophioglossoid"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0176",
@@ -6297,7 +6942,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0177",
@@ -6312,7 +6960,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0178",
@@ -6330,7 +6981,10 @@
       "leaf_type": [
         "microphyll"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0179",
@@ -6348,7 +7002,10 @@
       "leaf_type": [
         "microphyll"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0180",
@@ -6366,7 +7023,10 @@
       "leaf_type": [
         "microphyll"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0181",
@@ -6384,7 +7044,10 @@
       "leaf_type": [
         "microphyll"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0182",
@@ -6402,7 +7065,10 @@
       "leaf_type": [
         "microphyll"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0183",
@@ -6420,7 +7086,10 @@
       "leaf_type": [
         "microphyll"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0184",
@@ -6435,7 +7104,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0185",
@@ -6450,7 +7122,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0186",
@@ -6465,7 +7140,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0187",
@@ -6480,7 +7158,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0188",
@@ -6495,7 +7176,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0189",
@@ -6510,7 +7194,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0190",
@@ -6531,7 +7218,10 @@
       "sporangia_placement": [
         "strobilus"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0191",
@@ -6552,7 +7242,10 @@
       "sporangia_placement": [
         "strobilus"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0192",
@@ -6573,7 +7266,10 @@
       "sporangia_placement": [
         "strobilus"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0193",
@@ -6591,7 +7287,10 @@
       "leaf_type": [
         "microphyll"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0194",
@@ -6609,7 +7308,10 @@
       "leaf_type": [
         "microphyll"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0195",
@@ -6627,7 +7329,10 @@
       "leaf_type": [
         "microphyll"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0196",
@@ -6645,7 +7350,10 @@
       "leaf_type": [
         "microphyll"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0197",
@@ -6660,7 +7368,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0198",
@@ -6675,7 +7386,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0199",
@@ -6690,7 +7404,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0200",
@@ -6705,7 +7422,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0201",
@@ -6720,7 +7440,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0203",
@@ -6735,7 +7458,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0204",
@@ -6750,7 +7476,10 @@
       "plant_architecture": [
         "ophioglossoid"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0205",
@@ -6768,7 +7497,10 @@
       "leaf_type": [
         "microphyll"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0206",
@@ -6786,7 +7518,10 @@
       "leaf_type": [
         "microphyll"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0207",
@@ -6804,7 +7539,10 @@
       "leaf_type": [
         "microphyll"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0208",
@@ -6819,7 +7557,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0209",
@@ -6849,7 +7590,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0210",
@@ -6882,7 +7626,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0211",
@@ -6912,7 +7659,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0212",
@@ -6942,7 +7692,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0213",
@@ -6957,7 +7710,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0214",
@@ -6997,7 +7753,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0215",
@@ -7012,7 +7771,10 @@
       "plant_architecture": [
         "ophioglossoid"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0216",
@@ -7042,7 +7804,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0217",
@@ -7072,7 +7837,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0218",
@@ -7090,7 +7858,10 @@
       "leaf_type": [
         "microphyll"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0219",
@@ -7129,7 +7900,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0220",
@@ -7168,7 +7942,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0221",
@@ -7201,7 +7978,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0222",
@@ -7235,7 +8015,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0223",
@@ -7274,7 +8057,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0224",
@@ -7289,7 +8075,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0225",
@@ -7310,7 +8099,10 @@
       "sporangia_placement": [
         "strobilus"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0226",
@@ -7331,7 +8123,10 @@
       "sporangia_placement": [
         "strobilus"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0227",
@@ -7352,7 +8147,10 @@
       "sporangia_placement": [
         "strobilus"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0228",
@@ -7373,7 +8171,10 @@
       "sporangia_placement": [
         "strobilus"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0229",
@@ -7394,7 +8195,10 @@
       "sporangia_placement": [
         "strobilus"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0230",
@@ -7415,7 +8219,10 @@
       "sporangia_placement": [
         "strobilus"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0231",
@@ -7436,7 +8243,10 @@
       "sporangia_placement": [
         "strobilus"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0232",
@@ -7454,7 +8264,10 @@
       "leaf_type": [
         "microphyll"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0233",
@@ -7472,7 +8285,10 @@
       "leaf_type": [
         "microphyll"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0234",
@@ -7487,7 +8303,10 @@
       "plant_architecture": [
         "ophioglossoid"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0235",
@@ -7520,7 +8339,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0236",
@@ -7535,7 +8357,10 @@
       "plant_architecture": [
         "leafy_fern"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   },
   {
     "id": "TX0237",
@@ -7553,6 +8378,9 @@
       "leaf_type": [
         "microphyll"
       ]
-    }
+    },
+    "diagnostic_values": {},
+    "habitat_de": "",
+    "habitat_en": ""
   }
 ]

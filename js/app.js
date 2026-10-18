@@ -4,8 +4,8 @@ const dataVersionMatch = String(metadata.source_file || '').match(/(?:^|[_-])v(\
 const dataVersion = dataVersionMatch ? `V${dataVersionMatch[1]}` : (metadata.source_file || 'unbekannt');
 function renderVersionInfo(){
  const english = document.getElementById('language')?.value === 'en';
- document.getElementById('program-version').textContent = `${english ? 'App version' : 'Programmversion'}: V15`;
- document.getElementById('data-version').textContent = `${english ? 'Excel data version' : 'Excel-Datenbasis'}: ${dataVersion}`;
+ document.getElementById('program-version').textContent = `${english ? 'App version' : 'Programmversion'}: V17`;
+ document.getElementById('data-version').textContent = `${english ? 'Excel data version' : 'Excel-Datenbasis'}: ${metadata.base_excel_version || dataVersion} · ${metadata.editorial_revision || 'V17'}`;
 }
 renderVersionInfo();
 document.getElementById('language')?.addEventListener('change', renderVersionInfo);
@@ -143,7 +143,33 @@ function photoHtml(name){const p=PHOTO_TEST[name];if(!p)return '';
  return `<figure class="photo-example"><img loading="lazy" src="${escape(src)}" alt="${escape(name)}"><figcaption><strong>${escape(t('photoExample'))}</strong> · <i>${escape(name)}</i><br>${escape(p.credit)} · <a href="${escape(target)}" target="_blank" rel="noopener noreferrer">${escape(original)}</a> · <a href="${license}" target="_blank" rel="noopener noreferrer">${escape(p.license)}</a><br><span class="muted">${escape(changed)}</span></figcaption></figure>`;
 }
 function photoThumbHtml(name){const p=PHOTO_TEST[name];if(!p)return ''; const src='assets/photos/'+encodeURIComponent(p.file); return `<img class="taxon-thumb" loading="lazy" src="${escape(src)}" alt="${escape(name)}">`; }
-function detail(taxon){$('detail-name').textContent=taxon.name;const common=taxon.german_name?`<p>${state.lang==='de'?escape(taxon.german_name):`${escape(t('commonName'))}: ${escape(taxon.german_name)}`}</p>`:'';const detailValues=Object.entries(taxon.values).map(([code,vals])=>{const tr=byCode[code];if(!tr)return '';return `<div><small>${escape(txt(tr,'label'))}</small>${escape(vals.map(v=>txt(tr.states.find(s=>s.code===v)||{label_de:v,label_en:v},'label')).join(' · '))}</div>`}).join('');$('detail-body').innerHTML=`${photoHtml(taxon.name)}${common}<p>${escape(t('family'))}: ${escape(taxon.family||'–')}</p><p class="muted">${escape(t('notReviewed'))}</p><div class="detail-grid">${detailValues||escape(t('notAvailable'))}</div>`;$('details').showModal();}
+function detail(taxon){
+ $('detail-name').textContent=taxon.name;
+ const common=taxon.german_name?`<p>${state.lang==='de'?escape(taxon.german_name):`${escape(t('commonName'))}: ${escape(taxon.german_name)}`}</p>`:'';
+ const description=txt(taxon,'description');
+ const habitat=txt(taxon,'habitat');
+ const section=(title,body)=>body?`<section class="taxon-detail-section"><h3>${escape(title)}</h3><p>${escape(body)}</p></section>`:'';
+ const diagnostic=taxon.diagnostic_values||{};
+ const diagnosticItems=Object.entries(diagnostic).flatMap(([code,vals])=>{
+  const tr=byCode[code];if(!tr)return [];
+  return vals.map(v=>`<li><span>${escape(txt(tr,'label'))}:</span> <strong>${escape(txt(tr.states.find(s=>s.code===v)||{label_de:v,label_en:v},'label'))}</strong></li>`);
+ }).join('');
+ const diagnosticHtml=diagnosticItems?`<section class="taxon-detail-section taxon-diagnostic"><h3>${state.lang==='en'?'Distinctive characters':'Besonders wichtige Merkmale'}</h3><ul>${diagnosticItems}</ul></section>`:'';
+ const detailValues=Object.entries(taxon.values).map(([code,vals])=>{
+  const tr=byCode[code];if(!tr)return '';
+  const marked=new Set(diagnostic[code]||[]);
+  const valueHtml=vals.map(v=>{
+   const label=escape(txt(tr.states.find(s=>s.code===v)||{label_de:v,label_en:v},'label'));
+   return marked.has(v)?`<strong class="diagnostic-value">${label}</strong>`:label;
+  }).join(' · ');
+  return `<div><small>${escape(txt(tr,'label'))}</small>${valueHtml}</div>`;
+ }).join('');
+ $('detail-body').innerHTML=`${photoHtml(taxon.name)}${common}<p>${escape(t('family'))}: ${escape(taxon.family||'–')}</p>`+
+ section(state.lang==='en'?'Description':'Beschreibung',description)+
+ section(state.lang==='en'?'Habitat':'Standort',habitat)+
+ diagnosticHtml+`<p class="muted">${escape(t('notReviewed'))}</p><div class="detail-grid">${detailValues||escape(t('notAvailable'))}</div>`;
+ $('details').showModal();
+}
 function render(){localizeStatic();renderCatalog();const items=candidates();const filtered=items.filter(x=>(x.taxon.name+' '+(x.taxon.german_name||'')).toLocaleLowerCase().includes(state.query.toLocaleLowerCase()));$('count').textContent=items.length;$('summary').textContent='';const suggestion=recommendation(items);$('suggestion').innerHTML=suggestion?`<div class="suggestion-label">${escape(t('suggest'))}</div><div class="suggestion-main"><strong>${escape(txt(suggestion,'label'))}</strong><button id="suggest-button">${escape(t('add'))}</button></div>`:'';$('suggestion').hidden=!suggestion;if(suggestion)$('suggest-button').onclick=()=>add(suggestion.code);$('list').replaceChildren();for(const x of filtered){const taxon=x.taxon,btn=document.createElement('button');btn.className='taxon'+(selected().length&&x.match.unknown>0?' taxon-uncertain':'');if(selected().length&&x.match.unknown>0)btn.title=state.lang==='de'?'Möglicher Treffer: für einige ausgewählte Merkmale liegen noch keine Angaben vor.':'Possible match: some selected characters have no recorded values.';const sub=state.lang==='de'?(taxon.german_name||taxon.family):(taxon.family||'');btn.innerHTML=`${PHOTO_TEST[taxon.name]?`<div class="taxon-image-wrap">${photoThumbHtml(taxon.name)}</div>`:''}<div class="taxon-heading"><strong>${escape(taxon.name)}</strong>${PHOTO_TEST[taxon.name]?`<span class="photo-hint" title="${escape(t('photoExample'))}" aria-label="${escape(t('photoExample'))}">&#128247;</span>`:''}</div><small>${escape(sub)}</small><div class="tags"><span class="tag">${escape(taxon.family)}</span></div>`;btn.onclick=()=>detail(taxon);$('list').append(btn);}if(!filtered.length)$('list').innerHTML=`<p class="muted">${escape(t('none'))}</p>`;}
 $('language').onchange=e=>{state.lang=e.target.value==='en'?'en':'de';try{localStorage.setItem('floraooe-language',state.lang)}catch{}render();};
 document.querySelectorAll('#trait-level button').forEach(btn=>btn.onclick=()=>{state.traitLevel=btn.dataset.level;render();});
