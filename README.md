@@ -1,83 +1,133 @@
-# FloraOOE Farnschlüssel – GitHub-Pages-Testversion V14
+# FloraOOE Farnschlüssel
 
-**Status:** Veröffentlichungsvorbereitung, nicht fachlich oder rechtlich freigegeben (16.10.2026).
+**Öffentliche Testversion: Programm V15 · Excel-Datenbasis V23** (Stand: 18.10.2026)
 
-Statischer, zweisprachiger Multi-Access-Bestimmungsschlüssel für österreichische Gefäßsporenpflanzen. Die Daten wurden aus der wissenschaftlichen Excel-Version V23 exportiert (173 Bestimmungstaxa, 67 Merkmale). Die Matrix ist noch in Bearbeitung; die Bestimmungsergebnisse sind keine gesicherten Artbestimmungen.
+[**Farnschlüssel öffnen (GitHub Pages)**](https://sylviahagmueller.github.io/FloraOOEFarnschluessel/)
 
-## Bereitstellung
+Interaktiver, zweisprachiger **Multi-Access-Bestimmungsschlüssel** für Gefäßsporenpflanzen Österreichs. Merkmale können in beliebiger Reihenfolge kombiniert werden; unbekannte Merkmale können übersprungen werden. Die Kandidatenliste wird dynamisch gefiltert.
 
-Die Dateien dieses Archivs sind für das **Repository-Hauptverzeichnis** vorgesehen (`index.html` direkt im Root). Nach abgeschlossener Freigabe kann GitHub Pages mit Branch `main` und Ordner `/ (root)` aktiviert werden. Bis dahin **nicht öffentlich hochladen**.
+> **Wissenschaftlicher Prototyp / Testversion:** Die botanische Merkmalsmatrix ist noch nicht abschließend geprüft. Bestimmungsergebnisse sind Hilfestellungen, keine verifizierten Artbestimmungen. Die öffentliche Erreichbarkeit bedeutet keine abgeschlossene fachliche oder rechtliche Freigabe durch die ARGE Botanik.
 
-## Offene Prüfungen vor Veröffentlichung
+## Aktueller Stand
 
-- [x] Drei Commons-Testfotos als lokale, verkleinerte JPG-Dateien eingebunden; Urheber, Originalseiten, Lizenz und Änderungen in `BILDNACHWEISE.md` und bei den Artendetails angegeben. Vor endgültiger Veröffentlichung Sichtprüfung empfohlen.
-- [x] Google-Fonts-Verbindungen aus `index.html` entfernt und CSS auf Systemschriften umgestellt (Arial/Helvetica, für Überschriften vorzugsweise Arial Narrow). Visuelle Browserprüfung steht noch aus.
-- [ ] Illustrationen botanisch prüfen und Nutzungsrechte/Urheberschaft klären.
-- [x] Projektzuordnung und Namensnennung von Dr. Hans-Peter Reinthaler und Dr. Sylvia Hagmüller zweisprachig im Footer ergänzt.
-- [ ] Offizielles Impressum und Verantwortlichkeit prüfen; ARGE-Impressum ist verlinkt, aber ersetzt nicht automatisch alle Pflichtangaben.
-- [ ] `datenschutz.html` (derzeit ausdrücklich **Entwurf**) fachlich/rechtlich prüfen und vor Freigabe finalisieren; Verantwortlichkeit und GitHub-Pages-Hosting bestätigen.
-- [ ] Testversionshinweis, Mobilansicht, Navigation, Tastatur, Sprachwechsel, Datenabrufe testen.
-- [ ] Wissenschaftlichen `draft`-Status in der Außenkommunikation deutlich machen.
+- **Programm:** V15 (am 18.10.2026 als öffentliche Testversion über GitHub Pages bereitgestellt).
+- **Datenbasis:** Excel V23, nach JSON exportiert: **173 Bestimmungstaxa**, **67 Merkmale**. Der Export meldet 0 formale Validierungsprobleme, aber die fachliche Prüfung steht weiterhin aus.
+- **Sprachen:** Deutsch / Englisch für die Benutzeroberfläche.
+- **Hosting:** GitHub Pages aus **`main` / `(root)`**.
+- **Testbranch:** `test/v14-mit-versionsanzeige` (enthält inzwischen ebenfalls V15; Branchname historisch).
+- **Daten-Masterdatei:** `farn_schluessel_v23_ausgangsbasis.xlsx` im **privaten** Repository [FloraOOEFarnschluessel-Daten](https://github.com/Sylviahagmueller/FloraOOEFarnschluessel-Daten). Nicht in das öffentliche Repository kopieren.
+- **Website:** eigener Link „Über das Projekt“; Versionsanzeige im Footer.
 
-## Struktur
+## Funktionsweise
 
-- `index.html` – Einstieg mit Testversionshinweis
-- `css/main.css` – Styles (Systemschriften, keine Google-Fonts-Abfragen)
-- `js/app.js` – App-Logik, Sprache, lokale Testbilder
-- `data/*.json` – exportierte Daten und Metadaten
-- `assets/drawings/` – schematische Illustrationen
-- `assets/photos/` – drei lokale Testfotos
-- `BILDNACHWEISE.md` – Fotoquellen und CC-Lizenzen
+- Merkmalsauswahl in den Stufen **Einfach / Erweitert / Experte** (Standard: Einfach).
+- Häufig verwendete Merkmale zuerst; weitere Merkmale nach botanischen Themen gruppiert und aufklappbar.
+- Zustände eines Merkmals über Checkboxen auswählbar; mehrere Zustände desselben Merkmals werden mit **ODER**, verschiedene Merkmale mit **UND** kombiniert.
+- Fehlende Taxonwerte führen nicht automatisch zum Ausschluss; die Anzeige unterscheidet passende und unsichere Kandidaten.
+- Zeichnungen und einzelne lokale Testfotos unterstützen die Bestimmung.
+- Die Programmversion ist fest hinterlegt; die angezeigte Excel-Datenversion wird aus `data/metadata.json` abgeleitet.
 
-Die **Excel-Masterdatei**, Exportskripte, Prüfsummen und andere Sicherungsdateien sind bewusst nicht enthalten. Die JSON-Daten sind allerdings Teil einer öffentlichen Website und nach Upload öffentlich zugänglich.
+## Repositories und Datenfluss
 
-## Lokaler Test
+| Repository | Zweck | Sichtbarkeit |
+| --- | --- | --- |
+| [FloraOOEFarnschluessel](https://github.com/Sylviahagmueller/FloraOOEFarnschluessel) | Statische Webanwendung, exportierte JSON-Dateien, Bilder | Öffentlich |
+| [FloraOOEFarnschluessel-Daten](https://github.com/Sylviahagmueller/FloraOOEFarnschluessel-Daten) | Wissenschaftliche Excel-Masterdatei V23 | Privat |
 
-Im entpackten Verzeichnis `python -m http.server 8000` starten und `http://localhost:8000/` öffnen. Wegen `fetch()` nicht über `file://` testen.
+Geplanter Arbeitsfluss: **Excel-Masterdatei → Validierung und JSON-Export → Testbranch → Browserprüfung → Freigabe für `main` → GitHub Pages**.
 
-## Späterer Umzug
+Der JSON-Export und die Excel-Verwaltung erfolgen derzeit noch nicht automatisiert über GitHub. **JSON-Dateien im öffentlichen Repository sind öffentlich einsehbar**, auch wenn die Excel-Datei selbst privat bleibt.
 
-Relative Pfade ermöglichen die Übertragung in ein Museums-Repository. Für den Umzug müssen noch öffentliche Seitenadressen sowie rechtliche Hinweise angepasst werden.
+## Projektstruktur
 
-## Namensnennung
+```text
+/
+├── index.html                  Hauptseite
+├── projekt.html                Projektinformation (DE / EN)
+├── datenschutz.html            Datenschutzhinweise (Entwurf)
+├── bildnachweise.html          Bildnachweise
+├── README.md
+├── BILDNACHWEISE.md
+├── DATENSCHUTZ_ENTWURF.md
+├── css/
+│   └── main.css
+├── js/
+│   └── app.js
+├── data/
+│   ├── metadata.json
+│   ├── taxa.json
+│   ├── traits.json
+│   ├── distribution.json
+│   ├── regions.json
+│   └── validation.json
+└── assets/
+    ├── drawings/
+    └── photos/
+```
 
-Idee und fachliche Betreuung: **Dr. Hans-Peter Reinthaler**. Konzeption und technische Umsetzung: **Dr. Sylvia Hagmüller**. Ein Projekt der **ARGE Botanik Oberösterreich**.
+Kein eigener Anwendungsserver und keine Datenbank erforderlich; die Website lädt ihre JSON-Dateien im Browser. Das Verzeichnis `assets/photos/` enthält derzeit drei lokal gespeicherte Commons-Testfotos.
 
-## Rechtliche HTML-Seiten
+## Lokale Prüfung
 
-`datenschutz.html` und `bildnachweise.html` sind im Footer direkt verlinkt. Der Datenschutztext ist **nur ein Entwurf**, keine rechtliche Freigabe. Ausschließlich die offizielle ARGE-Webseite dient als Kontaktstelle.
+Im Verzeichnis mit der `index.html` einen lokalen HTTP-Server starten:
 
+```bash
+python -m http.server 8000
+```
 
-## V13 – Merkmalsauswahl (Prüfversion)
+Danach [http://localhost:8000/](http://localhost:8000/) öffnen. Nicht direkt per `file://` starten, da die Anwendung die JSON-Daten mit `fetch()` lädt.
 
-- Die Combobox bietet **Einfach** (Standard), **Erweitert** und **Experte**.
-- Botanische Kategorien gruppieren die Merkmale innerhalb der Auswahl.
-- Auswahl beschränkt nur neu hinzufügbare Merkmale und Merkmalvorschläge; aktive Filter bleiben beim Umschalten bestehen.
-- „Alles zurücksetzen“ stellt wieder „Einfach“ und die neun bisherigen Startmerkmale her.
-- Zuordnung der Schwierigkeitsstufen ist eine vorläufige UI-Redaktion, fachliche Prüfung folgt.
-- Excel, JSON, Taxonliste und Kandidatenlogik bleiben unverändert.
+Vor jeder Freigabe zumindest Startseite, Merkmalsfilter, Kandidatenliste, Sprachwechsel, Bilder, Info-Dialoge, Mobilansicht, Versionsanzeige und Linkseiten prüfen.
 
+## Entwicklungsplan / TODO
 
-## V14 – Merkmalsauswahl (17.10.2026)
+**Die nachfolgenden Versionen sind Arbeitstitel, keine zugesagten Releases. Änderungen nur nach ausdrücklicher Zustimmung und zunächst auf einem Testbranch.**
 
-- Sichtbare Reiter **Einfach / Erweitert / Experte**, Standard Einfach.
-- Die neun bisherigen Startmerkmale stehen unter **Häufig verwendete Merkmale**.
-- Übrige Merkmale sind nach Themen gruppiert und direkt aufklappbar. Merkmalswerte sind als Checkboxen innerhalb der Liste wählbar; Info-Zeichnungen bleiben verfügbar.
-- Bereits gesetzte Werte bleiben beim Stufenwechsel erhalten, auch wenn das Merkmal ansonsten nicht in dieser Stufe vorkommt.
-- Keine Änderung an `data/`, der taxonomischen Anzeige oder der Kandidatenklassifikation.
-- Browserdarstellung und Bestimmungsfälle fachlich prüfen, bevor die Testversion öffentlich wird.
+### Nächste Funktionen
 
+- [ ] **V16 – Taxon-Anzeigefilter:** Ansichten „nur Gattungen“, „Arten ohne Unterarten“ (Standard) und „alle Taxa einschließlich Unterarten“. Taxonomische Grenzfälle (z. B. Aggregate und Unterarten) vor Umsetzung anhand der Datenstruktur festlegen. Die Filterung der morphologischen Merkmale und der Taxon-Anzeigefilter sollen getrennt bleiben.
+- [ ] **V17 – Relevante Merkmalsausprägungen:** In der Excel-Merkmalsmatrix besonders relevante Zustände mit **`#!`** markieren. Maßgeblich ist die **Fettdruck-Hervorhebung der Österreichischen Exkursionsflora**, nicht eine eigenständige Neubewertung. Beim JSON-Export Kennzeichen **vom eigentlichen Merkmalscode trennen**; anschließend eine geeignete dezente Darstellung im Schlüssel prüfen.
+- [ ] **V18 – Bestimmungsunterstützung:** Vorschlag für das nächstgeeignete Merkmal überprüfen und weiterentwickeln. Die genaue Ausgestaltung folgt nach der V16/V17-Prüfung.
 
-## V14 – Versionsanzeige (lokale Ergänzung)
+### Botanische Inhalte und Benutzerfreundlichkeit
 
-- Footer zeigt die Programmversion V14 und die Excel-Datenversion aus `data/metadata.json` (derzeit V23).
-- Beschriftungen passen sich an Deutsch/Englisch an.
-- Keine Änderung der Excel-Datei, JSON-Daten oder Bestimmungs- und Filterlogik.
-- Keine GitHub-Veröffentlichung.
+- [ ] Taxa, Merkmalsmatrix und schwierige Gruppen fachlich validieren; Quellen vor allem Österreichische Exkursionsflora, Blumen in Schwaben, Info Flora und Flora NHM Wien.
+- [ ] Besonders bei ähnlichen Arten und Unterarten diagnostische Merkmalskombinationen mit echten Bestimmungsfällen überprüfen.
+- [ ] Für weitere Merkmalsausprägungen fachlich korrekte schematische Zeichnungen und kurze verständliche Erklärungen ergänzen; englische Erläuterungen systematisch vervollständigen.
+- [ ] Schwierigkeitseinstufung Einfach / Erweitert / Experte botanisch überprüfen.
+- [ ] Zusätzliche rechtssicher dokumentierte Artfotos prüfen.
+- [ ] Langfristig weitere Pflanzengruppen und ggf. KI-Unterstützung für das Ausfüllen von Merkmalen evaluieren; **nicht** Teil des aktuellen Releases.
 
-## V15 – Schlanker Footer und Projektseite (18.10.2026)
+### Veröffentlichung, Qualität und Recht
 
-- Die Projektvorstellung und Namensnennungen wurden von der Hauptseite auf `projekt.html` verschoben.
-- Der Footer enthält nur noch die Links zu Projekt, ARGE, Impressum, Datenschutz, Bildnachweisen und Metadaten sowie die Versionsanzeige.
-- Programmversion V15; Excel-Datenbasis V23 unverändert.
-- Änderungen ausschließlich im Testbranch; Browserprüfung ausständig.
+- [x] GitHub-Pages-Testversion V15 veröffentlicht und visuell im Browser überprüft (18.10.2026).
+- [x] Drei Commons-Testfotos lokal eingebunden; Quellen und Lizenzen dokumentiert.
+- [x] Externe Google Fonts entfernt; Systemschriften verwendet.
+- [x] Projektvorstellung auf eigene Seite `projekt.html` ausgelagert.
+- [ ] Gezielte Tests auf Smartphone, Tastaturbedienung, Navigation und in beiden Sprachen vervollständigen.
+- [ ] Botanische Korrektheit der Illustrationen prüfen; Herkunft und Verwendungsrechte der generierten Zeichnungen dokumentieren.
+- [ ] Verantwortlichkeit, Impressum und Hosting-Angaben vor einer offiziellen Freigabe klären.
+- [ ] `datenschutz.html` ist weiterhin als **Entwurf** gekennzeichnet; rechtliche Finalisierung steht aus.
+- [ ] Vor einer offiziellen Verlinkung durch die ARGE Botanik eine abgestimmte fachliche und rechtliche Freigabe einholen.
+- [ ] Eventuellen späteren Umzug auf einen offiziellen Museums-/Institutions-GitHub-Account planen; relative Projektpfade erleichtern dies.
+
+## Versionshistorie
+
+| Version | Datum | Änderungen |
+| --- | --- | --- |
+| **V15** | 18.10.2026 | Projektvorstellung in `projekt.html` ausgelagert, Footer verschlankt; Programm V15 / Daten V23; Veröffentlichung als öffentliche GitHub-Pages-Testversion |
+| **V14** | 17.–18.10.2026 | Aufklappbare, thematisch gegliederte Merkmale; Reiter Einfach / Erweitert / Experte; zweisprachige Versionsanzeige |
+| **V13** | 17.10.2026 | Einführung der gestuften, thematisch gruppierten Merkmalsauswahl |
+
+## Projekt und Bildnachweise
+
+Ein Projekt der **Botanischen Arbeitsgemeinschaft Oberösterreich (ARGE Botanik)**.
+
+- **Idee und fachliche Betreuung:** Dr. Hans-Peter Reinthaler
+- **Konzeption und technische Umsetzung:** Dr. Sylvia Hagmüller
+- [ARGE Botanik](https://www.argebotanik-ooe.at/)
+- [Impressum der ARGE](https://www.argebotanik-ooe.at/about/) (Verantwortlichkeit für diese eigenständige Testwebsite noch zu klären)
+- [Bildnachweise](bildnachweise.html) und [Quellendokumentation](BILDNACHWEISE.md)
+- [Datenschutzhinweise – Entwurf](datenschutz.html)
+
+**Stand der README:** 18.10.2026. Die README dokumentiert den aktuellen veröffentlichten Zustand und geplante Arbeiten; offene Punkte sind keine bereits implementierten Funktionen.
