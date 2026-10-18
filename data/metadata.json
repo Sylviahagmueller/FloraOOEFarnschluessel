@@ -1,10 +1,15 @@
 {
-  "source_file": "farn_schluessel_v23_ausgangsbasis.xlsx",
+  "source_file": "farn_schluessel_v17_erstentwurf_28_taxa.xlsx",
   "taxa_count": 173,
   "trait_count": 67,
   "primary_count": 11,
   "issues_count": 0,
   "botanical_review": "pending",
   "region_count": 0,
-  "distribution_count": 0
+  "distribution_count": 0,
+  "base_excel_version": "V23",
+  "editorial_revision": "V17",
+  "described_taxa_count": 28,
+  "diagnostic_taxa_count": 28,
+  "diagnostic_state_count": 71
 }
