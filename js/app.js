@@ -1,11 +1,17 @@
-const [traits,taxa,metadata,genera]=await Promise.all(['data/traits.json','data/taxa.json','data/metadata.json','data/genera.json'].map(x=>fetch(x).then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}: ${x}`);return r.json()})));
+const keyId = location.pathname.match(/\/(farne|viola)\/?$/i)?.[1]?.toLowerCase() || 'farne';
+const keyConfig = await fetch('config/' + keyId + '.json').then(r => {
+ if (!r.ok) throw new Error('Konfiguration nicht gefunden: ' + keyId);
+ return r.json();
+});
+const dataDir = keyConfig.data_directory || 'data';
+const [traits,taxa,metadata,genera]=await Promise.all(['traits.json','taxa.json','metadata.json','genera.json'].map(f => dataDir + '/' + f).map(x=>fetch(x).then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}: ${x}`);return r.json()})));
 const generaByName=Object.fromEntries(genera.map(g=>[g.genus_name,g]));
 // Versionsinformationen: Programmstand fix, Datenstand aus exportierten Metadaten.
 const dataVersionMatch = String(metadata.source_file || '').match(/(?:^|[_-])v(\d+(?:\.\d+)?)(?=[_.-]|$)/i);
 const dataVersion = dataVersionMatch ? `V${dataVersionMatch[1]}` : (metadata.source_file || 'unbekannt');
 function renderVersionInfo(){
  const english = document.getElementById('language')?.value === 'en';
- document.getElementById('program-version').textContent = `${english ? 'App version' : 'Programmversion'}: V19`;
+ document.getElementById('program-version').textContent = `${english ? 'App version' : 'Programmversion'}: V20`;
  document.getElementById('data-version').textContent = `${english ? 'Excel data version' : 'Excel-Datenbasis'}: ${metadata.base_excel_version || dataVersion} · ${metadata.editorial_revision || 'V17'}`;
 }
 renderVersionInfo();
@@ -15,6 +21,14 @@ const I18N={
  de:{eyebrow:'FLORAOOE · GEFÄSSSPORENPFLANZEN ÖSTERREICHS',headline:'Farne bestimmen',subtitle:'Merkmale frei kombinieren. Unbekanntes einfach überspringen.',language:'Sprache',reset:'Alles zurücksetzen',notice:'TESTVERSION – Fachlicher Prototyp – botanische Matrix noch nicht abschließend geprüft. Ergebnisse sind Bestimmungshilfen, keine sichere Artbestimmung.',characters:'Merkmale',filterIntro:'Wähle ein Merkmal und einen oder mehrere passende Zustände. Weitere Merkmale kannst du jederzeit hinzufügen.',traitLevel:'Merkmalsumfang',levelSimple:'Einfach',levelExtended:'Erweitert',levelExpert:'Experte',groupStructure:'Grundbauplan und Wuchsform',groupFrond:'Wedel und Fiedern',groupSori:'Sori und Fortpflanzung',groupSurface:'Oberfläche und besondere Merkmale',groupEcology:'Standort',groupSpecial:'Spezialmerkmale',characterPicker:'Merkmalsauswahl',frequent:'Häufig verwendete Merkmale',moreCharacter:'Weiteres Merkmal',add:'Hinzufügen',howFiltering:'Wie wird gefiltert?',filterHelp:'Verschiedene Merkmale werden mit UND kombiniert, mehrere Zustände innerhalb eines Merkmals mit ODER. Unbekannte Taxonwerte bleiben als mögliche Treffer erhalten.',identification:'BESTIMMUNG',possibleTaxa:'mögliche Taxa',searchLabel:'Taxa suchen',searchPlaceholder:'Wissenschaftlicher oder deutscher Name',close:'Schließen',footer:'FloraOOE Farnschlüssel · Daten aus Excel exportiert',projectTitle:'Über das Projekt',projectOrg:'Ein Projekt der Botanischen Arbeitsgemeinschaft Oberösterreich (ARGE Botanik).',projectIdea:'Idee und fachliche Betreuung: Dr. Hans-Peter Reinthaler',projectTech:'Konzeption und technische Umsetzung: Dr. Sylvia Hagmüller',projectWebsite:'ARGE Botanik',imprint:'Impressum der ARGE',privacyDraft:'Datenschutzhinweise (Entwurf)',credits:'Bildnachweise',metadata:'Datensatzinformationen',selectCharacter:'Merkmal auswählen …',active:'aktiv',expand:'Merkmal aufklappen',collapse:'Merkmal zuklappen',suggest:'Nächstes nützliches Merkmal:',chooseAny:'',info:'Erklärung und Zeichnung',exampleDrawing:'Schematische Zeichnung (nicht maßstabsgetreu)',noDrawing:'Für diese Ausprägung ist noch keine Zeichnung vorhanden.',photoExample:'Testfoto',photoOnline:'Lokal gespeicherte, verkleinerte Bildfassung.',photoSource:'Bildquelle und Lizenz',unknown:'unbekannt',unknownSummary:'davon mit unbekannten Werten bei ausgewählten Merkmalen',dataset:'Taxa im Datensatz',none:'Keine passenden Taxa.',notReviewed:'Die Angaben stammen aus einer noch nicht abschließend fachlich geprüften Matrix.',family:'Familie',commonName:'Deutscher Name',unnamed:'Kein deutscher Name hinterlegt',notAvailable:'Keine Angaben verfügbar'},
  en:{eyebrow:'FLORAOOE · VASCULAR SPORE PLANTS OF AUSTRIA',headline:'Identify ferns',subtitle:'Combine characters freely. Simply skip anything you cannot assess.',language:'Language',reset:'Reset all',notice:'TEST VERSION – Scientific prototype – the botanical matrix has not yet been fully reviewed. Results are identification aids, not confirmed identifications.',characters:'Characters',filterIntro:'Choose a character and one or more applicable states. You can add further characters at any time.',traitLevel:'Character detail',levelSimple:'Simple',levelExtended:'Extended',levelExpert:'Expert',groupStructure:'Plant structure and growth',groupFrond:'Fronds and pinnae',groupSori:'Sori and reproduction',groupSurface:'Surface and distinctive characters',groupEcology:'Habitat',groupSpecial:'Specialised characters',characterPicker:'Character selection',frequent:'Frequently used characters',moreCharacter:'Additional character',add:'Add',howFiltering:'How does filtering work?',filterHelp:'Different characters are combined with AND; multiple states of one character are combined with OR. Taxa with unknown values remain possible matches.',identification:'IDENTIFICATION',possibleTaxa:'possible taxa',searchLabel:'Search taxa',searchPlaceholder:'Scientific name or German common name',close:'Close',footer:'FloraOOE fern key · Data exported from Excel',projectTitle:'About the project',projectOrg:'A project of the Botanical Working Group of Upper Austria (ARGE Botanik).',projectIdea:'Concept idea and scientific supervision: Dr. Hans-Peter Reinthaler',projectTech:'Design and technical implementation: Dr. Sylvia Hagmüller',projectWebsite:'ARGE Botanik',imprint:'ARGE imprint (German)',privacyDraft:'Privacy information (draft, German)',credits:'Image credits (German)',metadata:'Dataset information',selectCharacter:'Select a character …',active:'active',expand:'Expand character',collapse:'Collapse character',suggest:'Suggested next character:',chooseAny:'',info:'Explanation and illustration',exampleDrawing:'Schematic drawing (not to scale)',noDrawing:'No drawing is available for this state yet.',photoExample:'Example photograph',photoOnline:'Locally stored, reduced-size image.',photoSource:'Image source and licence',unknown:'unknown',unknownSummary:'with unknown values among selected characters',dataset:'taxa in dataset',none:'No matching taxa.',notReviewed:'Botanical character data have not yet been fully reviewed.',family:'Family',commonName:'German common name',unnamed:'No German common name available',notAvailable:'No information available'}
 };
+for (const language of ['de','en']) {
+ const suffix = '_' + language;
+ for (const field of ['headline','subtitle','eyebrow']) {
+  const configField = field === 'headline' ? 'title' + suffix : field + suffix;
+  if (keyConfig[configField]) I18N[language][field] = keyConfig[configField];
+ }
+}
+document.getElementById('plant-group')?.addEventListener('change', e => { location.href = e.target.value === 'farne' ? './farne/' : './viola/'; });
 const byCode=Object.fromEntries(traits.map(t=>[t.code,t]));
 let savedLang='de';try{savedLang=localStorage.getItem('floraooe-language')||'de'}catch{}
 const state={lang:savedLang==='en'?'en':'de',filters:{},collapsed:new Set(),query:'',traitLevel:'simple',catalogOpen:new Set()};
@@ -61,35 +75,13 @@ function recommendation(items){
  }
  return best?.trait;
 }
-function localizeStatic(){document.documentElement.lang=state.lang;document.title=state.lang==='de'?'FloraOOE – Farnschlüssel':'FloraOOE – Fern identification key';$('language').value=state.lang;for(const el of document.querySelectorAll('[data-i18n]'))el.textContent=t(el.dataset.i18n);const search=$('search');if(search)search.placeholder='';}
+function localizeStatic(){document.documentElement.lang=state.lang;document.title=keyConfig['page_title_'+state.lang] || keyConfig['title_'+state.lang] || 'FloraOOE';$('language').value=state.lang;for(const el of document.querySelectorAll('[data-i18n]'))el.textContent=t(el.dataset.i18n);const search=$('search');if(search)search.placeholder='';}
 // UI-only classification: neither the source matrix nor candidate filtering is modified.
-const SIMPLE_CODES=new Set([
- 'plant_architecture','land_water_group','leaf_type','sporangia_placement',
- 'frond_arrangement','frond_outline','frond_base_narrowing','frond_division_degree',
- 'frond_dimorphism','sorus_position','sorus_shape','habitat_main_refined',
- 'frond_color','pinna_shape','growth_form'
-]);
-const EXTENDED_CODES=new Set([
- ...SIMPLE_CODES,'ophi_sterile_lamina_shape','ophi_fertile_segment_form',
- 'ophi_sterile_segment_outline','eq_fertile_shoot_separation','eq_branching',
- 'eq_sheath_teeth','eq_strobilus_apex','fertile_frond_special_form',
- 'frond_gloss','frond_translucent','pinna_margin','pinna_apex',
- 'pinna_arrangement','terminal_segment_form','scales_distribution',
- 'lower_surface_scales_persistent','underside_special_cover','sori_presence',
- 'indusium_shape','margin_rolled_covering_sori','odor_when_crushed',
- 'pinnule_spacing','hairiness','indusium_persistence','stipe_winged',
- 'glands_presence','rachis_color','stipe_color','scale_color_pattern',
- 'rachis_winged','indusium_presence','scales_presence','pinnule_spine_tip',
- 'pinna_base_symmetry','lowest_pinnae_relation','frond_texture',
- 'frond_overwintering','substrate_preference','moisture_preference',
- 'light','altitudinal_belt','carbonate_preference'
-]);
-const SORUS_CODES=new Set(['sporangia_placement','sorus_position','sorus_shape','sori_presence','sori_opening_behavior','indusium_shape','margin_rolled_covering_sori','indusium_attachment','indusium_persistence','indusium_presence','sorus_width_class','spore_ornamentation','eq_strobilus_apex','eq_fertile_shoot_separation','fertile_frond_special_form','frond_dimorphism','ophi_fertile_segment_form']);
-const SURFACE_CODES=new Set(['frond_color','frond_gloss','frond_translucent','scales_distribution','lower_surface_scales_persistent','underside_special_cover','odor_when_crushed','hairiness','glands_presence','stipe_winged','stipe_color','scale_color_pattern','rachis_color','rachis_winged','scales_presence','frond_texture','frond_overwintering']);
-const STRUCTURE_CODES=new Set(['plant_architecture','land_water_group','leaf_type','frond_arrangement','growth_form','rhizome_type','eq_branching','eq_sheath_teeth','eq_central_cavity']);
-const SPECIAL_CODES=new Set(['vein_branching','spore_ornamentation','sori_opening_behavior','nectar_gland_at_lower_pinnae','sorus_width_class','basiscopic_pinnule_length_ratio','eq_branch_first_internode','eq_central_cavity']);
+const SIMPLE_CODES=new Set(keyConfig.simple_traits||[]);
+const EXTENDED_CODES=new Set(keyConfig.extended_traits||keyConfig.simple_traits||[]);
+const GROUP_CODES=Object.fromEntries(Object.entries(keyConfig.group_codes||{}).map(([k,codes])=>[k,new Set(codes)]));
 const GROUP_KEYS=['groupStructure','groupFrond','groupSori','groupSurface','groupEcology','groupSpecial'];
-function groupOf(tr){const c=tr.code;if(tr.role==='ecology')return 'groupEcology';if(SPECIAL_CODES.has(c))return 'groupSpecial';if(SORUS_CODES.has(c))return 'groupSori';if(SURFACE_CODES.has(c))return 'groupSurface';if(STRUCTURE_CODES.has(c))return 'groupStructure';return 'groupFrond';}
+function groupOf(tr){const c=tr.code;if(tr.role==='ecology')return 'groupEcology';if(GROUP_CODES.special?.has(c))return 'groupSpecial';if(GROUP_CODES.sori?.has(c))return 'groupSori';if(GROUP_CODES.surface?.has(c))return 'groupSurface';if(GROUP_CODES.structure?.has(c))return 'groupStructure';return 'groupFrond';}
 function inLevel(tr){return state.traitLevel==='expert'||(state.traitLevel==='extended'?EXTENDED_CODES:SIMPLE_CODES).has(tr.code);}
 // V14: all choices live inside the catalogue; the scientific data and matching are unchanged.
 function add(code){if(!code||!byCode[code])return;if(!(code in state.filters))state.filters[code]=new Set();state.catalogOpen.add(code);render();}
@@ -138,28 +130,7 @@ function renderCatalog(){
  const active=Object.values(state.filters).filter(set=>set.size).length;
  $('filter-count').textContent=`${active} ${t('active')}`;
 }
-const DRAWINGS={
-  "frond_division_degree:entire": "assets/drawings/v19_entire.svg",
-  "frond_division_degree:lobed": "assets/drawings/v19_lobed.svg",
-  "frond_division_degree:pinnatifid": "assets/drawings/v19_pinnatifid.svg",
-  "frond_division_degree:once_pinnate": "assets/drawings/v19_once_pinnate.svg",
-  "frond_division_degree:bipinnate": "assets/drawings/v19_bipinnate.svg",
-  "frond_division_degree:tripinnate": "assets/drawings/v19_tripinnate.svg",
-  "frond_division_degree:quadripinnate": "assets/drawings/v19_quadripinnate.svg",
-  "frond_division_degree:irregularly_divided": "assets/drawings/v19_irregularly_divided.svg",
-  "frond_division_degree:once_pinnate_with_pinnatifid_segments": "assets/drawings/v19_once_pinnate_with_pinnatifid_segments.svg",
-  "leaf_type:reduced": "assets/drawings/v19_leaf_type_reduced.svg",
-  "leaf_type:microphyll": "assets/drawings/v19_leaf_type_microphyll.svg",
-  "leaf_type:narrow_undivided": "assets/drawings/v19_leaf_type_narrow_undivided.svg",
-  "leaf_type:broad_undivided": "assets/drawings/v19_leaf_type_broad_undivided.svg",
-  "leaf_type:divided": "assets/drawings/v19_leaf_type_divided.svg",
-  "sorus_shape:round": "assets/drawings/sori_round.svg",
-  "sorus_shape:hooked": "assets/drawings/sori_hooked.svg",
-  "plant_architecture:leafy_fern": "assets/drawings/architecture_fern.png",
-  "plant_architecture:ophioglossoid": "assets/drawings/architecture_ophiogloss.png",
-  "plant_architecture:jointed_stems": "assets/drawings/architecture_horsetail.png",
-  "plant_architecture:lycophyte": "assets/drawings/architecture_lycophyte.png"
-};
+const DRAWINGS=keyConfig.drawings||{};
 // Illustrations are deliberately schematic, not original floristic book artwork.
 function showStateInfo(tr,option){
  const src=DRAWINGS[`${tr.code}:${option.code}`];
@@ -221,7 +192,7 @@ $('language').onchange=e=>{state.lang=e.target.value==='en'?'en':'de';try{localS
 document.querySelectorAll('#trait-level button').forEach(btn=>btn.onclick=()=>{state.traitLevel=btn.dataset.level;render();});
 $('search').oninput=e=>{state.query=e.target.value;render();};
 // Initial characters are identical after page load and after Reset.
-const DEFAULT_TRAIT_CODES=traits.filter(tr=>tr.role==='primary'&&selectableStates(tr).length).slice(0,9).map(tr=>tr.code);
+const DEFAULT_TRAIT_CODES=traits.filter(tr=>tr.role==='primary'&&selectableStates(tr).length).slice(0,keyConfig.default_trait_count||9).map(tr=>tr.code);
 function resetIdentification(){
  state.filters=Object.fromEntries(DEFAULT_TRAIT_CODES.map(code=>[code,new Set()]));
  state.collapsed.clear();
