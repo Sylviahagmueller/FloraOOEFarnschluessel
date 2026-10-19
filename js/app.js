@@ -174,6 +174,9 @@ function detail(taxon){
  }).join('');
  const diagnosticHtml=diagnosticItems?`<section class="taxon-detail-section taxon-diagnostic"><h3>${state.lang==='en'?'Distinctive characters':'Besonders wichtige Merkmale'}</h3><ul>${diagnosticItems}</ul></section>`:'';
  const detailValues=Object.entries(taxon.values).map(([code,vals])=>{
+  // Hide unknown and inapplicable states in details without changing filter data.
+  vals=(vals||[]).filter(v=>v!=='unknown'&&v!=='not_applicable');
+  if(!vals.length)return '';
   const tr=byCode[code];if(!tr)return '';
   const marked=new Set(diagnostic[code]||[]);
   const valueHtml=vals.map(v=>{
