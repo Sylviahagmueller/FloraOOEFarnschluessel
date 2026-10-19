@@ -1,10 +1,11 @@
 const keyId = location.pathname.match(/\/(farne|viola)\/?$/i)?.[1]?.toLowerCase() || 'farne';
-const keyConfig = await fetch('config/' + keyId + '.json').then(r => {
+const appBase = new URL('./', document.baseURI);
+const keyConfig = await fetch(new URL('config/' + keyId + '.json', appBase)).then(r => {
  if (!r.ok) throw new Error('Konfiguration nicht gefunden: ' + keyId);
  return r.json();
 });
-const dataDir = keyConfig.data_directory || 'data';
-const [traits,taxa,metadata,genera]=await Promise.all(['traits.json','taxa.json','metadata.json','genera.json'].map(f => dataDir + '/' + f).map(x=>fetch(x).then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}: ${x}`);return r.json()})));
+const dataDir = new URL((keyConfig.data_directory || 'data') + '/', appBase);
+const [traits,taxa,metadata,genera]=await Promise.all(['traits.json','taxa.json','metadata.json','genera.json'].map(f => new URL(f, dataDir)).map(x=>fetch(x).then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}: ${x}`);return r.json()})));
 const generaByName=Object.fromEntries(genera.map(g=>[g.genus_name,g]));
 // Versionsinformationen: Programmstand fix, Datenstand aus exportierten Metadaten.
 const dataVersionMatch = String(metadata.source_file || '').match(/(?:^|[_-])v(\d+(?:\.\d+)?)(?=[_.-]|$)/i);
@@ -28,7 +29,7 @@ for (const language of ['de','en']) {
   if (keyConfig[configField]) I18N[language][field] = keyConfig[configField];
  }
 }
-document.getElementById('plant-group')?.addEventListener('change', e => { location.href = e.target.value === 'farne' ? './farne/' : './viola/'; });
+document.getElementById('plant-group')?.addEventListener('change', e => { location.href = new URL(e.target.value === 'farne' ? 'farne/' : 'viola/', appBase).href; });
 const byCode=Object.fromEntries(traits.map(t=>[t.code,t]));
 let savedLang='de';try{savedLang=localStorage.getItem('floraooe-language')||'de'}catch{}
 const state={lang:savedLang==='en'?'en':'de',filters:{},collapsed:new Set(),query:'',traitLevel:'simple',catalogOpen:new Set()};
@@ -130,7 +131,7 @@ function renderCatalog(){
  const active=Object.values(state.filters).filter(set=>set.size).length;
  $('filter-count').textContent=`${active} ${t('active')}`;
 }
-const DRAWINGS=keyConfig.drawings||{};
+const DRAWINGS=Object.fromEntries(Object.entries(keyConfig.drawings||{}).map(([key,path])=>[key,new URL(path,appBase).href]));
 // Illustrations are deliberately schematic, not original floristic book artwork.
 function showStateInfo(tr,option){
  const src=DRAWINGS[`${tr.code}:${option.code}`];
