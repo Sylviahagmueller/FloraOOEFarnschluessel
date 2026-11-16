@@ -1,0 +1,1143 @@
+[
+  {
+    "code": "life_cycle",
+    "label_de": "Lebensdauer",
+    "label_en": "Life cycle",
+    "description_de": "Definition und Trennschärfe in der Exkursionsflora prüfen.",
+    "description_en": "Definition and diagnostic limits require review.",
+    "role": "primary",
+    "group": "Einfach",
+    "order": 1,
+    "states": [
+      {
+        "code": "annual",
+        "label_de": "einjährig",
+        "label_en": "annual",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "biennial",
+        "label_de": "zweijährig",
+        "label_en": "biennial",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "perennial",
+        "label_de": "ausdauernd",
+        "label_en": "perennial",
+        "explanation_de": "",
+        "explanation_en": ""
+      }
+    ]
+  },
+  {
+    "code": "growth_habit",
+    "label_de": "Wuchsform",
+    "label_en": "Growth habit",
+    "description_de": "Definition und Trennschärfe in der Exkursionsflora prüfen.",
+    "description_en": "Definition and diagnostic limits require review.",
+    "role": "primary",
+    "group": "Einfach",
+    "order": 2,
+    "states": [
+      {
+        "code": "rosette",
+        "label_de": "rosettig",
+        "label_en": "rosette-forming",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "erect",
+        "label_de": "aufrecht",
+        "label_en": "erect",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "ascending",
+        "label_de": "aufsteigend",
+        "label_en": "ascending",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "prostrate",
+        "label_de": "niederliegend",
+        "label_en": "prostrate",
+        "explanation_de": "",
+        "explanation_en": ""
+      }
+    ]
+  },
+  {
+    "code": "leafy_stem",
+    "label_de": "Beblätterter Stängel",
+    "label_en": "Leafy stem",
+    "description_de": "Definition und Trennschärfe in der Exkursionsflora prüfen.",
+    "description_en": "Definition and diagnostic limits require review.",
+    "role": "primary",
+    "group": "Einfach",
+    "order": 3,
+    "states": [
+      {
+        "code": "present",
+        "label_de": "vorhanden",
+        "label_en": "present",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "absent",
+        "label_de": "fehlend",
+        "label_en": "absent",
+        "explanation_de": "",
+        "explanation_en": ""
+      }
+    ]
+  },
+  {
+    "code": "basal_leaves",
+    "label_de": "Grundblätter",
+    "label_en": "Basal leaves",
+    "description_de": "Definition und Trennschärfe in der Exkursionsflora prüfen.",
+    "description_en": "Definition and diagnostic limits require review.",
+    "role": "primary",
+    "group": "Einfach",
+    "order": 4,
+    "states": [
+      {
+        "code": "present",
+        "label_de": "vorhanden",
+        "label_en": "present",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "absent",
+        "label_de": "fehlend",
+        "label_en": "absent",
+        "explanation_de": "",
+        "explanation_en": ""
+      }
+    ]
+  },
+  {
+    "code": "stolons",
+    "label_de": "Ausläufer",
+    "label_en": "Stolons",
+    "description_de": "Definition und Trennschärfe in der Exkursionsflora prüfen.",
+    "description_en": "Definition and diagnostic limits require review.",
+    "role": "primary",
+    "group": "Einfach",
+    "order": 5,
+    "states": [
+      {
+        "code": "present",
+        "label_de": "vorhanden",
+        "label_en": "present",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "absent",
+        "label_de": "fehlend",
+        "label_en": "absent",
+        "explanation_de": "",
+        "explanation_en": ""
+      }
+    ]
+  },
+  {
+    "code": "flower_color",
+    "label_de": "Blütenfarbe",
+    "label_en": "Flower colour",
+    "description_de": "Definition und Trennschärfe in der Exkursionsflora prüfen.",
+    "description_en": "Definition and diagnostic limits require review.",
+    "role": "primary",
+    "group": "Einfach",
+    "order": 6,
+    "states": [
+      {
+        "code": "violet",
+        "label_de": "violett",
+        "label_en": "violet",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "blue",
+        "label_de": "blau",
+        "label_en": "blue",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "white",
+        "label_de": "weiß",
+        "label_en": "white",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "yellow",
+        "label_de": "gelb",
+        "label_en": "yellow",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "multicolored",
+        "label_de": "mehrfarbig",
+        "label_en": "multicoloured",
+        "explanation_de": "",
+        "explanation_en": ""
+      }
+    ]
+  },
+  {
+    "code": "flower_type",
+    "label_de": "Blütentyp",
+    "label_en": "Flower type",
+    "description_de": "Definition und Trennschärfe in der Exkursionsflora prüfen.",
+    "description_en": "Definition and diagnostic limits require review.",
+    "role": "primary",
+    "group": "Einfach",
+    "order": 7,
+    "states": [
+      {
+        "code": "violet_type",
+        "label_de": "Veilchentyp",
+        "label_en": "violet-type",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "pansy_type",
+        "label_de": "Stiefmütterchentyp",
+        "label_en": "pansy-type",
+        "explanation_de": "",
+        "explanation_en": ""
+      }
+    ]
+  },
+  {
+    "code": "flower_size_class",
+    "label_de": "Blütengröße",
+    "label_en": "Flower size class",
+    "description_de": "Definition und Trennschärfe in der Exkursionsflora prüfen.",
+    "description_en": "Definition and diagnostic limits require review.",
+    "role": "primary",
+    "group": "Einfach",
+    "order": 8,
+    "states": [
+      {
+        "code": "small",
+        "label_de": "klein",
+        "label_en": "small",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "medium",
+        "label_de": "mittel",
+        "label_en": "medium",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "large",
+        "label_de": "groß",
+        "label_en": "large",
+        "explanation_de": "",
+        "explanation_en": ""
+      }
+    ]
+  },
+  {
+    "code": "leaf_shape",
+    "label_de": "Blattspreitenform",
+    "label_en": "Leaf blade shape",
+    "description_de": "Definition und Trennschärfe in der Exkursionsflora prüfen.",
+    "description_en": "Definition and diagnostic limits require review.",
+    "role": "primary",
+    "group": "Einfach",
+    "order": 9,
+    "states": [
+      {
+        "code": "reniform",
+        "label_de": "nierenförmig",
+        "label_en": "kidney-shaped",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "orbicular",
+        "label_de": "rundlich",
+        "label_en": "round",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "ovate",
+        "label_de": "eiförmig",
+        "label_en": "ovate",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "lanceolate",
+        "label_de": "lanzettlich",
+        "label_en": "lanceolate",
+        "explanation_de": "",
+        "explanation_en": ""
+      }
+    ]
+  },
+  {
+    "code": "leaf_base",
+    "label_de": "Blattgrund",
+    "label_en": "Leaf base",
+    "description_de": "Definition und Trennschärfe in der Exkursionsflora prüfen.",
+    "description_en": "Definition and diagnostic limits require review.",
+    "role": "primary",
+    "group": "Einfach",
+    "order": 10,
+    "states": [
+      {
+        "code": "cordate",
+        "label_de": "herzförmig",
+        "label_en": "heart-shaped",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "truncate",
+        "label_de": "gestutzt",
+        "label_en": "truncate",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "cuneate",
+        "label_de": "keilförmig",
+        "label_en": "wedge-shaped",
+        "explanation_de": "",
+        "explanation_en": ""
+      }
+    ]
+  },
+  {
+    "code": "leaf_division",
+    "label_de": "Blattteilung",
+    "label_en": "Leaf division",
+    "description_de": "Definition und Trennschärfe in der Exkursionsflora prüfen.",
+    "description_en": "Definition and diagnostic limits require review.",
+    "role": "primary",
+    "group": "Einfach",
+    "order": 11,
+    "states": [
+      {
+        "code": "undivided",
+        "label_de": "ungeteilt",
+        "label_en": "undivided",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "pinnatifid",
+        "label_de": "fiederspaltig",
+        "label_en": "pinnatifid",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "pinnatisect",
+        "label_de": "fiederschnittig",
+        "label_en": "pinnatisect",
+        "explanation_de": "",
+        "explanation_en": ""
+      }
+    ]
+  },
+  {
+    "code": "flower_scent",
+    "label_de": "Blütenduft",
+    "label_en": "Flower scent",
+    "description_de": "Definition und Trennschärfe in der Exkursionsflora prüfen.",
+    "description_en": "Definition and diagnostic limits require review.",
+    "role": "primary",
+    "group": "Einfach",
+    "order": 12,
+    "states": [
+      {
+        "code": "strong",
+        "label_de": "deutlich",
+        "label_en": "strong",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "weak",
+        "label_de": "schwach",
+        "label_en": "weak",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "absent",
+        "label_de": "fehlend",
+        "label_en": "absent",
+        "explanation_de": "",
+        "explanation_en": ""
+      }
+    ]
+  },
+  {
+    "code": "stolon_type",
+    "label_de": "Ausläufertyp",
+    "label_en": "Stolon type",
+    "description_de": "Definition und Trennschärfe in der Exkursionsflora prüfen.",
+    "description_en": "Definition and diagnostic limits require review.",
+    "role": "secondary",
+    "group": "Erweitert",
+    "order": 13,
+    "states": [
+      {
+        "code": "aboveground",
+        "label_de": "oberirdisch",
+        "label_en": "aboveground",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "underground",
+        "label_de": "unterirdisch",
+        "label_en": "underground",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "both",
+        "label_de": "beide",
+        "label_en": "both",
+        "explanation_de": "",
+        "explanation_en": ""
+      }
+    ]
+  },
+  {
+    "code": "leaf_hairiness",
+    "label_de": "Blattbehaarung",
+    "label_en": "Leaf hairiness",
+    "description_de": "Definition und Trennschärfe in der Exkursionsflora prüfen.",
+    "description_en": "Definition and diagnostic limits require review.",
+    "role": "secondary",
+    "group": "Erweitert",
+    "order": 14,
+    "states": [
+      {
+        "code": "glabrous",
+        "label_de": "kahl",
+        "label_en": "glabrous",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "sparse",
+        "label_de": "spärlich",
+        "label_en": "sparse",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "dense",
+        "label_de": "dicht",
+        "label_en": "dense",
+        "explanation_de": "",
+        "explanation_en": ""
+      }
+    ]
+  },
+  {
+    "code": "upper_leaf_hair_position",
+    "label_de": "Behaarung der Blattoberseite",
+    "label_en": "Upper leaf hair distribution",
+    "description_de": "Definition und Trennschärfe in der Exkursionsflora prüfen.",
+    "description_en": "Definition and diagnostic limits require review.",
+    "role": "secondary",
+    "group": "Erweitert",
+    "order": 15,
+    "states": [
+      {
+        "code": "lamina",
+        "label_de": "auf Fläche",
+        "label_en": "blade surface",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "main_veins",
+        "label_de": "auf Hauptnerven",
+        "label_en": "main veins",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "both",
+        "label_de": "beides",
+        "label_en": "both",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "absent",
+        "label_de": "fehlend",
+        "label_en": "absent",
+        "explanation_de": "",
+        "explanation_en": ""
+      }
+    ]
+  },
+  {
+    "code": "leaf_margin",
+    "label_de": "Blattrand",
+    "label_en": "Leaf margin",
+    "description_de": "Definition und Trennschärfe in der Exkursionsflora prüfen.",
+    "description_en": "Definition and diagnostic limits require review.",
+    "role": "secondary",
+    "group": "Erweitert",
+    "order": 16,
+    "states": [
+      {
+        "code": "crenate",
+        "label_de": "gekerbt",
+        "label_en": "crenate",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "serrate",
+        "label_de": "gesägt",
+        "label_en": "serrate",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "coarsely_dentate",
+        "label_de": "grob gezähnt",
+        "label_en": "coarsely toothed",
+        "explanation_de": "",
+        "explanation_en": ""
+      }
+    ]
+  },
+  {
+    "code": "stipule_shape",
+    "label_de": "Nebenblattform",
+    "label_en": "Stipule shape",
+    "description_de": "Definition und Trennschärfe in der Exkursionsflora prüfen.",
+    "description_en": "Definition and diagnostic limits require review.",
+    "role": "secondary",
+    "group": "Erweitert",
+    "order": 17,
+    "states": [
+      {
+        "code": "ovate",
+        "label_de": "eiförmig",
+        "label_en": "ovate",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "lanceolate",
+        "label_de": "lanzettlich",
+        "label_en": "lanceolate",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "linear",
+        "label_de": "linealisch",
+        "label_en": "linear",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "pinnately_divided",
+        "label_de": "fiedrig geteilt",
+        "label_en": "pinnately divided",
+        "explanation_de": "",
+        "explanation_en": ""
+      }
+    ]
+  },
+  {
+    "code": "stipule_fringe_shape",
+    "label_de": "Nebenblattfransen",
+    "label_en": "Stipule fringe shape",
+    "description_de": "Definition und Trennschärfe in der Exkursionsflora prüfen.",
+    "description_en": "Definition and diagnostic limits require review.",
+    "role": "secondary",
+    "group": "Erweitert",
+    "order": 18,
+    "states": [
+      {
+        "code": "absent",
+        "label_de": "fehlend",
+        "label_en": "absent",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "broad",
+        "label_de": "breit",
+        "label_en": "broad",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "narrow",
+        "label_de": "schmal",
+        "label_en": "narrow",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "filiform",
+        "label_de": "fadenförmig",
+        "label_en": "thread-like",
+        "explanation_de": "",
+        "explanation_en": ""
+      }
+    ]
+  },
+  {
+    "code": "stipule_fringe_length",
+    "label_de": "Nebenblattfransenlänge",
+    "label_en": "Stipule fringe length",
+    "description_de": "Definition und Trennschärfe in der Exkursionsflora prüfen.",
+    "description_en": "Definition and diagnostic limits require review.",
+    "role": "secondary",
+    "group": "Erweitert",
+    "order": 19,
+    "states": [
+      {
+        "code": "short",
+        "label_de": "kurz",
+        "label_en": "short",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "medium",
+        "label_de": "mittellang",
+        "label_en": "medium",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "long",
+        "label_de": "lang",
+        "label_en": "long",
+        "explanation_de": "",
+        "explanation_en": ""
+      }
+    ]
+  },
+  {
+    "code": "stipule_size_class",
+    "label_de": "Nebenblattgröße",
+    "label_en": "Stipule size",
+    "description_de": "Definition und Trennschärfe in der Exkursionsflora prüfen.",
+    "description_en": "Definition and diagnostic limits require review.",
+    "role": "secondary",
+    "group": "Erweitert",
+    "order": 20,
+    "states": [
+      {
+        "code": "small",
+        "label_de": "klein",
+        "label_en": "small",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "medium",
+        "label_de": "mittel",
+        "label_en": "medium",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "large",
+        "label_de": "groß",
+        "label_en": "large",
+        "explanation_de": "",
+        "explanation_en": ""
+      }
+    ]
+  },
+  {
+    "code": "spur_color",
+    "label_de": "Spornfarbe",
+    "label_en": "Spur colour",
+    "description_de": "Definition und Trennschärfe in der Exkursionsflora prüfen.",
+    "description_en": "Definition and diagnostic limits require review.",
+    "role": "secondary",
+    "group": "Erweitert",
+    "order": 21,
+    "states": [
+      {
+        "code": "violet",
+        "label_de": "violett",
+        "label_en": "violet",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "blue",
+        "label_de": "blau",
+        "label_en": "blue",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "whitish",
+        "label_de": "weißlich",
+        "label_en": "whitish",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "greenish",
+        "label_de": "grünlich",
+        "label_en": "greenish",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "yellowish",
+        "label_de": "gelblich",
+        "label_en": "yellowish",
+        "explanation_de": "",
+        "explanation_en": ""
+      }
+    ]
+  },
+  {
+    "code": "spur_length_class",
+    "label_de": "Spornlänge",
+    "label_en": "Spur length",
+    "description_de": "Definition und Trennschärfe in der Exkursionsflora prüfen.",
+    "description_en": "Definition and diagnostic limits require review.",
+    "role": "secondary",
+    "group": "Erweitert",
+    "order": 22,
+    "states": [
+      {
+        "code": "short",
+        "label_de": "kurz",
+        "label_en": "short",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "medium",
+        "label_de": "mittellang",
+        "label_en": "medium",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "long",
+        "label_de": "lang",
+        "label_en": "long",
+        "explanation_de": "",
+        "explanation_en": ""
+      }
+    ]
+  },
+  {
+    "code": "spur_shape",
+    "label_de": "Spornform",
+    "label_en": "Spur shape",
+    "description_de": "Definition und Trennschärfe in der Exkursionsflora prüfen.",
+    "description_en": "Definition and diagnostic limits require review.",
+    "role": "secondary",
+    "group": "Erweitert",
+    "order": 23,
+    "states": [
+      {
+        "code": "straight",
+        "label_de": "gerade",
+        "label_en": "straight",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "slightly_curved",
+        "label_de": "leicht gebogen",
+        "label_en": "slightly curved",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "strongly_curved",
+        "label_de": "stark gebogen",
+        "label_en": "strongly curved",
+        "explanation_de": "",
+        "explanation_en": ""
+      }
+    ]
+  },
+  {
+    "code": "sepal_apex",
+    "label_de": "Kelchblattspitze",
+    "label_en": "Sepal apex",
+    "description_de": "Definition und Trennschärfe in der Exkursionsflora prüfen.",
+    "description_en": "Definition and diagnostic limits require review.",
+    "role": "secondary",
+    "group": "Erweitert",
+    "order": 24,
+    "states": [
+      {
+        "code": "acute",
+        "label_de": "spitz",
+        "label_en": "acute",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "obtuse",
+        "label_de": "stumpf",
+        "label_en": "obtuse",
+        "explanation_de": "",
+        "explanation_en": ""
+      }
+    ]
+  },
+  {
+    "code": "sepal_appendage_length",
+    "label_de": "Kelchblattanhängsel-Länge",
+    "label_en": "Sepal appendage length",
+    "description_de": "Definition und Trennschärfe in der Exkursionsflora prüfen.",
+    "description_en": "Definition and diagnostic limits require review.",
+    "role": "secondary",
+    "group": "Erweitert",
+    "order": 25,
+    "states": [
+      {
+        "code": "short",
+        "label_de": "kurz",
+        "label_en": "short",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "medium",
+        "label_de": "mittellang",
+        "label_en": "medium",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "long",
+        "label_de": "lang",
+        "label_en": "long",
+        "explanation_de": "",
+        "explanation_en": ""
+      }
+    ]
+  },
+  {
+    "code": "sepal_appendage_tip",
+    "label_de": "Kelchblattanhängsel-Ende",
+    "label_en": "Sepal appendage tip",
+    "description_de": "Definition und Trennschärfe in der Exkursionsflora prüfen.",
+    "description_en": "Definition and diagnostic limits require review.",
+    "role": "secondary",
+    "group": "Erweitert",
+    "order": 26,
+    "states": [
+      {
+        "code": "entire",
+        "label_de": "ganzrandig",
+        "label_en": "entire",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "notched",
+        "label_de": "ausgerandet",
+        "label_en": "notched",
+        "explanation_de": "",
+        "explanation_en": ""
+      }
+    ]
+  },
+  {
+    "code": "pedicel_bracteoles_position",
+    "label_de": "Vorblätter am Blütenstiel",
+    "label_en": "Bracteole position on pedicel",
+    "description_de": "Definition und Trennschärfe in der Exkursionsflora prüfen.",
+    "description_en": "Definition and diagnostic limits require review.",
+    "role": "secondary",
+    "group": "Erweitert",
+    "order": 27,
+    "states": [
+      {
+        "code": "lower",
+        "label_de": "unterer Bereich",
+        "label_en": "lower",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "middle",
+        "label_de": "mittlerer Bereich",
+        "label_en": "middle",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "upper",
+        "label_de": "oberer Bereich",
+        "label_en": "upper",
+        "explanation_de": "",
+        "explanation_en": ""
+      }
+    ]
+  },
+  {
+    "code": "petiole_hair_distribution",
+    "label_de": "Blattstielbehaarung",
+    "label_en": "Petiole hair distribution",
+    "description_de": "Definition und Trennschärfe in der Exkursionsflora prüfen.",
+    "description_en": "Definition and diagnostic limits require review.",
+    "role": "secondary",
+    "group": "Experte",
+    "order": 28,
+    "states": [
+      {
+        "code": "one_line",
+        "label_de": "einzeilig",
+        "label_en": "in one row",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "multiple_lines",
+        "label_de": "mehrzeilig",
+        "label_en": "in multiple rows",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "scattered",
+        "label_de": "zerstreut",
+        "label_en": "scattered",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "absent",
+        "label_de": "fehlend",
+        "label_en": "absent",
+        "explanation_de": "",
+        "explanation_en": ""
+      }
+    ]
+  },
+  {
+    "code": "nectary_width_class",
+    "label_de": "Nektarienbreite",
+    "label_en": "Nectary width",
+    "description_de": "Definition und Trennschärfe in der Exkursionsflora prüfen.",
+    "description_en": "Definition and diagnostic limits require review.",
+    "role": "secondary",
+    "group": "Experte",
+    "order": 29,
+    "states": [
+      {
+        "code": "narrow",
+        "label_de": "schmal",
+        "label_en": "narrow",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "medium",
+        "label_de": "mittel",
+        "label_en": "medium",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "broad",
+        "label_de": "breit",
+        "label_en": "broad",
+        "explanation_de": "",
+        "explanation_en": ""
+      }
+    ]
+  },
+  {
+    "code": "nectary_curvature",
+    "label_de": "Nektarienkrümmung",
+    "label_en": "Nectary curvature",
+    "description_de": "Definition und Trennschärfe in der Exkursionsflora prüfen.",
+    "description_en": "Definition and diagnostic limits require review.",
+    "role": "secondary",
+    "group": "Experte",
+    "order": 30,
+    "states": [
+      {
+        "code": "straight",
+        "label_de": "gerade",
+        "label_en": "straight",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "weakly_curved",
+        "label_de": "schwach gekrümmt",
+        "label_en": "slightly curved",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "strongly_curved",
+        "label_de": "stark gekrümmt",
+        "label_en": "strongly curved",
+        "explanation_de": "",
+        "explanation_en": ""
+      }
+    ]
+  },
+  {
+    "code": "style_hairiness",
+    "label_de": "Griffelbehaarung",
+    "label_en": "Style hairiness",
+    "description_de": "Definition und Trennschärfe in der Exkursionsflora prüfen.",
+    "description_en": "Definition and diagnostic limits require review.",
+    "role": "secondary",
+    "group": "Experte",
+    "order": 31,
+    "states": [
+      {
+        "code": "glabrous",
+        "label_de": "kahl",
+        "label_en": "glabrous",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "hairy",
+        "label_de": "behaart",
+        "label_en": "hairy",
+        "explanation_de": "",
+        "explanation_en": ""
+      }
+    ]
+  },
+  {
+    "code": "style_stigma_shape",
+    "label_de": "Griffel- und Narbenform",
+    "label_en": "Style and stigma shape",
+    "description_de": "Definition und Trennschärfe in der Exkursionsflora prüfen.",
+    "description_en": "Definition and diagnostic limits require review.",
+    "role": "secondary",
+    "group": "Experte",
+    "order": 32,
+    "states": [
+      {
+        "code": "pending_definition",
+        "label_de": "fachliche Ausprägungen noch zu definieren",
+        "label_en": "states pending botanical definition",
+        "explanation_de": "",
+        "explanation_en": ""
+      }
+    ]
+  },
+  {
+    "code": "capsule_hairiness",
+    "label_de": "Kapselbehaarung",
+    "label_en": "Capsule hairiness",
+    "description_de": "Definition und Trennschärfe in der Exkursionsflora prüfen.",
+    "description_en": "Definition and diagnostic limits require review.",
+    "role": "secondary",
+    "group": "Experte",
+    "order": 33,
+    "states": [
+      {
+        "code": "glabrous",
+        "label_de": "kahl",
+        "label_en": "glabrous",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "hairy",
+        "label_de": "behaart",
+        "label_en": "hairy",
+        "explanation_de": "",
+        "explanation_en": ""
+      }
+    ]
+  },
+  {
+    "code": "capsule_position",
+    "label_de": "Kapselstellung",
+    "label_en": "Capsule position",
+    "description_de": "Definition und Trennschärfe in der Exkursionsflora prüfen.",
+    "description_en": "Definition and diagnostic limits require review.",
+    "role": "secondary",
+    "group": "Experte",
+    "order": 34,
+    "states": [
+      {
+        "code": "erect",
+        "label_de": "aufrecht",
+        "label_en": "erect",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "spreading",
+        "label_de": "abstehend",
+        "label_en": "spreading",
+        "explanation_de": "",
+        "explanation_en": ""
+      },
+      {
+        "code": "prostrate",
+        "label_de": "niederliegend",
+        "label_en": "prostrate",
+        "explanation_de": "",
+        "explanation_en": ""
+      }
+    ]
+  },
+  {
+    "code": "seed_characteristics",
+    "label_de": "Samenmerkmale",
+    "label_en": "Seed characteristics",
+    "description_de": "Definition und Trennschärfe in der Exkursionsflora prüfen.",
+    "description_en": "Definition and diagnostic limits require review.",
+    "role": "secondary",
+    "group": "Experte",
+    "order": 35,
+    "states": [
+      {
+        "code": "pending_definition",
+        "label_de": "fachliche Ausprägungen noch zu definieren",
+        "label_en": "states pending botanical definition",
+        "explanation_de": "",
+        "explanation_en": ""
+      }
+    ]
+  }
+]
