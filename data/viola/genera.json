@@ -1,0 +1,13 @@
+[
+  {
+    "genus_id": "GEN001",
+    "genus_name": "Viola",
+    "german_name": "Veilchen",
+    "description_de": "",
+    "description_en": "",
+    "diagnostic_notes_de": "",
+    "diagnostic_notes_en": "",
+    "source_urls": "https://www.zobodat.at/pdf/STAPFIA_0117_0001-0146.pdf",
+    "review_status": "draft"
+  }
+]

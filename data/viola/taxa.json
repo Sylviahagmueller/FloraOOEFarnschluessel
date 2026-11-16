@@ -1,0 +1,1347 @@
+[
+  {
+    "id": "VI0001",
+    "name": "Viola alba",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "species",
+    "parent_taxon_id": "",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {
+      "life_cycle": [
+        "perennial"
+      ],
+      "leafy_stem": [
+        "absent"
+      ],
+      "basal_leaves": [
+        "present"
+      ],
+      "stolons": [
+        "present"
+      ],
+      "flower_color": [
+        "white",
+        "violet"
+      ],
+      "flower_type": [
+        "violet_type"
+      ],
+      "leaf_shape": [
+        "ovate"
+      ],
+      "leaf_base": [
+        "cordate"
+      ],
+      "flower_scent": [
+        "strong"
+      ],
+      "stolon_type": [
+        "aboveground"
+      ],
+      "stipule_shape": [
+        "linear"
+      ],
+      "stipule_fringe_length": [
+        "long"
+      ],
+      "spur_shape": [
+        "straight"
+      ],
+      "sepal_apex": [
+        "obtuse"
+      ],
+      "nectary_width_class": [
+        "narrow"
+      ],
+      "nectary_curvature": [
+        "weakly_curved"
+      ],
+      "capsule_hairiness": [
+        "hairy"
+      ],
+      "capsule_position": [
+        "prostrate"
+      ]
+    },
+    "diagnostic_values": {
+      "stipule_fringe_length": [
+        "long"
+      ],
+      "nectary_width_class": [
+        "narrow"
+      ],
+      "nectary_curvature": [
+        "weakly_curved"
+      ]
+    },
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0002",
+    "name": "Viola alba subsp. alba",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "subspecies",
+    "parent_taxon_id": "VI0001",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {
+      "leafy_stem": [
+        "absent"
+      ],
+      "basal_leaves": [
+        "present"
+      ],
+      "stolons": [
+        "present"
+      ],
+      "flower_scent": [
+        "strong"
+      ],
+      "leaf_margin": [
+        "crenate"
+      ],
+      "capsule_hairiness": [
+        "hairy"
+      ],
+      "capsule_position": [
+        "prostrate"
+      ]
+    },
+    "diagnostic_values": {},
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0003",
+    "name": "Viola alba subsp. alba var. alba",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "variety",
+    "parent_taxon_id": "VI0002",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {},
+    "diagnostic_values": {},
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0004",
+    "name": "Viola alba subsp. alba var. scotophylla",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "variety",
+    "parent_taxon_id": "VI0002",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {
+      "leafy_stem": [
+        "absent"
+      ],
+      "basal_leaves": [
+        "present"
+      ],
+      "stolons": [
+        "present"
+      ],
+      "flower_color": [
+        "white",
+        "violet"
+      ],
+      "flower_scent": [
+        "strong"
+      ],
+      "leaf_margin": [
+        "crenate"
+      ],
+      "spur_color": [
+        "violet"
+      ],
+      "capsule_hairiness": [
+        "hairy"
+      ],
+      "capsule_position": [
+        "prostrate"
+      ]
+    },
+    "diagnostic_values": {
+      "spur_color": [
+        "violet"
+      ]
+    },
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0005",
+    "name": "Viola alba subsp. alba var. violacea",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "variety",
+    "parent_taxon_id": "VI0002",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {
+      "flower_color": [
+        "violet"
+      ]
+    },
+    "diagnostic_values": {},
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0006",
+    "name": "Viola alpina",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "species",
+    "parent_taxon_id": "",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {},
+    "diagnostic_values": {},
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0007",
+    "name": "Viola ambigua",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "species",
+    "parent_taxon_id": "",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {},
+    "diagnostic_values": {},
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0008",
+    "name": "Viola arvensis",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "species",
+    "parent_taxon_id": "",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {
+      "life_cycle": [
+        "annual"
+      ],
+      "leafy_stem": [
+        "present"
+      ],
+      "stolons": [
+        "absent"
+      ],
+      "flower_color": [
+        "multicolored"
+      ],
+      "flower_type": [
+        "pansy_type"
+      ],
+      "leaf_division": [
+        "undivided"
+      ],
+      "leaf_hairiness": [
+        "sparse"
+      ],
+      "stipule_shape": [
+        "pinnately_divided"
+      ],
+      "sepal_apex": [
+        "acute"
+      ],
+      "capsule_hairiness": [
+        "glabrous"
+      ],
+      "capsule_position": [
+        "erect"
+      ]
+    },
+    "diagnostic_values": {},
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0009",
+    "name": "Viola arvensis subsp. arvensis",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "subspecies",
+    "parent_taxon_id": "VI0008",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {
+      "life_cycle": [
+        "annual"
+      ],
+      "leafy_stem": [
+        "present"
+      ],
+      "flower_color": [
+        "yellow",
+        "white",
+        "violet"
+      ],
+      "flower_type": [
+        "pansy_type"
+      ],
+      "flower_scent": [
+        "absent"
+      ],
+      "stipule_shape": [
+        "pinnately_divided"
+      ],
+      "capsule_hairiness": [
+        "glabrous"
+      ],
+      "capsule_position": [
+        "erect"
+      ]
+    },
+    "diagnostic_values": {},
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0010",
+    "name": "Viola arvensis subsp. megalantha",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "subspecies",
+    "parent_taxon_id": "VI0008",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {
+      "flower_color": [
+        "yellow",
+        "violet"
+      ],
+      "flower_type": [
+        "pansy_type"
+      ],
+      "flower_scent": [
+        "strong"
+      ]
+    },
+    "diagnostic_values": {},
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0011",
+    "name": "Viola biflora",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "species",
+    "parent_taxon_id": "",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {
+      "leaf_hairiness": [
+        "sparse"
+      ],
+      "stipule_fringe_shape": [
+        "absent"
+      ]
+    },
+    "diagnostic_values": {},
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0012",
+    "name": "Viola calcarata",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "species",
+    "parent_taxon_id": "",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {
+      "leafy_stem": [
+        "present"
+      ]
+    },
+    "diagnostic_values": {},
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0013",
+    "name": "Viola calcarata subsp. calcarata",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "subspecies",
+    "parent_taxon_id": "VI0012",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {},
+    "diagnostic_values": {},
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0014",
+    "name": "Viola calcarata subsp. zoysii",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "subspecies",
+    "parent_taxon_id": "VI0012",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {},
+    "diagnostic_values": {},
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0015",
+    "name": "Viola canina",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "species",
+    "parent_taxon_id": "",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {
+      "life_cycle": [
+        "perennial"
+      ],
+      "leafy_stem": [
+        "present"
+      ],
+      "basal_leaves": [
+        "absent"
+      ],
+      "stolons": [
+        "absent"
+      ],
+      "flower_color": [
+        "blue"
+      ],
+      "flower_type": [
+        "violet_type"
+      ],
+      "leaf_base": [
+        "cordate"
+      ],
+      "stipule_fringe_shape": [
+        "broad"
+      ],
+      "capsule_hairiness": [
+        "glabrous"
+      ]
+    },
+    "diagnostic_values": {
+      "stipule_fringe_shape": [
+        "broad"
+      ]
+    },
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0016",
+    "name": "Viola canina subsp. canina",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "subspecies",
+    "parent_taxon_id": "VI0015",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {
+      "leafy_stem": [
+        "present"
+      ],
+      "flower_color": [
+        "violet"
+      ]
+    },
+    "diagnostic_values": {},
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0017",
+    "name": "Viola canina subsp. ruppii",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "subspecies",
+    "parent_taxon_id": "VI0015",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {},
+    "diagnostic_values": {},
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0018",
+    "name": "Viola collina",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "species",
+    "parent_taxon_id": "",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {},
+    "diagnostic_values": {},
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0019",
+    "name": "Viola elatior",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "species",
+    "parent_taxon_id": "",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {},
+    "diagnostic_values": {},
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0020",
+    "name": "Viola hirta",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "species",
+    "parent_taxon_id": "",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {
+      "life_cycle": [
+        "perennial"
+      ],
+      "leafy_stem": [
+        "absent"
+      ],
+      "basal_leaves": [
+        "present"
+      ],
+      "stolons": [
+        "absent"
+      ],
+      "flower_color": [
+        "violet"
+      ],
+      "flower_type": [
+        "violet_type"
+      ],
+      "leaf_shape": [
+        "ovate"
+      ],
+      "leaf_base": [
+        "cordate"
+      ],
+      "flower_scent": [
+        "absent"
+      ],
+      "stipule_shape": [
+        "lanceolate"
+      ],
+      "stipule_fringe_length": [
+        "short"
+      ],
+      "sepal_apex": [
+        "obtuse"
+      ],
+      "capsule_hairiness": [
+        "hairy"
+      ],
+      "capsule_position": [
+        "prostrate"
+      ]
+    },
+    "diagnostic_values": {
+      "stipule_fringe_length": [
+        "short"
+      ]
+    },
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0021",
+    "name": "Viola kitaibeliana",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "species",
+    "parent_taxon_id": "",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {
+      "flower_color": [
+        "yellow",
+        "white"
+      ],
+      "leaf_hairiness": [
+        "dense"
+      ]
+    },
+    "diagnostic_values": {},
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0022",
+    "name": "Viola lutea subsp. sudetica",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "subspecies",
+    "parent_taxon_id": "",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {},
+    "diagnostic_values": {},
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0023",
+    "name": "Viola mirabilis",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "species",
+    "parent_taxon_id": "",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {
+      "life_cycle": [
+        "perennial"
+      ],
+      "leafy_stem": [
+        "present"
+      ],
+      "basal_leaves": [
+        "present"
+      ],
+      "stolons": [
+        "absent"
+      ],
+      "flower_color": [
+        "violet"
+      ],
+      "flower_type": [
+        "violet_type"
+      ],
+      "leaf_shape": [
+        "ovate"
+      ],
+      "flower_scent": [
+        "strong"
+      ],
+      "stipule_shape": [
+        "lanceolate"
+      ],
+      "stipule_fringe_shape": [
+        "absent"
+      ],
+      "spur_color": [
+        "greenish"
+      ],
+      "sepal_apex": [
+        "acute"
+      ],
+      "petiole_hair_distribution": [
+        "one_line"
+      ],
+      "capsule_hairiness": [
+        "glabrous"
+      ],
+      "capsule_position": [
+        "erect"
+      ]
+    },
+    "diagnostic_values": {},
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0024",
+    "name": "Viola odorata",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "species",
+    "parent_taxon_id": "",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {
+      "life_cycle": [
+        "perennial"
+      ],
+      "leafy_stem": [
+        "absent"
+      ],
+      "basal_leaves": [
+        "present"
+      ],
+      "stolons": [
+        "present"
+      ],
+      "flower_color": [
+        "violet"
+      ],
+      "flower_type": [
+        "violet_type"
+      ],
+      "leaf_shape": [
+        "orbicular",
+        "ovate"
+      ],
+      "flower_scent": [
+        "strong"
+      ],
+      "stolon_type": [
+        "aboveground"
+      ],
+      "stipule_shape": [
+        "ovate"
+      ],
+      "stipule_fringe_length": [
+        "short"
+      ],
+      "spur_shape": [
+        "straight"
+      ],
+      "sepal_apex": [
+        "obtuse"
+      ],
+      "nectary_width_class": [
+        "broad"
+      ],
+      "nectary_curvature": [
+        "strongly_curved"
+      ],
+      "capsule_hairiness": [
+        "hairy"
+      ],
+      "capsule_position": [
+        "prostrate"
+      ]
+    },
+    "diagnostic_values": {
+      "stipule_fringe_length": [
+        "short"
+      ],
+      "nectary_width_class": [
+        "broad"
+      ],
+      "nectary_curvature": [
+        "strongly_curved"
+      ]
+    },
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0025",
+    "name": "Viola palustris",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "species",
+    "parent_taxon_id": "",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {
+      "leafy_stem": [
+        "absent"
+      ],
+      "flower_color": [
+        "violet"
+      ],
+      "leaf_shape": [
+        "reniform"
+      ],
+      "flower_scent": [
+        "absent"
+      ],
+      "leaf_hairiness": [
+        "glabrous"
+      ],
+      "sepal_apex": [
+        "obtuse"
+      ],
+      "capsule_hairiness": [
+        "glabrous"
+      ],
+      "capsule_position": [
+        "erect"
+      ]
+    },
+    "diagnostic_values": {},
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0026",
+    "name": "Viola pinnata",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "species",
+    "parent_taxon_id": "",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {
+      "life_cycle": [
+        "perennial"
+      ],
+      "leafy_stem": [
+        "absent"
+      ],
+      "basal_leaves": [
+        "present"
+      ],
+      "flower_color": [
+        "violet"
+      ],
+      "leaf_division": [
+        "pinnatisect"
+      ],
+      "flower_scent": [
+        "strong"
+      ],
+      "capsule_hairiness": [
+        "glabrous"
+      ]
+    },
+    "diagnostic_values": {},
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0027",
+    "name": "Viola pumila",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "species",
+    "parent_taxon_id": "",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {},
+    "diagnostic_values": {},
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0028",
+    "name": "Viola pyrenaica",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "species",
+    "parent_taxon_id": "",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {
+      "leafy_stem": [
+        "absent"
+      ],
+      "flower_scent": [
+        "strong"
+      ],
+      "capsule_hairiness": [
+        "glabrous"
+      ]
+    },
+    "diagnostic_values": {},
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0029",
+    "name": "Viola reichenbachiana",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "species",
+    "parent_taxon_id": "",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {
+      "life_cycle": [
+        "perennial"
+      ],
+      "leafy_stem": [
+        "present"
+      ],
+      "basal_leaves": [
+        "present"
+      ],
+      "stolons": [
+        "absent"
+      ],
+      "flower_color": [
+        "violet"
+      ],
+      "flower_type": [
+        "violet_type"
+      ],
+      "leaf_shape": [
+        "ovate"
+      ],
+      "leaf_base": [
+        "cordate"
+      ],
+      "upper_leaf_hair_position": [
+        "lamina"
+      ],
+      "stipule_shape": [
+        "lanceolate"
+      ],
+      "stipule_fringe_shape": [
+        "filiform"
+      ],
+      "spur_color": [
+        "violet"
+      ],
+      "sepal_apex": [
+        "acute"
+      ],
+      "sepal_appendage_length": [
+        "short"
+      ],
+      "sepal_appendage_tip": [
+        "entire"
+      ],
+      "capsule_hairiness": [
+        "glabrous"
+      ],
+      "capsule_position": [
+        "erect"
+      ]
+    },
+    "diagnostic_values": {
+      "upper_leaf_hair_position": [
+        "lamina"
+      ],
+      "stipule_fringe_shape": [
+        "filiform"
+      ],
+      "spur_color": [
+        "violet"
+      ],
+      "sepal_appendage_length": [
+        "short"
+      ],
+      "sepal_appendage_tip": [
+        "entire"
+      ]
+    },
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0030",
+    "name": "Viola riviniana",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "species",
+    "parent_taxon_id": "",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {
+      "life_cycle": [
+        "perennial"
+      ],
+      "leafy_stem": [
+        "present"
+      ],
+      "basal_leaves": [
+        "present"
+      ],
+      "stolons": [
+        "absent"
+      ],
+      "flower_color": [
+        "violet"
+      ],
+      "flower_type": [
+        "violet_type"
+      ],
+      "leaf_shape": [
+        "ovate"
+      ],
+      "leaf_base": [
+        "cordate"
+      ],
+      "stipule_shape": [
+        "lanceolate"
+      ],
+      "stipule_fringe_shape": [
+        "filiform"
+      ],
+      "spur_color": [
+        "whitish"
+      ],
+      "sepal_apex": [
+        "acute"
+      ],
+      "capsule_hairiness": [
+        "glabrous"
+      ],
+      "capsule_position": [
+        "erect"
+      ]
+    },
+    "diagnostic_values": {
+      "stipule_fringe_shape": [
+        "filiform"
+      ],
+      "spur_color": [
+        "whitish"
+      ]
+    },
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0031",
+    "name": "Viola rupestris",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "species",
+    "parent_taxon_id": "",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {
+      "capsule_hairiness": [
+        "hairy"
+      ]
+    },
+    "diagnostic_values": {},
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0032",
+    "name": "Viola sororia",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "species",
+    "parent_taxon_id": "",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {},
+    "diagnostic_values": {},
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0033",
+    "name": "Viola stagnina",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "species",
+    "parent_taxon_id": "",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {},
+    "diagnostic_values": {},
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0034",
+    "name": "Viola suavis",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "species",
+    "parent_taxon_id": "",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {
+      "life_cycle": [
+        "perennial"
+      ],
+      "leafy_stem": [
+        "absent"
+      ],
+      "basal_leaves": [
+        "present"
+      ],
+      "stolons": [
+        "present"
+      ],
+      "flower_color": [
+        "violet"
+      ],
+      "flower_type": [
+        "violet_type"
+      ],
+      "leaf_base": [
+        "cordate"
+      ],
+      "flower_scent": [
+        "strong"
+      ],
+      "stolon_type": [
+        "underground"
+      ],
+      "stipule_shape": [
+        "lanceolate"
+      ],
+      "sepal_apex": [
+        "obtuse"
+      ],
+      "capsule_hairiness": [
+        "hairy"
+      ],
+      "capsule_position": [
+        "prostrate"
+      ]
+    },
+    "diagnostic_values": {},
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0035",
+    "name": "Viola suavis var. albida",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "variety",
+    "parent_taxon_id": "VI0034",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {},
+    "diagnostic_values": {},
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0036",
+    "name": "Viola suavis var. suavis",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "variety",
+    "parent_taxon_id": "VI0034",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {},
+    "diagnostic_values": {},
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0037",
+    "name": "Viola thomasiana",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "species",
+    "parent_taxon_id": "",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {},
+    "diagnostic_values": {},
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0038",
+    "name": "Viola tricolor",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "species",
+    "parent_taxon_id": "",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {
+      "leafy_stem": [
+        "present"
+      ],
+      "stolons": [
+        "absent"
+      ],
+      "flower_type": [
+        "pansy_type"
+      ],
+      "leaf_division": [
+        "undivided"
+      ],
+      "stipule_shape": [
+        "pinnately_divided"
+      ],
+      "sepal_apex": [
+        "acute"
+      ],
+      "capsule_hairiness": [
+        "glabrous"
+      ],
+      "capsule_position": [
+        "erect"
+      ]
+    },
+    "diagnostic_values": {},
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0039",
+    "name": "Viola tricolor subsp. curtisii",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "subspecies",
+    "parent_taxon_id": "VI0038",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {
+      "life_cycle": [
+        "perennial"
+      ]
+    },
+    "diagnostic_values": {},
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0040",
+    "name": "Viola tricolor subsp. polychroma",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "subspecies",
+    "parent_taxon_id": "VI0038",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {
+      "life_cycle": [
+        "perennial"
+      ],
+      "flower_color": [
+        "violet"
+      ]
+    },
+    "diagnostic_values": {},
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0041",
+    "name": "Viola tricolor subsp. saxatilis",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "subspecies",
+    "parent_taxon_id": "VI0038",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {
+      "life_cycle": [
+        "perennial"
+      ],
+      "flower_color": [
+        "yellow"
+      ]
+    },
+    "diagnostic_values": {},
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0042",
+    "name": "Viola tricolor subsp. tricolor",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "subspecies",
+    "parent_taxon_id": "VI0038",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {
+      "life_cycle": [
+        "annual",
+        "biennial"
+      ],
+      "flower_color": [
+        "violet",
+        "blue",
+        "white",
+        "yellow",
+        "multicolored"
+      ]
+    },
+    "diagnostic_values": {},
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0043",
+    "name": "Viola x bavarica",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "hybrid",
+    "parent_taxon_id": "",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {},
+    "diagnostic_values": {},
+    "review_status": "draft"
+  },
+  {
+    "id": "VI0044",
+    "name": "Viola x wittrockiana",
+    "german_name": "",
+    "family": "Violaceae",
+    "rank": "hybrid",
+    "parent_taxon_id": "",
+    "description_de": "",
+    "description_en": "",
+    "habitat_de": "",
+    "habitat_en": "",
+    "values": {},
+    "diagnostic_values": {},
+    "review_status": "draft"
+  }
+]

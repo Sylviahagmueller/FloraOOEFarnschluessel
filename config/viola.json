@@ -1,0 +1,76 @@
+{
+  "key_id": "viola",
+  "title_de": "Veilchen bestimmen",
+  "title_en": "Identify violets",
+  "page_title_de": "FloraOOE – Veilchen",
+  "page_title_en": "FloraOOE – Violets",
+  "eyebrow_de": "FLORAOOE · VEILCHEN ÖSTERREICHS",
+  "eyebrow_en": "FLORAOOE · VIOLETS OF AUSTRIA",
+  "data_directory": "data/viola",
+  "simple_traits": [
+    "life_cycle",
+    "growth_habit",
+    "leafy_stem",
+    "basal_leaves",
+    "stolons",
+    "flower_color",
+    "flower_type",
+    "flower_size_class",
+    "leaf_shape",
+    "leaf_base",
+    "leaf_division",
+    "flower_scent"
+  ],
+  "extended_traits": [
+    "life_cycle",
+    "growth_habit",
+    "leafy_stem",
+    "basal_leaves",
+    "stolons",
+    "flower_color",
+    "flower_type",
+    "flower_size_class",
+    "leaf_shape",
+    "leaf_base",
+    "leaf_division",
+    "flower_scent",
+    "stolon_type",
+    "leaf_hairiness",
+    "upper_leaf_hair_position",
+    "leaf_margin",
+    "stipule_shape",
+    "stipule_fringe_shape",
+    "stipule_fringe_length",
+    "stipule_size_class",
+    "spur_color",
+    "spur_length_class",
+    "spur_shape",
+    "sepal_apex",
+    "sepal_appendage_length",
+    "sepal_appendage_tip",
+    "pedicel_bracteoles_position"
+  ],
+  "default_trait_count": 9,
+  "group_codes": {
+    "structure": [
+      "life_cycle",
+      "growth_habit",
+      "leafy_stem",
+      "basal_leaves",
+      "stolons"
+    ],
+    "surface": [
+      "leaf_hairiness",
+      "upper_leaf_hair_position",
+      "petiole_hair_distribution",
+      "capsule_hairiness"
+    ],
+    "special": [
+      "nectary_width_class",
+      "nectary_curvature",
+      "style_hairiness",
+      "style_stigma_shape"
+    ]
+  },
+  "drawings": {}
+}
