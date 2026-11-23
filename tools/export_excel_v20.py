@@ -3,6 +3,7 @@
 
 import argparse
 import json
+import re
 from collections import Counter, defaultdict
 from pathlib import Path
 from tempfile import NamedTemporaryFile
@@ -177,11 +178,13 @@ def export(source, config):
         ]
         counts = Counter(row["values"]["plant_architecture"][0] for row in entries)
         old_metadata = json.loads((ROOT / "data" / "metadata.json").read_text(encoding="utf-8"))
+        version_match = re.search(r"(?:^|[_-])v(\d+(?:\.\d+)?)(?=[_.-]|$)", source.name, re.IGNORECASE)
+        data_version = f"V{version_match[1]}" if version_match else "V20"
         metadata = {
             **old_metadata,
             "source_file": source.name,
-            "base_excel_version": "V20",
-            "editorial_revision": "V20",
+            "base_excel_version": data_version,
+            "editorial_revision": data_version,
             "taxa_count": len(entries),
             "matrix_taxa_count": len(matrix),
             "hidden_taxa_count": len(matrix) - len(entries),

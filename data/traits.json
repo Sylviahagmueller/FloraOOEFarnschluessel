@@ -793,6 +793,15 @@
         "review_status": "text_drafted"
       },
       {
+        "code": "not_applicable",
+        "label_de": "nicht anwendbar",
+        "label_en": "not applicable",
+        "explanation_de": "Für dieses Taxon gibt es keine Sori oder Sporokarpien, deren Lage beschrieben werden kann.",
+        "explanation_en": "There are no sori or sporocarps whose position can be described for this taxon.",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
         "code": "not_visible_typically",
         "label_de": "meist nicht sichtbar",
         "label_en": "not visible typically",
@@ -827,6 +836,15 @@
         "explanation_en": "Sori occur just inside the margin.",
         "image_path": "",
         "review_status": "text_drafted"
+      },
+      {
+        "code": "unknown",
+        "label_de": "unbekannt",
+        "label_en": "unknown",
+        "explanation_de": "Die Lage der Sori ist im Arbeitsblatt nicht angegeben.",
+        "explanation_en": "The position of the sori is unspecified in the working table.",
+        "image_path": "",
+        "review_status": "pending"
       }
     ]
   },

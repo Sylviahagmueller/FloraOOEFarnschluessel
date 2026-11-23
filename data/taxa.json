@@ -192,6 +192,9 @@
       "frond_dimorphism": [
         "monomorphic"
       ],
+      "sorus_position": [
+        "along_veins"
+      ],
       "sorus_shape": [
         "linear"
       ],
@@ -292,6 +295,9 @@
       ],
       "frond_dimorphism": [
         "monomorphic"
+      ],
+      "sorus_position": [
+        "along_veins"
       ],
       "sorus_shape": [
         "linear"
@@ -666,6 +672,9 @@
       ],
       "frond_dimorphism": [
         "monomorphic"
+      ],
+      "sorus_position": [
+        "along_veins"
       ],
       "sorus_shape": [
         "linear"
@@ -1176,6 +1185,9 @@
       "frond_dimorphism": [
         "monomorphic"
       ],
+      "sorus_position": [
+        "along_veins"
+      ],
       "sorus_shape": [
         "linear"
       ],
@@ -1277,6 +1289,9 @@
       "frond_dimorphism": [
         "monomorphic"
       ],
+      "sorus_position": [
+        "along_veins"
+      ],
       "sorus_shape": [
         "linear"
       ],
@@ -1377,6 +1392,9 @@
       ],
       "frond_dimorphism": [
         "monomorphic"
+      ],
+      "sorus_position": [
+        "along_veins"
       ],
       "sorus_shape": [
         "linear"
@@ -2247,6 +2265,9 @@
       "frond_dimorphism": [
         "monomorphic"
       ],
+      "sorus_position": [
+        "along_veins"
+      ],
       "sorus_shape": [
         "linear"
       ],
@@ -2347,6 +2368,9 @@
       ],
       "frond_dimorphism": [
         "monomorphic"
+      ],
+      "sorus_position": [
+        "along_veins"
       ],
       "sorus_shape": [
         "linear"
@@ -2449,6 +2473,9 @@
       "frond_dimorphism": [
         "monomorphic"
       ],
+      "sorus_position": [
+        "along_veins"
+      ],
       "sorus_shape": [
         "linear"
       ],
@@ -2549,6 +2576,9 @@
       ],
       "frond_dimorphism": [
         "monomorphic"
+      ],
+      "sorus_position": [
+        "along_veins"
       ],
       "sorus_shape": [
         "linear"
@@ -2651,6 +2681,9 @@
       "frond_dimorphism": [
         "monomorphic"
       ],
+      "sorus_position": [
+        "along_veins"
+      ],
       "sorus_shape": [
         "linear"
       ],
@@ -2752,6 +2785,9 @@
       "frond_dimorphism": [
         "monomorphic"
       ],
+      "sorus_position": [
+        "along_veins"
+      ],
       "sorus_shape": [
         "linear"
       ],
@@ -2852,6 +2888,9 @@
       ],
       "frond_dimorphism": [
         "monomorphic"
+      ],
+      "sorus_position": [
+        "along_veins"
       ],
       "sorus_shape": [
         "linear"
@@ -3088,6 +3127,9 @@
       ],
       "frond_dimorphism": [
         "monomorphic"
+      ],
+      "sorus_position": [
+        "along_veins"
       ],
       "sorus_shape": [
         "linear"
@@ -4190,6 +4232,9 @@
       "frond_dimorphism": [
         "monomorphic"
       ],
+      "sorus_position": [
+        "along_veins"
+      ],
       "sorus_shape": [
         "linear"
       ],
@@ -4291,6 +4336,9 @@
       "frond_dimorphism": [
         "monomorphic"
       ],
+      "sorus_position": [
+        "along_veins"
+      ],
       "sorus_shape": [
         "linear"
       ],
@@ -4391,6 +4439,9 @@
       ],
       "frond_dimorphism": [
         "monomorphic"
+      ],
+      "sorus_position": [
+        "along_veins"
       ],
       "sorus_shape": [
         "linear"
@@ -4641,6 +4692,9 @@
       "frond_dimorphism": [
         "monomorphic"
       ],
+      "sorus_position": [
+        "along_veins"
+      ],
       "sorus_shape": [
         "linear"
       ],
@@ -4882,6 +4936,9 @@
       "frond_dimorphism": [
         "monomorphic"
       ],
+      "sorus_position": [
+        "along_veins"
+      ],
       "sorus_shape": [
         "linear"
       ],
@@ -4982,6 +5039,9 @@
       ],
       "frond_dimorphism": [
         "monomorphic"
+      ],
+      "sorus_position": [
+        "along_veins"
       ],
       "sorus_shape": [
         "linear"
@@ -5498,6 +5558,9 @@
       "frond_dimorphism": [
         "hemidimorphic"
       ],
+      "sorus_position": [
+        "not_applicable"
+      ],
       "sorus_shape": [
         "not_applicable"
       ],
@@ -5623,6 +5686,9 @@
       ],
       "frond_dimorphism": [
         "hemidimorphic"
+      ],
+      "sorus_position": [
+        "not_applicable"
       ],
       "sorus_shape": [
         "not_applicable"
@@ -5755,6 +5821,9 @@
       ],
       "frond_dimorphism": [
         "hemidimorphic"
+      ],
+      "sorus_position": [
+        "not_applicable"
       ],
       "sorus_shape": [
         "not_applicable"
@@ -5892,6 +5961,9 @@
       "frond_dimorphism": [
         "hemidimorphic"
       ],
+      "sorus_position": [
+        "not_applicable"
+      ],
       "sorus_shape": [
         "not_applicable"
       ],
@@ -6024,6 +6096,9 @@
       "frond_dimorphism": [
         "hemidimorphic"
       ],
+      "sorus_position": [
+        "not_applicable"
+      ],
       "sorus_shape": [
         "not_applicable"
       ],
@@ -6149,6 +6224,9 @@
       ],
       "frond_dimorphism": [
         "hemidimorphic"
+      ],
+      "sorus_position": [
+        "not_applicable"
       ],
       "sorus_shape": [
         "not_applicable"
@@ -6282,6 +6360,9 @@
       "frond_dimorphism": [
         "hemidimorphic"
       ],
+      "sorus_position": [
+        "not_applicable"
+      ],
       "sorus_shape": [
         "not_applicable"
       ],
@@ -6407,6 +6488,9 @@
       ],
       "frond_dimorphism": [
         "hemidimorphic"
+      ],
+      "sorus_position": [
+        "not_applicable"
       ],
       "sorus_shape": [
         "not_applicable"
@@ -6534,6 +6618,9 @@
       "frond_dimorphism": [
         "hemidimorphic"
       ],
+      "sorus_position": [
+        "not_applicable"
+      ],
       "sorus_shape": [
         "not_applicable"
       ],
@@ -6659,6 +6746,9 @@
       ],
       "frond_dimorphism": [
         "hemidimorphic"
+      ],
+      "sorus_position": [
+        "not_applicable"
       ],
       "sorus_shape": [
         "not_applicable"
@@ -7198,6 +7288,9 @@
       ],
       "frond_dimorphism": [
         "monomorphic"
+      ],
+      "sorus_position": [
+        "on_veins"
       ],
       "sorus_shape": [
         "round"
@@ -7802,6 +7895,9 @@
       "frond_dimorphism": [
         "monomorphic"
       ],
+      "sorus_position": [
+        "on_veins"
+      ],
       "sorus_shape": [
         "round"
       ],
@@ -8041,6 +8137,9 @@
       "frond_dimorphism": [
         "not_applicable"
       ],
+      "sorus_position": [
+        "not_applicable"
+      ],
       "sorus_shape": [
         "not_applicable"
       ],
@@ -8179,6 +8278,9 @@
         "not_applicable"
       ],
       "frond_dimorphism": [
+        "not_applicable"
+      ],
+      "sorus_position": [
         "not_applicable"
       ],
       "sorus_shape": [
@@ -8321,6 +8423,9 @@
       "frond_dimorphism": [
         "not_applicable"
       ],
+      "sorus_position": [
+        "not_applicable"
+      ],
       "sorus_shape": [
         "not_applicable"
       ],
@@ -8459,6 +8564,9 @@
         "not_applicable"
       ],
       "frond_dimorphism": [
+        "not_applicable"
+      ],
+      "sorus_position": [
         "not_applicable"
       ],
       "sorus_shape": [
@@ -8602,6 +8710,9 @@
       "frond_dimorphism": [
         "not_applicable"
       ],
+      "sorus_position": [
+        "not_applicable"
+      ],
       "sorus_shape": [
         "not_applicable"
       ],
@@ -8743,6 +8854,9 @@
       "frond_dimorphism": [
         "not_applicable"
       ],
+      "sorus_position": [
+        "not_applicable"
+      ],
       "sorus_shape": [
         "not_applicable"
       ],
@@ -8881,6 +8995,9 @@
         "not_applicable"
       ],
       "frond_dimorphism": [
+        "not_applicable"
+      ],
+      "sorus_position": [
         "not_applicable"
       ],
       "sorus_shape": [
@@ -9394,6 +9511,9 @@
       "frond_dimorphism": [
         "monomorphic"
       ],
+      "sorus_position": [
+        "on_veins"
+      ],
       "sorus_shape": [
         "round"
       ],
@@ -9493,6 +9613,9 @@
       ],
       "frond_dimorphism": [
         "monomorphic"
+      ],
+      "sorus_position": [
+        "on_veins"
       ],
       "sorus_shape": [
         "round"
@@ -9729,6 +9852,9 @@
       ],
       "frond_dimorphism": [
         "monomorphic"
+      ],
+      "sorus_position": [
+        "on_veins"
       ],
       "sorus_shape": [
         "round"
@@ -10241,6 +10367,9 @@
       "frond_dimorphism": [
         "monomorphic"
       ],
+      "sorus_position": [
+        "on_veins"
+      ],
       "sorus_shape": [
         "round"
       ],
@@ -10475,6 +10604,9 @@
       ],
       "frond_dimorphism": [
         "monomorphic"
+      ],
+      "sorus_position": [
+        "on_veins"
       ],
       "sorus_shape": [
         "round"
@@ -11510,6 +11642,9 @@
       "frond_dimorphism": [
         "monomorphic"
       ],
+      "sorus_position": [
+        "on_veins"
+      ],
       "sorus_shape": [
         "round"
       ],
@@ -12045,6 +12180,9 @@
       "frond_dimorphism": [
         "not_applicable"
       ],
+      "sorus_position": [
+        "not_applicable"
+      ],
       "sorus_shape": [
         "not_applicable"
       ],
@@ -12171,6 +12309,9 @@
       "frond_dimorphism": [
         "not_applicable"
       ],
+      "sorus_position": [
+        "not_applicable"
+      ],
       "sorus_shape": [
         "not_applicable"
       ],
@@ -12288,6 +12429,9 @@
       "frond_dimorphism": [
         "not_applicable"
       ],
+      "sorus_position": [
+        "not_applicable"
+      ],
       "sorus_shape": [
         "not_applicable"
       ],
@@ -12403,6 +12547,9 @@
         "not_applicable"
       ],
       "frond_dimorphism": [
+        "not_applicable"
+      ],
+      "sorus_position": [
         "not_applicable"
       ],
       "sorus_shape": [
@@ -12535,6 +12682,9 @@
       "frond_dimorphism": [
         "not_applicable"
       ],
+      "sorus_position": [
+        "not_applicable"
+      ],
       "sorus_shape": [
         "not_applicable"
       ],
@@ -12650,6 +12800,9 @@
         "not_applicable"
       ],
       "frond_dimorphism": [
+        "not_applicable"
+      ],
+      "sorus_position": [
         "not_applicable"
       ],
       "sorus_shape": [
@@ -12769,6 +12922,9 @@
       "frond_dimorphism": [
         "not_applicable"
       ],
+      "sorus_position": [
+        "not_applicable"
+      ],
       "sorus_shape": [
         "not_applicable"
       ],
@@ -12884,6 +13040,9 @@
         "not_applicable"
       ],
       "frond_dimorphism": [
+        "not_applicable"
+      ],
+      "sorus_position": [
         "not_applicable"
       ],
       "sorus_shape": [
@@ -13003,6 +13162,9 @@
       "frond_dimorphism": [
         "not_applicable"
       ],
+      "sorus_position": [
+        "not_applicable"
+      ],
       "sorus_shape": [
         "not_applicable"
       ],
@@ -13118,6 +13280,9 @@
         "not_applicable"
       ],
       "frond_dimorphism": [
+        "not_applicable"
+      ],
+      "sorus_position": [
         "not_applicable"
       ],
       "sorus_shape": [
@@ -13237,6 +13402,9 @@
       "frond_dimorphism": [
         "not_applicable"
       ],
+      "sorus_position": [
+        "not_applicable"
+      ],
       "sorus_shape": [
         "not_applicable"
       ],
@@ -13352,6 +13520,9 @@
         "not_applicable"
       ],
       "frond_dimorphism": [
+        "not_applicable"
+      ],
+      "sorus_position": [
         "not_applicable"
       ],
       "sorus_shape": [
@@ -13483,6 +13654,9 @@
       "frond_dimorphism": [
         "not_applicable"
       ],
+      "sorus_position": [
+        "not_applicable"
+      ],
       "sorus_shape": [
         "not_applicable"
       ],
@@ -13598,6 +13772,9 @@
         "not_applicable"
       ],
       "frond_dimorphism": [
+        "not_applicable"
+      ],
+      "sorus_position": [
         "not_applicable"
       ],
       "sorus_shape": [
@@ -13717,6 +13894,9 @@
       "frond_dimorphism": [
         "not_applicable"
       ],
+      "sorus_position": [
+        "not_applicable"
+      ],
       "sorus_shape": [
         "not_applicable"
       ],
@@ -13832,6 +14012,9 @@
         "not_applicable"
       ],
       "frond_dimorphism": [
+        "not_applicable"
+      ],
+      "sorus_position": [
         "not_applicable"
       ],
       "sorus_shape": [
@@ -13951,6 +14134,9 @@
       "frond_dimorphism": [
         "not_applicable"
       ],
+      "sorus_position": [
+        "not_applicable"
+      ],
       "sorus_shape": [
         "not_applicable"
       ],
@@ -14068,6 +14254,9 @@
       "frond_dimorphism": [
         "not_applicable"
       ],
+      "sorus_position": [
+        "not_applicable"
+      ],
       "sorus_shape": [
         "not_applicable"
       ],
@@ -14183,6 +14372,9 @@
         "not_applicable"
       ],
       "frond_dimorphism": [
+        "not_applicable"
+      ],
+      "sorus_position": [
         "not_applicable"
       ],
       "sorus_shape": [
@@ -14571,6 +14763,9 @@
       "frond_dimorphism": [
         "monomorphic"
       ],
+      "sorus_position": [
+        "not_applicable"
+      ],
       "sorus_shape": [
         "not_applicable"
       ],
@@ -14711,6 +14906,9 @@
       "frond_dimorphism": [
         "monomorphic"
       ],
+      "sorus_position": [
+        "not_applicable"
+      ],
       "sorus_shape": [
         "not_applicable"
       ],
@@ -14849,6 +15047,9 @@
         "not_applicable"
       ],
       "frond_dimorphism": [
+        "not_applicable"
+      ],
+      "sorus_position": [
         "not_applicable"
       ],
       "sorus_shape": [
@@ -14992,6 +15193,9 @@
       "frond_dimorphism": [
         "not_applicable"
       ],
+      "sorus_position": [
+        "not_applicable"
+      ],
       "sorus_shape": [
         "not_applicable"
       ],
@@ -15132,6 +15336,9 @@
       "frond_dimorphism": [
         "not_applicable"
       ],
+      "sorus_position": [
+        "not_applicable"
+      ],
       "sorus_shape": [
         "not_applicable"
       ],
@@ -15270,6 +15477,9 @@
         "not_applicable"
       ],
       "frond_dimorphism": [
+        "not_applicable"
+      ],
+      "sorus_position": [
         "not_applicable"
       ],
       "sorus_shape": [
@@ -15824,6 +16034,9 @@
       "frond_dimorphism": [
         "hemidimorphic"
       ],
+      "sorus_position": [
+        "not_applicable"
+      ],
       "sorus_shape": [
         "not_applicable"
       ],
@@ -15955,6 +16168,9 @@
       ],
       "frond_dimorphism": [
         "hemidimorphic"
+      ],
+      "sorus_position": [
+        "not_applicable"
       ],
       "sorus_shape": [
         "not_applicable"
@@ -16627,7 +16843,7 @@
         "monomorphic"
       ],
       "sorus_position": [
-        "on_veins"
+        "submarginal"
       ],
       "sorus_shape": [
         "round"
@@ -16719,6 +16935,9 @@
       ],
       "frond_outline": [
         "triangular"
+      ],
+      "sorus_position": [
+        "submarginal"
       ],
       "rhizome_type": [
         "long_creeping"
@@ -17216,6 +17435,9 @@
       "frond_dimorphism": [
         "monomorphic"
       ],
+      "sorus_position": [
+        "on_veins"
+      ],
       "sorus_shape": [
         "round"
       ],
@@ -17477,6 +17699,9 @@
       "frond_dimorphism": [
         "monomorphic"
       ],
+      "sorus_position": [
+        "on_veins"
+      ],
       "sorus_shape": [
         "round"
       ],
@@ -17731,6 +17956,9 @@
       "frond_dimorphism": [
         "monomorphic"
       ],
+      "sorus_position": [
+        "on_veins"
+      ],
       "sorus_shape": [
         "round"
       ],
@@ -17830,6 +18058,9 @@
       ],
       "frond_dimorphism": [
         "monomorphic"
+      ],
+      "sorus_position": [
+        "on_veins"
       ],
       "sorus_shape": [
         "round"
@@ -18090,6 +18321,9 @@
       ],
       "frond_dimorphism": [
         "monomorphic"
+      ],
+      "sorus_position": [
+        "on_veins"
       ],
       "sorus_shape": [
         "round"
@@ -18371,6 +18605,9 @@
       ],
       "frond_dimorphism": [
         "monomorphic"
+      ],
+      "sorus_position": [
+        "submarginal"
       ],
       "sorus_shape": [
         "round"
@@ -19057,6 +19294,9 @@
       "frond_dimorphism": [
         "not_applicable"
       ],
+      "sorus_position": [
+        "sporocarp"
+      ],
       "sorus_shape": [
         "globose_sporocarp"
       ],
@@ -19286,6 +19526,9 @@
       "frond_dimorphism": [
         "hemidimorphic"
       ],
+      "sorus_position": [
+        "not_applicable"
+      ],
       "sorus_shape": [
         "not_applicable"
       ],
@@ -19414,6 +19657,9 @@
         "not_applicable"
       ],
       "frond_dimorphism": [
+        "not_applicable"
+      ],
+      "sorus_position": [
         "not_applicable"
       ],
       "sorus_shape": [
@@ -19557,6 +19803,9 @@
       "frond_dimorphism": [
         "not_applicable"
       ],
+      "sorus_position": [
+        "not_applicable"
+      ],
       "sorus_shape": [
         "not_applicable"
       ],
@@ -19697,6 +19946,9 @@
       "frond_dimorphism": [
         "not_applicable"
       ],
+      "sorus_position": [
+        "not_applicable"
+      ],
       "sorus_shape": [
         "not_applicable"
       ],
@@ -19835,6 +20087,9 @@
         "not_applicable"
       ],
       "frond_dimorphism": [
+        "not_applicable"
+      ],
+      "sorus_position": [
         "not_applicable"
       ],
       "sorus_shape": [
