@@ -10,29 +10,20 @@
     "order": 10,
     "states": [
       {
-        "code": "leafy_fern",
-        "label_de": "Farn mit Blättern/Wedeln (auch Wasserfarne)",
-        "label_en": "Fern with fronds/leaves (including aquatic ferns)",
-        "explanation_de": "Farnpflanze mit Blättern oder Wedeln; umfasst auch kleinblättrige Wasserfarne.",
-        "explanation_en": "Fern with leaves or fronds; also includes small-leaved aquatic ferns.",
-        "image_path": "",
-        "review_status": "draft"
-      },
-      {
-        "code": "ophioglossoid",
-        "label_de": "Blatt mit grünem und sporentragendem Teil",
-        "label_en": "Leaf with green and spore-bearing parts",
-        "explanation_de": "Das Blatt besteht aus einem grünen Abschnitt und einem gesonderten Abschnitt, der Sporangien (Sporenbehälter) trägt. Typisch für Natternzungengewächse.",
-        "explanation_en": "The leaf has a green part and a separate spore-bearing part with sporangia. Characteristic of adder’s-tongue relatives.",
-        "image_path": "",
-        "review_status": "draft"
-      },
-      {
         "code": "jointed_stems",
         "label_de": "Gegliederte Sprosse mit Scheiden (Schachtelhalme)",
         "label_en": "Jointed stems with sheaths (horsetails)",
         "explanation_de": "Schachtelhalme: gegliederte, meist gerippte Sprosse mit kleinen, zu Scheiden verwachsenen Blättern.",
         "explanation_en": "Horsetails: jointed, usually ridged stems with small leaves fused into sheaths.",
+        "image_path": "",
+        "review_status": "draft"
+      },
+      {
+        "code": "leafy_fern",
+        "label_de": "Farn mit Blättern/Wedeln (auch Wasserfarne)",
+        "label_en": "Fern with fronds/leaves (including aquatic ferns)",
+        "explanation_de": "Farnpflanze mit Blättern oder Wedeln; umfasst auch kleinblättrige Wasserfarne.",
+        "explanation_en": "Fern with leaves or fronds; also includes small-leaved aquatic ferns.",
         "image_path": "",
         "review_status": "draft"
       },
@@ -44,6 +35,15 @@
         "explanation_en": "Clubmosses and spikemosses with small leaves (microphylls), without typical fern fronds.",
         "image_path": "",
         "review_status": "pending"
+      },
+      {
+        "code": "ophioglossoid",
+        "label_de": "Steriler und fertiler Blattabschnitt",
+        "label_en": "Sterile and fertile leaf sections",
+        "explanation_de": "Blatt mit steriler Spreite und gesondertem sporangientragendem Teil.",
+        "explanation_en": "Leaf differentiated into sterile and sporangia-bearing portions.",
+        "image_path": "",
+        "review_status": "draft"
       }
     ]
   },
@@ -57,15 +57,6 @@
     "group": "Ecology",
     "order": 20,
     "states": [
-      {
-        "code": "land",
-        "label_de": "An Land",
-        "label_en": "On land",
-        "explanation_de": "Auf festem Untergrund wachsend, auch an feuchten Standorten; ohne typische Entwicklung im stehenden Wasser.",
-        "explanation_en": "Growing on solid ground, including moist sites; without typical growth in standing water.",
-        "image_path": "",
-        "review_status": "text_drafted"
-      },
       {
         "code": "amphibious",
         "label_de": "Teilweise im Wasser",
@@ -83,6 +74,15 @@
         "explanation_en": "Growing in or on water, for example submerged or floating.",
         "image_path": "",
         "review_status": "text_drafted"
+      },
+      {
+        "code": "land",
+        "label_de": "An Land",
+        "label_en": "On land (Terrestrial)",
+        "explanation_de": "Auf festem Untergrund wachsend, auch an feuchten Standorten; ohne typische Entwicklung im stehenden Wasser.",
+        "explanation_en": "Growing on solid ground, including moist sites; without typical growth in standing water.",
+        "image_path": "",
+        "review_status": "text_drafted"
       }
     ]
   },
@@ -90,18 +90,63 @@
     "code": "leaf_type",
     "label_de": "Blatttyp",
     "label_en": "Leaf type",
-    "description_de": "Grobtyp der Blätter; Feinmerkmale wie Teilungsgrad und Fertil-Dimorphie werden separat erfasst.",
-    "description_en": "Broad leaf morphology; division degree and fertile-leaf dimorphism are separate traits.",
+    "description_de": "Grobtyp der Blätter. Für Bärlappe und Moosfarne zusätzlich Form, Gleich- oder Verschiedenblättrigkeit und besondere Blattstrukturen. Der Teilungsgrad wird separat erfasst.",
+    "description_en": "Broad leaf type. For clubmosses and spikemosses, also records shape, leaf dimorphism and associated structures. Degree of division is recorded separately.",
     "role": "primary",
     "group": "Morphology",
     "order": 30,
     "states": [
       {
-        "code": "reduced",
-        "label_de": "Blätter stark reduziert / scheidenförmig",
-        "label_en": "Leaves strongly reduced / sheath-like",
-        "explanation_de": "Schachtelhalme: winzige Blätter zu Scheiden vereinigt; die grünen Sprosse übernehmen wesentliche Assimilation.",
+        "code": "anisophyll",
+        "label_de": "verschiedenblättrig",
+        "label_en": "anisophyllous",
+        "explanation_de": "Die Blätter unterscheiden sich in Größe oder Form (Dorsal-, Ventral- und Lateralblätter).",
+        "explanation_en": "Leaves differ in size or shape (dorsal, ventral and lateral leaves).",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "axillary_leaf",
+        "label_de": "mit Achselblatt",
+        "label_en": "with an axillary leaf",
+        "explanation_de": "Spezialisiertes, meist symmetrisches Mikrophyll in der Gabelung der Sprossachse. Originalcode in Blatt 7: axilliary_leaf.",
+        "explanation_en": "Specialized, generally symmetrical microphyll at a stem fork.",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "broad_undivided",
+        "label_de": "Breite, ungeteilte Blattspreite",
+        "label_en": "Broad undivided blade",
+        "explanation_de": "Breite, nicht gefiederte Spreite; Wedel-Umriss und fertile/sterile Blattunterschiede bleiben separate Merkmale.",
         "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "divided",
+        "label_de": "Geteilte oder gefiederte Blattspreite",
+        "label_en": "Divided or pinnate blade",
+        "explanation_de": "Blattspreite gelappt, fiederspaltig oder gefiedert; die genaue Teilung wird über frond_division_degree abgefragt.",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "isophyll",
+        "label_de": "gleichblättrig",
+        "label_en": "isophyllous",
+        "explanation_de": "Die Blätter sind von gleicher Form und Größe.",
+        "explanation_en": "Leaves have the same shape and size.",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "ligule",
+        "label_de": "mit Ligula",
+        "label_en": "with a ligule",
+        "explanation_de": "Kleiner zungen- oder schuppenförmiger Anhang nahe der Blattbasis auf der Oberseite von Mikrophyllen und Sporophyllen.",
+        "explanation_en": "Small tongue- or scale-like appendage near the base of microphylls and sporophylls on the upper surface.",
         "image_path": "",
         "review_status": "pending"
       },
@@ -124,20 +169,38 @@
         "review_status": "pending"
       },
       {
-        "code": "broad_undivided",
-        "label_de": "Breite, ungeteilte Blattspreite",
-        "label_en": "Broad undivided blade",
-        "explanation_de": "Breite, nicht gefiederte Spreite; Wedel-Umriss und fertile/sterile Blattunterschiede bleiben separate Merkmale.",
+        "code": "needle_like",
+        "label_de": "nadelförmig",
+        "label_en": "needle like",
+        "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
         "review_status": "pending"
       },
       {
-        "code": "divided",
-        "label_de": "Geteilte oder gefiederte Blattspreite",
-        "label_en": "Divided or pinnate blade",
-        "explanation_de": "Blattspreite gelappt, fiederspaltig oder gefiedert; die genaue Teilung wird über frond_division_degree abgefragt.",
+        "code": "reduced",
+        "label_de": "Blätter stark reduziert / scheidenförmig",
+        "label_en": "Leaves strongly reduced / sheath-like",
+        "explanation_de": "Schachtelhalme: winzige Blätter zu Scheiden vereinigt; die grünen Sprosse übernehmen wesentliche Assimilation.",
         "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "scale_like",
+        "label_de": "schuppenförmig",
+        "label_en": "scale like",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "unknown",
+        "label_de": "unbekannt",
+        "label_en": "unknown",
+        "explanation_de": "Der Blatttyp ist nicht belegt.",
+        "explanation_en": "The leaf type has not been established.",
         "image_path": "",
         "review_status": "pending"
       }
@@ -154,11 +217,29 @@
     "order": 40,
     "states": [
       {
-        "code": "underside_sori",
-        "label_de": "Sori auf Blattflächen (meist unterseits)",
-        "label_en": "Sori on frond surfaces (usually beneath)",
-        "explanation_de": "Sporangien in Sori auf Blattspreiten oder Blattabschnitten; genaue Position weiter über sorus_position.",
+        "code": "along_veins",
+        "label_de": "entlang der Nerven",
+        "label_en": "along veins",
+        "explanation_de": "Sori sind entlang des Verlaufs von Blattnerven angeordnet.",
+        "explanation_en": "Sori are arranged along the course of veins.",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "fertile_segment",
+        "label_de": "Sporangien an gesonderten fertilen Blattabschnitten",
+        "label_en": "Sporangia on separate fertile leaf portions",
+        "explanation_de": "Besondere fertile Teile eines ansonsten sterilen/fertilen Blattes, u. a. Natternzungengewächse.",
         "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "leaf_axil",
+        "label_de": "Einzelne Sporangien am Spross / an Sporophyllen",
+        "label_en": "Individual sporangia on shoots / sporophylls",
+        "explanation_de": "Bei Huperzia liegen die Sporangien in den Achseln unmodifizierter Laubblätter; ein ausgeprägter endständiger Strobilus fehlt.",
+        "explanation_en": "In Huperzia, sporangia are in the axils of unmodified leaves; a distinct terminal strobilus is absent.",
         "image_path": "",
         "review_status": "pending"
       },
@@ -172,10 +253,19 @@
         "review_status": "pending"
       },
       {
-        "code": "fertile_segment",
-        "label_de": "Sporangien an gesonderten fertilen Blattabschnitten",
-        "label_en": "Sporangia on separate fertile leaf portions",
-        "explanation_de": "Besondere fertile Teile eines ansonsten sterilen/fertilen Blattes, u. a. Natternzungengewächse.",
+        "code": "on_veins",
+        "label_de": "auf den Nerven",
+        "label_en": "on veins",
+        "explanation_de": "Sori stehen direkt auf Blattnerven.",
+        "explanation_en": "Sori are borne directly on veins.",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "sporocarp",
+        "label_de": "Sporangien in Sporokarpien",
+        "label_en": "Sporangia within sporocarps",
+        "explanation_de": "Sporangien in besonderen, oft kapselartigen Sporokarpien von Wasserfarnen.",
         "explanation_en": "",
         "image_path": "",
         "review_status": "pending"
@@ -190,20 +280,29 @@
         "review_status": "pending"
       },
       {
-        "code": "leaf_axil",
-        "label_de": "Einzelne Sporangien am Spross / an Sporophyllen",
-        "label_en": "Individual sporangia on shoots / sporophylls",
-        "explanation_de": "Kein ausgeprägter endständiger Strobilus, z. B. bei Huperzia; genaue Homologien gruppenspezifisch prüfen.",
+        "code": "submarginal",
+        "label_de": "submarginal",
+        "label_en": "submarginal",
+        "explanation_de": "Sori sitzen knapp innerhalb des Blattrands.",
+        "explanation_en": "Sori occur just inside the margin.",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "underside_sori",
+        "label_de": "Sori auf Blattflächen (meist unterseits)",
+        "label_en": "Sori on frond surfaces (usually beneath)",
+        "explanation_de": "Sporangien in Sori auf Blattspreiten oder Blattabschnitten; genaue Position weiter über sorus_position.",
         "explanation_en": "",
         "image_path": "",
         "review_status": "pending"
       },
       {
-        "code": "sporocarp",
-        "label_de": "Sporangien in Sporokarpien",
-        "label_en": "Sporangia within sporocarps",
-        "explanation_de": "Sporangien in besonderen, oft kapselartigen Sporokarpien von Wasserfarnen.",
-        "explanation_en": "",
+        "code": "unknown",
+        "label_de": "unbekannt",
+        "label_en": "unknown",
+        "explanation_de": "Die Lage der Sporangien ist im Arbeitsblatt nicht angegeben.",
+        "explanation_en": "The position of the sporangia is unspecified in the working table.",
         "image_path": "",
         "review_status": "pending"
       }
@@ -220,29 +319,11 @@
     "order": 60,
     "states": [
       {
-        "code": "rosette",
-        "label_de": "rosettig",
-        "label_en": "rosette",
-        "explanation_de": "Die Wedel entspringen dicht beieinander und strahlen vom Pflanzenzentrum aus.",
-        "explanation_en": "Fronds arise close together and radiate from the centre of the plant.",
-        "image_path": "",
-        "review_status": "text_drafted"
-      },
-      {
         "code": "clustered",
         "label_de": "gebüschelt",
         "label_en": "clustered",
         "explanation_de": "Mehrere Wedel stehen als deutlich erkennbarer Büschel zusammen.",
         "explanation_en": "Several fronds arise together in a distinct tuft.",
-        "image_path": "",
-        "review_status": "text_drafted"
-      },
-      {
-        "code": "solitary_from_rhizome",
-        "label_de": "einzeln aus Rhizom",
-        "label_en": "solitary from rhizome",
-        "explanation_de": "Einzelne Wedel erscheinen mit Abstand zueinander entlang eines Rhizoms.",
-        "explanation_en": "Individual fronds arise separately along a rhizome.",
         "image_path": "",
         "review_status": "text_drafted"
       },
@@ -256,6 +337,42 @@
         "review_status": "text_drafted"
       },
       {
+        "code": "not_applicable",
+        "label_de": "nicht anwendbar",
+        "label_en": "not applicable",
+        "explanation_de": "Die Pflanze besitzt für dieses Merkmal keine vergleichbaren Wedel.",
+        "explanation_en": "The plant has no comparable fronds for this character.",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "rosette",
+        "label_de": "rosettig",
+        "label_en": "rosette",
+        "explanation_de": "Die Wedel entspringen dicht beieinander und strahlen vom Pflanzenzentrum aus.",
+        "explanation_en": "Fronds arise close together and radiate from the centre of the plant.",
+        "image_path": "",
+        "review_status": "text_drafted"
+      },
+      {
+        "code": "single_frond",
+        "label_de": "meist ein einzelner Wedel",
+        "label_en": "usually a single frond",
+        "explanation_de": "Pro Spross steht gewöhnlich ein einzelner Wedel. Bei Natternzungengewächsen können fertiler und steriler Abschnitt einen gemeinsamen Stiel besitzen.",
+        "explanation_en": "There is usually one frond per shoot. In Ophioglossaceae, fertile and sterile portions may share a common stalk.",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "solitary_from_rhizome",
+        "label_de": "einzeln aus Rhizom",
+        "label_en": "solitary from rhizome",
+        "explanation_de": "Einzelne Wedel erscheinen mit Abstand zueinander entlang eines Rhizoms.",
+        "explanation_en": "Individual fronds arise separately along a rhizome.",
+        "image_path": "",
+        "review_status": "text_drafted"
+      },
+      {
         "code": "two_ranked",
         "label_de": "zweizeilig",
         "label_en": "two-ranked",
@@ -263,6 +380,15 @@
         "explanation_en": "Leaves or fronds are arranged in two opposing rows.",
         "image_path": "",
         "review_status": "text_drafted"
+      },
+      {
+        "code": "unknown",
+        "label_de": "unbekannt",
+        "label_en": "unknown",
+        "explanation_de": "Die Stellung der Wedel ist nicht belegt.",
+        "explanation_en": "The arrangement of the fronds has not been established.",
+        "image_path": "",
+        "review_status": "pending"
       }
     ]
   },
@@ -276,6 +402,33 @@
     "group": "Frond",
     "order": 70,
     "states": [
+      {
+        "code": "broadly_triangular",
+        "label_de": "breit-dreieckig",
+        "label_en": "broadly triangular",
+        "explanation_de": "Breit dreieckig; die Spreite ist im Verhältnis zur Länge besonders breit.",
+        "explanation_en": "Broadly triangular; the blade is especially wide relative to its length.",
+        "image_path": "",
+        "review_status": "text_drafted"
+      },
+      {
+        "code": "fan_like",
+        "label_de": "fächerförmig",
+        "label_en": "fan-like",
+        "explanation_de": "Fächerförmig von einer schmalen Basis nach außen verbreitert.",
+        "explanation_en": "Fan-shaped, widening outward from a narrow base.",
+        "image_path": "",
+        "review_status": "text_drafted"
+      },
+      {
+        "code": "lanceolate",
+        "label_de": "lanzettlich",
+        "label_en": "lanceolate",
+        "explanation_de": "Länglich, etwa in der Mitte am breitesten und zu beiden Enden schmäler werdend.",
+        "explanation_en": "Elongated, usually widest near the middle and narrowing towards both ends.",
+        "image_path": "",
+        "review_status": "text_drafted"
+      },
       {
         "code": "linear",
         "label_de": "linear",
@@ -295,13 +448,13 @@
         "review_status": "text_drafted"
       },
       {
-        "code": "lanceolate",
-        "label_de": "lanzettlich",
-        "label_en": "lanceolate",
-        "explanation_de": "Länglich, etwa in der Mitte am breitesten und zu beiden Enden schmäler werdend.",
-        "explanation_en": "Elongated, usually widest near the middle and narrowing towards both ends.",
+        "code": "not_applicable",
+        "label_de": "nicht anwendbar",
+        "label_en": "not applicable",
+        "explanation_de": "Das Merkmal ist für den Grundbauplan dieses Taxons anatomisch nicht sinnvoll.",
+        "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
         "image_path": "",
-        "review_status": "text_drafted"
+        "review_status": "pending"
       },
       {
         "code": "oblong",
@@ -322,47 +475,11 @@
         "review_status": "text_drafted"
       },
       {
-        "code": "triangular",
-        "label_de": "dreieckig",
-        "label_en": "triangular",
-        "explanation_de": "Dreieckiger Gesamtumriss, meist mit breiter Basis und schmalerer Spitze.",
-        "explanation_en": "Triangular overall outline, usually with a broad base and narrower apex.",
-        "image_path": "",
-        "review_status": "text_drafted"
-      },
-      {
-        "code": "broadly_triangular",
-        "label_de": "breit-dreieckig",
-        "label_en": "broadly triangular",
-        "explanation_de": "Breit dreieckig; die Spreite ist im Verhältnis zur Länge besonders breit.",
-        "explanation_en": "Broadly triangular; the blade is especially wide relative to its length.",
-        "image_path": "",
-        "review_status": "text_drafted"
-      },
-      {
         "code": "pentagonal",
         "label_de": "fünfeckig",
         "label_en": "pentagonal",
         "explanation_de": "Der Gesamtumriss erinnert an ein Fünfeck.",
         "explanation_en": "The overall outline is approximately five-sided.",
-        "image_path": "",
-        "review_status": "text_drafted"
-      },
-      {
-        "code": "sagittate",
-        "label_de": "pfeilförmig",
-        "label_en": "sagittate",
-        "explanation_de": "Pfeilförmig, mit zwei zur Basis gerichteten Seitenlappen.",
-        "explanation_en": "Arrow-shaped, with two basal lobes pointing backwards.",
-        "image_path": "",
-        "review_status": "text_drafted"
-      },
-      {
-        "code": "fan_like",
-        "label_de": "fächerförmig",
-        "label_en": "fan-like",
-        "explanation_de": "Fächerförmig von einer schmalen Basis nach außen verbreitert.",
-        "explanation_en": "Fan-shaped, widening outward from a narrow base.",
         "image_path": "",
         "review_status": "text_drafted"
       },
@@ -376,13 +493,22 @@
         "review_status": "text_drafted"
       },
       {
-        "code": "not_applicable",
-        "label_de": "nicht anwendbar",
-        "label_en": "not applicable",
-        "explanation_de": "Das Merkmal ist für den Grundbauplan dieses Taxons anatomisch nicht sinnvoll.",
-        "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
+        "code": "sagittate",
+        "label_de": "pfeilförmig",
+        "label_en": "sagittate",
+        "explanation_de": "Pfeilförmig, mit zwei zur Basis gerichteten Seitenlappen.",
+        "explanation_en": "Arrow-shaped, with two basal lobes pointing backwards.",
         "image_path": "",
-        "review_status": "pending"
+        "review_status": "text_drafted"
+      },
+      {
+        "code": "triangular",
+        "label_de": "dreieckig",
+        "label_en": "triangular",
+        "explanation_de": "Dreieckiger Gesamtumriss, meist mit breiter Basis und schmalerer Spitze.",
+        "explanation_en": "Triangular overall outline, usually with a broad base and narrower apex.",
+        "image_path": "",
+        "review_status": "text_drafted"
       }
     ]
   },
@@ -406,15 +532,6 @@
         "review_status": "text_drafted"
       },
       {
-        "code": "not_clearly_narrowed",
-        "label_de": "nicht deutlich verschmälert",
-        "label_en": "not clearly narrowed",
-        "explanation_de": "Die unteren Fiedern werden zur Spreitenbasis hin nicht deutlich kürzer.",
-        "explanation_en": "The lower pinnae do not become conspicuously shorter towards the blade base.",
-        "image_path": "",
-        "review_status": "text_drafted"
-      },
-      {
         "code": "not_applicable",
         "label_de": "nicht anwendbar",
         "label_en": "not applicable",
@@ -422,6 +539,15 @@
         "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
         "image_path": "",
         "review_status": "pending"
+      },
+      {
+        "code": "not_clearly_narrowed",
+        "label_de": "nicht deutlich verschmälert",
+        "label_en": "not clearly narrowed",
+        "explanation_de": "Die unteren Fiedern werden zur Spreitenbasis hin nicht deutlich kürzer.",
+        "explanation_en": "The lower pinnae do not become conspicuously shorter towards the blade base.",
+        "image_path": "",
+        "review_status": "text_drafted"
       }
     ]
   },
@@ -436,40 +562,13 @@
     "order": 90,
     "states": [
       {
-        "code": "entire",
-        "label_de": "ungeteilt",
-        "label_en": "entire",
-        "explanation_de": "Die Spreite ist ungeteilt und besitzt keine tiefen Einschnitte.",
-        "explanation_en": "The blade is undivided and has no deep incisions.",
+        "code": "at_least_bipinnate",
+        "label_de": "mindestens zweifach gefiedert (Grad offen)",
+        "label_en": "at least bipinnate (exact degree unspecified)",
+        "explanation_de": "Sammelangabe G2 des Arbeitsblatts. Die genaue Fiederungsordnung ist nicht angegeben.",
+        "explanation_en": "Working-table category G2. The precise order of pinnation is unspecified.",
         "image_path": "",
-        "review_status": "text_drafted"
-      },
-      {
-        "code": "lobed",
-        "label_de": "gelappt",
-        "label_en": "lobed",
-        "explanation_de": "Der Blattrand ist gelappt; die Lappen sind nicht als selbständige Fiedern abgesetzt.",
-        "explanation_en": "The blade margin is lobed; lobes are not separate pinnae.",
-        "image_path": "",
-        "review_status": "text_drafted"
-      },
-      {
-        "code": "pinnatifid",
-        "label_de": "fiederspaltig",
-        "label_en": "pinnatifid",
-        "explanation_de": "Die Spreite ist tief fiedrig eingeschnitten, die Abschnitte bleiben an der Hauptachse verbunden.",
-        "explanation_en": "The blade is deeply pinnately cut, but the segments remain connected along the main axis.",
-        "image_path": "",
-        "review_status": "text_drafted"
-      },
-      {
-        "code": "once_pinnate",
-        "label_de": "einfach gefiedert",
-        "label_en": "once pinnate",
-        "explanation_de": "Die Spreite ist in einzelne Fiedern an einer gemeinsamen Mittelachse geteilt.",
-        "explanation_en": "The blade is divided into distinct pinnae along a common main axis.",
-        "image_path": "",
-        "review_status": "text_drafted"
+        "review_status": "pending"
       },
       {
         "code": "bipinnate",
@@ -481,20 +580,11 @@
         "review_status": "text_drafted"
       },
       {
-        "code": "tripinnate",
-        "label_de": "dreifach gefiedert",
-        "label_en": "tripinnate",
-        "explanation_de": "Die Spreite ist bis zur dritten Ordnung in getrennte Abschnitte gefiedert.",
-        "explanation_en": "The blade is pinnately divided into distinct segments to the third order.",
-        "image_path": "",
-        "review_status": "text_drafted"
-      },
-      {
-        "code": "quadripinnate",
-        "label_de": "vierfach gefiedert",
-        "label_en": "quadripinnate",
-        "explanation_de": "Die Spreite ist bis zur vierten Ordnung gefiedert.",
-        "explanation_en": "The blade is pinnately divided to the fourth order.",
+        "code": "entire",
+        "label_de": "ungeteilt",
+        "label_en": "entire",
+        "explanation_de": "Die Spreite ist ungeteilt und besitzt keine tiefen Einschnitte.",
+        "explanation_en": "The blade is undivided and has no deep incisions.",
         "image_path": "",
         "review_status": "text_drafted"
       },
@@ -508,11 +598,11 @@
         "review_status": "text_drafted"
       },
       {
-        "code": "once_pinnate_with_pinnatifid_segments",
-        "label_de": "einfach gefiedert mit fiederspaltigen Segmenten",
-        "label_en": "once pinnate with pinnatifid segments",
-        "explanation_de": "Einzelne Fiedern sind deutlich fiederspaltig eingeschnitten, ohne in freie Fiederchen geteilt zu sein.",
-        "explanation_en": "Separate pinnae are deeply pinnatifid but are not divided into free pinnules.",
+        "code": "lobed",
+        "label_de": "gelappt",
+        "label_en": "lobed",
+        "explanation_de": "Der Blattrand ist gelappt; die Lappen sind nicht als selbständige Fiedern abgesetzt.",
+        "explanation_en": "The blade margin is lobed; lobes are not separate pinnae.",
         "image_path": "",
         "review_status": "text_drafted"
       },
@@ -524,6 +614,60 @@
         "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
         "image_path": "",
         "review_status": "pending"
+      },
+      {
+        "code": "once_pinnate",
+        "label_de": "einfach gefiedert",
+        "label_en": "once pinnate",
+        "explanation_de": "Die Spreite ist in einzelne Fiedern an einer gemeinsamen Mittelachse geteilt.",
+        "explanation_en": "The blade is divided into distinct pinnae along a common main axis.",
+        "image_path": "",
+        "review_status": "text_drafted"
+      },
+      {
+        "code": "once_pinnate_with_pinnatifid_segments",
+        "label_de": "einfach gefiedert mit fiederspaltigen Segmenten",
+        "label_en": "once pinnate with pinnatifid segments",
+        "explanation_de": "Einzelne Fiedern sind deutlich fiederspaltig eingeschnitten, ohne in freie Fiederchen geteilt zu sein.",
+        "explanation_en": "Separate pinnae are deeply pinnatifid but are not divided into free pinnules.",
+        "image_path": "",
+        "review_status": "text_drafted"
+      },
+      {
+        "code": "pinnatifid",
+        "label_de": "fiederspaltig",
+        "label_en": "pinnatifid",
+        "explanation_de": "Die Spreite ist tief fiedrig eingeschnitten, die Abschnitte bleiben an der Hauptachse verbunden.",
+        "explanation_en": "The blade is deeply pinnately cut, but the segments remain connected along the main axis.",
+        "image_path": "",
+        "review_status": "text_drafted"
+      },
+      {
+        "code": "quadripinnate",
+        "label_de": "vierfach gefiedert",
+        "label_en": "quadripinnate",
+        "explanation_de": "Die Spreite ist bis zur vierten Ordnung gefiedert.",
+        "explanation_en": "The blade is pinnately divided to the fourth order.",
+        "image_path": "",
+        "review_status": "text_drafted"
+      },
+      {
+        "code": "tripinnate",
+        "label_de": "dreifach gefiedert",
+        "label_en": "tripinnate",
+        "explanation_de": "Die Spreite ist bis zur dritten Ordnung in getrennte Abschnitte gefiedert.",
+        "explanation_en": "The blade is pinnately divided into distinct segments to the third order.",
+        "image_path": "",
+        "review_status": "text_drafted"
+      },
+      {
+        "code": "unknown",
+        "label_de": "unbekannt",
+        "label_en": "unknown",
+        "explanation_de": "Der Teilungsgrad ist nicht belegt.",
+        "explanation_en": "The degree of division has not been established.",
+        "image_path": "",
+        "review_status": "pending"
       }
     ]
   },
@@ -531,12 +675,21 @@
     "code": "frond_dimorphism",
     "label_de": "Fertile und sterile Wedel",
     "label_en": "Fertile and sterile fronds",
-    "description_de": "Vergleicht fertile (sporangientragende) und sterile Wedel hinsichtlich Gestalt und Größe; nur beurteilen, wenn beide vorhanden sind.",
-    "description_en": "Compares the shape and size of fertile (sporangia-bearing) and sterile fronds; assess only when both are present.",
+    "description_de": "Vergleicht sterile und fertile Wedel nach Form und Größe. Hemidimorph: deutlich getrennte fertile und sterile Abschnitte an einem Wedel. Nur bei anwendbarem Grundbauplan beurteilen.",
+    "description_en": "Compares sterile and fertile fronds by shape and size. Hemidimorphic: distinct fertile and sterile segments on one frond. Assess only where the body plan is applicable.",
     "role": "primary",
     "group": "Habit",
     "order": 100,
     "states": [
+      {
+        "code": "hemidimorphic",
+        "label_de": "hemidimorph",
+        "label_en": "hemidimorphic",
+        "explanation_de": "Ein Wedel besitzt deutlich getrennte sterile und fertile Abschnitte.",
+        "explanation_en": "One frond has distinct sterile and fertile segments.",
+        "image_path": "",
+        "review_status": "pending"
+      },
       {
         "code": "monomorphic",
         "label_de": "monomorph",
@@ -547,13 +700,13 @@
         "review_status": "text_drafted"
       },
       {
-        "code": "weakly_dimorphic",
-        "label_de": "schwach dimorph",
-        "label_en": "weakly dimorphic",
-        "explanation_de": "Fertile und sterile Wedel unterscheiden sich erkennbar, aber nicht grundlegend in ihrer Form.",
-        "explanation_en": "Fertile and sterile fronds differ visibly but not fundamentally in shape.",
+        "code": "not_applicable",
+        "label_de": "nicht anwendbar",
+        "label_en": "not applicable",
+        "explanation_de": "Der Grundbauplan besitzt keine für dieses Merkmal vergleichbaren Wedel.",
+        "explanation_en": "The plant lacks fronds comparable for this character.",
         "image_path": "",
-        "review_status": "text_drafted"
+        "review_status": "pending"
       },
       {
         "code": "strongly_dimorphic",
@@ -561,6 +714,24 @@
         "label_en": "strongly dimorphic",
         "explanation_de": "Fertile Wedel sind gegenüber sterilen Wedeln deutlich anders gestaltet, oft schmaler oder aufrechter.",
         "explanation_en": "Fertile fronds are distinctly different in form, often narrower or more upright than sterile fronds.",
+        "image_path": "",
+        "review_status": "text_drafted"
+      },
+      {
+        "code": "unknown",
+        "label_de": "unbekannt",
+        "label_en": "unknown",
+        "explanation_de": "Die Ausprägung für dieses Merkmal ist nicht hinreichend geklärt.",
+        "explanation_en": "The state of this character has not been established.",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "weakly_dimorphic",
+        "label_de": "schwach dimorph",
+        "label_en": "weakly dimorphic",
+        "explanation_de": "Fertile und sterile Wedel unterscheiden sich erkennbar, aber nicht grundlegend in ihrer Form.",
+        "explanation_en": "Fertile and sterile fronds differ visibly but not fundamentally in shape.",
         "image_path": "",
         "review_status": "text_drafted"
       }
@@ -577,38 +748,11 @@
     "order": 110,
     "states": [
       {
-        "code": "marginal",
-        "label_de": "randständig",
-        "label_en": "marginal",
-        "explanation_de": "Sori sitzen am Rand der Spreite oder ihrer Abschnitte.",
-        "explanation_en": "Sori occur at the margin of the blade or its segments.",
-        "image_path": "",
-        "review_status": "text_drafted"
-      },
-      {
-        "code": "submarginal",
-        "label_de": "submarginal",
-        "label_en": "submarginal",
-        "explanation_de": "Sori sitzen knapp innerhalb des Blattrands.",
-        "explanation_en": "Sori occur just inside the margin.",
-        "image_path": "",
-        "review_status": "text_drafted"
-      },
-      {
         "code": "along_veins",
         "label_de": "entlang der Nerven",
         "label_en": "along veins",
         "explanation_de": "Sori sind entlang des Verlaufs von Blattnerven angeordnet.",
         "explanation_en": "Sori are arranged along the course of veins.",
-        "image_path": "",
-        "review_status": "text_drafted"
-      },
-      {
-        "code": "on_veins",
-        "label_de": "auf den Nerven",
-        "label_en": "on veins",
-        "explanation_de": "Sori stehen direkt auf Blattnerven.",
-        "explanation_en": "Sori are borne directly on veins.",
         "image_path": "",
         "review_status": "text_drafted"
       },
@@ -622,6 +766,24 @@
         "review_status": "text_drafted"
       },
       {
+        "code": "covering_underside",
+        "label_de": "Unterseite bedeckend",
+        "label_en": "covering underside",
+        "explanation_de": "Bei Reife bedecken Sporangien große Bereiche der Blattunterseite; einzelne Sori können schwer erkennbar sein.",
+        "explanation_en": "At maturity, sporangia cover large areas of the underside; individual sori may be hard to distinguish.",
+        "image_path": "",
+        "review_status": "text_drafted"
+      },
+      {
+        "code": "marginal",
+        "label_de": "randständig",
+        "label_en": "marginal",
+        "explanation_de": "Sori sitzen am Rand der Spreite oder ihrer Abschnitte.",
+        "explanation_en": "Sori occur at the margin of the blade or its segments.",
+        "image_path": "",
+        "review_status": "text_drafted"
+      },
+      {
         "code": "near_midrib",
         "label_de": "nahe der Mittelrippe",
         "label_en": "near midrib",
@@ -631,11 +793,20 @@
         "review_status": "text_drafted"
       },
       {
-        "code": "covering_underside",
-        "label_de": "Unterseite bedeckend",
-        "label_en": "covering underside",
-        "explanation_de": "Bei Reife bedecken Sporangien große Bereiche der Blattunterseite; einzelne Sori können schwer erkennbar sein.",
-        "explanation_en": "At maturity, sporangia cover large areas of the underside; individual sori may be hard to distinguish.",
+        "code": "not_visible_typically",
+        "label_de": "meist nicht sichtbar",
+        "label_en": "not visible typically",
+        "explanation_de": "Sporentragende Strukturen sind am beobachteten Wedel normalerweise nicht gut zu erkennen; kein sicherer Negativnachweis.",
+        "explanation_en": "Spore-bearing structures are usually not readily visible on the observed frond; this does not prove absence.",
+        "image_path": "",
+        "review_status": "text_drafted"
+      },
+      {
+        "code": "on_veins",
+        "label_de": "auf den Nerven",
+        "label_en": "on veins",
+        "explanation_de": "Sori stehen direkt auf Blattnerven.",
+        "explanation_en": "Sori are borne directly on veins.",
         "image_path": "",
         "review_status": "text_drafted"
       },
@@ -649,11 +820,11 @@
         "review_status": "text_drafted"
       },
       {
-        "code": "not_visible_typically",
-        "label_de": "meist nicht sichtbar",
-        "label_en": "not visible typically",
-        "explanation_de": "Sporentragende Strukturen sind am beobachteten Wedel normalerweise nicht gut zu erkennen; kein sicherer Negativnachweis.",
-        "explanation_en": "Spore-bearing structures are usually not readily visible on the observed frond; this does not prove absence.",
+        "code": "submarginal",
+        "label_de": "submarginal",
+        "label_en": "submarginal",
+        "explanation_de": "Sori sitzen knapp innerhalb des Blattrands.",
+        "explanation_en": "Sori occur just inside the margin.",
         "image_path": "",
         "review_status": "text_drafted"
       }
@@ -670,38 +841,11 @@
     "order": 120,
     "states": [
       {
-        "code": "round",
-        "label_de": "rund",
-        "label_en": "round",
-        "explanation_de": "Einzelne Sori wirken annähernd kreisförmig.",
-        "explanation_en": "Individual sori appear approximately circular.",
-        "image_path": "",
-        "review_status": "text_drafted"
-      },
-      {
-        "code": "elongate",
-        "label_de": "länglich",
-        "label_en": "elongate",
-        "explanation_de": "Sori sind deutlich länger als breit.",
-        "explanation_en": "Sori are distinctly longer than wide.",
-        "image_path": "",
-        "review_status": "text_drafted"
-      },
-      {
-        "code": "linear",
-        "label_de": "linear",
-        "label_en": "linear",
-        "explanation_de": "Sehr schmale, strichförmige Sori.",
-        "explanation_en": "Very narrow, line-shaped sori.",
-        "image_path": "",
-        "review_status": "text_drafted"
-      },
-      {
-        "code": "hooked",
-        "label_de": "hakenförmig",
-        "label_en": "hooked",
-        "explanation_de": "Sori sind gebogen bis haken- oder kommaförmig.",
-        "explanation_en": "Sori are curved, hook-shaped or comma-shaped.",
+        "code": "bean_like_sporocarp",
+        "label_de": "bohnenförmiger Sporokarp",
+        "label_en": "bean-like sporocarp",
+        "explanation_de": "Das besondere sporangientragende Organ ist bohnenförmig.",
+        "explanation_en": "The distinct spore-bearing sporocarp is bean-shaped.",
         "image_path": "",
         "review_status": "text_drafted"
       },
@@ -715,11 +859,20 @@
         "review_status": "text_drafted"
       },
       {
-        "code": "bean_like_sporocarp",
-        "label_de": "bohnenförmiger Sporokarp",
-        "label_en": "bean-like sporocarp",
-        "explanation_de": "Das besondere sporangientragende Organ ist bohnenförmig.",
-        "explanation_en": "The distinct spore-bearing sporocarp is bean-shaped.",
+        "code": "elliptical",
+        "label_de": "elliptisch",
+        "label_en": "elliptical",
+        "explanation_de": "Sori sind oval bis elliptisch.",
+        "explanation_en": "Sori are oval to elliptical.",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "elongate",
+        "label_de": "länglich",
+        "label_en": "elongate",
+        "explanation_de": "Sori sind deutlich länger als breit.",
+        "explanation_en": "Sori are distinctly longer than wide.",
         "image_path": "",
         "review_status": "text_drafted"
       },
@@ -733,6 +886,33 @@
         "review_status": "text_drafted"
       },
       {
+        "code": "hooked",
+        "label_de": "hakenförmig",
+        "label_en": "hooked",
+        "explanation_de": "Sori sind gebogen bis haken- oder kommaförmig.",
+        "explanation_en": "Sori are curved, hook-shaped or comma-shaped.",
+        "image_path": "",
+        "review_status": "text_drafted"
+      },
+      {
+        "code": "linear",
+        "label_de": "linear",
+        "label_en": "linear",
+        "explanation_de": "Sehr schmale, strichförmige Sori.",
+        "explanation_en": "Very narrow, line-shaped sori.",
+        "image_path": "",
+        "review_status": "text_drafted"
+      },
+      {
+        "code": "lunulate",
+        "label_de": "halbmondförmig",
+        "label_en": "lunulate",
+        "explanation_de": "Die sichtbare Kontur einer einzelnen Sporengruppe ist halbmondförmig.",
+        "explanation_en": "The visible outline of an individual spore-bearing group is crescent-shaped.",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
         "code": "not_applicable",
         "label_de": "nicht anwendbar (keine Sori)",
         "label_en": "not applicable (no sori)",
@@ -740,6 +920,24 @@
         "explanation_en": "Sporangia are not grouped into sori; sorus shape is therefore not applicable.",
         "image_path": "",
         "review_status": "source_checked"
+      },
+      {
+        "code": "round",
+        "label_de": "rund",
+        "label_en": "round",
+        "explanation_de": "Einzelne Sori wirken annähernd kreisförmig.",
+        "explanation_en": "Individual sori appear approximately circular.",
+        "image_path": "",
+        "review_status": "text_drafted"
+      },
+      {
+        "code": "unknown",
+        "label_de": "unbekannt",
+        "label_en": "unknown",
+        "explanation_de": "Die Form der Sori ist nicht belegt.",
+        "explanation_en": "The shape of the sori has not been established.",
+        "image_path": "",
+        "review_status": "pending"
       }
     ]
   },
@@ -754,20 +952,20 @@
     "order": 210,
     "states": [
       {
-        "code": "entire",
-        "label_de": "Ungeteilt",
-        "label_en": "Undivided",
-        "explanation_de": "Steriler Abschnitt als ungeteilte Spreite.",
-        "explanation_en": "Sterile portion forming an undivided blade.",
-        "image_path": "",
-        "review_status": "draft"
-      },
-      {
         "code": "divided",
         "label_de": "Geteilt",
         "label_en": "Divided",
         "explanation_de": "Steriler Abschnitt in Teilsegmente gegliedert.",
         "explanation_en": "Sterile portion divided into segments.",
+        "image_path": "",
+        "review_status": "draft"
+      },
+      {
+        "code": "entire",
+        "label_de": "Ungeteilt",
+        "label_en": "Undivided",
+        "explanation_de": "Steriler Abschnitt als ungeteilte Spreite.",
+        "explanation_en": "Sterile portion forming an undivided blade.",
         "image_path": "",
         "review_status": "draft"
       },
@@ -793,15 +991,6 @@
     "order": 220,
     "states": [
       {
-        "code": "two_ranked_spike",
-        "label_de": "Zweizeilige Ähre",
-        "label_en": "Two-ranked spike",
-        "explanation_de": "Sporangien in zwei Reihen an einer Ähre.",
-        "explanation_en": "Sporangia in two rows along a spike.",
-        "image_path": "",
-        "review_status": "draft"
-      },
-      {
         "code": "branched_cluster",
         "label_de": "Verzweigte Sporangienrispe",
         "label_en": "Branched sporangial cluster",
@@ -818,6 +1007,15 @@
         "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
         "image_path": "",
         "review_status": "pending"
+      },
+      {
+        "code": "two_ranked_spike",
+        "label_de": "Zweizeilige Ähre",
+        "label_en": "Two-ranked spike",
+        "explanation_de": "Sporangien in zwei Reihen an einer Ähre.",
+        "explanation_en": "Sporangia in two rows along a spike.",
+        "image_path": "",
+        "review_status": "draft"
       }
     ]
   },
@@ -841,20 +1039,20 @@
         "review_status": "draft"
       },
       {
-        "code": "narrow_lobed",
-        "label_de": "Schmal, gelappt",
-        "label_en": "Narrow, lobed",
-        "explanation_de": "Sterile Segmente schmal bis unregelmäßig gelappt.",
-        "explanation_en": "Sterile segments narrow or irregularly lobed.",
-        "image_path": "",
-        "review_status": "draft"
-      },
-      {
         "code": "finely_divided",
         "label_de": "Fein zerteilt",
         "label_en": "Finely divided",
         "explanation_de": "Sterile Spreite in zahlreiche kleine Abschnitte geteilt.",
         "explanation_en": "Sterile lamina dissected into numerous small parts.",
+        "image_path": "",
+        "review_status": "draft"
+      },
+      {
+        "code": "narrow_lobed",
+        "label_de": "Schmal, gelappt",
+        "label_en": "Narrow, lobed",
+        "explanation_de": "Sterile Segmente schmal bis unregelmäßig gelappt.",
+        "explanation_en": "Sterile segments narrow or irregularly lobed.",
         "image_path": "",
         "review_status": "draft"
       },
@@ -880,54 +1078,18 @@
     "order": 300,
     "states": [
       {
-        "code": "forest",
-        "label_de": "Wald",
-        "label_en": "Forest",
+        "code": "aquatic_floating",
+        "label_de": "Schwimmpflanze",
+        "label_en": "aquatic floating",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
         "review_status": "pending"
       },
       {
-        "code": "wet_forest",
-        "label_de": "Feuchtwald",
-        "label_en": "wet forest",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "ravine_forest",
-        "label_de": "Schluchtwald",
-        "label_en": "ravine forest",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "rock",
-        "label_de": "Fels",
-        "label_en": "rock",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "wall",
-        "label_de": "Mauer",
-        "label_en": "wall",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "scree",
-        "label_de": "Schutt",
-        "label_en": "scree",
+        "code": "aquatic_rooted",
+        "label_de": "im Wasser wurzelnd",
+        "label_en": "rooted aquatic",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
@@ -943,9 +1105,18 @@
         "review_status": "pending"
       },
       {
-        "code": "moor",
-        "label_de": "Moor",
-        "label_en": "moor",
+        "code": "dry_grassland",
+        "label_de": "Trockenrasen",
+        "label_en": "dry grassland",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "epiphytic",
+        "label_de": "epiphytisch (auf Pflanzen)",
+        "label_en": "epiphytic (on plants)",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
@@ -961,11 +1132,65 @@
         "review_status": "pending"
       },
       {
+        "code": "forest",
+        "label_de": "Wald",
+        "label_en": "Forest",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "lithophytic",
+        "label_de": "lithophytisch (auf Fels)",
+        "label_en": "lithophytic (on rock)",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
         "code": "marsh",
         "label_de": "Sumpf",
         "label_en": "marsh",
         "explanation_de": "",
         "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "moor",
+        "label_de": "Moor",
+        "label_en": "moor",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "ravine_forest",
+        "label_de": "Schluchtwald",
+        "label_en": "ravine forest",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "scree",
+        "label_de": "Schutt",
+        "label_en": "scree",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "semi_aquatic",
+        "label_de": "semiaquatisch",
+        "label_en": "semi-aquatic",
+        "explanation_de": "Pflanze wurzelt im Boden an Ufern, Sümpfen oder Flachwasserzonen",
+        "explanation_en": "Plant roots directly in the soil along banks, in marshes, or in shallow-water zones.",
         "image_path": "",
         "review_status": "pending"
       },
@@ -979,9 +1204,9 @@
         "review_status": "pending"
       },
       {
-        "code": "standing_water",
-        "label_de": "stehendes Gewässer",
-        "label_en": "standing water",
+        "code": "shrubland",
+        "label_de": "Gebüsch",
+        "label_en": "shrubland",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
@@ -997,27 +1222,36 @@
         "review_status": "pending"
       },
       {
-        "code": "aquatic_floating",
-        "label_de": "Schwimmpflanze",
-        "label_en": "aquatic floating",
+        "code": "standing_water",
+        "label_de": "stehendes Gewässer",
+        "label_en": "standing water",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
         "review_status": "pending"
       },
       {
-        "code": "dry_grassland",
-        "label_de": "Trockenrasen",
-        "label_en": "dry grassland",
+        "code": "terrestrial",
+        "label_de": "terrestrisch (am Boden)",
+        "label_en": "terrestrial (on the ground)",
+        "explanation_de": "Pflanze wurzelt direkt im Boden",
+        "explanation_en": "plant roots directly in the soil",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "wall",
+        "label_de": "Mauer",
+        "label_en": "wall",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
         "review_status": "pending"
       },
       {
-        "code": "shrubland",
-        "label_de": "Gebüsch",
-        "label_en": "shrubland",
+        "code": "wet_forest",
+        "label_de": "Feuchtwald",
+        "label_en": "wet forest",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
@@ -1036,6 +1270,15 @@
     "order": 310,
     "states": [
       {
+        "code": "not_applicable",
+        "label_de": "nicht anwendbar",
+        "label_en": "not applicable",
+        "explanation_de": "Das Merkmal ist für den Grundbauplan dieses Taxons anatomisch nicht sinnvoll.",
+        "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
         "code": "separate_different",
         "label_de": "Deutlich verschieden",
         "label_en": "Distinctly different",
@@ -1052,15 +1295,6 @@
         "explanation_en": "Strobili borne on broadly similar green shoots.",
         "image_path": "",
         "review_status": "draft"
-      },
-      {
-        "code": "not_applicable",
-        "label_de": "nicht anwendbar",
-        "label_en": "not applicable",
-        "explanation_de": "Das Merkmal ist für den Grundbauplan dieses Taxons anatomisch nicht sinnvoll.",
-        "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
-        "image_path": "",
-        "review_status": "pending"
       }
     ]
   },
@@ -1075,15 +1309,6 @@
     "order": 320,
     "states": [
       {
-        "code": "mostly_unbranched",
-        "label_de": "Meist unverzweigt",
-        "label_en": "Usually unbranched",
-        "explanation_de": "Spross überwiegend ohne Seitenäste.",
-        "explanation_en": "Stem predominantly without lateral branches.",
-        "image_path": "",
-        "review_status": "draft"
-      },
-      {
         "code": "branched_whorls",
         "label_de": "Quirläste vorhanden",
         "label_en": "Branches in whorls",
@@ -1093,11 +1318,11 @@
         "review_status": "draft"
       },
       {
-        "code": "variable",
-        "label_de": "Variabel",
-        "label_en": "Variable",
-        "explanation_de": "Äste können vorhanden sein oder fehlen.",
-        "explanation_en": "Branches may be present or absent.",
+        "code": "mostly_unbranched",
+        "label_de": "Meist unverzweigt",
+        "label_en": "Usually unbranched",
+        "explanation_de": "Spross überwiegend ohne Seitenäste.",
+        "explanation_en": "Stem predominantly without lateral branches.",
         "image_path": "",
         "review_status": "draft"
       },
@@ -1109,6 +1334,15 @@
         "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
         "image_path": "",
         "review_status": "pending"
+      },
+      {
+        "code": "variable",
+        "label_de": "Variabel",
+        "label_en": "Variable",
+        "explanation_de": "Äste können vorhanden sein oder fehlen.",
+        "explanation_en": "Branches may be present or absent.",
+        "image_path": "",
+        "review_status": "draft"
       }
     ]
   },
@@ -1132,72 +1366,9 @@
         "review_status": "pending"
       },
       {
-        "code": "weakly_calcareous",
-        "label_de": "schwach kalkhaltig",
-        "label_en": "weakly calcareous",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "siliceous",
-        "label_de": "silikatisch",
-        "label_en": "siliceous",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "serpentine",
-        "label_de": "Serpentin",
-        "label_en": "serpentine",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
         "code": "dolomite",
         "label_de": "Dolomit",
         "label_en": "dolomite",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "porphyry",
-        "label_de": "Porphyr",
-        "label_en": "porphyry",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "schist",
-        "label_de": "Schiefer",
-        "label_en": "schist",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "magnesite",
-        "label_de": "Magnesit",
-        "label_en": "magnesite",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "soil",
-        "label_de": "Boden",
-        "label_en": "soil",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
@@ -1213,18 +1384,9 @@
         "review_status": "pending"
       },
       {
-        "code": "rock",
-        "label_de": "Fels",
-        "label_en": "rock",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "wall_mortar_free",
-        "label_de": "mörtelfreie Mauer",
-        "label_en": "mortar-free wall",
+        "code": "magnesite",
+        "label_de": "Magnesit",
+        "label_en": "magnesite",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
@@ -1240,6 +1402,60 @@
         "review_status": "pending"
       },
       {
+        "code": "porphyry",
+        "label_de": "Porphyr",
+        "label_en": "porphyry",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "rock",
+        "label_de": "Fels",
+        "label_en": "rock",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "schist",
+        "label_de": "Schiefer",
+        "label_en": "schist",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "serpentine",
+        "label_de": "Serpentin",
+        "label_en": "serpentine",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "siliceous",
+        "label_de": "silikatisch",
+        "label_en": "siliceous",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "soil",
+        "label_de": "Boden",
+        "label_en": "soil",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
         "code": "variable",
         "label_de": "variabel",
         "label_en": "variable",
@@ -1247,43 +1463,22 @@
         "explanation_en": "",
         "image_path": "",
         "review_status": "pending"
-      }
-    ]
-  },
-  {
-    "code": "eq_branch_first_internode",
-    "label_de": "Erstes Astglied zur Stängelscheide",
-    "label_en": "First branch internode vs stem sheath",
-    "description_de": "Länge des untersten Astglieds im Vergleich zur zugehörigen Stängelscheide.",
-    "description_en": "Length of first branch internode relative to adjoining stem sheath.",
-    "role": "advanced",
-    "group": "Equisetaceae",
-    "order": 330,
-    "states": [
-      {
-        "code": "shorter",
-        "label_de": "Kürzer als Scheide",
-        "label_en": "Shorter than sheath",
-        "explanation_de": "Erstes Astglied kürzer als angrenzende Stängelscheide.",
-        "explanation_en": "First branch internode shorter than adjacent stem sheath.",
-        "image_path": "",
-        "review_status": "draft"
       },
       {
-        "code": "equal_or_longer",
-        "label_de": "Mindestens so lang",
-        "label_en": "At least as long",
-        "explanation_de": "Erstes Astglied mindestens so lang wie die angrenzende Scheide.",
-        "explanation_en": "First branch internode at least as long as adjacent sheath.",
+        "code": "wall_mortar_free",
+        "label_de": "mörtelfreie Mauer",
+        "label_en": "mortar-free wall",
+        "explanation_de": "",
+        "explanation_en": "",
         "image_path": "",
-        "review_status": "draft"
+        "review_status": "pending"
       },
       {
-        "code": "not_applicable",
-        "label_de": "nicht anwendbar",
-        "label_en": "not applicable",
-        "explanation_de": "Das Merkmal ist für den Grundbauplan dieses Taxons anatomisch nicht sinnvoll.",
-        "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
+        "code": "weakly_calcareous",
+        "label_de": "schwach kalkhaltig",
+        "label_en": "weakly calcareous",
+        "explanation_de": "",
+        "explanation_en": "",
         "image_path": "",
         "review_status": "pending"
       }
@@ -1300,15 +1495,6 @@
     "order": 330,
     "states": [
       {
-        "code": "calcifuge",
-        "label_de": "kalkmeidend",
-        "label_en": "calcifuge",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
         "code": "calcicole",
         "label_de": "kalkliebend",
         "label_en": "calcicole",
@@ -1318,9 +1504,27 @@
         "review_status": "pending"
       },
       {
+        "code": "calcifuge",
+        "label_de": "kalkmeidend",
+        "label_en": "calcifuge",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
         "code": "carbonate_indifferent",
         "label_de": "karbonatindifferent",
         "label_en": "carbonate indifferent",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "variable",
+        "label_de": "variabel",
+        "label_en": "variable",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
@@ -1343,15 +1547,84 @@
         "explanation_en": "",
         "image_path": "",
         "review_status": "pending"
+      }
+    ]
+  },
+  {
+    "code": "eq_branch_first_internode",
+    "label_de": "Erstes Astglied zur Stängelscheide",
+    "label_en": "First branch internode vs stem sheath",
+    "description_de": "Länge des untersten Astglieds im Vergleich zur zugehörigen Stängelscheide.",
+    "description_en": "Length of first branch internode relative to adjoining stem sheath.",
+    "role": "advanced",
+    "group": "Equisetaceae",
+    "order": 330,
+    "states": [
+      {
+        "code": "equal_or_longer",
+        "label_de": "Mindestens so lang",
+        "label_en": "At least as long",
+        "explanation_de": "Erstes Astglied mindestens so lang wie die angrenzende Scheide.",
+        "explanation_en": "First branch internode at least as long as adjacent sheath.",
+        "image_path": "",
+        "review_status": "draft"
       },
       {
-        "code": "variable",
-        "label_de": "variabel",
-        "label_en": "variable",
-        "explanation_de": "",
-        "explanation_en": "",
+        "code": "not_applicable",
+        "label_de": "nicht anwendbar",
+        "label_en": "not applicable",
+        "explanation_de": "Das Merkmal ist für den Grundbauplan dieses Taxons anatomisch nicht sinnvoll.",
+        "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
         "image_path": "",
         "review_status": "pending"
+      },
+      {
+        "code": "shorter",
+        "label_de": "Kürzer als Scheide",
+        "label_en": "Shorter than sheath",
+        "explanation_de": "Erstes Astglied kürzer als angrenzende Stängelscheide.",
+        "explanation_en": "First branch internode shorter than adjacent stem sheath.",
+        "image_path": "",
+        "review_status": "draft"
+      }
+    ]
+  },
+  {
+    "code": "eq_central_cavity",
+    "label_de": "Größe der Zentralhöhle",
+    "label_en": "Relative central cavity size",
+    "description_de": "Zentralhöhle im Stängelquerschnitt; nur bei aufgeschnittenem Spross prüfbar.",
+    "description_en": "Central cavity in stem cross section; requires a cut stem.",
+    "role": "advanced",
+    "group": "Equisetaceae",
+    "order": 340,
+    "states": [
+      {
+        "code": "not_applicable",
+        "label_de": "nicht anwendbar",
+        "label_en": "not applicable",
+        "explanation_de": "Das Merkmal ist für den Grundbauplan dieses Taxons anatomisch nicht sinnvoll.",
+        "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "not_very_large",
+        "label_de": "Nicht sehr groß",
+        "label_en": "Not very large",
+        "explanation_de": "Zentralhöhle deutlich kleiner; genaue Grenzwerte artspezifisch prüfen.",
+        "explanation_en": "Cavity notably smaller; verify species-specific thresholds.",
+        "image_path": "",
+        "review_status": "draft"
+      },
+      {
+        "code": "very_large",
+        "label_de": "Sehr groß (ca. 75–90 %)",
+        "label_en": "Very large (approx. 75–90%)",
+        "explanation_de": "Zentralhöhle nimmt etwa drei Viertel bis neun Zehntel des Durchmessers ein.",
+        "explanation_en": "Cavity occupies approximately three quarters to nine tenths of stem diameter.",
+        "image_path": "",
+        "review_status": "draft"
       }
     ]
   },
@@ -1365,6 +1638,15 @@
     "group": "Ecology",
     "order": 340,
     "states": [
+      {
+        "code": "aquatic",
+        "label_de": "aquatisch",
+        "label_en": "aquatic",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
       {
         "code": "dry",
         "label_de": "trocken",
@@ -1393,27 +1675,18 @@
         "review_status": "pending"
       },
       {
-        "code": "wet",
-        "label_de": "nass",
-        "label_en": "wet",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "aquatic",
-        "label_de": "aquatisch",
-        "label_en": "aquatic",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
         "code": "periodically_inundated",
         "label_de": "periodisch überflutet",
         "label_en": "periodically inundated",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "wet",
+        "label_de": "nass",
+        "label_en": "wet",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
@@ -1422,30 +1695,21 @@
     ]
   },
   {
-    "code": "eq_central_cavity",
-    "label_de": "Größe der Zentralhöhle",
-    "label_en": "Relative central cavity size",
-    "description_de": "Zentralhöhle im Stängelquerschnitt; nur bei aufgeschnittenem Spross prüfbar.",
-    "description_en": "Central cavity in stem cross section; requires a cut stem.",
-    "role": "advanced",
+    "code": "eq_sheath_teeth",
+    "label_de": "Zähne der Stängelscheide",
+    "label_en": "Stem sheath teeth",
+    "description_de": "Scheidenzähne am Knoten; Zahl, Farbe und Beständigkeit diagnostisch.",
+    "description_en": "Sheath teeth at nodes; number, colour and persistence can be diagnostic.",
+    "role": "dependent",
     "group": "Equisetaceae",
-    "order": 340,
+    "order": 350,
     "states": [
       {
-        "code": "very_large",
-        "label_de": "Sehr groß (ca. 75–90 %)",
-        "label_en": "Very large (approx. 75–90%)",
-        "explanation_de": "Zentralhöhle nimmt etwa drei Viertel bis neun Zehntel des Durchmessers ein.",
-        "explanation_en": "Cavity occupies approximately three quarters to nine tenths of stem diameter.",
-        "image_path": "",
-        "review_status": "draft"
-      },
-      {
-        "code": "not_very_large",
-        "label_de": "Nicht sehr groß",
-        "label_en": "Not very large",
-        "explanation_de": "Zentralhöhle deutlich kleiner; genaue Grenzwerte artspezifisch prüfen.",
-        "explanation_en": "Cavity notably smaller; verify species-specific thresholds.",
+        "code": "deciduous",
+        "label_de": "Früh abfallend",
+        "label_en": "Early deciduous",
+        "explanation_de": "Scheidenzähne fallen früh ab.",
+        "explanation_en": "Sheath teeth shed early.",
         "image_path": "",
         "review_status": "draft"
       },
@@ -1457,6 +1721,24 @@
         "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
         "image_path": "",
         "review_status": "pending"
+      },
+      {
+        "code": "persistent",
+        "label_de": "Bleibend",
+        "label_en": "Persistent",
+        "explanation_de": "Scheidenzähne bleiben gut erkennbar.",
+        "explanation_en": "Sheath teeth remain recognisable.",
+        "image_path": "",
+        "review_status": "draft"
+      },
+      {
+        "code": "variable",
+        "label_de": "Variabel",
+        "label_en": "Variable",
+        "explanation_de": "Beständigkeit oder Ausprägung wechselnd.",
+        "explanation_en": "Persistence or appearance varies.",
+        "image_path": "",
+        "review_status": "draft"
       }
     ]
   },
@@ -1471,20 +1753,20 @@
     "order": 350,
     "states": [
       {
-        "code": "shade",
-        "label_de": "schattig",
-        "label_en": "shade",
-        "explanation_de": "Standorte ohne längere direkte Sonneneinstrahlung.",
-        "explanation_en": "Sites without prolonged direct sunlight.",
-        "image_path": "",
-        "review_status": "text_drafted"
-      },
-      {
         "code": "halfshade",
         "label_de": "halbschattig",
         "label_en": "partial shade",
         "explanation_de": "Standorte mit zeitweiser direkter Sonne oder gefiltertem Licht.",
         "explanation_en": "Sites receiving some direct sun or filtered light.",
+        "image_path": "",
+        "review_status": "text_drafted"
+      },
+      {
+        "code": "shade",
+        "label_de": "schattig",
+        "label_en": "shade",
+        "explanation_de": "Standorte ohne längere direkte Sonneneinstrahlung.",
+        "explanation_en": "Sites without prolonged direct sunlight.",
         "image_path": "",
         "review_status": "text_drafted"
       },
@@ -1500,54 +1782,6 @@
     ]
   },
   {
-    "code": "eq_sheath_teeth",
-    "label_de": "Zähne der Stängelscheide",
-    "label_en": "Stem sheath teeth",
-    "description_de": "Scheidenzähne am Knoten; Zahl, Farbe und Beständigkeit diagnostisch.",
-    "description_en": "Sheath teeth at nodes; number, colour and persistence can be diagnostic.",
-    "role": "dependent",
-    "group": "Equisetaceae",
-    "order": 350,
-    "states": [
-      {
-        "code": "persistent",
-        "label_de": "Bleibend",
-        "label_en": "Persistent",
-        "explanation_de": "Scheidenzähne bleiben gut erkennbar.",
-        "explanation_en": "Sheath teeth remain recognisable.",
-        "image_path": "",
-        "review_status": "draft"
-      },
-      {
-        "code": "deciduous",
-        "label_de": "Früh abfallend",
-        "label_en": "Early deciduous",
-        "explanation_de": "Scheidenzähne fallen früh ab.",
-        "explanation_en": "Sheath teeth shed early.",
-        "image_path": "",
-        "review_status": "draft"
-      },
-      {
-        "code": "variable",
-        "label_de": "Variabel",
-        "label_en": "Variable",
-        "explanation_de": "Beständigkeit oder Ausprägung wechselnd.",
-        "explanation_en": "Persistence or appearance varies.",
-        "image_path": "",
-        "review_status": "draft"
-      },
-      {
-        "code": "not_applicable",
-        "label_de": "nicht anwendbar",
-        "label_en": "not applicable",
-        "explanation_de": "Das Merkmal ist für den Grundbauplan dieses Taxons anatomisch nicht sinnvoll.",
-        "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
-        "image_path": "",
-        "review_status": "pending"
-      }
-    ]
-  },
-  {
     "code": "altitudinal_belt",
     "label_de": "Höhenstufe",
     "label_en": "Altitudinal belt",
@@ -1558,45 +1792,27 @@
     "order": 360,
     "states": [
       {
-        "code": "colline",
-        "label_de": "kollin",
-        "label_en": "colline",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "submontane",
-        "label_de": "submontan",
-        "label_en": "submontane",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "montane",
-        "label_de": "montan",
-        "label_en": "montane",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "subalpine",
-        "label_de": "subalpin",
-        "label_en": "subalpine",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
         "code": "alpine",
         "label_de": "alpin",
         "label_en": "alpine",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "broad_range",
+        "label_de": "breite Spanne",
+        "label_en": "broad range",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "colline",
+        "label_de": "kollin",
+        "label_en": "colline",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
@@ -1612,6 +1828,15 @@
         "review_status": "pending"
       },
       {
+        "code": "montane",
+        "label_de": "montan",
+        "label_en": "montane",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
         "code": "montane_subalpine",
         "label_de": "montan-subalpin",
         "label_en": "montane-subalpine",
@@ -1621,9 +1846,18 @@
         "review_status": "pending"
       },
       {
-        "code": "broad_range",
-        "label_de": "breite Spanne",
-        "label_en": "broad range",
+        "code": "subalpine",
+        "label_de": "subalpin",
+        "label_en": "subalpine",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "submontane",
+        "label_de": "submontan",
+        "label_en": "submontane",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
@@ -1642,20 +1876,20 @@
     "order": 360,
     "states": [
       {
-        "code": "blunt",
-        "label_de": "Stumpf",
-        "label_en": "Blunt",
-        "explanation_de": "Sporangienähre oben abgerundet bis stumpf.",
-        "explanation_en": "Strobilus rounded or blunt at apex.",
-        "image_path": "",
-        "review_status": "draft"
-      },
-      {
         "code": "acute",
         "label_de": "Spitz",
         "label_en": "Acute",
         "explanation_de": "Sporangienähre zum Ende zugespitzt.",
         "explanation_en": "Strobilus tapering to acute apex.",
+        "image_path": "",
+        "review_status": "draft"
+      },
+      {
+        "code": "blunt",
+        "label_de": "Stumpf",
+        "label_en": "Blunt",
+        "explanation_de": "Sporangienähre oben abgerundet bis stumpf.",
+        "explanation_en": "Strobilus rounded or blunt at apex.",
         "image_path": "",
         "review_status": "draft"
       },
@@ -1681,18 +1915,27 @@
     "order": 400,
     "states": [
       {
-        "code": "none",
-        "label_de": "keine",
-        "label_en": "none",
+        "code": "contracted",
+        "label_de": "zusammengezogen",
+        "label_en": "contracted",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
         "review_status": "pending"
       },
       {
-        "code": "contracted",
-        "label_de": "zusammengezogen",
-        "label_en": "contracted",
+        "code": "different_segment_shape",
+        "label_de": "abweichende Segmentform",
+        "label_en": "different segment shape",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "none",
+        "label_de": "keine",
+        "label_en": "none",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
@@ -1708,15 +1951,6 @@
         "review_status": "pending"
       },
       {
-        "code": "strongly_narrowed",
-        "label_de": "stark verschmälert",
-        "label_en": "strongly narrowed",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
         "code": "sporocarp_bearing",
         "label_de": "sporokarptragend",
         "label_en": "sporocarp-bearing",
@@ -1726,9 +1960,9 @@
         "review_status": "pending"
       },
       {
-        "code": "different_segment_shape",
-        "label_de": "abweichende Segmentform",
-        "label_en": "different segment shape",
+        "code": "strongly_narrowed",
+        "label_de": "stark verschmälert",
+        "label_en": "strongly narrowed",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
@@ -1756,15 +1990,6 @@
         "review_status": "pending"
       },
       {
-        "code": "weakly_glossy",
-        "label_de": "schwach glänzend",
-        "label_en": "weakly glossy",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
         "code": "glossy",
         "label_de": "glänzend",
         "label_en": "glossy",
@@ -1777,6 +2002,15 @@
         "code": "strongly_glossy",
         "label_de": "stark glänzend",
         "label_en": "strongly glossy",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "weakly_glossy",
+        "label_de": "schwach glänzend",
+        "label_en": "weakly glossy",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
@@ -1795,18 +2029,9 @@
     "order": 420,
     "states": [
       {
-        "code": "pale_green",
-        "label_de": "hellgrün",
-        "label_en": "pale green",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "medium_green",
-        "label_de": "mittelgrün",
-        "label_en": "medium green",
+        "code": "bluish_green",
+        "label_de": "blaugrün",
+        "label_en": "bluish green",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
@@ -1822,18 +2047,18 @@
         "review_status": "pending"
       },
       {
-        "code": "bluish_green",
-        "label_de": "blaugrün",
-        "label_en": "bluish green",
+        "code": "medium_green",
+        "label_de": "mittelgrün",
+        "label_en": "medium green",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
         "review_status": "pending"
       },
       {
-        "code": "yellow_green",
-        "label_de": "gelbgrün",
-        "label_en": "yellow green",
+        "code": "pale_green",
+        "label_de": "hellgrün",
+        "label_en": "pale green",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
@@ -1843,6 +2068,15 @@
         "code": "reddish_brown_late",
         "label_de": "später rötlichbraun",
         "label_en": "reddish brown late",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "yellow_green",
+        "label_de": "gelbgrün",
+        "label_en": "yellow green",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
@@ -1861,18 +2095,18 @@
     "order": 430,
     "states": [
       {
-        "code": "true",
-        "label_de": "ja",
-        "label_en": "true",
+        "code": "false",
+        "label_de": "nein",
+        "label_en": "false",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
         "review_status": "pending"
       },
       {
-        "code": "false",
-        "label_de": "nein",
-        "label_en": "false",
+        "code": "true",
+        "label_de": "ja",
+        "label_en": "true",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
@@ -1890,51 +2124,6 @@
     "group": "Pinnae",
     "order": 440,
     "states": [
-      {
-        "code": "linear",
-        "label_de": "linear",
-        "label_en": "linear",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "oblong",
-        "label_de": "länglich",
-        "label_en": "oblong",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "ovate",
-        "label_de": "eiförmig",
-        "label_en": "ovate",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "triangular",
-        "label_de": "dreieckig",
-        "label_en": "triangular",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "lanceolate",
-        "label_de": "lanzettlich",
-        "label_en": "lanceolate",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
       {
         "code": "elliptic",
         "label_de": "elliptisch",
@@ -1954,18 +2143,18 @@
         "review_status": "pending"
       },
       {
-        "code": "rhombic",
-        "label_de": "rhombisch",
-        "label_en": "rhombic",
+        "code": "lanceolate",
+        "label_de": "lanzettlich",
+        "label_en": "lanceolate",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
         "review_status": "pending"
       },
       {
-        "code": "rectangular",
-        "label_de": "rechteckig",
-        "label_en": "rectangular",
+        "code": "linear",
+        "label_de": "linear",
+        "label_en": "linear",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
@@ -1988,6 +2177,51 @@
         "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
         "image_path": "",
         "review_status": "pending"
+      },
+      {
+        "code": "oblong",
+        "label_de": "länglich",
+        "label_en": "oblong",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "ovate",
+        "label_de": "eiförmig",
+        "label_en": "ovate",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "rectangular",
+        "label_de": "rechteckig",
+        "label_en": "rectangular",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "rhombic",
+        "label_de": "rhombisch",
+        "label_en": "rhombic",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "triangular",
+        "label_de": "dreieckig",
+        "label_en": "triangular",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
       }
     ]
   },
@@ -2002,27 +2236,9 @@
     "order": 450,
     "states": [
       {
-        "code": "entire",
-        "label_de": "ganzrandig",
-        "label_en": "entire",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
         "code": "crenate",
         "label_de": "gekerbt",
         "label_en": "crenate",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "serrate",
-        "label_de": "gesägt",
-        "label_en": "serrate",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
@@ -2038,18 +2254,9 @@
         "review_status": "pending"
       },
       {
-        "code": "lobed",
-        "label_de": "gelappt",
-        "label_en": "lobed",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "pinnatifid",
-        "label_de": "fiederspaltig",
-        "label_en": "pinnatifid",
+        "code": "entire",
+        "label_de": "ganzrandig",
+        "label_en": "entire",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
@@ -2065,11 +2272,38 @@
         "review_status": "label_completed"
       },
       {
+        "code": "lobed",
+        "label_de": "gelappt",
+        "label_en": "lobed",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
         "code": "not_applicable",
         "label_de": "nicht anwendbar",
         "label_en": "not applicable",
         "explanation_de": "Das Merkmal ist für den Grundbauplan dieses Taxons anatomisch nicht sinnvoll.",
         "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "pinnatifid",
+        "label_de": "fiederspaltig",
+        "label_en": "pinnatifid",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "serrate",
+        "label_de": "gesägt",
+        "label_en": "serrate",
+        "explanation_de": "",
+        "explanation_en": "",
         "image_path": "",
         "review_status": "pending"
       }
@@ -2086,18 +2320,9 @@
     "order": 460,
     "states": [
       {
-        "code": "rounded",
-        "label_de": "rundlich",
-        "label_en": "rounded",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "obtuse",
-        "label_de": "stumpf",
-        "label_en": "obtuse",
+        "code": "acuminate",
+        "label_de": "lang zugespitzt",
+        "label_en": "acuminate",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
@@ -2113,13 +2338,13 @@
         "review_status": "pending"
       },
       {
-        "code": "acuminate",
-        "label_de": "lang zugespitzt",
-        "label_en": "acuminate",
+        "code": "awned",
+        "label_de": "grannenspitzig",
+        "label_en": "awn-tipped",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
-        "review_status": "pending"
+        "review_status": "label_completed"
       },
       {
         "code": "mucronate",
@@ -2131,20 +2356,29 @@
         "review_status": "pending"
       },
       {
-        "code": "awned",
-        "label_de": "grannenspitzig",
-        "label_en": "awn-tipped",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "label_completed"
-      },
-      {
         "code": "not_applicable",
         "label_de": "nicht anwendbar",
         "label_en": "not applicable",
         "explanation_de": "Das Merkmal ist für den Grundbauplan dieses Taxons anatomisch nicht sinnvoll.",
         "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "obtuse",
+        "label_de": "stumpf",
+        "label_en": "obtuse",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "rounded",
+        "label_de": "rundlich",
+        "label_en": "rounded",
+        "explanation_de": "",
+        "explanation_en": "",
         "image_path": "",
         "review_status": "pending"
       }
@@ -2160,24 +2394,6 @@
     "group": "Pinnae",
     "order": 470,
     "states": [
-      {
-        "code": "opposite",
-        "label_de": "gegenständig",
-        "label_en": "opposite",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "subopposite",
-        "label_de": "fast gegenständig",
-        "label_en": "subopposite",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
       {
         "code": "alternate",
         "label_de": "wechselständig",
@@ -2197,6 +2413,24 @@
         "review_status": "pending"
       },
       {
+        "code": "not_applicable",
+        "label_de": "nicht anwendbar",
+        "label_en": "not applicable",
+        "explanation_de": "Das Merkmal ist für den Grundbauplan dieses Taxons anatomisch nicht sinnvoll.",
+        "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "opposite",
+        "label_de": "gegenständig",
+        "label_en": "opposite",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
         "code": "overlapping",
         "label_de": "überlappend",
         "label_en": "overlapping",
@@ -2206,11 +2440,11 @@
         "review_status": "pending"
       },
       {
-        "code": "not_applicable",
-        "label_de": "nicht anwendbar",
-        "label_en": "not applicable",
-        "explanation_de": "Das Merkmal ist für den Grundbauplan dieses Taxons anatomisch nicht sinnvoll.",
-        "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
+        "code": "subopposite",
+        "label_de": "fast gegenständig",
+        "label_en": "subopposite",
+        "explanation_de": "",
+        "explanation_en": "",
         "image_path": "",
         "review_status": "pending"
       }
@@ -2227,6 +2461,15 @@
     "order": 480,
     "states": [
       {
+        "code": "divided",
+        "label_de": "geteilt",
+        "label_en": "divided",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
         "code": "entire",
         "label_de": "ganz",
         "label_en": "entire",
@@ -2239,24 +2482,6 @@
         "code": "lobed",
         "label_de": "gelappt",
         "label_en": "lobed",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "pinnatifid",
-        "label_de": "fiederspaltig",
-        "label_en": "pinnatifid",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "divided",
-        "label_de": "geteilt",
-        "label_en": "divided",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
@@ -2279,6 +2504,15 @@
         "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
         "image_path": "",
         "review_status": "pending"
+      },
+      {
+        "code": "pinnatifid",
+        "label_de": "fiederspaltig",
+        "label_en": "pinnatifid",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
       }
     ]
   },
@@ -2292,6 +2526,33 @@
     "group": "Indument",
     "order": 490,
     "states": [
+      {
+        "code": "lower_surface",
+        "label_de": "Unterseite",
+        "label_en": "lower surface",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "persistent_lower_surface",
+        "label_de": "dauerhaft auf Unterseite",
+        "label_en": "persistent lower surface",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "rachis",
+        "label_de": "Rhachis",
+        "label_en": "rachis",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
       {
         "code": "rhizome_only",
         "label_de": "nur am Rhizom",
@@ -2311,36 +2572,9 @@
         "review_status": "pending"
       },
       {
-        "code": "rachis",
-        "label_de": "Rhachis",
-        "label_en": "rachis",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "lower_surface",
-        "label_de": "Unterseite",
-        "label_en": "lower surface",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
         "code": "whole_frond",
         "label_de": "ganzer Wedel",
         "label_en": "whole frond",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "persistent_lower_surface",
-        "label_de": "dauerhaft auf Unterseite",
-        "label_en": "persistent lower surface",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
@@ -2359,18 +2593,18 @@
     "order": 500,
     "states": [
       {
-        "code": "true",
-        "label_de": "ja",
-        "label_en": "true",
+        "code": "false",
+        "label_de": "nein",
+        "label_en": "false",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
         "review_status": "pending"
       },
       {
-        "code": "false",
-        "label_de": "nein",
-        "label_en": "false",
+        "code": "true",
+        "label_de": "ja",
+        "label_en": "true",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
@@ -2389,45 +2623,9 @@
     "order": 500,
     "states": [
       {
-        "code": "free_simple",
-        "label_de": "frei einfach",
-        "label_en": "free simple",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "free_forked",
-        "label_de": "frei gegabelte Nerven",
-        "label_en": "free forked veins",
-        "explanation_de": "Seitennerven teilen sich gabelig und verbinden sich nicht netzartig mit Nachbarnerven.",
-        "explanation_en": "Lateral veins fork and do not form connecting networks with neighbouring veins.",
-        "image_path": "",
-        "review_status": "text_drafted"
-      },
-      {
-        "code": "pinnate",
-        "label_de": "fiedrig",
-        "label_en": "pinnate",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
         "code": "anastomosing",
         "label_de": "netzig verbunden",
         "label_en": "anastomosing",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "unclear",
-        "label_de": "unklar",
-        "label_en": "unclear",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
@@ -2441,6 +2639,81 @@
         "explanation_en": "Forking of veins; whether veins remain free or connect in a network is not specified.",
         "image_path": "",
         "review_status": "needs_taxon_review"
+      },
+      {
+        "code": "free_forked",
+        "label_de": "frei gegabelte Nerven",
+        "label_en": "free forked veins",
+        "explanation_de": "Seitennerven teilen sich gabelig und verbinden sich nicht netzartig mit Nachbarnerven.",
+        "explanation_en": "Lateral veins fork and do not form connecting networks with neighbouring veins.",
+        "image_path": "",
+        "review_status": "text_drafted"
+      },
+      {
+        "code": "free_simple",
+        "label_de": "frei einfach",
+        "label_en": "free simple",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "pinnate",
+        "label_de": "fiedrig",
+        "label_en": "pinnate",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "unclear",
+        "label_de": "unklar",
+        "label_en": "unclear",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      }
+    ]
+  },
+  {
+    "code": "sori_opening_behavior",
+    "label_de": "Verhalten der Sporangien bei Reife",
+    "label_en": "Sporangia opening behaviour",
+    "description_de": "Verhalten der Sporangien/Sori zur Reife.",
+    "description_en": "",
+    "role": "advanced",
+    "group": "Reproduction",
+    "order": 510,
+    "states": [
+      {
+        "code": "mostly_closed",
+        "label_de": "großteils geschlossen bleibend",
+        "label_en": "mostly closed",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "normally_opening",
+        "label_de": "normal öffnend",
+        "label_en": "normally opening",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "unclear",
+        "label_de": "unklar",
+        "label_en": "unclear",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
       }
     ]
   },
@@ -2454,15 +2727,6 @@
     "group": "Indument",
     "order": 510,
     "states": [
-      {
-        "code": "none",
-        "label_de": "keine",
-        "label_en": "none",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
       {
         "code": "dense_scales",
         "label_de": "dichte Spreuschuppen",
@@ -2482,6 +2746,15 @@
         "review_status": "pending"
       },
       {
+        "code": "glandular",
+        "label_de": "drüsig",
+        "label_en": "glandular",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
         "code": "hairy",
         "label_de": "behaart",
         "label_en": "hairy",
@@ -2491,48 +2764,9 @@
         "review_status": "pending"
       },
       {
-        "code": "glandular",
-        "label_de": "drüsig",
-        "label_en": "glandular",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      }
-    ]
-  },
-  {
-    "code": "sori_opening_behavior",
-    "label_de": "Verhalten der Sporangien bei Reife",
-    "label_en": "Sporangia opening behaviour",
-    "description_de": "Verhalten der Sporangien/Sori zur Reife.",
-    "description_en": "",
-    "role": "advanced",
-    "group": "Reproduction",
-    "order": 510,
-    "states": [
-      {
-        "code": "normally_opening",
-        "label_de": "normal öffnend",
-        "label_en": "normally opening",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "mostly_closed",
-        "label_de": "großteils geschlossen bleibend",
-        "label_en": "mostly closed",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "unclear",
-        "label_de": "unklar",
-        "label_en": "unclear",
+        "code": "none",
+        "label_de": "keine",
+        "label_en": "none",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
@@ -2551,6 +2785,15 @@
     "order": 520,
     "states": [
       {
+        "code": "false",
+        "label_de": "nein",
+        "label_en": "false",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
         "code": "true",
         "label_de": "ja",
         "label_en": "true",
@@ -2560,11 +2803,11 @@
         "review_status": "pending"
       },
       {
-        "code": "false",
-        "label_de": "nein",
-        "label_en": "false",
-        "explanation_de": "",
-        "explanation_en": "",
+        "code": "unknown",
+        "label_de": "unbekannt",
+        "label_en": "unknown",
+        "explanation_de": "Im Arbeitsblatt fehlt eine Angabe zum Vorkommen von Sori oder Sporokarpien.",
+        "explanation_en": "The working table gives no evidence about the presence of sori or sporocarps.",
         "image_path": "",
         "review_status": "pending"
       }
@@ -2581,9 +2824,18 @@
     "order": 520,
     "states": [
       {
-        "code": "smooth",
-        "label_de": "glatt",
-        "label_en": "smooth",
+        "code": "almost_smooth",
+        "label_de": "fast glatt",
+        "label_en": "nearly smooth",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "label_completed"
+      },
+      {
+        "code": "coarsely_warty",
+        "label_de": "grobwarzig",
+        "label_en": "coarsely warty",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
@@ -2599,18 +2851,9 @@
         "review_status": "pending"
       },
       {
-        "code": "coarsely_warty",
-        "label_de": "grobwarzig",
-        "label_en": "coarsely warty",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "spiny",
-        "label_de": "stachelig",
-        "label_en": "spiny",
+        "code": "folded",
+        "label_de": "gefaltet",
+        "label_en": "folded",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
@@ -2626,6 +2869,24 @@
         "review_status": "pending"
       },
       {
+        "code": "smooth",
+        "label_de": "glatt",
+        "label_en": "smooth",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "spiny",
+        "label_de": "stachelig",
+        "label_en": "spiny",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
         "code": "wrinkled",
         "label_de": "runzelig",
         "label_en": "wrinkled",
@@ -2633,24 +2894,6 @@
         "explanation_en": "",
         "image_path": "",
         "review_status": "pending"
-      },
-      {
-        "code": "folded",
-        "label_de": "gefaltet",
-        "label_en": "folded",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "almost_smooth",
-        "label_de": "fast glatt",
-        "label_en": "nearly smooth",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "label_completed"
       }
     ]
   },
@@ -2665,9 +2908,72 @@
     "order": 530,
     "states": [
       {
-        "code": "none",
-        "label_de": "keiner",
-        "label_en": "none",
+        "code": "bladder_like",
+        "label_de": "blasig",
+        "label_en": "bladder-like",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "cup_shaped",
+        "label_de": "becherförmig",
+        "label_en": "cup-shaped",
+        "explanation_de": "Der Schleier ist flach bis deutlich becherförmig.",
+        "explanation_en": "The indusium forms a shallow or distinct cup.",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "elongate",
+        "label_de": "länglich",
+        "label_en": "elongate",
+        "explanation_de": "Der Schleier ist länger als breit.",
+        "explanation_en": "The indusium is longer than wide.",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "fringed",
+        "label_de": "gefranst",
+        "label_en": "fringed",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "hooked",
+        "label_de": "hakenförmig",
+        "label_en": "hook-shaped",
+        "explanation_de": "Der Schleier ist hakenförmig gekrümmt.",
+        "explanation_en": "The indusium curves into a hook.",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "irregular",
+        "label_de": "unregelmäßig",
+        "label_en": "irregular",
+        "explanation_de": "Der Schleier ist unregelmäßig geformt oder zerschlitzt.",
+        "explanation_en": "The indusium is irregularly shaped or lacerate.",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "kidney_shaped",
+        "label_de": "nierenförmig",
+        "label_en": "kidney-shaped",
+        "explanation_de": "Der die Sori bedeckende Schleier ist nierenförmig.",
+        "explanation_en": "The protective indusium over the sorus is kidney-shaped.",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "lateral_linear",
+        "label_de": "seitlich-linear",
+        "label_en": "lateral linear",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
@@ -2683,38 +2989,47 @@
         "review_status": "pending"
       },
       {
-        "code": "kidney_shaped",
-        "label_de": "nierenförmig",
-        "label_en": "kidney-shaped",
-        "explanation_de": "Der die Sori bedeckende Schleier ist nierenförmig.",
-        "explanation_en": "The protective indusium over the sorus is kidney-shaped.",
+        "code": "long_linear_irregular",
+        "label_de": "lang-linear, unregelmäßig",
+        "label_en": "long, linear and irregular",
+        "explanation_de": "Der Schleier ist lang und schmal und unregelmäßig geformt.",
+        "explanation_en": "The indusium is long, narrow and irregular in outline.",
         "image_path": "",
         "review_status": "pending"
       },
       {
-        "code": "bladder_like",
-        "label_de": "blasig",
-        "label_en": "bladder-like",
+        "code": "lunulate",
+        "label_de": "halbmondförmig",
+        "label_en": "lunulate",
+        "explanation_de": "Der Schleier ist halbmondförmig.",
+        "explanation_en": "The indusium is crescent-shaped.",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "none",
+        "label_de": "keiner",
+        "label_en": "none",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
         "review_status": "pending"
       },
       {
-        "code": "lateral_linear",
-        "label_de": "seitlich-linear",
-        "label_en": "lateral linear",
-        "explanation_de": "",
-        "explanation_en": "",
+        "code": "not_applicable",
+        "label_de": "nicht anwendbar",
+        "label_en": "not applicable",
+        "explanation_de": "Es gibt keine vergleichbaren Sori, deren Schleierform beurteilt werden kann.",
+        "explanation_en": "There are no comparable sori whose indusium shape can be assessed.",
         "image_path": "",
         "review_status": "pending"
       },
       {
-        "code": "fringed",
-        "label_de": "gefranst",
-        "label_en": "fringed",
-        "explanation_de": "",
-        "explanation_en": "",
+        "code": "peltate",
+        "label_de": "schildförmig/kreisrund, mittig angeheftet",
+        "label_en": "peltate/shield-shaped",
+        "explanation_de": "Der meist runde Schleier ist schildförmig in seiner Fläche angeheftet.",
+        "explanation_en": "The usually rounded indusium is attached peltately on its inner surface.",
         "image_path": "",
         "review_status": "pending"
       },
@@ -2728,11 +3043,20 @@
         "review_status": "pending"
       },
       {
-        "code": "peltate",
-        "label_de": "schildförmig/kreisrund, mittig angeheftet",
-        "label_en": "peltate/shield-shaped",
-        "explanation_de": "Der meist runde Schleier ist schildförmig in seiner Fläche angeheftet.",
-        "explanation_en": "The usually rounded indusium is attached peltately on its inner surface.",
+        "code": "triangular",
+        "label_de": "dreieckig",
+        "label_en": "triangular",
+        "explanation_de": "Der Schleier ist dreieckig.",
+        "explanation_en": "The indusium is triangular.",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "unknown",
+        "label_de": "unbekannt",
+        "label_en": "unknown",
+        "explanation_de": "Die Schleierform ist nicht belegt.",
+        "explanation_en": "The indusium shape has not been established.",
         "image_path": "",
         "review_status": "pending"
       }
@@ -2748,15 +3072,6 @@
     "group": "Reproduction",
     "order": 540,
     "states": [
-      {
-        "code": "yes",
-        "label_de": "ja",
-        "label_en": "yes",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
       {
         "code": "no",
         "label_de": "nein",
@@ -2774,6 +3089,54 @@
         "explanation_en": "",
         "image_path": "",
         "review_status": "pending"
+      },
+      {
+        "code": "yes",
+        "label_de": "ja",
+        "label_en": "yes",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      }
+    ]
+  },
+  {
+    "code": "nectar_gland_at_lower_pinnae",
+    "label_de": "Nektarium an den unteren Hauptfiedern",
+    "label_en": "Nectary gland at lower pinnae",
+    "description_de": "Spezialmerkmal, z. B. bei Pteridium.",
+    "description_en": "",
+    "role": "advanced",
+    "group": "Special",
+    "order": 550,
+    "states": [
+      {
+        "code": "no",
+        "label_de": "nein",
+        "label_en": "no",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "unknown",
+        "label_de": "unbekannt",
+        "label_en": "unknown",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "yes",
+        "label_de": "ja",
+        "label_en": "yes",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
       }
     ]
   },
@@ -2787,15 +3150,6 @@
     "group": "Special",
     "order": 550,
     "states": [
-      {
-        "code": "none",
-        "label_de": "kein",
-        "label_en": "none",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
       {
         "code": "aromatic",
         "label_de": "aromatisch",
@@ -2815,564 +3169,18 @@
         "review_status": "pending"
       },
       {
+        "code": "none",
+        "label_de": "kein",
+        "label_en": "none",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
         "code": "other",
         "label_de": "sonstig",
         "label_en": "other",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      }
-    ]
-  },
-  {
-    "code": "nectar_gland_at_lower_pinnae",
-    "label_de": "Nektarium an den unteren Hauptfiedern",
-    "label_en": "Nectary gland at lower pinnae",
-    "description_de": "Spezialmerkmal, z. B. bei Pteridium.",
-    "description_en": "",
-    "role": "advanced",
-    "group": "Special",
-    "order": 550,
-    "states": [
-      {
-        "code": "yes",
-        "label_de": "ja",
-        "label_en": "yes",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "no",
-        "label_de": "nein",
-        "label_en": "no",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "unknown",
-        "label_de": "unbekannt",
-        "label_en": "unknown",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      }
-    ]
-  },
-  {
-    "code": "pinnule_spacing",
-    "label_de": "Abstand der Fiederchen",
-    "label_en": "Pinnule spacing",
-    "description_de": "Abstand benachbarter Fiederchen; als Vergleichsmerkmal innerhalb ähnlicher Farngruppen. Fachlich anhand der besprochenen Farnschlüsselmerkmale strukturiert.",
-    "description_en": "",
-    "role": "dependent",
-    "group": "Pinna morphology",
-    "order": 9999,
-    "states": [
-      {
-        "code": "close",
-        "label_de": "eng stehend",
-        "label_en": "close",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "variable",
-        "label_de": "variabel",
-        "label_en": "variable",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "widely_spaced",
-        "label_de": "weit auseinanderstehend",
-        "label_en": "widely spaced",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "not_applicable",
-        "label_de": "nicht anwendbar",
-        "label_en": "not applicable",
-        "explanation_de": "Das Merkmal ist für den Grundbauplan dieses Taxons anatomisch nicht sinnvoll.",
-        "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
-        "image_path": "",
-        "review_status": "pending"
-      }
-    ]
-  },
-  {
-    "code": "indusium_attachment",
-    "label_de": "Ansatz des Schleiers",
-    "label_en": "Indusium attachment",
-    "description_de": "Ansatzstelle des Indusiums; bei Polystichum typisch schildförmig-mittig, bei Dryopteris nierenförmig-seitlich. Fachlich anhand der besprochenen Farnschlüsselmerkmale strukturiert.",
-    "description_en": "The point at which the indusium is attached.",
-    "role": "dependent",
-    "group": "Sori and spores",
-    "order": 9999,
-    "states": [
-      {
-        "code": "central",
-        "label_de": "mittig angeheftet",
-        "label_en": "centrally attached",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "lateral",
-        "label_de": "seitlich angeheftet",
-        "label_en": "laterally attached",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      }
-    ]
-  },
-  {
-    "code": "hairiness",
-    "label_de": "Behaarung",
-    "label_en": "Hairiness",
-    "description_de": "Allgemeine Behaarung.",
-    "description_en": "",
-    "role": "dependent",
-    "group": "Indument",
-    "order": 9999,
-    "states": [
-      {
-        "code": "glabrous",
-        "label_de": "kahl",
-        "label_en": "glabrous",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "sparsely_hairy",
-        "label_de": "spärlich behaart",
-        "label_en": "sparsely hairy",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "hairy",
-        "label_de": "behaart",
-        "label_en": "hairy",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "densely_hairy",
-        "label_de": "dicht behaart",
-        "label_en": "densely hairy",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "glandular_hairy",
-        "label_de": "drüsig behaart",
-        "label_en": "glandular hairy",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "mixed",
-        "label_de": "gemischt",
-        "label_en": "mixed",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "moderate",
-        "label_de": "mäßig behaart",
-        "label_en": "moderately hairy",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "label_completed"
-      }
-    ]
-  },
-  {
-    "code": "indusium_persistence",
-    "label_de": "Beständigkeit des Schleiers",
-    "label_en": "Indusium persistence",
-    "description_de": "Verhalten des Indusiums bis bzw. während der Sporenreife. Fachlich anhand der besprochenen Farnschlüsselmerkmale strukturiert.",
-    "description_en": "",
-    "role": "dependent",
-    "group": "Sori and spores",
-    "order": 9999,
-    "states": [
-      {
-        "code": "persistent",
-        "label_de": "bleibend/lang haftend",
-        "label_en": "persistent/long-lasting",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "early_deciduous",
-        "label_de": "früh abfallend",
-        "label_en": "early deciduous",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      }
-    ]
-  },
-  {
-    "code": "stipe_winged",
-    "label_de": "Blattstiel geflügelt",
-    "label_en": "Stipe winged",
-    "description_de": "Vorhandensein von Flügeln am Blattstiel.",
-    "description_en": "",
-    "role": "dependent",
-    "group": "Axes",
-    "order": 9999,
-    "states": [
-      {
-        "code": "yes",
-        "label_de": "ja",
-        "label_en": "yes",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "no",
-        "label_de": "nein",
-        "label_en": "no",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "only_at_base",
-        "label_de": "nur an der Basis",
-        "label_en": "only at base",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "only_distally",
-        "label_de": "nur distal",
-        "label_en": "only distally",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      }
-    ]
-  },
-  {
-    "code": "glands_presence",
-    "label_de": "Drüsen vorhanden",
-    "label_en": "Glands present",
-    "description_de": "Vorkommen von Drüsen/Drüsenhaaren.",
-    "description_en": "",
-    "role": "dependent",
-    "group": "Indument",
-    "order": 9999,
-    "states": [
-      {
-        "code": "absent",
-        "label_de": "fehlend",
-        "label_en": "absent",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "sparse",
-        "label_de": "spärlich",
-        "label_en": "sparse",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "moderate",
-        "label_de": "mäßig",
-        "label_en": "moderate",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "dense",
-        "label_de": "dicht",
-        "label_en": "dense",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      }
-    ]
-  },
-  {
-    "code": "rachis_color",
-    "label_de": "Farbe der Rhachis",
-    "label_en": "Rachis colour",
-    "description_de": "Farbe der Rhachis.",
-    "description_en": "",
-    "role": "dependent",
-    "group": "Axes",
-    "order": 9999,
-    "states": [
-      {
-        "code": "green",
-        "label_de": "grün",
-        "label_en": "green",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "brown",
-        "label_de": "braun",
-        "label_en": "brown",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "red_brown",
-        "label_de": "rotbraun",
-        "label_en": "red brown",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "dark_brown",
-        "label_de": "dunkelbraun",
-        "label_en": "dark brown",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "blackish",
-        "label_de": "schwärzlich",
-        "label_en": "blackish",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "bicolored",
-        "label_de": "zweifarbig",
-        "label_en": "bicolored",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "straw",
-        "label_de": "strohfarben",
-        "label_en": "straw-coloured",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "label_completed"
-      }
-    ]
-  },
-  {
-    "code": "stipe_color",
-    "label_de": "Farbe des Blattstiels",
-    "label_en": "Stipe colour",
-    "description_de": "Typische Färbung des Blattstiels.",
-    "description_en": "Predominant stipe colour; broad brown category retained when shade is not established.",
-    "role": "dependent",
-    "group": "Axes",
-    "order": 9999,
-    "states": [
-      {
-        "code": "green",
-        "label_de": "grün",
-        "label_en": "green",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "straw",
-        "label_de": "strohfarben",
-        "label_en": "straw",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "pale_brown",
-        "label_de": "hellbraun",
-        "label_en": "pale brown",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "red_brown",
-        "label_de": "rotbraun",
-        "label_en": "red brown",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "dark_brown",
-        "label_de": "dunkelbraun",
-        "label_en": "dark brown",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "blackish",
-        "label_de": "schwärzlich",
-        "label_en": "blackish",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "bicolored",
-        "label_de": "zweifarbig",
-        "label_en": "bicolored",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "brown",
-        "label_de": "braun (nicht näher bestimmt)",
-        "label_en": "brown (unspecified)",
-        "explanation_de": "Blattstiel braun, ohne gesicherte Angabe eines genaueren Farbtons.",
-        "explanation_en": "Brown stipe without a more precise documented shade.",
-        "image_path": "",
-        "review_status": "text_drafted"
-      }
-    ]
-  },
-  {
-    "code": "scale_color_pattern",
-    "label_de": "Farbmuster der Spreuschuppen",
-    "label_en": "Scale colour pattern",
-    "description_de": "Farbmuster der Spreuschuppen an Blattstiel/Spindel; diagnostisch bei mehreren Dryopteris-Arten. Referenz: https://www.blumeninschwaben.de/Sporenpflanzen/fieder_stachel.htm",
-    "description_en": "Colour pattern of the scales on the stipe or rachis.",
-    "role": "dependent",
-    "group": "Indument",
-    "order": 9999,
-    "states": [
-      {
-        "code": "uniform_pale",
-        "label_de": "einfarbig blass",
-        "label_en": "uniform pale",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "dark_central_stripe",
-        "label_de": "dunkler Mittelstreif",
-        "label_en": "dark central stripe",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "dark_base_pale_margin",
-        "label_de": "dunkler Grund mit hellem Rand",
-        "label_en": "dark base with pale margin",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "other",
-        "label_de": "anderes",
-        "label_en": "other",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      }
-    ]
-  },
-  {
-    "code": "sorus_width_class",
-    "label_de": "Größenklasse der Sori",
-    "label_en": "Sorus width class",
-    "description_de": "Praktische Größenklasse zur Trennung ähnlich aussehender Gruppen; nur verwenden, wenn sicher beurteilbar. Fachlich anhand der besprochenen Farnschlüsselmerkmale strukturiert.",
-    "description_en": "",
-    "role": "advanced",
-    "group": "Sori and spores",
-    "order": 9999,
-    "states": [
-      {
-        "code": "tiny_le_0_5mm",
-        "label_de": "klein (bis 0,5 mm)",
-        "label_en": "small (up to 0.5 mm)",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "large_gt_0_7mm",
-        "label_de": "groß (über 0,7 mm)",
-        "label_en": "large (over 0.7 mm)",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
@@ -3388,21 +3196,21 @@
     "description_en": "Relative length of the innermost basiscopic pinnule compared with its pinna.",
     "role": "advanced",
     "group": "Pinna morphology",
-    "order": 9999,
+    "order": null,
     "states": [
       {
-        "code": "less_than_half",
-        "label_de": "weniger als halbe Fiederlänge",
-        "label_en": "less than half pinna length",
+        "code": "about_half",
+        "label_de": "etwa halbe Fiederlänge",
+        "label_en": "about half pinna length",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
         "review_status": "pending"
       },
       {
-        "code": "about_half",
-        "label_de": "etwa halbe Fiederlänge",
-        "label_en": "about half pinna length",
+        "code": "less_than_half",
+        "label_de": "weniger als halbe Fiederlänge",
+        "label_en": "less than half pinna length",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
@@ -3429,121 +3237,37 @@
     ]
   },
   {
-    "code": "rachis_winged",
-    "label_de": "Rhachis geflügelt",
-    "label_en": "Rachis winged",
-    "description_de": "Ausprägung bzw. Vorhandensein von Flügeln an der Rhachis.",
-    "description_en": "",
-    "role": "dependent",
-    "group": "Axes",
-    "order": 9999,
-    "states": [
-      {
-        "code": "yes",
-        "label_de": "ja",
-        "label_en": "yes",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "no",
-        "label_de": "nein",
-        "label_en": "no",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "weakly",
-        "label_de": "schwach",
-        "label_en": "weakly",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "narrowly",
-        "label_de": "schmal geflügelt",
-        "label_en": "narrowly winged",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "only_upper_part",
-        "label_de": "nur im oberen Teil",
-        "label_en": "only upper part",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      }
-    ]
-  },
-  {
-    "code": "rhizome_type",
-    "label_de": "Rhizomtyp",
-    "label_en": "Rhizome type",
-    "description_de": "Typ des Rhizoms.",
-    "description_en": "",
-    "role": "advanced",
+    "code": "branching_pattern",
+    "label_de": "Verzweigung der Äste",
+    "label_en": "Branching pattern",
+    "description_de": "Längenverhältnis der beiden Gabeläste bei Bärlappen und Moosfarnen.",
+    "description_en": "Relative lengths of the two branches at a fork in clubmosses and spikemosses.",
+    "role": "primary",
     "group": "Habit",
-    "order": 9999,
+    "order": null,
     "states": [
       {
-        "code": "short_erect",
-        "label_de": "kurz aufrecht",
-        "label_en": "short erect",
-        "explanation_de": "",
-        "explanation_en": "",
+        "code": "anisotomously",
+        "label_de": "anisotom verzweigt",
+        "label_en": "anisotomous",
+        "explanation_de": "Die Gabeläste sind verschieden lang.",
+        "explanation_en": "The two branches at a fork differ in length.",
         "image_path": "",
         "review_status": "pending"
       },
       {
-        "code": "short_oblique",
-        "label_de": "kurz schräg",
-        "label_en": "short oblique",
-        "explanation_de": "",
-        "explanation_en": "",
+        "code": "isotomously",
+        "label_de": "isotom verzweigt",
+        "label_en": "isotomous",
+        "explanation_de": "Die Gabeläste sind etwa gleich lang.",
+        "explanation_en": "The two branches at a fork are approximately equal in length.",
         "image_path": "",
         "review_status": "pending"
       },
       {
-        "code": "short_creeping",
-        "label_de": "kurz kriechend",
-        "label_en": "short creeping",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "long_creeping",
-        "label_de": "lang kriechend",
-        "label_en": "long creeping",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "stolon_like",
-        "label_de": "stolonartig",
-        "label_en": "stolon-like",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "reduced",
-        "label_de": "reduziert",
-        "label_en": "reduced",
+        "code": "not_applicable",
+        "label_de": "nicht anwendbar",
+        "label_en": "not applicable",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
@@ -3552,19 +3276,133 @@
     ]
   },
   {
-    "code": "indusium_presence",
-    "label_de": "Schleier vorhanden",
-    "label_en": "Indusium present",
-    "description_de": "Vorhandensein des Indusiums.",
+    "code": "frond_overwintering",
+    "label_de": "Überwinterung der Wedel",
+    "label_en": "Frond overwintering",
+    "description_de": "Phänologisches Verhalten der Wedel.",
     "description_en": "",
     "role": "dependent",
+    "group": "Habit",
+    "order": null,
+    "states": [
+      {
+        "code": "evergreen",
+        "label_de": "wintergrün",
+        "label_en": "evergreen",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "summergreen",
+        "label_de": "sommergrün",
+        "label_en": "summergreen",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "variable",
+        "label_de": "variabel",
+        "label_en": "variable",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "wintergreen_short_lived",
+        "label_de": "wintergrün-kurzlebig",
+        "label_en": "wintergreen short-lived",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      }
+    ]
+  },
+  {
+    "code": "frond_texture",
+    "label_de": "Wedeltextur",
+    "label_en": "Frond texture",
+    "description_de": "Mechanische Beschaffenheit der Wedel.",
+    "description_en": "",
+    "role": "dependent",
+    "group": "Frond",
+    "order": null,
+    "states": [
+      {
+        "code": "delicate",
+        "label_de": "zart",
+        "label_en": "delicate",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "firm",
+        "label_de": "derb",
+        "label_en": "firm",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "fleshy",
+        "label_de": "fleischig",
+        "label_en": "fleshy",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "leathery",
+        "label_de": "ledrig",
+        "label_en": "leathery",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "soft_herbaceous",
+        "label_de": "weich-krautig",
+        "label_en": "soft herbaceous",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      }
+    ]
+  },
+  {
+    "code": "gemmae",
+    "label_de": "Brutkörper",
+    "label_en": "Gemmae",
+    "description_de": "Vorkommen von Brutkörpern bei Bärlappen und Moosfarnen.",
+    "description_en": "Presence of gemmae in clubmosses and spikemosses.",
+    "role": "primary",
     "group": "Reproduction",
-    "order": 9999,
+    "order": null,
     "states": [
       {
         "code": "absent",
-        "label_de": "fehlend",
+        "label_de": "nicht vorhanden",
         "label_en": "absent",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "not_applicable",
+        "label_de": "nicht anwendbar",
+        "label_en": "not applicable",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
@@ -3578,36 +3416,18 @@
         "explanation_en": "",
         "image_path": "",
         "review_status": "pending"
-      },
-      {
-        "code": "reduced",
-        "label_de": "reduziert",
-        "label_en": "reduced",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "false_indusium_margin",
-        "label_de": "falscher Schleier durch umgerollten Rand",
-        "label_en": "false indusium formed by rolled margin",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
       }
     ]
   },
   {
-    "code": "scales_presence",
-    "label_de": "Spreuschuppen vorhanden",
-    "label_en": "Scales present",
-    "description_de": "Gesamtdichte der Spreuschuppen.",
+    "code": "glands_presence",
+    "label_de": "Drüsen vorhanden",
+    "label_en": "Glands present",
+    "description_de": "Vorkommen von Drüsen/Drüsenhaaren.",
     "description_en": "",
     "role": "dependent",
     "group": "Indument",
-    "order": 9999,
+    "order": null,
     "states": [
       {
         "code": "absent",
@@ -3619,9 +3439,9 @@
         "review_status": "pending"
       },
       {
-        "code": "sparse",
-        "label_de": "spärlich",
-        "label_en": "sparse",
+        "code": "dense",
+        "label_de": "dicht",
+        "label_en": "dense",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
@@ -3637,9 +3457,9 @@
         "review_status": "pending"
       },
       {
-        "code": "dense",
-        "label_de": "dicht",
-        "label_en": "dense",
+        "code": "sparse",
+        "label_de": "spärlich",
+        "label_en": "sparse",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
@@ -3648,14 +3468,260 @@
     ]
   },
   {
-    "code": "pinnule_spine_tip",
-    "label_de": "Stachelspitze der Fiederchen",
-    "label_en": "Pinnule spine tip",
-    "description_de": "Ausprägung der Stachelspitze an Fiederabschnitten/Fiederchen; wichtig innerhalb der Dornfarn-Gruppe. Referenz: https://www.blumeninschwaben.de/Sporenpflanzen/fieder_stachel.htm",
-    "description_en": "Presence and development of sharp tips on pinnules.",
+    "code": "growth_form",
+    "label_de": "Wuchsform",
+    "label_en": "Growth form",
+    "description_de": "Gesamtwuchs der Pflanze. Bei den 17 Taxa aus Lyco_Sela_species beziehen sich die Angaben ausdrücklich auf den Hauptspross.",
+    "description_en": "Overall growth habit. For the 17 taxa from Lyco_Sela_species, the values specifically describe the main shoot.",
     "role": "dependent",
-    "group": "Pinna morphology",
-    "order": 9999,
+    "group": "Habit",
+    "order": null,
+    "states": [
+      {
+        "code": "climbing_like",
+        "label_de": "kletternd wirkend",
+        "label_en": "climbing-like",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "clustered",
+        "label_de": "gruppenweise stehende Wedel",
+        "label_en": "fronds growing in groups",
+        "explanation_de": "Mehrere Wedel treten räumlich gemeinsam auf; die genaue Rhizomform ist dadurch nicht festgelegt.",
+        "explanation_en": "Several fronds grow together; this does not specify their rhizome structure.",
+        "image_path": "",
+        "review_status": "text_drafted"
+      },
+      {
+        "code": "creeping",
+        "label_de": "kriechend",
+        "label_en": "creeping",
+        "explanation_de": "Die Sprosse oder Rhizome wachsen kriechend.",
+        "explanation_en": "Shoots or rhizomes have a creeping habit.",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "creeping_mat",
+        "label_de": "kriechende Matte",
+        "label_en": "creeping mat",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "floating",
+        "label_de": "schwimmend",
+        "label_en": "floating",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "more_or_less_erect",
+        "label_de": "± aufrecht",
+        "label_en": "more or less erect",
+        "explanation_de": "Der Hauptspross wächst mehr oder weniger aufrecht.",
+        "explanation_en": "The main shoot is more or less erect.",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "rosette",
+        "label_de": "Rosette",
+        "label_en": "rosette",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "scattered_fronds",
+        "label_de": "zerstreute Wedel",
+        "label_en": "scattered fronds",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "solitary",
+        "label_de": "einzeln stehend",
+        "label_en": "solitary",
+        "explanation_de": "Die oberirdischen Sprosse oder Wedel erscheinen einzeln.",
+        "explanation_en": "Above-ground shoots or fronds emerge individually.",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "tuft",
+        "label_de": "Horst",
+        "label_en": "tuft",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "unknown",
+        "label_de": "unbekannt",
+        "label_en": "unknown",
+        "explanation_de": "Die Wuchsform ist nicht belegt.",
+        "explanation_en": "The growth form has not been established.",
+        "image_path": "",
+        "review_status": "pending"
+      }
+    ]
+  },
+  {
+    "code": "hairiness",
+    "label_de": "Behaarung",
+    "label_en": "Hairiness",
+    "description_de": "Allgemeine Behaarung.",
+    "description_en": "",
+    "role": "dependent",
+    "group": "Indument",
+    "order": null,
+    "states": [
+      {
+        "code": "densely_hairy",
+        "label_de": "dicht behaart",
+        "label_en": "densely hairy",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "glabrous",
+        "label_de": "kahl",
+        "label_en": "glabrous",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "glandular_hairy",
+        "label_de": "drüsig behaart",
+        "label_en": "glandular hairy",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "hairy",
+        "label_de": "behaart",
+        "label_en": "hairy",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "mixed",
+        "label_de": "gemischt",
+        "label_en": "mixed",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "moderate",
+        "label_de": "mäßig behaart",
+        "label_en": "moderately hairy",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "label_completed"
+      },
+      {
+        "code": "sparsely_hairy",
+        "label_de": "spärlich behaart",
+        "label_en": "sparsely hairy",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      }
+    ]
+  },
+  {
+    "code": "indusium_attachment",
+    "label_de": "Ansatz des Schleiers",
+    "label_en": "Indusium attachment",
+    "description_de": "Ansatzstelle des Indusiums; bei Polystichum typisch schildförmig-mittig, bei Dryopteris nierenförmig-seitlich. Fachlich anhand der besprochenen Farnschlüsselmerkmale strukturiert.",
+    "description_en": "The point at which the indusium is attached.",
+    "role": "dependent",
+    "group": "Sori and spores",
+    "order": null,
+    "states": [
+      {
+        "code": "central",
+        "label_de": "mittig angeheftet",
+        "label_en": "centrally attached",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "lateral",
+        "label_de": "seitlich angeheftet",
+        "label_en": "laterally attached",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      }
+    ]
+  },
+  {
+    "code": "indusium_persistence",
+    "label_de": "Beständigkeit des Schleiers",
+    "label_en": "Indusium persistence",
+    "description_de": "Verhalten des Indusiums bis bzw. während der Sporenreife. Fachlich anhand der besprochenen Farnschlüsselmerkmale strukturiert.",
+    "description_en": "",
+    "role": "dependent",
+    "group": "Sori and spores",
+    "order": null,
+    "states": [
+      {
+        "code": "early_deciduous",
+        "label_de": "früh abfallend",
+        "label_en": "early deciduous",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "persistent",
+        "label_de": "bleibend/lang haftend",
+        "label_en": "persistent/long-lasting",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      }
+    ]
+  },
+  {
+    "code": "indusium_presence",
+    "label_de": "Schleier vorhanden",
+    "label_en": "Indusium present",
+    "description_de": "Vorhandensein des Indusiums.",
+    "description_en": "",
+    "role": "dependent",
+    "group": "Reproduction",
+    "order": null,
     "states": [
       {
         "code": "absent",
@@ -3663,6 +3729,24 @@
         "label_en": "absent",
         "explanation_de": "",
         "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "false_indusium_margin",
+        "label_de": "falscher Schleier durch umgerollten Rand",
+        "label_en": "false indusium formed by rolled margin",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "not_applicable",
+        "label_de": "nicht anwendbar",
+        "label_en": "not applicable",
+        "explanation_de": "Für dieses Merkmal liegen keine vergleichbaren Sori vor.",
+        "explanation_en": "There are no comparable sori for this character.",
         "image_path": "",
         "review_status": "pending"
       },
@@ -3676,66 +3760,48 @@
         "review_status": "pending"
       },
       {
-        "code": "short",
-        "label_de": "kurz",
-        "label_en": "short",
+        "code": "reduced",
+        "label_de": "reduziert",
+        "label_en": "reduced",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
         "review_status": "pending"
       },
       {
-        "code": "long",
-        "label_de": "lang",
-        "label_en": "long",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "not_applicable",
-        "label_de": "nicht anwendbar",
-        "label_en": "not applicable",
-        "explanation_de": "Das Merkmal ist für den Grundbauplan dieses Taxons anatomisch nicht sinnvoll.",
-        "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
+        "code": "unknown",
+        "label_de": "unbekannt",
+        "label_en": "unknown",
+        "explanation_de": "Das Vorkommen eines Schleiers ist nicht geklärt.",
+        "explanation_en": "The presence of an indusium has not been established.",
         "image_path": "",
         "review_status": "pending"
       }
     ]
   },
   {
-    "code": "pinna_base_symmetry",
-    "label_de": "Symmetrie der untersten Fieder",
-    "label_en": "Symmetry of lowest pinna",
-    "description_de": "Symmetrie der untersten Fieder: beurteilt wird insbesondere, ob die zum Blattgrund gerichtete (basiskopische) Seite stärker/länger entwickelt ist. Referenz: https://www.blumeninschwaben.de/Sporenpflanzen/fieder_stachel.htm",
-    "description_en": "Whether the lowest pinna is symmetrical or its basiscopic side is distinctly longer.",
-    "role": "dependent",
-    "group": "Pinnae",
-    "order": 9999,
+    "code": "leaf_arrangement_branches",
+    "label_de": "Blattstellung an den Ästen",
+    "label_en": "Leaf arrangement on branches",
+    "description_de": "Anordnung der Blätter an den Ästen bei Bärlappen und Moosfarnen.",
+    "description_en": "Arrangement of leaves on branches in clubmosses and spikemosses.",
+    "role": "primary",
+    "group": "Morphology",
+    "order": null,
     "states": [
       {
-        "code": "symmetrical",
-        "label_de": "symmetrisch",
-        "label_en": "symmetrical",
+        "code": "decussate",
+        "label_de": "Blätter dekussiert (kreuzgegenständig) an den Ästen angeordnet",
+        "label_en": "leaves decussated arranged on the branches",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
         "review_status": "pending"
       },
       {
-        "code": "weakly_asymmetrical",
-        "label_de": "basale Seite etwas länger",
-        "label_en": "weakly asymmetrical",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "strongly_asymmetrical",
-        "label_de": "basale Seite deutlich länger",
-        "label_en": "strongly asymmetrical",
+        "code": "dorsiventral_flat",
+        "label_de": "Blätter in 4 Reihen angeordnet (dorsal, ventral, 2 lateral), Äste sind abgeflacht",
+        "label_en": "leaves are arranged in 4 rows (dorsal, ventral 2 lateral), branches are flattened",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
@@ -3745,6 +3811,81 @@
         "code": "not_applicable",
         "label_de": "nicht anwendbar",
         "label_en": "not applicable",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "spiral",
+        "label_de": "Blätter spiralig an den Ästen angeordnet",
+        "label_en": "leaves spiraly arranged on the branches",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "three_to_four_sided_roundish",
+        "label_de": "Blätter drei- oder vierkantig an den Ästen angeordnet",
+        "label_en": "leaves arranged in three or four sided way on the branches",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      }
+    ]
+  },
+  {
+    "code": "leaf_spine_tip",
+    "label_de": "Ausbildung der Blattspitze",
+    "label_en": "Leaf tip",
+    "description_de": "Form und besondere Anhänge der Blattspitze bei Bärlappen und Moosfarnen.",
+    "description_en": "Shape and appendages of the leaf tip in clubmosses and spikemosses.",
+    "role": "primary",
+    "group": "Morphology",
+    "order": null,
+    "states": [
+      {
+        "code": "absent",
+        "label_de": "nicht vorhanden",
+        "label_en": "absent",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "colorless_hair",
+        "label_de": "Blattspitze mit einem langen weißem Grannenhaar",
+        "label_en": "apex of the leaf with a long, colorless (whitish) hair tip",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "firm_spinule",
+        "label_de": "Blattspitze mit einem festen kurzen Stachel",
+        "label_en": "apex of leaf with a short firm spinule",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "not_applicable",
+        "label_de": "nicht anwendbar",
+        "label_en": "not applicable",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "pointed",
+        "label_de": "Blattspitze  spitz auslaufendg",
+        "label_en": "apex of leaf pointed",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
@@ -3760,17 +3901,8 @@
     "description_en": "",
     "role": "dependent",
     "group": "Pinnae",
-    "order": 9999,
+    "order": null,
     "states": [
-      {
-        "code": "shorter_than_next",
-        "label_de": "kürzer als die nächsten",
-        "label_en": "shorter than next",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
       {
         "code": "equal_to_next",
         "label_de": "gleich lang",
@@ -3806,175 +3938,91 @@
         "explanation_en": "",
         "image_path": "",
         "review_status": "pending"
+      },
+      {
+        "code": "shorter_than_next",
+        "label_de": "kürzer als die nächsten",
+        "label_en": "shorter than next",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
       }
     ]
   },
   {
-    "code": "frond_texture",
-    "label_de": "Wedeltextur",
-    "label_en": "Frond texture",
-    "description_de": "Mechanische Beschaffenheit der Wedel.",
+    "code": "pinna_base_symmetry",
+    "label_de": "Symmetrie der untersten Fieder",
+    "label_en": "Symmetry of lowest pinna",
+    "description_de": "Symmetrie der untersten Fieder: beurteilt wird insbesondere, ob die zum Blattgrund gerichtete (basiskopische) Seite stärker/länger entwickelt ist. Referenz: https://www.blumeninschwaben.de/Sporenpflanzen/fieder_stachel.htm",
+    "description_en": "Whether the lowest pinna is symmetrical or its basiscopic side is distinctly longer.",
+    "role": "dependent",
+    "group": "Pinnae",
+    "order": null,
+    "states": [
+      {
+        "code": "not_applicable",
+        "label_de": "nicht anwendbar",
+        "label_en": "not applicable",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "strongly_asymmetrical",
+        "label_de": "basale Seite deutlich länger",
+        "label_en": "strongly asymmetrical",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "symmetrical",
+        "label_de": "symmetrisch",
+        "label_en": "symmetrical",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "weakly_asymmetrical",
+        "label_de": "basale Seite etwas länger",
+        "label_en": "weakly asymmetrical",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      }
+    ]
+  },
+  {
+    "code": "pinnule_spacing",
+    "label_de": "Abstand der Fiederchen",
+    "label_en": "Pinnule spacing",
+    "description_de": "Abstand benachbarter Fiederchen; als Vergleichsmerkmal innerhalb ähnlicher Farngruppen. Fachlich anhand der besprochenen Farnschlüsselmerkmale strukturiert.",
     "description_en": "",
     "role": "dependent",
-    "group": "Frond",
-    "order": 9999,
+    "group": "Pinna morphology",
+    "order": null,
     "states": [
       {
-        "code": "delicate",
-        "label_de": "zart",
-        "label_en": "delicate",
+        "code": "close",
+        "label_de": "eng stehend",
+        "label_en": "close",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",
         "review_status": "pending"
       },
       {
-        "code": "soft_herbaceous",
-        "label_de": "weich-krautig",
-        "label_en": "soft herbaceous",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "firm",
-        "label_de": "derb",
-        "label_en": "firm",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "leathery",
-        "label_de": "ledrig",
-        "label_en": "leathery",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "fleshy",
-        "label_de": "fleischig",
-        "label_en": "fleshy",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      }
-    ]
-  },
-  {
-    "code": "growth_form",
-    "label_de": "Wuchsform",
-    "label_en": "Growth form",
-    "description_de": "Gesamtwuchs der Pflanze.",
-    "description_en": "Overall growth habit, including grouped or widely spaced fronds.",
-    "role": "dependent",
-    "group": "Habit",
-    "order": 9999,
-    "states": [
-      {
-        "code": "rosette",
-        "label_de": "Rosette",
-        "label_en": "rosette",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "tuft",
-        "label_de": "Horst",
-        "label_en": "tuft",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "scattered_fronds",
-        "label_de": "zerstreute Wedel",
-        "label_en": "scattered fronds",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "creeping_mat",
-        "label_de": "kriechende Matte",
-        "label_en": "creeping mat",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "floating",
-        "label_de": "schwimmend",
-        "label_en": "floating",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "climbing_like",
-        "label_de": "kletternd wirkend",
-        "label_en": "climbing-like",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "clustered",
-        "label_de": "gruppenweise stehende Wedel",
-        "label_en": "fronds growing in groups",
-        "explanation_de": "Mehrere Wedel treten räumlich gemeinsam auf; die genaue Rhizomform ist dadurch nicht festgelegt.",
-        "explanation_en": "Several fronds grow together; this does not specify their rhizome structure.",
-        "image_path": "",
-        "review_status": "text_drafted"
-      }
-    ]
-  },
-  {
-    "code": "frond_overwintering",
-    "label_de": "Überwinterung der Wedel",
-    "label_en": "Frond overwintering",
-    "description_de": "Phänologisches Verhalten der Wedel.",
-    "description_en": "",
-    "role": "dependent",
-    "group": "Habit",
-    "order": 9999,
-    "states": [
-      {
-        "code": "summergreen",
-        "label_de": "sommergrün",
-        "label_en": "summergreen",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "evergreen",
-        "label_de": "wintergrün",
-        "label_en": "evergreen",
-        "explanation_de": "",
-        "explanation_en": "",
-        "image_path": "",
-        "review_status": "pending"
-      },
-      {
-        "code": "wintergreen_short_lived",
-        "label_de": "wintergrün-kurzlebig",
-        "label_en": "wintergreen short-lived",
-        "explanation_de": "",
-        "explanation_en": "",
+        "code": "not_applicable",
+        "label_de": "nicht anwendbar",
+        "label_en": "not applicable",
+        "explanation_de": "Das Merkmal ist für den Grundbauplan dieses Taxons anatomisch nicht sinnvoll.",
+        "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
         "image_path": "",
         "review_status": "pending"
       },
@@ -3982,6 +4030,633 @@
         "code": "variable",
         "label_de": "variabel",
         "label_en": "variable",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "widely_spaced",
+        "label_de": "weit auseinanderstehend",
+        "label_en": "widely spaced",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      }
+    ]
+  },
+  {
+    "code": "pinnule_spine_tip",
+    "label_de": "Stachelspitze der Fiederchen",
+    "label_en": "Pinnule spine tip",
+    "description_de": "Ausprägung der Stachelspitze an Fiederabschnitten/Fiederchen; wichtig innerhalb der Dornfarn-Gruppe. Referenz: https://www.blumeninschwaben.de/Sporenpflanzen/fieder_stachel.htm",
+    "description_en": "Presence and development of sharp tips on pinnules.",
+    "role": "dependent",
+    "group": "Pinna morphology",
+    "order": null,
+    "states": [
+      {
+        "code": "absent",
+        "label_de": "fehlend",
+        "label_en": "absent",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "long",
+        "label_de": "lang",
+        "label_en": "long",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "not_applicable",
+        "label_de": "nicht anwendbar",
+        "label_en": "not applicable",
+        "explanation_de": "Das Merkmal ist für den Grundbauplan dieses Taxons anatomisch nicht sinnvoll.",
+        "explanation_en": "This character does not apply to the anatomical organization of this taxon.",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "present",
+        "label_de": "vorhanden",
+        "label_en": "present",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "short",
+        "label_de": "kurz",
+        "label_en": "short",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      }
+    ]
+  },
+  {
+    "code": "rachis_color",
+    "label_de": "Farbe der Rhachis",
+    "label_en": "Rachis colour",
+    "description_de": "Farbe der Rhachis.",
+    "description_en": "",
+    "role": "dependent",
+    "group": "Axes",
+    "order": null,
+    "states": [
+      {
+        "code": "bicolored",
+        "label_de": "zweifarbig",
+        "label_en": "bicolored",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "blackish",
+        "label_de": "schwärzlich",
+        "label_en": "blackish",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "brown",
+        "label_de": "braun",
+        "label_en": "brown",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "dark_brown",
+        "label_de": "dunkelbraun",
+        "label_en": "dark brown",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "green",
+        "label_de": "grün",
+        "label_en": "green",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "red_brown",
+        "label_de": "rotbraun",
+        "label_en": "red brown",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "straw",
+        "label_de": "strohfarben",
+        "label_en": "straw-coloured",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "label_completed"
+      }
+    ]
+  },
+  {
+    "code": "rachis_winged",
+    "label_de": "Rhachis geflügelt",
+    "label_en": "Rachis winged",
+    "description_de": "Ausprägung bzw. Vorhandensein von Flügeln an der Rhachis.",
+    "description_en": "",
+    "role": "dependent",
+    "group": "Axes",
+    "order": null,
+    "states": [
+      {
+        "code": "narrowly",
+        "label_de": "schmal geflügelt",
+        "label_en": "narrowly winged",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "no",
+        "label_de": "nein",
+        "label_en": "no",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "only_upper_part",
+        "label_de": "nur im oberen Teil",
+        "label_en": "only upper part",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "weakly",
+        "label_de": "schwach",
+        "label_en": "weakly",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "yes",
+        "label_de": "ja",
+        "label_en": "yes",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      }
+    ]
+  },
+  {
+    "code": "rhizome_type",
+    "label_de": "Rhizomtyp",
+    "label_en": "Rhizome type",
+    "description_de": "Typ des Rhizoms.",
+    "description_en": "",
+    "role": "advanced",
+    "group": "Habit",
+    "order": null,
+    "states": [
+      {
+        "code": "creeping",
+        "label_de": "kriechend",
+        "label_en": "creeping",
+        "explanation_de": "Die Länge des kriechenden Rhizoms ist offen.",
+        "explanation_en": "The length of the creeping rhizome is unspecified.",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "long_creeping",
+        "label_de": "lang kriechend",
+        "label_en": "long creeping",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "reduced",
+        "label_de": "reduziert",
+        "label_en": "reduced",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "roots",
+        "label_de": "Wurzeln angegeben (Rhizomtyp offen)",
+        "label_en": "Roots recorded (rhizome type unspecified)",
+        "explanation_de": "Das Arbeitsblatt nennt Wurzeln. Der Rhizomtyp bleibt offen.",
+        "explanation_en": "The working table records roots. The rhizome type is unspecified.",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "short",
+        "label_de": "kurz",
+        "label_en": "short",
+        "explanation_de": "Das Rhizom ist kurz. Seine Wuchsrichtung ist offen.",
+        "explanation_en": "The rhizome is short. Its orientation is unspecified.",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "short_creeping",
+        "label_de": "kurz kriechend",
+        "label_en": "short creeping",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "short_erect",
+        "label_de": "kurz aufrecht",
+        "label_en": "short erect",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "short_oblique",
+        "label_de": "kurz schräg",
+        "label_en": "short oblique",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "stolon_like",
+        "label_de": "stolonartig",
+        "label_en": "stolon-like",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "unknown",
+        "label_de": "unbekannt",
+        "label_en": "unknown",
+        "explanation_de": "Im Arbeitsblatt fehlt eine Angabe zum Rhizomtyp.",
+        "explanation_en": "No rhizome type is recorded in the working table.",
+        "image_path": "",
+        "review_status": "pending"
+      }
+    ]
+  },
+  {
+    "code": "scale_color_pattern",
+    "label_de": "Farbmuster der Spreuschuppen",
+    "label_en": "Scale colour pattern",
+    "description_de": "Farbmuster der Spreuschuppen an Blattstiel/Spindel; diagnostisch bei mehreren Dryopteris-Arten. Referenz: https://www.blumeninschwaben.de/Sporenpflanzen/fieder_stachel.htm",
+    "description_en": "Colour pattern of the scales on the stipe or rachis.",
+    "role": "dependent",
+    "group": "Indument",
+    "order": null,
+    "states": [
+      {
+        "code": "dark_base_pale_margin",
+        "label_de": "dunkler Grund mit hellem Rand",
+        "label_en": "dark base with pale margin",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "dark_central_stripe",
+        "label_de": "dunkler Mittelstreif",
+        "label_en": "dark central stripe",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "other",
+        "label_de": "anderes",
+        "label_en": "other",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "uniform_pale",
+        "label_de": "einfarbig blass",
+        "label_en": "uniform pale",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      }
+    ]
+  },
+  {
+    "code": "scales_presence",
+    "label_de": "Spreuschuppen vorhanden",
+    "label_en": "Scales present",
+    "description_de": "Gesamtdichte der Spreuschuppen.",
+    "description_en": "",
+    "role": "dependent",
+    "group": "Indument",
+    "order": null,
+    "states": [
+      {
+        "code": "absent",
+        "label_de": "fehlend",
+        "label_en": "absent",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "dense",
+        "label_de": "dicht",
+        "label_en": "dense",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "moderate",
+        "label_de": "mäßig",
+        "label_en": "moderate",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "sparse",
+        "label_de": "spärlich",
+        "label_en": "sparse",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      }
+    ]
+  },
+  {
+    "code": "sorus_width_class",
+    "label_de": "Größenklasse der Sori",
+    "label_en": "Sorus width class",
+    "description_de": "Praktische Größenklasse zur Trennung ähnlich aussehender Gruppen; nur verwenden, wenn sicher beurteilbar. Fachlich anhand der besprochenen Farnschlüsselmerkmale strukturiert.",
+    "description_en": "",
+    "role": "advanced",
+    "group": "Sori and spores",
+    "order": null,
+    "states": [
+      {
+        "code": "large_gt_0_7mm",
+        "label_de": "groß (über 0,7 mm)",
+        "label_en": "large (over 0.7 mm)",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "tiny_le_0_5mm",
+        "label_de": "klein (bis 0,5 mm)",
+        "label_en": "small (up to 0.5 mm)",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      }
+    ]
+  },
+  {
+    "code": "spore_size",
+    "label_de": "Sporentyp nach Größe",
+    "label_en": "Spore size classes",
+    "description_de": "Gleich große Sporen oder zwei Größenklassen (Mikrosporen und Megasporen).",
+    "description_en": "Spores of one size class or two size classes (microspores and megaspores).",
+    "role": "primary",
+    "group": "Reproduction",
+    "order": null,
+    "states": [
+      {
+        "code": "heterospore",
+        "label_de": "Mikro- und Megasporen",
+        "label_en": "microspores and megaspores",
+        "explanation_de": "Es gibt zwei Sporengrößenklassen, Mikrosporen und Megasporen.",
+        "explanation_en": "There are two spore size classes, microspores and megaspores.",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "isospore",
+        "label_de": "gleich große Sporen",
+        "label_en": "one spore size class",
+        "explanation_de": "Alle Sporen gehören derselben Größenklasse an.",
+        "explanation_en": "All spores belong to the same size class.",
+        "image_path": "",
+        "review_status": "pending"
+      }
+    ]
+  },
+  {
+    "code": "stipe_color",
+    "label_de": "Farbe des Blattstiels",
+    "label_en": "Stipe colour",
+    "description_de": "Typische Färbung des Blattstiels.",
+    "description_en": "Predominant stipe colour; broad brown category retained when shade is not established.",
+    "role": "dependent",
+    "group": "Axes",
+    "order": null,
+    "states": [
+      {
+        "code": "bicolored",
+        "label_de": "zweifarbig",
+        "label_en": "bicolored",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "blackish",
+        "label_de": "schwärzlich",
+        "label_en": "blackish",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "brown",
+        "label_de": "braun (nicht näher bestimmt)",
+        "label_en": "brown (unspecified)",
+        "explanation_de": "Blattstiel braun, ohne gesicherte Angabe eines genaueren Farbtons.",
+        "explanation_en": "Brown stipe without a more precise documented shade.",
+        "image_path": "",
+        "review_status": "text_drafted"
+      },
+      {
+        "code": "dark_brown",
+        "label_de": "dunkelbraun",
+        "label_en": "dark brown",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "green",
+        "label_de": "grün",
+        "label_en": "green",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "pale_brown",
+        "label_de": "hellbraun",
+        "label_en": "pale brown",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "red_brown",
+        "label_de": "rotbraun",
+        "label_en": "red brown",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "straw",
+        "label_de": "strohfarben",
+        "label_en": "straw",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      }
+    ]
+  },
+  {
+    "code": "stipe_winged",
+    "label_de": "Blattstiel geflügelt",
+    "label_en": "Stipe winged",
+    "description_de": "Vorhandensein von Flügeln am Blattstiel.",
+    "description_en": "",
+    "role": "dependent",
+    "group": "Axes",
+    "order": null,
+    "states": [
+      {
+        "code": "no",
+        "label_de": "nein",
+        "label_en": "no",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "only_at_base",
+        "label_de": "nur an der Basis",
+        "label_en": "only at base",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "only_distally",
+        "label_de": "nur distal",
+        "label_en": "only distally",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "yes",
+        "label_de": "ja",
+        "label_en": "yes",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      }
+    ]
+  },
+  {
+    "code": "strobili",
+    "label_de": "Stiel des Sporophyllstands",
+    "label_en": "Stalk of the strobilus",
+    "description_de": "Ob der endständige Sporophyllstand bei Bärlappen und Moosfarnen gestielt oder sitzend ist.",
+    "description_en": "Whether the terminal strobilus of clubmosses or spikemosses is stalked or sessile.",
+    "role": "dependent",
+    "group": "Reproduction",
+    "order": null,
+    "states": [
+      {
+        "code": "not_applicable",
+        "label_de": "nicht anwendbar",
+        "label_en": "not applicable",
+        "explanation_de": "Es ist kein Sporophyllstand vorhanden.",
+        "explanation_en": "No strobilus is present.",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "not_stalked",
+        "label_de": "Sporophyllstand (Strobilus) ohne Stiel",
+        "label_en": "Terminal strobili without stalk",
+        "explanation_de": "",
+        "explanation_en": "",
+        "image_path": "",
+        "review_status": "pending"
+      },
+      {
+        "code": "stalked",
+        "label_de": "Sporophyllstand (Strobilus) mit Stiel",
+        "label_en": "Terminal strobili with stalk",
         "explanation_de": "",
         "explanation_en": "",
         "image_path": "",

@@ -74,6 +74,17 @@ Beispiele (Archivstand 16.11.2026):
 - Für Viola ist die **Österreichische Exkursionsflora 2026** die vorrangige botanische Arbeitsgrundlage. Ergänzende Quellen und Abweichungen sind im Quellen-/Prüfprotokoll nachzuweisen. Die fachliche Prüfung der 44 Taxa und 35 Merkmale ist noch offen.
 - Nach jeder fachlichen Änderung an der Excel-Mastermatrix: Datenexport, Validierung aller Merkmalscodes, Prüfung der Markierungen und lokaler Funktionstest. GitHub-Veröffentlichungen erfolgen erst nach ausdrücklicher Freigabe.
 
+### Farnschlüssel lokal aus der V20-Matrix testen
+
+Der Export benötigt Python und openpyxl. Aus dem Programmordner:
+
+```text
+python tools/export_excel_v20.py /Pfad/zur/farn_schluessel_v20.xlsx
+python -m http.server 8765 --bind 127.0.0.1
+```
+
+Öffne `http://127.0.0.1:8765/farne/`. Die Auswahl der vier Farn- und Verwandtschaftsgruppen verwendet `plant_architecture`. Die pro Gruppe angebotenen Merkmale stehen in `config/farne.json`.
+
 ### Geplante Freigabe von V20
 
 Vor einem Merge nach `main` sind die fehlenden Viola-Anwendungsdateien zu vergleichen bzw. einzubinden sowie Farn- und Viola-Funktionen (Pfade, Merkmalsfilter, Darstellung, `unknown`/`not_applicable` und Caching der CSS-/JS-Dateien) lokal zu testen. Bis dahin bleibt `main` unverändert.

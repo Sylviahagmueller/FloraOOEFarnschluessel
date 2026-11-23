@@ -5,7 +5,13 @@ const keyConfig = await fetch(new URL('config/' + keyId + '.json', appBase)).the
  return r.json();
 });
 const dataDir = new URL((keyConfig.data_directory || 'data') + '/', appBase);
-const [traits,taxa,metadata,genera]=await Promise.all(['traits.json','taxa.json','metadata.json','genera.json'].map(f => new URL(f, dataDir)).map(x=>fetch(x).then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}: ${x}`);return r.json()})));
+const [sourceTraits,taxa,metadata,genera]=await Promise.all(['traits.json','taxa.json','metadata.json','genera.json'].map(f => new URL(f, dataDir)).map(x=>fetch(x).then(r=>{if(!r.ok)throw new Error(`HTTP ${r.status}: ${x}`);return r.json()})));
+const traits=sourceTraits.map(trait=>{
+ const stateText=keyConfig.state_text?.[trait.code];
+ return stateText
+  ? {...trait,states:trait.states.map(option=>({...option,...stateText[option.code]}))}
+  : trait;
+});
 const generaByName=Object.fromEntries(genera.map(g=>[g.genus_name,g]));
 // Versionsinformationen: Programmstand fix, Datenstand aus exportierten Metadaten.
 const dataVersionMatch = String(metadata.source_file || '').match(/(?:^|[_-])v(\d+(?:\.\d+)?)(?=[_.-]|$)/i);
@@ -13,7 +19,8 @@ const dataVersion = dataVersionMatch ? `V${dataVersionMatch[1]}` : (metadata.sou
 function renderVersionInfo(){
  const english = document.getElementById('language')?.value === 'en';
  document.getElementById('program-version').textContent = `${english ? 'App version' : 'Programmversion'}: V20`;
- document.getElementById('data-version').textContent = `${english ? 'Excel data version' : 'Excel-Datenbasis'}: ${metadata.base_excel_version || dataVersion} · ${metadata.editorial_revision || 'V17'}`;
+ const versions = new Set([metadata.base_excel_version || dataVersion, metadata.editorial_revision || 'V17']);
+ document.getElementById('data-version').textContent = `${english ? 'Excel data version' : 'Excel-Datenbasis'}: ${[...versions].join(' · ')}`;
 }
 renderVersionInfo();
 document.getElementById('language')?.addEventListener('change', renderVersionInfo);
@@ -29,17 +36,45 @@ for (const language of ['de','en']) {
   if (keyConfig[configField]) I18N[language][field] = keyConfig[configField];
  }
 }
+I18N.de.keySelection = 'Bestimmungsschlüssel';
+I18N.en.keySelection = 'Identification key';
 document.getElementById('plant-group')?.addEventListener('change', e => { location.href = new URL(e.target.value === 'farne' ? 'farne/' : 'viola/', appBase).href; });
 const byCode=Object.fromEntries(traits.map(t=>[t.code,t]));
 let savedLang='de';try{savedLang=localStorage.getItem('floraooe-language')||'de'}catch{}
-const state={lang:savedLang==='en'?'en':'de',filters:{},collapsed:new Set(),query:'',traitLevel:'simple',catalogOpen:new Set()};
+const state={lang:savedLang==='en'?'en':'de',filters:{},collapsed:new Set(),query:'',traitLevel:'simple',catalogOpen:new Set(),identificationGroup:null};
+const identificationGroups = keyConfig.identification_groups;
+const groupPickerText = {de:'Pflanzengruppe wählen', en:'Choose a plant group'};
+const groupLevels = Object.fromEntries(Object.entries(identificationGroups || {}).map(([code, group]) => [
+ code, {
+  simple: new Set(group.simple),
+  extended: new Set([...group.simple, ...group.extended]),
+  expert: new Set([...group.simple, ...group.extended, ...group.expert])
+ }
+]));
 const $=id=>document.getElementById(id),t=k=>I18N[state.lang][k]||k;
 const txt=(obj,field)=>obj?.[`${field}_${state.lang}`]||obj?.[`${field}_de`]||'';
 const escape=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const selected=()=>Object.entries(state.filters).filter(([,v])=>v.size);
 // V18 semantics: not_applicable is an explicit contradiction, while missing/unknown data remain possible.
 const NON_SELECTABLE_STATES=new Set(['not_applicable','unknown']);
-const selectableStates=trait=>trait.states.filter(s=>!NON_SELECTABLE_STATES.has(s.code));
+const groupStateCodes = new Map();
+for (const group of Object.keys(identificationGroups || {})) {
+ const byTrait = new Map();
+ for (const taxon of groupTaxa(group)) {
+  for (const [trait, values] of Object.entries(taxon.values)) {
+   if (!byTrait.has(trait)) byTrait.set(trait, new Set());
+   for (const value of values) byTrait.get(trait).add(value);
+  }
+ }
+ groupStateCodes.set(group, byTrait);
+}
+function selectableStates(trait){
+ const groupStates = groupStateCodes.get(state.identificationGroup);
+ const usedCodes = groupStates?.get(trait.code);
+ return trait.states.filter(option=>
+  !NON_SELECTABLE_STATES.has(option.code) && (!groupStates || usedCodes?.has(option.code))
+ );
+}
 function classification(taxon){
  let unknown=0;
  for(const [code,choices] of selected()){
@@ -53,11 +88,19 @@ function classification(taxon){
 function hasApplicableTaxa(trait,items){
  return items.some(({taxon})=>{
   const values=taxon.values[trait.code];
-  return !values?.includes('not_applicable') && (!values?.length || values.some(v=>!NON_SELECTABLE_STATES.has(v)));
+  return !values?.includes('not_applicable') && (
+   !values?.length || values.some(v=>!NON_SELECTABLE_STATES.has(v)) ||
+   (identificationGroups && values.includes('unknown'))
+  );
  });
 }
 
-function candidates(){return taxa.map(taxon=>({taxon,match:classification(taxon)})).filter(x=>x.match!==null).sort((a,b)=>a.match.unknown-b.match.unknown||a.taxon.name.localeCompare(b.taxon.name));}
+function groupTaxa(group = state.identificationGroup){
+ return identificationGroups
+  ? taxa.filter(taxon=>taxon.values.plant_architecture?.includes(group))
+  : taxa;
+}
+function candidates(){return groupTaxa().map(taxon=>({taxon,match:classification(taxon)})).filter(x=>x.match!==null).sort((a,b)=>a.match.unknown-b.match.unknown||a.taxon.name.localeCompare(b.taxon.name));}
 function recommendation(items){
  const used=new Set(Object.keys(state.filters));let best=null;
  for(const trait of traits){
@@ -83,18 +126,29 @@ const EXTENDED_CODES=new Set(keyConfig.extended_traits||keyConfig.simple_traits|
 const GROUP_CODES=Object.fromEntries(Object.entries(keyConfig.group_codes||{}).map(([k,codes])=>[k,new Set(codes)]));
 const GROUP_KEYS=['groupStructure','groupFrond','groupSori','groupSurface','groupEcology','groupSpecial'];
 function groupOf(tr){const c=tr.code;if(tr.role==='ecology')return 'groupEcology';if(GROUP_CODES.special?.has(c))return 'groupSpecial';if(GROUP_CODES.sori?.has(c))return 'groupSori';if(GROUP_CODES.surface?.has(c))return 'groupSurface';if(GROUP_CODES.structure?.has(c))return 'groupStructure';return 'groupFrond';}
-function inLevel(tr){return state.traitLevel==='expert'||(state.traitLevel==='extended'?EXTENDED_CODES:SIMPLE_CODES).has(tr.code);}
+function traitInGroup(tr){
+ return !identificationGroups || groupLevels[state.identificationGroup]?.expert.has(tr.code);
+}
+function inLevel(tr){
+ if(identificationGroups)return groupLevels[state.identificationGroup]?.[state.traitLevel].has(tr.code);
+ return state.traitLevel==='expert'||(state.traitLevel==='extended'?EXTENDED_CODES:SIMPLE_CODES).has(tr.code);
+}
+function traitDescription(trait){
+ const override=identificationGroups?.[state.identificationGroup]?.trait_descriptions?.[trait.code];
+ return txt(override,'description')||txt(keyConfig.trait_descriptions?.[trait.code],'description')||txt(trait,'description');
+}
 // V14: all choices live inside the catalogue; the scientific data and matching are unchanged.
 function add(code){if(!code||!byCode[code])return;if(!(code in state.filters))state.filters[code]=new Set();state.catalogOpen.add(code);render();}
 function makeCatalogTrait(tr){
  const code=tr.code, set=state.filters[code] || new Set();
- const el=document.createElement('details');el.className='catalog-trait';el.open=state.catalogOpen.has(code);
+ const el=document.createElement('details');el.className='catalog-trait';el.dataset.trait=code;el.open=state.catalogOpen.has(code);
  const heading=document.createElement('summary');heading.className='catalog-trait-heading';
  const label=document.createElement('span');label.className='catalog-trait-name';label.textContent=txt(tr,'label');
  const count=document.createElement('span');count.className='filter-selected';count.textContent=set.size?String(set.size):'';
  heading.append(label,count);el.append(heading);
  const body=document.createElement('div');body.className='catalog-trait-body';
- if(txt(tr,'description')){const description=document.createElement('p');description.className='desc';description.textContent=txt(tr,'description');body.append(description);}
+ const descriptionText=traitDescription(tr);
+ if(descriptionText){const description=document.createElement('p');description.className='desc';description.textContent=descriptionText;body.append(description);}
  const choices=document.createElement('div');choices.className='choices';
  for(const option of selectableStates(tr)){
   const line=document.createElement('div');line.className='state-line';
@@ -108,17 +162,18 @@ function makeCatalogTrait(tr){
  el.addEventListener('toggle',()=>{if(el.open)state.catalogOpen.add(code);else state.catalogOpen.delete(code);});
  return el;
 }
-function renderCatalog(){
- const items=candidates();
+function renderCatalog(items){
  const panel=$('character-catalog');panel.replaceChildren();
  for(const btn of document.querySelectorAll('#trait-level button')){
   const selected=btn.dataset.level===state.traitLevel;btn.classList.toggle('is-active',selected);btn.setAttribute('aria-pressed',String(selected));
  }
- // The original nine primary characters remain the first group.
- const frequent=traits.filter(tr=>DEFAULT_TRAIT_CODES.includes(tr.code)&&hasApplicableTaxa(tr,items));
+ const defaults=defaultTraitCodes();
+ const applicable=items.length ? items : groupTaxa().map(taxon=>({taxon}));
+ const show=tr=>traitInGroup(tr)&&(state.filters[tr.code]?.size||hasApplicableTaxa(tr,applicable));
+ const frequent=defaults.map(code=>byCode[code]).filter(tr=>tr&&selectableStates(tr).length&&show(tr));
  const groups=[['frequent',frequent]];
  for(const key of GROUP_KEYS){
-  const members=traits.filter(tr=>selectableStates(tr).length&&!DEFAULT_TRAIT_CODES.includes(tr.code)&&groupOf(tr)===key&&(inLevel(tr)||state.filters[tr.code]?.size)&&hasApplicableTaxa(tr,items));
+  const members=traits.filter(tr=>selectableStates(tr).length&&!defaults.includes(tr.code)&&groupOf(tr)===key&&(inLevel(tr)||state.filters[tr.code]?.size)&&show(tr));
   if(members.length)groups.push([key,members]);
  }
  for(const [key,members] of groups){
@@ -132,11 +187,45 @@ function renderCatalog(){
  $('filter-count').textContent=`${active} ${t('active')}`;
 }
 const DRAWINGS=Object.fromEntries(Object.entries(keyConfig.drawings||{}).map(([key,path])=>[key,new URL(path,appBase).href]));
+function setupGroupPicker(){
+ if(!identificationGroups)return;
+ for(const code of Object.keys(identificationGroups)){
+  const button=document.createElement('button');
+  button.type='button';
+  button.dataset.group=code;
+  button.className='group-card';
+  const image=document.createElement('img');
+  image.alt='';
+  image.src=DRAWINGS[`plant_architecture:${code}`];
+  const label=document.createElement('strong');
+  const hint=document.createElement('span');
+  button.append(image,label,hint);
+  button.onclick=()=>{
+   if(state.identificationGroup===code)return;
+   state.identificationGroup=code;
+   resetIdentification();
+  };
+  $('identification-group-cards').append(button);
+ }
+}
+function renderGroupPicker(){
+ if(!identificationGroups)return true;
+ $('identification-group-title').textContent=groupPickerText[state.lang];
+ for(const button of $('identification-group-cards').children){
+  const group=identificationGroups[button.dataset.group];
+  button.querySelector('strong').textContent=txt(group,'label');
+  button.querySelector('span').textContent=txt(group,'hint');
+  button.setAttribute('aria-pressed',String(button.dataset.group===state.identificationGroup));
+ }
+ $('identification-groups').classList.toggle('has-selection',Boolean(state.identificationGroup));
+ $('identification').hidden=!state.identificationGroup;
+ return Boolean(state.identificationGroup);
+}
 // Illustrations are deliberately schematic, not original floristic book artwork.
 function showStateInfo(tr,option){
  const src=DRAWINGS[`${tr.code}:${option.code}`];
  $('info-title').textContent=txt(option,'label');
- const description=txt(option,'explanation')||txt(tr,'description')||t('notAvailable');
+ const description=txt(option,'explanation')||traitDescription(tr)||t('notAvailable');
  $('info-description').textContent=description;
  $('info-illustration').replaceChildren();
  if(src){const pic=document.createElement('img');pic.src=src;pic.alt=txt(option,'label');pic.className='trait-drawing';$('info-illustration').append(pic);
@@ -169,7 +258,7 @@ function detail(taxon){
  const section=(title,body)=>body?`<section class="taxon-detail-section"><h3>${escape(title)}</h3><p>${escape(body)}</p></section>`:'';
  const diagnostic=taxon.diagnostic_values||{};
  const diagnosticItems=Object.entries(diagnostic).flatMap(([code,vals])=>{
-  const tr=byCode[code];if(!tr)return [];
+  const tr=byCode[code];if(!tr||!traitInGroup(tr))return [];
   return vals.map(v=>`<li><span>${escape(txt(tr,'label'))}:</span> <strong>${escape(txt(tr.states.find(s=>s.code===v)||{label_de:v,label_en:v},'label'))}</strong></li>`);
  }).join('');
  const diagnosticHtml=diagnosticItems?`<section class="taxon-detail-section taxon-diagnostic"><h3>${state.lang==='en'?'Distinctive characters':'Besonders wichtige Merkmale'}</h3><ul>${diagnosticItems}</ul></section>`:'';
@@ -177,7 +266,7 @@ function detail(taxon){
   // Hide unknown and inapplicable states in details without changing filter data.
   vals=(vals||[]).filter(v=>v!=='unknown'&&v!=='not_applicable');
   if(!vals.length)return '';
-  const tr=byCode[code];if(!tr)return '';
+  const tr=byCode[code];if(!tr||!traitInGroup(tr))return '';
   const marked=new Set(diagnostic[code]||[]);
   const valueHtml=vals.map(v=>{
    const label=escape(txt(tr.states.find(s=>s.code===v)||{label_de:v,label_en:v},'label'));
@@ -191,14 +280,17 @@ function detail(taxon){
  genusHtml+diagnosticHtml+`<p class="muted">${escape(t('notReviewed'))}</p><div class="detail-grid">${detailValues||escape(t('notAvailable'))}</div>`;
  $('details').showModal();
 }
-function render(){localizeStatic();renderCatalog();const items=candidates();const filtered=items.filter(x=>(x.taxon.name+' '+(x.taxon.german_name||'')).toLocaleLowerCase().includes(state.query.toLocaleLowerCase()));$('count').textContent=items.length;$('summary').textContent='';const suggestion=recommendation(items);$('suggestion').innerHTML=suggestion?`<div class="suggestion-label">${escape(t('suggest'))}</div><div class="suggestion-main"><strong>${escape(txt(suggestion,'label'))}</strong><button id="suggest-button">${escape(t('add'))}</button></div>`:'';$('suggestion').hidden=!suggestion;if(suggestion)$('suggest-button').onclick=()=>add(suggestion.code);$('list').replaceChildren();for(const x of filtered){const taxon=x.taxon,btn=document.createElement('button');btn.className='taxon'+(selected().length&&x.match.unknown>0?' taxon-uncertain':'');if(selected().length&&x.match.unknown>0)btn.title=state.lang==='de'?'Möglicher Treffer: für einige ausgewählte Merkmale liegen noch keine Angaben vor.':'Possible match: some selected characters have no recorded values.';const sub=state.lang==='de'?(taxon.german_name||taxon.family):(taxon.family||'');btn.innerHTML=`${PHOTO_TEST[taxon.name]?`<div class="taxon-image-wrap">${photoThumbHtml(taxon.name)}</div>`:''}<div class="taxon-heading"><strong>${escape(taxon.name)}</strong>${PHOTO_TEST[taxon.name]?`<span class="photo-hint" title="${escape(t('photoExample'))}" aria-label="${escape(t('photoExample'))}">&#128247;</span>`:''}</div><small>${escape(sub)}</small><div class="tags"><span class="tag">${escape(taxon.family)}</span></div>`;btn.onclick=()=>detail(taxon);$('list').append(btn);}if(!filtered.length)$('list').innerHTML=`<p class="muted">${escape(t('none'))}</p>`;}
+function render(){localizeStatic();if(!renderGroupPicker())return;const items=candidates();renderCatalog(items);const filtered=items.filter(x=>(x.taxon.name+' '+(x.taxon.german_name||'')).toLocaleLowerCase().includes(state.query.toLocaleLowerCase()));$('count').textContent=items.length;$('summary').textContent='';const suggestion=recommendation(items);$('suggestion').innerHTML=suggestion?`<div class="suggestion-label">${escape(t('suggest'))}</div><div class="suggestion-main"><strong>${escape(txt(suggestion,'label'))}</strong><button id="suggest-button">${escape(t('add'))}</button></div>`:'';$('suggestion').hidden=!suggestion;if(suggestion)$('suggest-button').onclick=()=>add(suggestion.code);$('list').replaceChildren();for(const x of filtered){const taxon=x.taxon,btn=document.createElement('button');btn.className='taxon'+(selected().length&&x.match.unknown>0?' taxon-uncertain':'');if(selected().length&&x.match.unknown>0)btn.title=state.lang==='de'?'Möglicher Treffer: für einige ausgewählte Merkmale liegen noch keine Angaben vor.':'Possible match: some selected characters have no recorded values.';const sub=state.lang==='de'?(taxon.german_name||taxon.family):(taxon.family||'');btn.innerHTML=`${PHOTO_TEST[taxon.name]?`<div class="taxon-image-wrap">${photoThumbHtml(taxon.name)}</div>`:''}<div class="taxon-heading"><strong>${escape(taxon.name)}</strong>${PHOTO_TEST[taxon.name]?`<span class="photo-hint" title="${escape(t('photoExample'))}" aria-label="${escape(t('photoExample'))}">&#128247;</span>`:''}</div><small>${escape(sub)}</small><div class="tags"><span class="tag">${escape(taxon.family)}</span></div>`;btn.onclick=()=>detail(taxon);$('list').append(btn);}if(!filtered.length)$('list').innerHTML=`<p class="muted">${escape(t('none'))}</p>`;}
 $('language').onchange=e=>{state.lang=e.target.value==='en'?'en':'de';try{localStorage.setItem('floraooe-language',state.lang)}catch{}render();};
 document.querySelectorAll('#trait-level button').forEach(btn=>btn.onclick=()=>{state.traitLevel=btn.dataset.level;render();});
 $('search').oninput=e=>{state.query=e.target.value;render();};
-// Initial characters are identical after page load and after Reset.
-const DEFAULT_TRAIT_CODES=traits.filter(tr=>tr.role==='primary'&&selectableStates(tr).length).slice(0,keyConfig.default_trait_count||9).map(tr=>tr.code);
+const legacyDefaults=traits.filter(tr=>tr.role==='primary'&&selectableStates(tr).length).map(tr=>tr.code);
+function defaultTraitCodes(){
+ const codes=identificationGroups ? identificationGroups[state.identificationGroup]?.simple || [] : legacyDefaults;
+ return codes.slice(0,keyConfig.default_trait_count||9);
+}
 function resetIdentification(){
- state.filters=Object.fromEntries(DEFAULT_TRAIT_CODES.map(code=>[code,new Set()]));
+ state.filters=Object.fromEntries(defaultTraitCodes().map(code=>[code,new Set()]));
  state.collapsed.clear();
  state.catalogOpen.clear();
  state.query='';
@@ -209,4 +301,5 @@ function resetIdentification(){
 $('reset').onclick=resetIdentification;
 $('close').onclick=()=>$('details').close();
 $('info-close').onclick=()=>$('info-dialog').close();
+setupGroupPicker();
 resetIdentification();

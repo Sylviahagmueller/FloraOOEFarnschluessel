@@ -1,18 +1,26 @@
 {
-  "source_file": "farn_schluessel_v19_gattungen_zeichnungen.xlsx",
-  "taxa_count": 173,
-  "trait_count": 67,
-  "primary_count": 11,
+  "source_file": "farn_schluessel_v20.xlsx",
+  "taxa_count": 162,
+  "trait_count": 73,
+  "primary_count": 16,
   "issues_count": 0,
   "botanical_review": "pending",
   "region_count": 0,
   "distribution_count": 0,
-  "base_excel_version": "V23",
-  "editorial_revision": "V19",
-  "described_taxa_count": 28,
-  "diagnostic_taxa_count": 28,
-  "diagnostic_state_count": 75,
-  "not_applicable_state_count": 2097,
-  "not_applicable_trait_count": 23,
-  "genus_description_count": 3
+  "base_excel_version": "V20",
+  "editorial_revision": "V20",
+  "described_taxa_count": 162,
+  "diagnostic_taxa_count": 34,
+  "diagnostic_state_count": 88,
+  "not_applicable_state_count": 2889,
+  "not_applicable_trait_count": 32,
+  "genus_description_count": 3,
+  "matrix_taxa_count": 169,
+  "hidden_taxa_count": 7,
+  "group_counts": {
+    "leafy_fern": 113,
+    "ophioglossoid": 13,
+    "lycophyte": 17,
+    "jointed_stems": 19
+  }
 }

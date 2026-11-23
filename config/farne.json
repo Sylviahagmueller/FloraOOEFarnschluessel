@@ -9,82 +9,6 @@
   "eyebrow_de": "FLORAOOE · GEFÄSSSPORENPFLANZEN ÖSTERREICHS",
   "eyebrow_en": "FLORAOOE · VASCULAR SPORE PLANTS OF AUSTRIA",
   "data_directory": "data",
-  "simple_traits": [
-    "plant_architecture",
-    "land_water_group",
-    "leaf_type",
-    "sporangia_placement",
-    "frond_arrangement",
-    "frond_outline",
-    "frond_base_narrowing",
-    "frond_division_degree",
-    "frond_dimorphism",
-    "sorus_position",
-    "sorus_shape",
-    "habitat_main_refined",
-    "frond_color",
-    "pinna_shape",
-    "growth_form"
-  ],
-  "extended_traits": [
-    "plant_architecture",
-    "land_water_group",
-    "leaf_type",
-    "sporangia_placement",
-    "frond_arrangement",
-    "frond_outline",
-    "frond_base_narrowing",
-    "frond_division_degree",
-    "frond_dimorphism",
-    "sorus_position",
-    "sorus_shape",
-    "habitat_main_refined",
-    "frond_color",
-    "pinna_shape",
-    "growth_form",
-    "ophi_sterile_lamina_shape",
-    "ophi_fertile_segment_form",
-    "ophi_sterile_segment_outline",
-    "eq_fertile_shoot_separation",
-    "eq_branching",
-    "eq_sheath_teeth",
-    "eq_strobilus_apex",
-    "fertile_frond_special_form",
-    "frond_gloss",
-    "frond_translucent",
-    "pinna_margin",
-    "pinna_apex",
-    "pinna_arrangement",
-    "terminal_segment_form",
-    "scales_distribution",
-    "lower_surface_scales_persistent",
-    "underside_special_cover",
-    "sori_presence",
-    "indusium_shape",
-    "margin_rolled_covering_sori",
-    "odor_when_crushed",
-    "pinnule_spacing",
-    "hairiness",
-    "indusium_persistence",
-    "stipe_winged",
-    "glands_presence",
-    "rachis_color",
-    "stipe_color",
-    "scale_color_pattern",
-    "rachis_winged",
-    "indusium_presence",
-    "scales_presence",
-    "pinnule_spine_tip",
-    "pinna_base_symmetry",
-    "lowest_pinnae_relation",
-    "frond_texture",
-    "frond_overwintering",
-    "substrate_preference",
-    "moisture_preference",
-    "light",
-    "altitudinal_belt",
-    "carbonate_preference"
-  ],
   "group_codes": {
     "sori": [
       "sporangia_placement",
@@ -103,7 +27,10 @@
       "eq_fertile_shoot_separation",
       "fertile_frond_special_form",
       "frond_dimorphism",
-      "ophi_fertile_segment_form"
+      "ophi_fertile_segment_form",
+      "strobili",
+      "gemmae",
+      "spore_size"
     ],
     "surface": [
       "frond_color",
@@ -133,7 +60,10 @@
       "rhizome_type",
       "eq_branching",
       "eq_sheath_teeth",
-      "eq_central_cavity"
+      "eq_central_cavity",
+      "branching_pattern",
+      "leaf_arrangement_branches",
+      "leaf_spine_tip"
     ],
     "special": [
       "vein_branching",
@@ -147,6 +77,334 @@
     ]
   },
   "default_trait_count": 9,
+  "trait_descriptions": {
+    "land_water_group": {
+      "description_de": "Beobachte, ob die Pflanze an Land, im oder auf dem Wasser oder an zeitweise überfluteten Stellen wächst. Feuchter Boden allein macht sie noch nicht zur Wasserpflanze.",
+      "description_en": "Check whether the plant grows on land, in or on water, or on periodically flooded ground. Moist soil alone does not make a plant aquatic."
+    },
+    "frond_dimorphism": {
+      "description_de": "Vergleiche Form und Größe der sporentragenden und der sterilen Wedel. Bei „hemidimorph“ sind beide Bereiche an demselben Wedel deutlich voneinander abgesetzt.",
+      "description_en": "Compare the shape and size of spore-bearing and sterile fronds. A hemidimorphic frond has clearly distinct fertile and sterile parts on the same frond."
+    },
+    "sori_presence": {
+      "description_de": "Suche an einer fertilen Pflanze nach Sori, also Gruppen von Sporangien. Bei Wasserfarnen zählen hier auch Sporokarpien.",
+      "description_en": "On a fertile plant, look for sori, which are clusters of sporangia. In aquatic ferns, include sporocarps here."
+    },
+    "sorus_position": {
+      "description_de": "Schau, wo die Sori auf der Spreite sitzen, etwa an den Blattadern oder am Rand. Bei Wasserfarnen können die Sporangien in Sporokarpien liegen.",
+      "description_en": "Look for the position of the sori on the blade, for example along the veins or near the margin. In aquatic ferns, sporangia may be enclosed in sporocarps."
+    },
+    "sorus_shape": {
+      "description_de": "Betrachte die Form der Sori am fertilen Wedel. Bei Wasserfarnen mit Sporokarpien wählst du die Form des Sporokarps.",
+      "description_en": "Look at the shape of the sori on a fertile frond. For aquatic ferns with sporocarps, select the shape of the sporocarp."
+    },
+    "habitat_main_refined": {
+      "description_de": "Wähle den Standort, an dem die Pflanze wächst. Mehrere Angaben können zusammenpassen, etwa „Wald“ und „am Boden“.",
+      "description_en": "Select the habitat where the plant grows. More than one option can apply, for example woodland and growing on the ground."
+    },
+    "indusium_presence": {
+      "description_de": "Prüfe an fertilen Wedeln, ob ein Schleier die Sori bedeckt. Auch ein umgerollter Blattrand kann sie als falscher Schleier schützen.",
+      "description_en": "On fertile fronds, check for a covering over the sori. A rolled blade margin can also protect them as a false indusium."
+    },
+    "indusium_shape": {
+      "description_de": "Beurteile die Form des Schleiers über den Sori. Ein umgerollter Blattrand kann als falscher Schleier dienen.",
+      "description_en": "Check the shape of the covering over the sori. A rolled blade margin can form a false indusium."
+    },
+    "fertile_frond_special_form": {
+      "description_de": "Achte darauf, ob die fertilen Wedel oder ihre Abschnitte auffällig schmal, zusammengezogen oder eingerollt sind.",
+      "description_en": "Check whether fertile fronds or their segments are notably narrowed, contracted or rolled."
+    },
+    "frond_gloss": {
+      "description_de": "Betrachte die Oberfläche der Spreite und achte darauf, wie stark sie glänzt.",
+      "description_en": "Examine the surface of the blade and assess how glossy it is."
+    },
+    "frond_color": {
+      "description_de": "Betrachte die Färbung der Spreite. Manche Wedel ändern ihre Farbe im Lauf der Entwicklung.",
+      "description_en": "Look at the colour of the blade. Some fronds change colour as they develop."
+    },
+    "frond_translucent": {
+      "description_de": "Halte die Spreite gegen das Licht, um zu sehen, ob sie dünn und durchscheinend ist.",
+      "description_en": "Hold the blade up to the light to see whether it is thin and translucent."
+    },
+    "frond_texture": {
+      "description_de": "Achte beim Berühren darauf, wie weich, zart, derb oder ledrig der Wedel ist.",
+      "description_en": "Gently feel whether the frond is soft, delicate, firm or leathery."
+    },
+    "frond_overwintering": {
+      "description_de": "Achte darauf, ob die Wedel nur während der Vegetationszeit grün sind oder über den Winter grün bleiben.",
+      "description_en": "Check whether fronds are green only during the growing season or stay green through winter."
+    },
+    "pinna_shape": {
+      "description_de": "Betrachte den Umriss einer Fieder oder, bei stärker geteilten Wedeln, eines Fiederchens.",
+      "description_en": "Examine the outline of a pinna or, on a more divided frond, a pinnule."
+    },
+    "pinna_margin": {
+      "description_de": "Betrachte den Rand einer Fieder oder eines Fiederchens. Er kann ganzrandig, gekerbt, gesägt oder gelappt sein.",
+      "description_en": "Examine the edge of a pinna or pinnule. It may be entire, scalloped, toothed or lobed."
+    },
+    "pinna_apex": {
+      "description_de": "Achte auf die Form am Ende der Fieder und auf eine mögliche Granne oder Stachelspitze.",
+      "description_en": "Look at the shape of the pinna tip and check for a bristle or short sharp point."
+    },
+    "pinna_arrangement": {
+      "description_de": "Vergleiche die Ansatzstellen der Fiedern auf beiden Seiten der Wedelspindel.",
+      "description_en": "Compare where the pinnae attach on opposite sides of the frond axis."
+    },
+    "terminal_segment_form": {
+      "description_de": "Betrachte die Endfieder oder das letzte Segment am Ende der Spreite. Achte darauf, ob der Umriss ganz oder gelappt ist.",
+      "description_en": "Look at the terminal pinna or last segment at the tip of the blade. Check whether its outline is entire or lobed."
+    },
+    "scales_presence": {
+      "description_de": "Achte darauf, ob Spreuschuppen vorhanden sind und wie dicht sie stehen.",
+      "description_en": "Check whether scales are present and how densely they are spaced."
+    },
+    "scales_distribution": {
+      "description_de": "Achte darauf, wo die Spreuschuppen sitzen, zum Beispiel an der Blattstielbasis, an der Wedelspindel, an der Unterseite oder am Rhizom.",
+      "description_en": "Check where the scales occur, for example at the stipe base, on the frond axis, beneath the blade or on the rhizome."
+    },
+    "lower_surface_scales_persistent": {
+      "description_de": "Prüfe an älteren Wedeln, ob die Spreuschuppen auf der Unterseite dicht erhalten bleiben.",
+      "description_en": "On older fronds, check whether the scales beneath the blade persist as a dense cover."
+    },
+    "underside_special_cover": {
+      "description_de": "Schau, ob die Unterseite der Spreite eine auffällige Bedeckung trägt.",
+      "description_en": "Check the underside of the blade for a distinctive covering."
+    },
+    "margin_rolled_covering_sori": {
+      "description_de": "Prüfe am fertilen Wedel, ob sich der Rand einrollt und die Sori bedeckt.",
+      "description_en": "On a fertile frond, check whether the margin rolls over and covers the sori."
+    },
+    "odor_when_crushed": {
+      "description_de": "Dieses Merkmal erfasst den Geruch eines zerriebenen Wedelstücks.",
+      "description_en": "This character records the smell of a crushed piece of frond."
+    },
+    "pinnule_spacing": {
+      "description_de": "Vergleiche die Abstände zwischen benachbarten Fiederchen derselben Fieder.",
+      "description_en": "Compare the spacing between adjacent pinnules on the same pinna."
+    },
+    "hairiness": {
+      "description_de": "Prüfe, ob die Pflanze Haare trägt und wie dicht sie stehen. Achte auch auf Drüsenhaare.",
+      "description_en": "Check for hairs and assess their density. Look for glandular hairs as well."
+    },
+    "indusium_persistence": {
+      "description_de": "Vergleiche Sori in verschiedenen Reifestadien. Achte darauf, ob der Schleier früh abfällt oder länger haftet.",
+      "description_en": "Compare sori at different stages of maturity. Check whether the indusium falls off early or remains attached."
+    },
+    "stipe_color": {
+      "description_de": "Beurteile die vorherrschende Farbe des Blattstiels. Wähle „braun“, wenn der genaue Braunton offenbleibt.",
+      "description_en": "Assess the predominant colour of the stipe. Choose ‘brown’ when the exact shade is unclear."
+    },
+    "stipe_winged": {
+      "description_de": "Prüfe, ob am Blattstiel seitlich ein schmaler Saum aus Blattgewebe verläuft.",
+      "description_en": "Check whether a narrow strip of blade tissue runs along the side of the stipe."
+    },
+    "glands_presence": {
+      "description_de": "Achte auf Drüsen oder Drüsenhaare und darauf, wie dicht sie stehen.",
+      "description_en": "Look for glands or glandular hairs and assess their density."
+    },
+    "rachis_color": {
+      "description_de": "Betrachte die Färbung der Rhachis, also der Mittelachse innerhalb der Spreite. Sie kann auch zweifarbig sein.",
+      "description_en": "Look at the colour of the rachis, the main axis within the blade. It can also be two-toned."
+    },
+    "rachis_winged": {
+      "description_de": "Prüfe, ob an der Rhachis innerhalb der Spreite ein seitlicher Saum aus Blattgewebe verläuft.",
+      "description_en": "Check whether blade tissue forms a wing along the side of the rachis."
+    },
+    "scale_color_pattern": {
+      "description_de": "Betrachte die Färbung der Spreuschuppen am Blattstiel oder an der Wedelspindel. Achte auf einen dunklen Mittelstreif oder einen hellen Rand.",
+      "description_en": "Look at the colour pattern of scales on the stipe or rachis. Check for a dark central stripe or a pale margin."
+    },
+    "pinnule_spine_tip": {
+      "description_de": "Achte darauf, ob das Fiederchen in einer Stachelspitze endet und wie lang diese ist.",
+      "description_en": "Check whether the pinnule ends in a sharp point and how long that point is."
+    },
+    "pinna_base_symmetry": {
+      "description_de": "Vergleiche die beiden Seiten der untersten Fieder. Achte darauf, ob die zum Wedelgrund gerichtete Seite länger ist.",
+      "description_en": "Compare the two sides of the lowest pinna. Check whether the side directed towards the frond base is longer."
+    },
+    "lowest_pinnae_relation": {
+      "description_de": "Vergleiche die Länge der untersten Hauptfiedern mit derjenigen der unmittelbar darüberliegenden Fiedern.",
+      "description_en": "Compare the length of the lowest primary pinnae with the length of the pinnae directly above them."
+    },
+    "substrate_preference": {
+      "description_de": "Achte darauf, worauf die Pflanze wächst, zum Beispiel auf kalkhaltigem Gestein, Serpentin, Humus oder Boden.",
+      "description_en": "Consider what the plant grows on, for example calcareous rock, serpentine, humus or soil."
+    },
+    "moisture_preference": {
+      "description_de": "Beurteile den Wasserhaushalt des Standorts. Er kann von trocken bis nass, zeitweise überflutet oder aquatisch reichen.",
+      "description_en": "Assess moisture at the site. Conditions may range from dry to wet, periodically flooded or aquatic."
+    },
+    "light": {
+      "description_de": "Achte auf die Lichtverhältnisse am Standort. Bei wechselnden Verhältnissen können mehrere Angaben passen.",
+      "description_en": "Consider the light conditions at the site. More than one option may apply if conditions vary."
+    },
+    "altitudinal_belt": {
+      "description_de": "Ordne den Standort einer Höhenstufe oder einem Übergang zwischen zwei Stufen zu.",
+      "description_en": "Identify the altitudinal belt of the site, or the transition between two belts."
+    },
+    "carbonate_preference": {
+      "description_de": "Dieses Merkmal beschreibt, ob die Pflanze eher auf kalkhaltigem oder kalkarmem Untergrund vorkommt oder beide toleriert.",
+      "description_en": "This character describes whether the plant tends to grow on calcareous or lime-poor substrates, or tolerates both."
+    },
+    "sori_opening_behavior": {
+      "description_de": "Dieses Merkmal erfasst, wie sich die Sporangien bei der Reife öffnen.",
+      "description_en": "This character records how the sporangia open at maturity."
+    },
+    "spore_ornamentation": {
+      "description_de": "Betrachte unter Vergrößerung die Oberfläche der Sporen. Achte zum Beispiel auf Falten oder ein netzartiges Muster.",
+      "description_en": "Under magnification, examine the surface of the spores for features such as folds or a net-like pattern."
+    },
+    "nectar_gland_at_lower_pinnae": {
+      "description_de": "Prüfe, ob an den unteren Hauptfiedern Nektardrüsen vorhanden sind.",
+      "description_en": "Check the lower primary pinnae for nectaries."
+    },
+    "basiscopic_pinnule_length_ratio": {
+      "description_de": "Suche das Fiederchen direkt am Ansatz der Fieder auf der zum Wedelgrund gerichteten Seite. Vergleiche seine Länge mit der halben Länge der gesamten Fieder.",
+      "description_en": "Find the pinnule closest to the base of the pinna on the side facing the frond base. Compare its length with half the length of the entire pinna."
+    },
+    "indusium_attachment": {
+      "description_de": "Prüfe am Sorus, ob der Schleier in seiner Mitte oder seitlich angeheftet ist.",
+      "description_en": "Check whether the indusium is attached centrally or at the side of the sorus."
+    },
+    "sorus_width_class": {
+      "description_de": "Ordne einzelne Sori nach ihrer Breite ein. Verwende die angegebenen Grenzen in Millimetern.",
+      "description_en": "Classify individual sori by their width. Use the thresholds given in millimetres."
+    },
+    "eq_fertile_shoot_separation": {
+      "description_de": "Vergleiche sporentragende und sterile Sprosse. Achte darauf, ob sie deutlich verschieden oder ähnlich und grün sind.",
+      "description_en": "Compare spore-bearing and sterile shoots. Check whether they are clearly different or similar and green."
+    },
+    "eq_branching": {
+      "description_de": "Betrachte die Knoten am Spross. Achte auf Seitenäste in Quirlen und darauf, ob Äste auch fehlen können.",
+      "description_en": "Examine the nodes on the shoot. Look for whorls of side branches and check whether branches can also be absent."
+    },
+    "eq_central_cavity": {
+      "description_de": "Vergleiche im Stängelquerschnitt den Durchmesser des Hohlraums in der Mitte mit dem gesamten Stängeldurchmesser.",
+      "description_en": "In a stem cross-section, compare the diameter of the central cavity with the overall stem diameter."
+    },
+    "branching_pattern": {
+      "description_de": "Vergleiche an einer Gabelung die Länge der beiden Äste. Etwa gleich lange Äste heißen isotom, verschieden lange anisotom.",
+      "description_en": "Compare the lengths of the two branches at a fork. Roughly equal branches are isotomous; branches of unequal length are anisotomous."
+    },
+    "leaf_arrangement_branches": {
+      "description_de": "Betrachte einen Ast von mehreren Seiten. Achte darauf, ob die Blätter spiralig, in Paaren oder in Reihen stehen und ob der Ast abgeflacht ist.",
+      "description_en": "Examine a branch from several sides. Check whether the leaves form a spiral, pairs or rows, and whether the branch is flattened."
+    },
+    "leaf_spine_tip": {
+      "description_de": "Betrachte die Blattspitze. Sie kann spitz auslaufen oder ein Grannenhaar beziehungsweise einen kurzen Stachel tragen.",
+      "description_en": "Examine the leaf tip. It may taper to a point or bear a hair-like awn or a short stiff spine."
+    },
+    "gemmae": {
+      "description_de": "Suche am Spross nach Brutkörpern. Das sind kleine Strukturen, aus denen sich neue Pflanzen entwickeln können.",
+      "description_en": "Look along the shoot for gemmae, small structures that can develop into new plants."
+    },
+    "strobili": {
+      "description_de": "Betrachte den endständigen Sporophyllstand. Prüfe, ob unter der Ähre ein Stiel erkennbar ist oder ob sie direkt am Spross sitzt.",
+      "description_en": "Examine the terminal strobilus. Check whether it has a distinct stalk beneath the cone or sits directly on the shoot."
+    },
+    "ophi_sterile_lamina_shape": {
+      "description_de": "Betrachte den grünen, sterilen Blattabschnitt. Achte darauf, ob er eine durchgehende Spreite bildet oder in einzelne Segmente geteilt ist.",
+      "description_en": "Examine the green, sterile part of the leaf. Check whether it forms an undivided blade or is divided into separate segments."
+    },
+    "ophi_sterile_segment_outline": {
+      "description_de": "Betrachte den Umriss eines einzelnen Segments des grünen, sterilen Blattabschnitts.",
+      "description_en": "Examine the outline of an individual segment of the green, sterile part of the leaf."
+    },
+    "ophi_fertile_segment_form": {
+      "description_de": "Betrachte den Abschnitt mit Sporangien. Achte darauf, ob diese in einer verzweigten Rispe oder zweizeilig an einer Ähre stehen.",
+      "description_en": "Examine the sporangia-bearing part. Check whether the sporangia are arranged in a branched cluster or in two rows along a spike."
+    }
+  },
+  "state_text": {
+    "leaf_type": {
+      "axillary_leaf": {
+        "explanation_de": "Kleines Blatt in der Gabelung der Sprossachse.",
+        "explanation_en": "A small leaf in the fork of the stem."
+      },
+      "broad_undivided": {
+        "explanation_de": "Die breite Spreite besteht aus einer zusammenhängenden Fläche.",
+        "explanation_en": "The broad blade forms a single continuous surface."
+      },
+      "divided": {
+        "explanation_de": "Die Spreite ist gelappt, fiederspaltig oder in Fiedern geteilt.",
+        "explanation_en": "The blade is lobed, deeply cut or divided into pinnae."
+      },
+      "microphyll": {
+        "explanation_de": "Die Sprosse tragen kleine, einfach gebaute Blätter, sogenannte Mikrophylle.",
+        "explanation_en": "The shoots bear small, simple leaves called microphylls."
+      }
+    },
+    "frond_division_degree": {
+      "at_least_bipinnate": {
+        "explanation_de": "Die Spreite ist mindestens zweifach gefiedert. Eine genauere Teilungsordnung ist offen.",
+        "explanation_en": "The blade is at least twice pinnate. The precise order of division is unspecified."
+      }
+    },
+    "sporangia_placement": {
+      "fertile_segment": {
+        "explanation_de": "Die Sporangien sitzen an besonders ausgebildeten fertilen Blattabschnitten.",
+        "explanation_en": "The sporangia are borne on specialised fertile leaf segments."
+      },
+      "margin": {
+        "explanation_de": "Die Sori oder Sporangien sitzen am Rand. Ein umgerollter Blattrand kann sie bedecken.",
+        "explanation_en": "Sori or sporangia are borne at the margin. A rolled blade margin may cover them."
+      },
+      "sporocarp": {
+        "explanation_de": "Bei diesen Wasserfarnen liegen die Sporangien in besonderen, oft kapselartigen Sporokarpien.",
+        "explanation_en": "In these aquatic ferns, the sporangia are enclosed in distinct, often capsule-like sporocarps."
+      },
+      "strobilus": {
+        "explanation_de": "Die Sporangien sitzen an Strukturen, die zu einer Ähre am Sprossende zusammengefasst sind.",
+        "explanation_en": "The sporangia are borne on structures grouped into a cone at the tip of the shoot."
+      },
+      "submarginal": {
+        "label_de": "knapp innerhalb des Blattrands",
+        "label_en": "Just inside the blade margin"
+      }
+    },
+    "sorus_position": {
+      "submarginal": {
+        "label_de": "knapp innerhalb des Blattrands",
+        "label_en": "Just inside the blade margin"
+      }
+    },
+    "leaf_spine_tip": {
+      "absent": {
+        "label_de": "keine besondere Ausbildung",
+        "label_en": "No distinctive tip",
+        "explanation_de": "Die Blattspitze zeigt keine der hier beschriebenen besonderen Formen oder Anhänge.",
+        "explanation_en": "The leaf tip shows none of the distinctive forms or appendages described here."
+      },
+      "colorless_hair": {
+        "label_de": "mit langem, weißem Grannenhaar",
+        "label_en": "With a long, pale hair-like awn"
+      },
+      "pointed": {
+        "label_de": "spitz auslaufend",
+        "label_en": "Tapering to a point"
+      }
+    },
+    "leaf_arrangement_branches": {
+      "decussate": {
+        "label_de": "kreuzgegenständig",
+        "label_en": "Decussate (opposite pairs)",
+        "explanation_de": "Je zwei Blätter stehen sich gegenüber. Das nächste Blattpaar steht dazu um etwa 90 Grad gedreht.",
+        "explanation_en": "Two leaves stand opposite each other at each node. Each pair is turned about 90 degrees from the next."
+      },
+      "dorsiventral_flat": {
+        "label_de": "vier Reihen an abgeflachten Ästen",
+        "label_en": "Four rows on flattened branches"
+      },
+      "spiral": {
+        "label_de": "spiralig",
+        "label_en": "Spiral"
+      },
+      "three_to_four_sided_roundish": {
+        "label_de": "dreikantig oder vierkantig angeordnet",
+        "label_en": "Leaves arranged in a three- or four-sided pattern"
+      }
+    }
+  },
   "drawings": {
     "frond_division_degree:entire": "assets/drawings/v19_entire.svg",
     "frond_division_degree:lobed": "assets/drawings/v19_lobed.svg",
@@ -168,5 +426,212 @@
     "plant_architecture:ophioglossoid": "assets/drawings/architecture_ophiogloss.png",
     "plant_architecture:jointed_stems": "assets/drawings/architecture_horsetail.png",
     "plant_architecture:lycophyte": "assets/drawings/architecture_lycophyte.png"
+  },
+  "identification_groups": {
+    "leafy_fern": {
+      "label_de": "Farne",
+      "label_en": "Ferns",
+      "hint_de": "Wedel oder kleine Wasserfarne",
+      "hint_en": "Fronds or small aquatic ferns",
+      "trait_descriptions": {
+        "frond_arrangement": {
+          "description_de": "Achte darauf, wie die Wedel am Pflanzenstock oder Rhizom ansetzen. Bei Wasserfarnen kannst du auch die Anordnung der schwimmenden Blätter beurteilen.",
+          "description_en": "Look at how fronds arise from the plant base or rhizome. In aquatic ferns, also check the arrangement of floating leaves."
+        },
+        "sporangia_placement": {
+          "description_de": "Suche am fertilen Wedel nach Sporangien. Achte auf ihre Lage zu den Blattadern und zum Rand sowie auf besondere fertile Abschnitte. Bei Wasserfarnen können sie in Sporokarpien liegen.",
+          "description_en": "Look for sporangia on a fertile frond. Note their position relative to the veins and margin, or on specialised fertile segments. In aquatic ferns, they may be enclosed in sporocarps."
+        },
+        "growth_form": {
+          "description_de": "Betrachte die ganze Pflanze. Achte darauf, ob die Wedel in Gruppen, Horsten, Rosetten oder verstreut stehen oder ob die Pflanze eine Matte bildet oder schwimmt.",
+          "description_en": "Look at the whole plant. Check whether the fronds form groups, tufts or rosettes, arise separately, or whether the plant forms a mat or floats."
+        },
+        "rhizome_type": {
+          "description_de": "Betrachte das Rhizom. Achte auf seine Länge, darauf, ob es kriecht oder aufrecht ist, und ob es stark reduziert ist.",
+          "description_en": "Examine the rhizome. Note its length, whether it creeps or stands upright, and whether it is reduced."
+        },
+        "leaf_type": {
+          "description_de": "Beschreibt die Grundform der Blattspreite. Wie fein der Wedel geteilt ist, erfasst du unter „Teilungsgrad des Wedels“.",
+          "description_en": "Describes the basic form of the blade. Record how finely the frond is divided under ‘Frond division degree’."
+        }
+      },
+      "simple": [
+        "land_water_group",
+        "leaf_type",
+        "frond_arrangement",
+        "frond_division_degree",
+        "frond_dimorphism",
+        "frond_outline",
+        "sporangia_placement",
+        "sori_presence",
+        "sorus_position",
+        "sorus_shape",
+        "habitat_main_refined"
+      ],
+      "extended": [
+        "frond_base_narrowing",
+        "growth_form",
+        "indusium_presence",
+        "indusium_shape",
+        "fertile_frond_special_form",
+        "frond_gloss",
+        "frond_color",
+        "frond_translucent",
+        "frond_texture",
+        "frond_overwintering",
+        "pinna_shape",
+        "pinna_margin",
+        "pinna_apex",
+        "pinna_arrangement",
+        "terminal_segment_form",
+        "scales_presence",
+        "scales_distribution",
+        "lower_surface_scales_persistent",
+        "underside_special_cover",
+        "margin_rolled_covering_sori",
+        "odor_when_crushed",
+        "pinnule_spacing",
+        "hairiness",
+        "indusium_persistence",
+        "stipe_color",
+        "stipe_winged",
+        "glands_presence",
+        "rachis_color",
+        "rachis_winged",
+        "scale_color_pattern",
+        "pinnule_spine_tip",
+        "pinna_base_symmetry",
+        "lowest_pinnae_relation",
+        "substrate_preference",
+        "moisture_preference",
+        "light",
+        "altitudinal_belt",
+        "carbonate_preference"
+      ],
+      "expert": [
+        "rhizome_type",
+        "vein_branching",
+        "sori_opening_behavior",
+        "spore_ornamentation",
+        "nectar_gland_at_lower_pinnae",
+        "basiscopic_pinnule_length_ratio",
+        "indusium_attachment",
+        "sorus_width_class"
+      ]
+    },
+    "jointed_stems": {
+      "label_de": "Schachtelhalme",
+      "label_en": "Horsetails",
+      "hint_de": "Gegliederte Sprosse mit Scheiden",
+      "hint_en": "Jointed stems with sheaths",
+      "trait_descriptions": {
+        "sporangia_placement": {
+          "description_de": "Suche am Ende eines fertilen Sprosses nach der Ähre, die die Sporangien trägt.",
+          "description_en": "Look at the tip of a fertile shoot for the cone that bears the sporangia."
+        },
+        "growth_form": {
+          "description_de": "Achte darauf, ob die oberirdischen Sprosse einzeln stehen.",
+          "description_en": "Check whether the above-ground shoots arise singly."
+        },
+        "rhizome_type": {
+          "description_de": "Achte darauf, ob das Rhizom waagerecht kriecht. Beim Eintrag „kriechend“ ist seine Länge offen.",
+          "description_en": "Check for a horizontally creeping rhizome. The state ‘creeping’ leaves its length unspecified."
+        }
+      },
+      "simple": [
+        "eq_fertile_shoot_separation",
+        "eq_branching",
+        "eq_sheath_teeth",
+        "eq_strobilus_apex"
+      ],
+      "extended": [
+        "growth_form",
+        "habitat_main_refined",
+        "sporangia_placement"
+      ],
+      "expert": [
+        "eq_branch_first_internode",
+        "eq_central_cavity",
+        "rhizome_type"
+      ]
+    },
+    "lycophyte": {
+      "label_de": "Bärlappe und Moosfarne",
+      "label_en": "Clubmosses and spikemosses",
+      "hint_de": "Dicht stehende kleine Blätter",
+      "hint_en": "Closely spaced small leaves",
+      "trait_descriptions": {
+        "sporangia_placement": {
+          "description_de": "Suche an einem fertilen Spross nach Sporangien. Sie können einzeln in Blattachseln oder in einem endständigen Sporophyllstand liegen.",
+          "description_en": "Look for sporangia on a fertile shoot. They may occur singly in leaf axils or in a terminal strobilus."
+        },
+        "growth_form": {
+          "description_de": "Achte darauf, ob der Hauptspross kriecht oder mehr oder weniger aufrecht wächst.",
+          "description_en": "Check whether the main shoot creeps or grows more or less upright."
+        },
+        "leaf_type": {
+          "description_de": "Erfasst die Blattform, gleich oder verschieden ausgebildete Blätter und besondere Strukturen wie eine Ligula oder ein Achselblatt. Mehrere Angaben können zutreffen.",
+          "description_en": "Records leaf shape, whether the leaves are alike or differ in form, and special features such as a ligule or an axillary leaf. More than one option may apply."
+        }
+      },
+      "simple": [
+        "branching_pattern",
+        "leaf_arrangement_branches",
+        "leaf_spine_tip",
+        "gemmae",
+        "strobili",
+        "leaf_type",
+        "sporangia_placement"
+      ],
+      "extended": [
+        "growth_form",
+        "habitat_main_refined",
+        "spore_size"
+      ],
+      "expert": []
+    },
+    "ophioglossoid": {
+      "label_de": "Natternzungengewächse",
+      "label_en": "Adder’s-tongue relatives",
+      "hint_de": "Grüner und sporentragender Blattabschnitt",
+      "hint_en": "Green and spore-bearing leaf segments",
+      "trait_descriptions": {
+        "frond_arrangement": {
+          "description_de": "Achte darauf, ob der Spross in der Regel einen einzelnen Wedel trägt. Dessen steriler und fertiler Abschnitt können einen gemeinsamen Stiel haben.",
+          "description_en": "Check whether the shoot usually bears a single frond. Its sterile and fertile parts may share a common stalk."
+        },
+        "frond_division_degree": {
+          "description_de": "Beurteile die Teilung der grünen, sterilen Blattspreite. Zähle bei gefiederten Spreiten die Teilungsordnungen.",
+          "description_en": "Assess division of the green, sterile blade. If it is pinnate, count the orders of division."
+        },
+        "growth_form": {
+          "description_de": "Achte darauf, ob die oberirdischen Sprosse einzeln stehen.",
+          "description_en": "Check whether the above-ground shoots arise singly."
+        },
+        "rhizome_type": {
+          "description_de": "Beurteile die Länge des Rhizoms. Der Eintrag „kurz“ lässt die Wuchsrichtung offen.",
+          "description_en": "Examine the length of the rhizome. The state ‘short’ leaves its orientation unspecified."
+        },
+        "leaf_type": {
+          "description_de": "Beschreibt die Grundform der Blattspreite. Die Form des sterilen Blattabschnitts wird separat erfasst.",
+          "description_en": "Describes the basic form of the blade. The shape of the sterile leaf segment is recorded separately."
+        }
+      },
+      "simple": [
+        "ophi_sterile_lamina_shape",
+        "ophi_sterile_segment_outline",
+        "ophi_fertile_segment_form"
+      ],
+      "extended": [
+        "growth_form",
+        "habitat_main_refined",
+        "frond_arrangement",
+        "frond_division_degree",
+        "leaf_type"
+      ],
+      "expert": [
+        "rhizome_type"
+      ]
+    }
   }
 }
